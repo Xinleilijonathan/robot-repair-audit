@@ -1,5 +1,13 @@
 # Handoff to Claude: robot-repair workshop paper
 
+> **Page-limit decision (user, Nov 16 ~00:15).**
+> - **The question.** The user is emailing the organizers (trust4rsi.agent@gmail.com; primary contact Haolun Wu) to ask whether references count toward the 4-page short-paper limit.
+> - **The two versions.**
+>   - `paper/main.tex`: a 4-page body, with references on pages 4–5. This is the default.
+>   - `paper/main_short.tex` → `main_short.pdf`: 4 pages total including references. Same results, tables and figures; the prose is condensed. This is the fallback, ready now.
+> - **The user's instruction:** if the organizers have NOT confirmed by **Nov 18** that references are excluded, submit the 4-page-total version (`main_short`).
+> - **Keep in sync.** Any content edit to `main.tex` must also go into `main_short.tex`.
+
 > **Update, Nov 15 ~23:59 (Claude): EXTENSION 1 COMPLETE and in the paper.**
 > - **Run.** 3,800/3,800 rollouts, no retries, no exclusions. Gates were committed before the audit. The parent repeat matched 20/20. All 39 frozen hashes were re-verified.
 > - **Results.** Full write-up in `outputs/extension1_report.md`.

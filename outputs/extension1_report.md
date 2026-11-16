@@ -118,4 +118,4 @@ All three gates delivered candidate_b (on the audit: target 27/30, old 76/90, 4 
 - **Other sections.** Updates the abstract, the contribution list, the Discussion bullets and the Limitations.
 - **First audit.** Its sections are unchanged.
 - **Length.** The paper compiles to 5 pages: a 4-page body, with references starting on page 4 and ending on page 5.
-- **Open item.** If the venue counts references toward the 4-page limit, the paper must be cut by about half a column. This needs organizer confirmation.
+- **Open item.** It is not yet confirmed whether the venue counts references toward the 4-page limit. A fallback, `paper/main_short.tex`, fits in 4 pages including references, with the same results. The user's instruction is to use it if the organizers have not confirmed by Nov 18.
