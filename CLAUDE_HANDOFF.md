@@ -7,6 +7,12 @@
 >   - `paper/main_short.tex` → `main_short.pdf`: 4 pages total including references. Same results, tables and figures; the prose is condensed. This is the fallback, ready now.
 > - **The user's instruction:** if the organizers have NOT confirmed by **Nov 18** that references are excluded, submit the 4-page-total version (`main_short`).
 > - **Keep in sync.** Any content edit to `main.tex` must also go into `main_short.tex`.
+>
+> **Submission prep (Nov 16, user-approved fixes).**
+> - **Artifact sentence.** The OpenReview form has only a PDF field (at most 50 MB) and no supplementary field. Both versions now say the anonymized artifact "will be released after the review period".
+> - **Workshop fit.** Both versions now add one intro sentence framing the acceptance check as the release step of an agent's update layer.
+> - **Form entries.** `outputs/openreview_form.md` has the title, keywords, TL;DR, both abstracts and the required confirmations.
+> - **Still the user's:** an OpenReview profile for every author, the read-through, and the submission itself.
 
 > **Update, Nov 15 ~23:59 (Claude): EXTENSION 1 COMPLETE and in the paper.**
 > - **Run.** 3,800/3,800 rollouts, no retries, no exclusions. Gates were committed before the audit. The parent repeat matched 20/20. All 39 frozen hashes were re-verified.
