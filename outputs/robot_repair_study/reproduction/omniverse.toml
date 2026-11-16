@@ -1,0 +1,4 @@
+[paths]
+data_root = "C:/Users/Jonat/Documents/Codex/2026-11-15/t/work/isaac_runtime/data"
+cache_root = "C:/Users/Jonat/Documents/Codex/2026-11-15/t/work/isaac_runtime/cache"
+logs_root = "C:/Users/Jonat/Documents/Codex/2026-11-15/t/work/isaac_runtime/logs"

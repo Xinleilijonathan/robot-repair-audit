@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{2.6pt}
+\begin{tabular}{lcccccccc}
+\toprule
+ & \multicolumn{2}{c}{Committed} & & \multicolumn{3}{c}{Delivered (audit)} & \multicolumn{2}{c}{P(admit)} \\
+\cmidrule(lr){2-3}\cmidrule(lr){5-7}\cmidrule(lr){8-9}
+Gate & A & B & Deliv. & Tgt & Old & Loss & A & B \\
+\midrule
+Frozen & -- & -- & parent & 15 & 106 & 0 & -- & -- \\
+Target-only & admit & admit & B & 38 & 105 & 5 & 0.99 & 1.00 \\
+Aggregate & reject & reject & parent & 15 & 106 & 0 & 0.47 & 0.74 \\
+Preservation & reject & reject & parent & 15 & 106 & 0 & 0.41 & 0.68 \\
+\bottomrule
+\end{tabular}
+\caption{Gate decisions committed from the 24-rollout validation draw before the audit ran, and the delivered controller's audit outcomes (target /40, old /120). P(admit) is a diagnostic: the admission rate over 5{,}000 validation-sized draws resampled from the audit pools.}
+\label{tab:gates}
+\end{table}

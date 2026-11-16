@@ -1,0 +1,18 @@
+﻿{
+    "frozen_local":  "2026-11-15T15:07:13.4315938-08:00",
+    "note":  "Amendment 1 (infrastructure only), before any audit/validation rollout. See audit_amendment_1.md.",
+    "files":  [
+                  {
+                      "path":  "work\\run_audit_batches.ps1",
+                      "sha256":  "965E8AE3BD441FFDBAAF65463CD681AEEB3469301C6B7CABBAD9738C7E92BA0D"
+                  },
+                  {
+                      "path":  "work\\launch_isaac_ps51.ps1",
+                      "sha256":  "FC7DFBF0FF2A98DDCCCA09B173EF296CE3DE6266F8EB6289309DAFB21A3A6007"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\audit_amendment_1.md",
+                      "sha256":  "C7963C6212A3C22BB93EE132096FF9A50589F15A6B6398862093A6FC2E35282A"
+                  }
+              ]
+}

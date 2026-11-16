@@ -1,0 +1,95 @@
+{
+  "completed_rollouts": 18,
+  "scenes": {
+    "place_front_left": {
+      "successes": 3,
+      "n": 3,
+      "errors_m": [
+        0.013058,
+        0.013058,
+        0.012202
+      ],
+      "failures": [],
+      "steps": [
+        422,
+        422,
+        422
+      ]
+    },
+    "place_front_right": {
+      "successes": 3,
+      "n": 3,
+      "errors_m": [
+        0.00749,
+        0.01398,
+        0.01398
+      ],
+      "failures": [],
+      "steps": [
+        424,
+        425,
+        425
+      ]
+    },
+    "place_far_left": {
+      "successes": 3,
+      "n": 3,
+      "errors_m": [
+        0.012158,
+        0.012158,
+        0.016037
+      ],
+      "failures": [],
+      "steps": [
+        464,
+        464,
+        465
+      ]
+    },
+    "place_near_left": {
+      "successes": 3,
+      "n": 3,
+      "errors_m": [
+        0.014363,
+        0.015186,
+        0.015186
+      ],
+      "failures": [],
+      "steps": [
+        452,
+        453,
+        453
+      ]
+    },
+    "cross_workspace": {
+      "successes": 3,
+      "n": 3,
+      "errors_m": [
+        0.013748,
+        0.013748,
+        0.012794
+      ],
+      "failures": [],
+      "steps": [
+        476,
+        476,
+        478
+      ]
+    },
+    "short_transfer": {
+      "successes": 3,
+      "n": 3,
+      "errors_m": [
+        0.013338,
+        0.013338,
+        0.013338
+      ],
+      "failures": [],
+      "steps": [
+        437,
+        437,
+        437
+      ]
+    }
+  }
+}

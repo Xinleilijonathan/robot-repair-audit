@@ -1,0 +1,231 @@
+{
+ "seed": 20261119,
+ "stock_values": {
+  "approach_height": 0.3,
+  "lift_height": 0.3,
+  "position_tolerance": 0.015,
+  "grasp_position_tolerance": 0.015,
+  "stability_duration": 0.1,
+  "gripper_dwell": 0.2
+ },
+ "bounds": {
+  "approach_height": [
+   0.05,
+   0.4
+  ],
+  "lift_height": [
+   0.1,
+   0.4
+  ],
+  "position_tolerance": [
+   0.005,
+   0.035
+  ],
+  "grasp_position_tolerance": [
+   0.005,
+   0.035
+  ],
+  "stability_duration": [
+   0.05,
+   0.5
+  ],
+  "gripper_dwell": [
+   0.1,
+   1.0
+  ]
+ },
+ "candidates": [
+  {
+   "id": "candidate_a",
+   "origin": "assistant",
+   "overrides": {
+    "lift_height": 0.2
+   }
+  },
+  {
+   "id": "candidate_b",
+   "origin": "assistant",
+   "overrides": {
+    "position_tolerance": 0.025
+   }
+  },
+  {
+   "id": "r01",
+   "origin": "random",
+   "overrides": {
+    "approach_height": 0.152
+   }
+  },
+  {
+   "id": "r02",
+   "origin": "random",
+   "overrides": {
+    "grasp_position_tolerance": 0.012
+   }
+  },
+  {
+   "id": "r03",
+   "origin": "random",
+   "overrides": {
+    "lift_height": 0.397,
+    "position_tolerance": 0.026
+   }
+  },
+  {
+   "id": "r04",
+   "origin": "random",
+   "overrides": {
+    "position_tolerance": 0.033
+   }
+  },
+  {
+   "id": "r05",
+   "origin": "random",
+   "overrides": {
+    "approach_height": 0.397,
+    "gripper_dwell": 0.21
+   }
+  },
+  {
+   "id": "r06",
+   "origin": "random",
+   "overrides": {
+    "approach_height": 0.073,
+    "grasp_position_tolerance": 0.011
+   }
+  },
+  {
+   "id": "r07",
+   "origin": "random",
+   "overrides": {
+    "position_tolerance": 0.012,
+    "gripper_dwell": 0.749
+   }
+  },
+  {
+   "id": "r08",
+   "origin": "random",
+   "overrides": {
+    "lift_height": 0.395
+   }
+  },
+  {
+   "id": "r09",
+   "origin": "random",
+   "overrides": {
+    "gripper_dwell": 0.134
+   }
+  },
+  {
+   "id": "r10",
+   "origin": "random",
+   "overrides": {
+    "approach_height": 0.156
+   }
+  },
+  {
+   "id": "r11",
+   "origin": "random",
+   "overrides": {
+    "stability_duration": 0.267
+   }
+  },
+  {
+   "id": "r12",
+   "origin": "random",
+   "overrides": {
+    "lift_height": 0.361,
+    "position_tolerance": 0.009
+   }
+  },
+  {
+   "id": "r13",
+   "origin": "random",
+   "overrides": {
+    "grasp_position_tolerance": 0.021
+   }
+  },
+  {
+   "id": "r14",
+   "origin": "random",
+   "overrides": {
+    "approach_height": 0.178,
+    "position_tolerance": 0.026
+   }
+  },
+  {
+   "id": "r15",
+   "origin": "random",
+   "overrides": {
+    "approach_height": 0.249,
+    "grasp_position_tolerance": 0.025
+   }
+  },
+  {
+   "id": "r16",
+   "origin": "random",
+   "overrides": {
+    "grasp_position_tolerance": 0.026
+   }
+  },
+  {
+   "id": "r17",
+   "origin": "random",
+   "overrides": {
+    "approach_height": 0.394
+   }
+  },
+  {
+   "id": "r18",
+   "origin": "random",
+   "overrides": {
+    "gripper_dwell": 0.896
+   }
+  },
+  {
+   "id": "r19",
+   "origin": "random",
+   "overrides": {
+    "approach_height": 0.062,
+    "grasp_position_tolerance": 0.018
+   }
+  },
+  {
+   "id": "r20",
+   "origin": "random",
+   "overrides": {
+    "grasp_position_tolerance": 0.006,
+    "gripper_dwell": 0.44
+   }
+  },
+  {
+   "id": "r21",
+   "origin": "random",
+   "overrides": {
+    "approach_height": 0.325
+   }
+  },
+  {
+   "id": "r22",
+   "origin": "random",
+   "overrides": {
+    "stability_duration": 0.164
+   }
+  },
+  {
+   "id": "r23",
+   "origin": "random",
+   "overrides": {
+    "approach_height": 0.244
+   }
+  },
+  {
+   "id": "r24",
+   "origin": "random",
+   "overrides": {
+    "lift_height": 0.105,
+    "gripper_dwell": 0.202
+   }
+  }
+ ]
+}

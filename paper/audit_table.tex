@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{1.9pt}
+\begin{tabular}{lcccccc}
+\toprule
+ & Target & Old & \multicolumn{2}{c}{Old} & Cond.\ loss, \% & Useful \\
+\cmidrule(lr){4-5}
+ & /40 & /120 & gain & loss & [95\% CI] & agg./pres. \\
+\midrule
+Parent & 15 & 106 & -- & -- & -- & -- \\
+A: lift 0.20\,m & 26 & 102 & 4 & 8 & 7.5 [3.9, 14.2] & no/no \\
+B: tol.\ 0.025\,m & 38 & 105 & 4 & 5 & 4.7 [2.0, 10.6] & no/no \\
+\bottomrule
+\end{tabular}
+\caption{Frozen audit: 40 target and 120 old scenes, one reset each, paired against the parent. Conditional loss is losses divided by parent old successes, with a Wilson interval over scenes for this single context. Usefulness follows the objectives declared before the audit.}
+\label{tab:audit}
+\end{table}

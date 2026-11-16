@@ -1,0 +1,143 @@
+\documentclass[letterpaper]{article} % DO NOT CHANGE THIS
+\usepackage[submission]{aaai2027}  % DO NOT CHANGE THIS
+\usepackage[hyphens]{url}  % DO NOT CHANGE THIS
+\usepackage{graphicx} % DO NOT CHANGE THIS
+\urlstyle{rm} % DO NOT CHANGE THIS
+\def\UrlFont{\rm}  % DO NOT CHANGE THIS
+\usepackage{natbib}  % DO NOT CHANGE THIS AND DO NOT ADD ANY OPTIONS TO IT
+\usepackage{caption} % DO NOT CHANGE THIS AND DO NOT ADD ANY OPTIONS TO IT
+\frenchspacing  % DO NOT CHANGE THIS
+\usepackage{booktabs}
+\usepackage{amsmath}
+\pdfinfo{
+/TemplateVersion (2027.1)
+}
+\setcounter{secnumdepth}{0}
+
+\title{Repair Without Regression? A Budget-Matched Audit of an Agent-Edited Robot Skill}
+\author{
+    Anonymous Submission
+}
+\affiliations{
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+When a coding agent edits a persistent robot controller to fix a failure, aggregate success can hide losses on scenes the controller used to solve. We test this in a small, fully controlled case. We use the scripted Franka pick-and-place controller in Isaac Sim, a measured-state evaluator that rejects four negative controls, and a workspace-boundary failure found by documented search. The unchanged controller replays exactly, so every paired transition is caused by an edit. On the development panel, two frozen single-parameter repairs each fixed the target. They lost 4 and 1 of 44 earlier successes but gained more elsewhere, so aggregate and zero-loss admission disagreed. On a frozen audit of 160 fresh scenes this compensation did not replicate. Both repairs improved the target neighborhood (from 15/40 to 26/40 and 38/40), but they lost 8 and 5 of 106 old successes against 4 gains each. Budget-matched aggregate and zero-loss gates, committed before the audit, both rejected both repairs. Across 5{,}000 resampled validation draws they disagreed in about 6\% of draws, while a target-only gate almost always admitted. Every loss was a centimeter-scale placement regression in the workspace interior, far from the repaired boundary. In this case the composition of the old-scene panel mattered more than the choice between aggregate and zero-loss admission.
+\end{abstract}
+
+\section{Introduction}
+Coding agents increasingly improve robot behavior by editing executable controllers in response to simulated or real feedback \citep{kuroki2026closedloop,xiao2026enpire,aphale2026selfrepair}. When the edited artifact is a persistent skill, a repair made for one failure is carried into every later scene. The usual acceptance check---did success go up?---can hide a trade: the revised controller may solve new scenes while failing scenes it used to solve. Because the change in old-scene success equals gains minus losses, ``no aggregate decrease'' and ``no lost successes'' are different requirements. They differ only when a repair both breaks and fixes old scenes.
+
+Whether that happens for robot skills, and how admission rules respond, has mostly been argued analytically or in software repair \citep{ma2026validation,gao2026looping}. We contribute a small, tightly controlled robot case study:
+\begin{itemize}
+\item A simulation setup in which the unchanged parent replays exactly, so each success-to-failure transition after an edit is caused by the edit, not reset noise.
+\item A development pilot in which both frozen repairs of a boundary failure lost earlier successes that were offset by gains, so aggregate and zero-loss admission disagreed.
+\item A frozen audit on 160 fresh scenes, with gate decisions committed before execution. The compensation disappears, the two rules agree, and what decides the outcome is whether, and from where, old scenes are sampled.
+\end{itemize}
+We do not propose a new verifier, learning algorithm or safety guarantee; regression testing and paired evaluation are established tools. The contribution is controlled evidence about directional gains and losses, and about when the choice of admission objective matters.
+
+\section{Related Work}
+Ma and Wu formalize update admission under evaluation budgets, including missed learning opportunities. Their evaluation is analytical and synthetic and leaves physical and VLA validation open \citep{ma2026validation}; we study a simulated-robot instance of their question. Kuroki et al.\ refine closed-loop robot code with simulation feedback and keep validation-selected implementations \citep{kuroki2026closedloop}, and ENPIRE runs an agentic improvement loop on real robots \citep{xiao2026enpire}. Aphale and Singh show that retry success in code-as-policy repair must be compared against resampling and static-guidance baselines \citep{aphale2026selfrepair}; we therefore make no claim about the proposer and hold candidates fixed across gates. In software agents, Gao et al.\ separate finding a correct artifact from retaining it and bind evidence to exact code states \citep{gao2026looping}. Xu and Wu test whether passing validation actually discriminates a fix \citep{xu2026evidence}, and Zhang et al.\ compare verification designs in agent harnesses \citep{zhang2026verification}. We adopt state-bound evidence and parent replay for a persistent robot skill.
+
+\section{Setup}
+\paragraph{Controller and evaluator.} We use Isaac Sim 6.2's scripted Franka pick-and-place controller \citep{nvidia2026franka} with CPU physics at 60\,Hz, one cube, a fixed place goal and an 1{,}800-step horizon. Edits are restricted to six bounded high-level parameters: approach height, lift height, motion and grasp convergence tolerances, stability duration and gripper dwell. Motion generation, scenes and the evaluator cannot be edited.
+
+Success $S(p,x)\in\{0,1\}$ for controller $p$ on scene $x$ is scored from simulator object state, independently of the controller's completion flag. The cube must be lifted above 7.58\,cm, and the episode must end before the horizon. Over 30 settling frames, the cube must stay within 3.0\,cm of the goal with the gripper more than 8\,cm away, linear speed below 0.02\,m/s, angular speed below 0.1\,rad/s and orientation drift below 0.05\,rad. Four negative controls---no motion, no grasp, holding at the goal, and a one-step timeout---are all rejected.
+
+\paragraph{Directional outcomes.} For parent $p$, candidate $p'$ and old-scene distribution $D_o$, define
+\begin{align*}
+L &= \Pr\nolimits_{x\sim D_o}[S(p,x)=1,\; S(p',x)=0],\\
+G &= \Pr\nolimits_{x\sim D_o}[S(p,x)=0,\; S(p',x)=1].
+\end{align*}
+Then $J_o(p')-J_o(p)=G-L$: an aggregate criterion constrains $G-L$, not $L$. If the parent solves every old scene, then $G=0$ and the two notions coincide; they come apart only when gains offset losses. We report the conditional loss $L/J_o(p)$ alongside $G$, $L$ and the target change.
+
+\paragraph{Gates.} Every rule spends 24 rollouts per candidate; a pair is one parent and one candidate rollout on the same scene.
+\begin{itemize}
+\item \emph{Aggregate} uses 4 target and 8 old pairs. It admits if the target net change is positive and the old net change is at least zero, given at least one parent old success.
+\item \emph{Preservation} uses the same pairs and also requires zero old losses.
+\item \emph{Target-only} uses 12 target pairs and admits if the target improves.
+\item \emph{Frozen} never admits.
+\end{itemize}
+A rejected candidate leaves the parent deployed. No rule certifies safety: zero losses in eight draws is compatible with a substantial loss rate.
+
+\paragraph{Failure discovery and repairs.} Development scenes were searched in documented, adaptive stages:
+\begin{itemize}
+\item twelve hand-specified scenes: 36/36 successes;
+\item a radial grid of pick radii 0.35, 0.55 and 0.75\,m at angles from $-60^\circ$ to $60^\circ$ in $30^\circ$ steps: 44/45;
+\item a boundary ring at 0.80 and 0.85\,m: 0/30.
+\end{itemize}
+The first scene in manifest order that failed at least two of three resets became the target: radius 0.80\,m, angle $-60^\circ$. The cube is lifted, but the arm stalls in the lift phase with 2.0\,cm residual error against a 1.5\,cm convergence tolerance and times out. A coding assistant inspected the controller source and failure traces and proposed two single-parameter repairs, saved and hashed before execution:
+\begin{itemize}
+\item \textbf{A} lowers the lift height from 0.30 to 0.20\,m.
+\item \textbf{B} relaxes the motion convergence tolerance from 0.015 to 0.025\,m; the grasp tolerance is unchanged.
+\end{itemize}
+The proposals were interactive, not samples from a frozen model, so we treat them as fixed artifacts.
+
+\section{Development Pilot}
+Each candidate and a fresh parent ran the 25 radial and ring scenes, three resets each, in identical order: 75 labeled rollouts per configuration.
+
+\paragraph{Parent replay.} Label by label, the parent's discovery run and its repeat agree on all 75 outcomes, with final placement errors within 22\,$\mu$m. Resets within one process differ slightly, but the ordered sequence reproduces exactly across processes. Paired transitions are therefore deterministic consequences of an edit, and parent rollouts can be shared between candidates.
+
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3.2pt}
+\begin{tabular}{lcccccc}
+\toprule
+ & Target & \multicolumn{3}{c}{Old scenes} & \multicolumn{2}{c}{Full-panel gate} \\
+\cmidrule(lr){3-5}\cmidrule(lr){6-7}
+ & /3 & gain & loss & net & Aggr. & Pres. \\
+\midrule
+Parent & 0 & -- & -- & -- & -- & -- \\
+A: lift 0.20\,m & 3 & 10 & 4 & $+6$ & admit & reject \\
+B: tol.\ 0.025\,m & 3 & 13 & 1 & $+12$ & admit & reject \\
+\bottomrule
+\end{tabular}
+\caption{Development pilot: 25 scenes $\times$ 3 resets, paired against the repeated parent. The old panel has 72 labels, 44 of them parent successes. Gate columns apply the gate rules to all 75 labels; they are a diagnostic, not the budget-matched protocol.}
+\label{tab:pilot}
+\end{table}
+
+\paragraph{Gains and losses.} Table~\ref{tab:pilot} shows that both repairs fixed the target and both lost old successes that were offset by gains. On the full panel, aggregate admission accepts both and preservation rejects both. Most of the gains, however, come from the target's own failure family: 9 of A's and 12 of B's are the other 0.80\,m scenes, which fail through the same lift stall. Every loss is a placement regression, with the cube at rest 3.4--4.0\,cm from the goal. Approximate re-scoring shows the losses persist at tolerances from 2.0 to 3.5\,cm and vanish at 4.0\,cm.
+
+\section{Frozen Audit}
+\paragraph{Design.} Before any audit rollout, we froze and hashed the protocol, scene manifests and gate and analysis scripts. Target scenes are drawn around the development target: radius in $[0.79, 0.81]$\,m and angle in $[-62^\circ, -58^\circ]$. Old scenes are drawn uniformly over the development region, radius in $[0.35, 0.85]$\,m and angle in $[-60^\circ, 60^\circ]$, excluding a box around the target. A validation draw of 12 target and 8 old scenes was run first, and the gate decisions it produced were written to disk 22\,s before the first audit rollout. The audit itself has 40 target and 120 old scenes, one reset each, in one shuffled order shared by all configurations.
+
+Useful updates were declared in advance. Under the aggregate objective, a candidate is useful if the target net change is positive and the old net change is at least zero; under the preservation objective, it also needs zero audit losses. A secondary objective tolerates a 5\% conditional loss. Repeating the validation parent at the end of the queue reproduced all 20 outcomes, with identical errors. The run took 560 rollouts in 61 minutes. One infrastructure amendment, a launcher fix made before any rollout, left the protocol unchanged.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{fig_audit_map}
+\caption{Paired audit outcomes by pick angle and radius. Each marker is one scene. Losses (red) lie in the workspace interior, far from the repaired boundary target (box at upper left). Most scenes that both controllers fail lie beyond 0.80\,m.}
+\label{fig:map}
+\end{figure}
+
+\input{audit_table}
+\input{gate_table}
+
+\paragraph{Target neighborhood.} Table~\ref{tab:audit} gives the audit outcomes. The parent already succeeds on 15/40 target-neighborhood scenes, all at radius below 0.80\,m. Its 25 failures split into 11 lift stalls and 14 approach timeouts, a mode the development target never showed. A repairs every lift stall but no approach timeout, reaching 26/40. B's tolerance applies to all motion phases. It repairs all 11 lift stalls and 12 of the 14 approach timeouts; the remaining two get past the approach and then stall in the lift. B reaches 38/40. How far a repair generalizes depends on its mechanism, which three development resets of one scene could not reveal.
+
+\paragraph{Old scenes.} The parent solves 106/120 old scenes; 9 of its 14 failures are approach timeouts beyond 0.80\,m, of which B fixes one and A none. A loses 8 old successes and gains 4, for a net change of $-4$; B loses 5 and gains 4, for a net change of $-1$. The losses lie in the interior, at radii from 0.36 to 0.73\,m (Figure~\ref{fig:map}). All are placement regressions: the parent's errors of 1.3--3.0\,cm become 3.0--4.7\,cm. Unlike in development, they do not vanish at a 4\,cm tolerance, where 2 and 3 losses remain. Neither candidate is useful under the aggregate or the zero-loss objective. B is useful under the 5\% tolerance.
+
+\paragraph{Gates.} In the committed validation draw, each candidate lost one of eight old scenes and gained none (Table~\ref{tab:gates}). Aggregate and preservation therefore both rejected both candidates and kept the parent. Target-only admitted both and delivered B, trading 23 target gains for 5 old losses and 4 old gains. When validation-sized draws are resampled from the audit pools, aggregate and preservation disagree in only 6.4\% (A) and 5.8\% (B) of draws, while target-only admits in at least 99\%.
+
+\paragraph{Why the compensation disappeared.} The development panel was dominated by the boundary ring: 9 of its 24 old scenes lay at 0.80\,m or beyond, four of them sharing the target's lift stall. Uniform sampling of the same region places only 10 of 120 old scenes there. A regression panel assembled around the failure being repaired over-represents that failure's family, which inflates compensating gains. That is exactly the condition under which aggregate admission tolerates losses.
+
+\section{Discussion and Limitations}
+Three observations follow, each specific to this case.
+\begin{itemize}
+\item Aggregate success hides losses only when gains offset them. Whether they do depends on how the old panel is composed, and panels inherited from failure discovery can manufacture the offset.
+\item When gains are rare, aggregate and zero-loss admission nearly coincide at a 12-pair budget. What changed the delivered controller was whether old scenes were checked at all.
+\item Whether B should be deployed has no evidence-only answer: it adds 23 target successes and loses one old success on net. The tolerance for loss, and the placement precision the deployment needs, must be declared before such evidence is read.
+\end{itemize}
+
+The study is narrow: one robot, one task, one repair context and two interactively proposed candidates. It makes no claim about agent competence, how common regressions are, or which gate is better in general. Intervals reflect sampling over scenes for this context only. Scripted parameter edits are not learned-policy updates, and simulation says nothing about physical safety. The failure was found by adaptive search near the workspace boundary. A broader study needs many repair contexts, a frozen sampled proposer with resampling baselines, and several tasks.
+
+\paragraph{Reproducibility.} An anonymized artifact contains the runner, scene manifests, every rollout record, frozen hashes and the scripts that regenerate all tables and the figure.
+
+\bibliography{refs}
+
+\end{document}

@@ -1,0 +1,58 @@
+{
+  "n": 18,
+  "successes": 18,
+  "negative_controls_rejected": 4,
+  "startup_seconds": 9.422000000000025,
+  "setup_seconds": 1.6869999999998981,
+  "peak_process_working_set_gib": 5.015537261962891,
+  "timing_medians_seconds": {
+    "reset_seconds": 0.15599999999994907,
+    "execution_seconds": 6.25,
+    "evaluation_seconds": 0.29700000000002547,
+    "wall_seconds": 6.5470000000000255
+  },
+  "scene_details": {
+    "nominal": {
+      "successes": 3,
+      "n": 3,
+      "min_error_m": 0.025117490955491907,
+      "max_error_m": 0.025117490955491907,
+      "identical_final_positions": true
+    },
+    "pick_far": {
+      "successes": 3,
+      "n": 3,
+      "min_error_m": 0.014388289837162577,
+      "max_error_m": 0.02269137892927741,
+      "identical_final_positions": false
+    },
+    "pick_far_left": {
+      "successes": 3,
+      "n": 3,
+      "min_error_m": 0.013815369629849132,
+      "max_error_m": 0.014014215122627759,
+      "identical_final_positions": false
+    },
+    "pick_left": {
+      "successes": 3,
+      "n": 3,
+      "min_error_m": 0.01270602963489244,
+      "max_error_m": 0.01616110761571658,
+      "identical_final_positions": false
+    },
+    "pick_near": {
+      "successes": 3,
+      "n": 3,
+      "min_error_m": 0.014111870089706132,
+      "max_error_m": 0.01510640750127682,
+      "identical_final_positions": false
+    },
+    "pick_right": {
+      "successes": 3,
+      "n": 3,
+      "min_error_m": 0.01911918378511444,
+      "max_error_m": 0.01911918378511444,
+      "identical_final_positions": true
+    }
+  }
+}

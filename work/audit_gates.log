@@ -1,0 +1,99 @@
+﻿{
+  "committed_utc": "2026-11-15T23:14:22.131144+00:00",
+  "manifest_sha256": "33c759c3e18f07662078664e4e5946a1755f72aac6411272e0cf6c5b513bf04d",
+  "parent_folder": "audit_validation_parent",
+  "rule_note": "Budget-matched: aggregate/preservation share 4 target + 8 old pairs (24 rollouts); target-only uses 12 target pairs (24 rollouts). Parent rollouts are shared across candidates.",
+  "candidates": {
+    "candidate_a": {
+      "overrides": {
+        "lift_height": 0.2
+      },
+      "aggregate_evidence": {
+        "target": {
+          "n": 4,
+          "parent_successes": 0,
+          "candidate_successes": 2,
+          "lost": 0,
+          "gained": 2,
+          "parent_success_rate": 0.0,
+          "candidate_success_rate": 0.5,
+          "net_change": 0.5,
+          "unconditional_loss": 0.0,
+          "conditional_loss": null
+        },
+        "old": {
+          "n": 8,
+          "parent_successes": 8,
+          "candidate_successes": 7,
+          "lost": 1,
+          "gained": 0,
+          "parent_success_rate": 1.0,
+          "candidate_success_rate": 0.875,
+          "net_change": -0.125,
+          "unconditional_loss": 0.125,
+          "conditional_loss": 0.125
+        },
+        "evaluable": true
+      },
+      "target_only_evidence": {
+        "parent_successes": 1,
+        "candidate_successes": 5,
+        "n": 12
+      },
+      "target_only": true,
+      "aggregate": false,
+      "preservation": false,
+      "aggregate_unrestricted": false,
+      "validation_folder": "audit_validation_candidate_a"
+    },
+    "candidate_b": {
+      "overrides": {
+        "position_tolerance": 0.025
+      },
+      "aggregate_evidence": {
+        "target": {
+          "n": 4,
+          "parent_successes": 0,
+          "candidate_successes": 4,
+          "lost": 0,
+          "gained": 4,
+          "parent_success_rate": 0.0,
+          "candidate_success_rate": 1.0,
+          "net_change": 1.0,
+          "unconditional_loss": 0.0,
+          "conditional_loss": null
+        },
+        "old": {
+          "n": 8,
+          "parent_successes": 8,
+          "candidate_successes": 7,
+          "lost": 1,
+          "gained": 0,
+          "parent_success_rate": 1.0,
+          "candidate_success_rate": 0.875,
+          "net_change": -0.125,
+          "unconditional_loss": 0.125,
+          "conditional_loss": 0.125
+        },
+        "evaluable": true
+      },
+      "target_only_evidence": {
+        "parent_successes": 1,
+        "candidate_successes": 12,
+        "n": 12
+      },
+      "target_only": true,
+      "aggregate": false,
+      "preservation": false,
+      "aggregate_unrestricted": false,
+      "validation_folder": "audit_validation_candidate_b"
+    }
+  },
+  "delivered": {
+    "frozen": "parent",
+    "target_only": "candidate_b",
+    "aggregate": "parent",
+    "preservation": "parent",
+    "aggregate_unrestricted": "parent"
+  }
+}

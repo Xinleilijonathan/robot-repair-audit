@@ -1,0 +1,181 @@
+ 1"""Create a scene with ground, Franka robot, and blue cube."""
+ 2
+ 3import argparse
+ 4
+ 5parser = argparse.ArgumentParser()
+ 6parser.add_argument("--test", action="store_true")
+ 7args, _ = parser.parse_known_args()
+ 8
+ 9from isaacsim import SimulationApp
+10
+11simulation_app = SimulationApp({"headless": False})
+12
+13import isaacsim.core.experimental.utils.app as app_utils
+14
+15app_utils.enable_extension("isaacsim.robot_motion.examples")
+16
+17from isaacsim.core.experimental.objects import Cube
+18from isaacsim.core.experimental.prims import GeomPrim, RigidPrim
+19from isaacsim.core.simulation_manager import SimulationManager
+20from isaacsim.robot_motion.examples.manipulation import ManipulationScenario
+21
+22DEVICE = "cpu"
+23
+24# Robot-specific defaults and tool transforms come from the named configuration.
+25scenario = ManipulationScenario("franka")
+26articulation = scenario.setup_scene()
+27
+28# Create a blue cube for the robot to pick up
+29cube_shape = Cube(
+30    paths="/World/Cube",
+31    positions=[0.5, 0.0, 0.0258],
+32    sizes=1.0,
+33    scales=[0.0515, 0.0515, 0.0515],
+34    colors="blue",
+35)
+36GeomPrim(paths=cube_shape.paths, apply_collision_apis=True)
+37RigidPrim(paths=cube_shape.paths)
+38
+39SimulationManager.setup_simulation(dt=1.0 / 60.0, device=DEVICE)
+40physics_scene = SimulationManager.get_physics_scenes()[0]
+41physics_scene.set_enabled_gpu_dynamics(False)
+42app_utils.play()
+43app_utils.update_app(steps=20)
+44
+45step_count = 0
+46max_test_steps = 60
+47while simulation_app.is_running():
+48    simulation_app.update()
+49    step_count += 1
+50    if args.test and step_count >= max_test_steps:
+51        break
+52
+53scenario.cleanup()
+54app_utils.stop()
+55simulation_app.close()
+
+
+ 1"""Pick-and-place using the generic motion-generation controller."""
+ 2
+ 3import argparse
+ 4
+ 5parser = argparse.ArgumentParser()
+ 6parser.add_argument("--test", action="store_true")
+ 7args, _ = parser.parse_known_args()
+ 8
+ 9from isaacsim import SimulationApp
+10
+11simulation_app = SimulationApp({"headless": False})
+12
+13import isaacsim.core.experimental.utils.app as app_utils
+14
+15app_utils.enable_extension("isaacsim.robot_motion.examples")
+16
+17from isaacsim.core.simulation_manager import SimulationManager
+18from isaacsim.robot_motion.examples.manipulation import PickPlaceTask
+19
+20DEVICE = "cpu"
+21
+22# The task composes RMPFlow, the feedback-driven state machine, and the gripper.
+23task = PickPlaceTask()
+24task.setup_scene()
+25
+26SimulationManager.setup_simulation(dt=1.0 / 60.0, device=DEVICE)
+27physics_scene = SimulationManager.get_physics_scenes()[0]
+28physics_scene.set_enabled_gpu_dynamics(False)
+29app_utils.play()
+30# Run a few steps so the articulation's physics tensor entity is valid before `task.initialize()`
+31app_utils.update_app(steps=20)
+32task.initialize()
+33task.reset()
+34
+35# Main loop: run one pick-place step each physics frame until done
+36step_count = 0
+37max_test_steps = 600
+38while simulation_app.is_running():
+39    simulation_app.update()
+40    step_count += 1
+41    if app_utils.is_playing():
+42        if not task.is_done:
+43            task.step(1.0 / 60.0)
+44            if task.failed:
+45                raise RuntimeError(str(task.status()["failure_reason"]))
+46        else:
+47            print("Pick-and-place completed")
+48            app_utils.pause()
+49            if args.test:
+50                break
+51    if args.test and step_count >= max_test_steps:
+52        raise RuntimeError("Pick-and-place did not complete within the test step budget")
+53
+54task.cleanup()
+55app_utils.stop()
+56simulation_app.close()
+
+
+1# Goals are captured at reset; configure task positions before scene setup.
+2task = PickPlaceTask(cube_positions=[(0.4, 0.2, 0.0258)])
+3task.place_position = np.asarray([-0.4, 0.2, 0.0258], dtype=np.float32)
+4task.setup_scene()
+
+
+ 1"""Customize the generic pick-and-place task."""
+ 2
+ 3import argparse
+ 4
+ 5parser = argparse.ArgumentParser()
+ 6parser.add_argument("--test", action="store_true")
+ 7args, _ = parser.parse_known_args()
+ 8
+ 9from isaacsim import SimulationApp
+10
+11simulation_app = SimulationApp({"headless": False})
+12
+13import isaacsim.core.experimental.utils.app as app_utils
+14
+15app_utils.enable_extension("isaacsim.robot_motion.examples")
+16
+17import numpy as np
+18from isaacsim.core.simulation_manager import SimulationManager
+19from isaacsim.robot_motion.examples.manipulation import PickPlaceTask
+20
+21DEVICE = "cpu"
+22
+23# -- Begin custom setup -- #
+24# Goals are captured at reset; configure task positions before scene setup.
+25task = PickPlaceTask(cube_positions=[(0.4, 0.2, 0.0258)])
+26task.place_position = np.asarray([-0.4, 0.2, 0.0258], dtype=np.float32)
+27task.setup_scene()
+28# -- End of custom setup -- #
+29
+30SimulationManager.setup_simulation(dt=1.0 / 60.0, device=DEVICE)
+31physics_scene = SimulationManager.get_physics_scenes()[0]
+32physics_scene.set_enabled_gpu_dynamics(False)
+33app_utils.play()
+34# Run a few steps so the articulation's physics tensor entity is valid before `task.initialize()`
+35app_utils.update_app(steps=20)
+36task.initialize()
+37task.reset()
+38
+39# Main loop: run one pick-place step each physics frame until done
+40step_count = 0
+41max_test_steps = 600
+42while simulation_app.is_running():
+43    simulation_app.update()
+44    step_count += 1
+45    if app_utils.is_playing():
+46        if not task.is_done:
+47            task.step(1.0 / 60.0)
+48            if task.failed:
+49                raise RuntimeError(str(task.status()["failure_reason"]))
+50        else:
+51            print("Pick-and-place completed")
+52            app_utils.pause()
+53            if args.test:
+54                break
+55    if args.test and step_count >= max_test_steps:
+56        raise RuntimeError("Pick-and-place did not complete within the test step budget")
+57
+58task.cleanup()
+59app_utils.stop()
+60simulation_app.close()

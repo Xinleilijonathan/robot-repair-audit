@@ -1,0 +1,162 @@
+﻿{
+    "frozen_local":  "2026-11-15T16:47:22.7946661-08:00",
+    "note":  "Extension 1: hashed before any extension rollout. See extension1_protocol.md.",
+    "files":  [
+                  {
+                      "path":  "outputs\\robot_repair_study\\extension1_protocol.md",
+                      "sha256":  "06F49DEC0BC0DAE6B574EF05917E8FBEB7A74A0AF1A70B2A2C64615D2EC234D7"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\ext1_validation_scenes.json",
+                      "sha256":  "91CBB0208DF04A2E73D2DFFF36F79DA3E96C7F054BF81DB9606DE0064C7D1397"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\ext1_audit_scenes.json",
+                      "sha256":  "50A38E120B4EA4CF278F7948260AFC9CDD4096B765E328860956F0CC8CBEF10B"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\make_extension_manifest.py",
+                      "sha256":  "41BF0835D027E58D6B78D53657B596AC06B6816657D3A56CA56C9FBD10A336B6"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\make_random_proposals.py",
+                      "sha256":  "15652E1406451B8A63CE258303DD08F779E4E4061059B1E41D8E33462A26E7A7"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\analyze_population.py",
+                      "sha256":  "98A2724B6F7CABEBF1888191A684D28F4DCA8BFF1FE078E5715B46A2D51FFF27"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\audit_gates.py",
+                      "sha256":  "6B5DB787C1D6495D0D6091782AF88E97314D34352E592B5897B0D8254DCDCCCD"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\analyze_audit.py",
+                      "sha256":  "F8BFF70B02105DF5E7F28F955D3E564A43B83021F07CCB9AE0C90FCACC64A28F"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\audit.py",
+                      "sha256":  "BF07961A3B35D7F3F0576E1F318905B012E985374455229E25AE55094EB3B296"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\run_stock_scene.py",
+                      "sha256":  "B0982ED0D856B6AE802E32863723762ABF62AB50F7C013548BB1AF2F8FEE3C58"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\proposals\\candidate_a.json",
+                      "sha256":  "322BD60C1A994D8C69E119918A7D54043611DD48154BD5A28D87F998387084C3"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\proposals\\candidate_b.json",
+                      "sha256":  "F9EE75C73C27E6DA598470BC8496295058435A437418651A307F3FE5DCF802A4"
+                  },
+                  {
+                      "path":  "work\\run_extension1.ps1",
+                      "sha256":  "C250AEBCFA66A96E07F8DC691EAB5D563324570FB2C35425647D36C1B2AD4E74"
+                  },
+                  {
+                      "path":  "work\\launch_isaac_ps51_timeout.ps1",
+                      "sha256":  "12B6A2B9E731836CD644B6308A1923FCEC38CA8FB952C12504DF788B23B3405F"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\proposals\\ext1\\index.json",
+                      "sha256":  "58D3EBBDC61565078CECAF76A3E8F5EC6DE828931D4EE9F0050A78049A0BC775"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\proposals\\ext1\\r01.json",
+                      "sha256":  "474CB5962A6D59B6AE6EED9F5246FB6DE61DBE8B1EC799FDF89A67A73ADF5EE5"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\proposals\\ext1\\r02.json",
+                      "sha256":  "A5B8237AE123C023FFBE7D3EDC60718E08D5E4A4B0D91134FB827E0002512E78"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\proposals\\ext1\\r03.json",
+                      "sha256":  "9CE24E7919EBE6CECF52D0CEB15F785FEEA7D30D6C5BAE1AA54EC338CCE66686"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\proposals\\ext1\\r04.json",
+                      "sha256":  "0FD4F610518E2F66500BBA5A8413EF9A81AC9E219D34EB267599E3C6AD2AAEBB"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\proposals\\ext1\\r05.json",
+                      "sha256":  "F961434B1DBC08B3A587593C66AD5685DAE17CD5B63512FB133E788992ED108A"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\proposals\\ext1\\r06.json",
+                      "sha256":  "8052B8FFE21695E56A557BC67474F01E133AD3A785F09C663744EC4183AFFC5C"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\proposals\\ext1\\r07.json",
+                      "sha256":  "E1A567FABC8A083994A84B6A8E3ACB5964BB7FF18C6AFB43C16786400A0E0A4B"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\proposals\\ext1\\r08.json",
+                      "sha256":  "2F85222C86D875B9C24E4F72E3371FB09A6FD507F7A539422616E7E7ABEEE8E3"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\proposals\\ext1\\r09.json",
+                      "sha256":  "7CABE298EE0D374A95DD4AB558EF6DA5AF369E8CFB61649B3B9A89D5644EF85E"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\proposals\\ext1\\r10.json",
+                      "sha256":  "57C78D392AA430BA091C6AA6BF8D14B0E7D2789F2E267D0DFF112D54B4620BC2"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\proposals\\ext1\\r11.json",
+                      "sha256":  "A7ACAF76279B5716FAA647536ABF9D37E7FEC8912C9A09597F5AFDA450C0EE0F"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\proposals\\ext1\\r12.json",
+                      "sha256":  "AC82E28BBEEEFC6538CEB217A791D65BC975774CD0CB7F2621CB2CEE6B108A21"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\proposals\\ext1\\r13.json",
+                      "sha256":  "592FED0B34585969E632DAE591EBF1042127A526AC506DC21FA9B891238ECCE3"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\proposals\\ext1\\r14.json",
+                      "sha256":  "337850B414093484945DD54D1E7C883C0DA546846CF67ACC11DED82737085FB2"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\proposals\\ext1\\r15.json",
+                      "sha256":  "E420BF86A8F9FCB62D921E34AECD6CE253ADC95422C301555B194FEC6C563F43"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\proposals\\ext1\\r16.json",
+                      "sha256":  "4C5BE2CABE1664A479272FD285105F11DB3183663D199E1F159D318D04F3FCB6"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\proposals\\ext1\\r17.json",
+                      "sha256":  "205FF4AA6591AD1AEF3824408AA394D474DA05B0FE0D9F465724413C67D825BA"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\proposals\\ext1\\r18.json",
+                      "sha256":  "44E66E9194FF0A3CB2A6840E4DC07568B7AF10BF26D17DDB024F5C4605419683"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\proposals\\ext1\\r19.json",
+                      "sha256":  "4B6FDF781DCAD008DE90080DCEED9763C900CBD45F40CB84997FBA95823C30A4"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\proposals\\ext1\\r20.json",
+                      "sha256":  "83154E470887CF2143936AD6012E762AB0292BA848C60AECAE2F94DB69CB1F1B"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\proposals\\ext1\\r21.json",
+                      "sha256":  "48E0BE208C8F9258072C842C9CA2FFD4C730EE3BBEC65D0A3E3AB39A7F926A4B"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\proposals\\ext1\\r22.json",
+                      "sha256":  "DF11BAB05C9FA6ACA4071C844D6052EB0D9A74B7D4EE49A4C81A577CF575C193"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\proposals\\ext1\\r23.json",
+                      "sha256":  "7CBEF71F59C728E5054230BB83193D3992AE41E36F5EED7C2A18B47900B4CC73"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\proposals\\ext1\\r24.json",
+                      "sha256":  "9A1509E14ADFE0D6A5219361311AA203650ED254C731B074B174343C799780FD"
+                  }
+              ]
+}

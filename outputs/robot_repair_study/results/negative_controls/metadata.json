@@ -1,0 +1,25 @@
+{
+  "kind": "stock_controller_pilot",
+  "isaacsim": "6.2.0.0",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "script_sha256": "b3ba9afc3cb56843c4785f9e64de74367c69d2344085d470927029296fe2cf5b",
+  "physics_dt": 0.016666666666666666,
+  "physics_device": "cpu",
+  "max_steps": 900,
+  "note": "Repeated stock scene; no claim of model-generated repair or generalization.",
+  "scenes": [
+    {
+      "id": "no_motion",
+      "control_mode": "no_motion"
+    },
+    {
+      "id": "no_grasp",
+      "control_mode": "no_grasp"
+    },
+    {
+      "id": "hold_at_goal",
+      "control_mode": "hold_at_goal"
+    }
+  ],
+  "controller_overrides": {}
+}

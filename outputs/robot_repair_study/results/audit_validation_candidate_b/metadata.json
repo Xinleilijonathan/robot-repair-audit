@@ -1,0 +1,355 @@
+{
+  "kind": "controller_parameter_pilot",
+  "isaacsim": "6.2.0.0",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "script_sha256": "b0982ed0d856b6ae802e32863723762abf62ab50f7c013548bb1af2f8fee3c58",
+  "physics_dt": 0.016666666666666666,
+  "physics_device": "cpu",
+  "max_steps": 1800,
+  "note": "Exploratory parameter edit; not an independently sampled autonomous repair benchmark.",
+  "scenes": [
+    {
+      "id": "vt09",
+      "split": "validation",
+      "regime": "target",
+      "radius_m": 0.80487,
+      "angle_deg": -59.2488,
+      "pick": [
+        0.4115373,
+        -0.6916979,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ]
+    },
+    {
+      "id": "vt08",
+      "split": "validation",
+      "regime": "target",
+      "radius_m": 0.79487,
+      "angle_deg": -59.9433,
+      "pick": [
+        0.3981142,
+        -0.6879795,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ]
+    },
+    {
+      "id": "vt11",
+      "split": "validation",
+      "regime": "target",
+      "radius_m": 0.79826,
+      "angle_deg": -61.1439,
+      "pick": [
+        0.385251,
+        -0.6991459,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ]
+    },
+    {
+      "id": "vt10",
+      "split": "validation",
+      "regime": "target",
+      "radius_m": 0.8082,
+      "angle_deg": -58.024,
+      "pick": [
+        0.4279919,
+        -0.6855696,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ]
+    },
+    {
+      "id": "vt12",
+      "split": "validation",
+      "regime": "target",
+      "radius_m": 0.79841,
+      "angle_deg": -61.7233,
+      "pick": [
+        0.3782304,
+        -0.7031343,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ]
+    },
+    {
+      "id": "vo06",
+      "split": "validation",
+      "regime": "old",
+      "radius_m": 0.54522,
+      "angle_deg": 24.4998,
+      "pick": [
+        0.4961277,
+        0.2260967,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ]
+    },
+    {
+      "id": "vt02",
+      "split": "validation",
+      "regime": "target",
+      "radius_m": 0.80174,
+      "angle_deg": -60.8003,
+      "pick": [
+        0.3911322,
+        -0.6998564,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ]
+    },
+    {
+      "id": "vt05",
+      "split": "validation",
+      "regime": "target",
+      "radius_m": 0.80936,
+      "angle_deg": -60.7292,
+      "pick": [
+        0.395727,
+        -0.7060212,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ]
+    },
+    {
+      "id": "vo08",
+      "split": "validation",
+      "regime": "old",
+      "radius_m": 0.58027,
+      "angle_deg": -1.6962,
+      "pick": [
+        0.5800144,
+        -0.0171755,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ]
+    },
+    {
+      "id": "vo03",
+      "split": "validation",
+      "regime": "old",
+      "radius_m": 0.35408,
+      "angle_deg": 21.5551,
+      "pick": [
+        0.3293209,
+        0.1300887,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ]
+    },
+    {
+      "id": "vt06",
+      "split": "validation",
+      "regime": "target",
+      "radius_m": 0.80207,
+      "angle_deg": -58.8872,
+      "pick": [
+        0.4144516,
+        -0.6866975,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ]
+    },
+    {
+      "id": "vt07",
+      "split": "validation",
+      "regime": "target",
+      "radius_m": 0.805,
+      "angle_deg": -59.5583,
+      "pick": [
+        0.4078614,
+        -0.6940254,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ]
+    },
+    {
+      "id": "vt04",
+      "split": "validation",
+      "regime": "target",
+      "radius_m": 0.79833,
+      "angle_deg": -59.789,
+      "pick": [
+        0.4017075,
+        -0.6898991,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ]
+    },
+    {
+      "id": "vt01",
+      "split": "validation",
+      "regime": "target",
+      "radius_m": 0.80004,
+      "angle_deg": -60.7141,
+      "pick": [
+        0.391353,
+        -0.6977845,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ]
+    },
+    {
+      "id": "vt03",
+      "split": "validation",
+      "regime": "target",
+      "radius_m": 0.80395,
+      "angle_deg": -60.4422,
+      "pick": [
+        0.3965891,
+        -0.6993221,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ]
+    },
+    {
+      "id": "vo04",
+      "split": "validation",
+      "regime": "old",
+      "radius_m": 0.7828,
+      "angle_deg": -15.3155,
+      "pick": [
+        0.7549967,
+        -0.2067634,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ]
+    },
+    {
+      "id": "vo07",
+      "split": "validation",
+      "regime": "old",
+      "radius_m": 0.51067,
+      "angle_deg": -14.1224,
+      "pick": [
+        0.4952364,
+        -0.1246008,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ]
+    },
+    {
+      "id": "vo01",
+      "split": "validation",
+      "regime": "old",
+      "radius_m": 0.63155,
+      "angle_deg": 21.096,
+      "pick": [
+        0.5892229,
+        0.227315,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ]
+    },
+    {
+      "id": "vo02",
+      "split": "validation",
+      "regime": "old",
+      "radius_m": 0.40615,
+      "angle_deg": -14.686,
+      "pick": [
+        0.3928796,
+        -0.1029677,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ]
+    },
+    {
+      "id": "vo05",
+      "split": "validation",
+      "regime": "old",
+      "radius_m": 0.41526,
+      "angle_deg": 45.8629,
+      "pick": [
+        0.2891766,
+        0.2980205,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ]
+    }
+  ],
+  "controller_overrides": {
+    "position_tolerance": 0.025
+  }
+}

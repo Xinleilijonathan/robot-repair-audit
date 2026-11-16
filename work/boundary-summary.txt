@@ -1,0 +1,195 @@
+{
+  "completed_rollouts": 30,
+  "scenes": {
+    "r80_a-60": {
+      "successes": 0,
+      "n": 3,
+      "errors_m": [
+        1.278668,
+        1.278668,
+        1.278668
+      ],
+      "failures": [
+        "LIFT timed out after 5.000 s (position error 0.0203 m, orientation error 0.0205 rad).",
+        "LIFT timed out after 5.000 s (position error 0.0203 m, orientation error 0.0205 rad).",
+        "LIFT timed out after 5.000 s (position error 0.0203 m, orientation error 0.0205 rad)."
+      ],
+      "steps": [
+        507,
+        507,
+        507
+      ]
+    },
+    "r80_a-30": {
+      "successes": 0,
+      "n": 3,
+      "errors_m": [
+        1.162806,
+        1.162806,
+        1.162806
+      ],
+      "failures": [
+        "LIFT timed out after 5.000 s (position error 0.0208 m, orientation error 0.0225 rad).",
+        "LIFT timed out after 5.000 s (position error 0.0208 m, orientation error 0.0225 rad).",
+        "LIFT timed out after 5.000 s (position error 0.0208 m, orientation error 0.0225 rad)."
+      ],
+      "steps": [
+        488,
+        488,
+        488
+      ]
+    },
+    "r80_a+00": {
+      "successes": 0,
+      "n": 3,
+      "errors_m": [
+        0.979763,
+        0.980262,
+        0.980262
+      ],
+      "failures": [
+        "LIFT timed out after 5.000 s (position error 0.0214 m, orientation error 0.0216 rad).",
+        "LIFT timed out after 5.000 s (position error 0.0215 m, orientation error 0.0219 rad).",
+        "LIFT timed out after 5.000 s (position error 0.0215 m, orientation error 0.0219 rad)."
+      ],
+      "steps": [
+        478,
+        478,
+        478
+      ]
+    },
+    "r80_a+30": {
+      "successes": 0,
+      "n": 3,
+      "errors_m": [
+        0.750398,
+        0.750398,
+        0.750377
+      ],
+      "failures": [
+        "LIFT timed out after 5.000 s (position error 0.0221 m, orientation error 0.0168 rad).",
+        "LIFT timed out after 5.000 s (position error 0.0221 m, orientation error 0.0168 rad).",
+        "LIFT timed out after 5.000 s (position error 0.0221 m, orientation error 0.0167 rad)."
+      ],
+      "steps": [
+        486,
+        486,
+        486
+      ]
+    },
+    "r80_a+60": {
+      "successes": 0,
+      "n": 3,
+      "errors_m": [
+        0.518677,
+        0.518666,
+        0.518677
+      ],
+      "failures": [
+        "LIFT timed out after 5.000 s (position error 0.0225 m, orientation error 0.0089 rad).",
+        "LIFT timed out after 5.000 s (position error 0.0225 m, orientation error 0.0089 rad).",
+        "LIFT timed out after 5.000 s (position error 0.0225 m, orientation error 0.0089 rad)."
+      ],
+      "steps": [
+        509,
+        509,
+        509
+      ]
+    },
+    "r85_a-60": {
+      "successes": 0,
+      "n": 3,
+      "errors_m": [
+        1.307142,
+        1.307142,
+        1.307142
+      ],
+      "failures": [
+        "APPROACH_PICK timed out after 5.000 s (position error 0.0579 m, orientation error 0.1007 rad).",
+        "APPROACH_PICK timed out after 5.000 s (position error 0.0579 m, orientation error 0.1007 rad).",
+        "APPROACH_PICK timed out after 5.000 s (position error 0.0579 m, orientation error 0.1007 rad)."
+      ],
+      "steps": [
+        302,
+        302,
+        302
+      ]
+    },
+    "r85_a-30": {
+      "successes": 0,
+      "n": 3,
+      "errors_m": [
+        1.182159,
+        1.182159,
+        1.182159
+      ],
+      "failures": [
+        "APPROACH_PICK timed out after 5.000 s (position error 0.0579 m, orientation error 0.1011 rad).",
+        "APPROACH_PICK timed out after 5.000 s (position error 0.0579 m, orientation error 0.1011 rad).",
+        "APPROACH_PICK timed out after 5.000 s (position error 0.0579 m, orientation error 0.1011 rad)."
+      ],
+      "steps": [
+        302,
+        302,
+        302
+      ]
+    },
+    "r85_a+00": {
+      "successes": 0,
+      "n": 3,
+      "errors_m": [
+        0.986154,
+        0.986154,
+        0.986154
+      ],
+      "failures": [
+        "APPROACH_PICK timed out after 5.000 s (position error 0.0579 m, orientation error 0.1013 rad).",
+        "APPROACH_PICK timed out after 5.000 s (position error 0.0579 m, orientation error 0.1013 rad).",
+        "APPROACH_PICK timed out after 5.000 s (position error 0.0579 m, orientation error 0.1013 rad)."
+      ],
+      "steps": [
+        302,
+        302,
+        302
+      ]
+    },
+    "r85_a+30": {
+      "successes": 0,
+      "n": 3,
+      "errors_m": [
+        0.739932,
+        0.739932,
+        0.739932
+      ],
+      "failures": [
+        "APPROACH_PICK timed out after 5.000 s (position error 0.0579 m, orientation error 0.1011 rad).",
+        "APPROACH_PICK timed out after 5.000 s (position error 0.0579 m, orientation error 0.1011 rad).",
+        "APPROACH_PICK timed out after 5.000 s (position error 0.0579 m, orientation error 0.1011 rad)."
+      ],
+      "steps": [
+        302,
+        302,
+        302
+      ]
+    },
+    "r85_a+60": {
+      "successes": 0,
+      "n": 3,
+      "errors_m": [
+        0.486188,
+        0.486188,
+        0.486188
+      ],
+      "failures": [
+        "APPROACH_PICK timed out after 5.000 s (position error 0.0579 m, orientation error 0.1007 rad).",
+        "APPROACH_PICK timed out after 5.000 s (position error 0.0579 m, orientation error 0.1007 rad).",
+        "APPROACH_PICK timed out after 5.000 s (position error 0.0579 m, orientation error 0.1007 rad)."
+      ],
+      "steps": [
+        302,
+        302,
+        302
+      ]
+    }
+  }
+}

@@ -1,0 +1,64 @@
+﻿[
+    {
+        "exit_code":  0,
+        "ended_utc":  "2026-11-15T23:09:25.0855173Z",
+        "completed_rollouts":  20,
+        "batch":  "audit_validation_parent",
+        "started_utc":  "2026-11-15T23:07:16.8228989Z",
+        "expected_rollouts":  20
+    },
+    {
+        "exit_code":  0,
+        "ended_utc":  "2026-11-15T23:11:37.4857200Z",
+        "completed_rollouts":  20,
+        "batch":  "audit_validation_candidate_a",
+        "started_utc":  "2026-11-15T23:09:25.1382418Z",
+        "expected_rollouts":  20
+    },
+    {
+        "exit_code":  0,
+        "ended_utc":  "2026-11-15T23:14:21.8631124Z",
+        "completed_rollouts":  20,
+        "batch":  "audit_validation_candidate_b",
+        "started_utc":  "2026-11-15T23:11:37.4867118Z",
+        "expected_rollouts":  20
+    },
+    {
+        "ended_utc":  "2026-11-15T23:14:22.3172914Z",
+        "started_utc":  "2026-11-15T23:14:21.8641191Z",
+        "batch":  "gate_decisions",
+        "exit_code":  0
+    },
+    {
+        "exit_code":  0,
+        "ended_utc":  "2026-11-15T23:31:41.8076169Z",
+        "completed_rollouts":  160,
+        "batch":  "audit_parent",
+        "started_utc":  "2026-11-15T23:14:22.3202925Z",
+        "expected_rollouts":  160
+    },
+    {
+        "exit_code":  0,
+        "ended_utc":  "2026-11-15T23:48:36.8268386Z",
+        "completed_rollouts":  160,
+        "batch":  "audit_candidate_a",
+        "started_utc":  "2026-11-15T23:31:41.8086162Z",
+        "expected_rollouts":  160
+    },
+    {
+        "exit_code":  0,
+        "ended_utc":  "2026-11-16T00:06:22.9827994Z",
+        "completed_rollouts":  160,
+        "batch":  "audit_candidate_b",
+        "started_utc":  "2026-11-15T23:48:36.8298409Z",
+        "expected_rollouts":  160
+    },
+    {
+        "exit_code":  0,
+        "ended_utc":  "2026-11-16T00:08:26.0233907Z",
+        "completed_rollouts":  20,
+        "batch":  "audit_validation_parent_repeat",
+        "started_utc":  "2026-11-16T00:06:22.9837982Z",
+        "expected_rollouts":  20
+    }
+]

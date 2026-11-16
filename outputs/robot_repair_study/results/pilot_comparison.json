@@ -1,0 +1,620 @@
+{
+  "evidence": "exploratory development; repeat labels are not independent repairs",
+  "target": "r80_a-60",
+  "comparisons": {
+    "radial_candidate_a": {
+      "parameters": {
+        "lift_height": 0.2
+      },
+      "target": {
+        "n": 3,
+        "both_fail": 0,
+        "gain": 3,
+        "loss": 0,
+        "both_success": 0,
+        "parent_successes": 0,
+        "candidate_successes": 3,
+        "net_gain": 3,
+        "conditional_loss": null
+      },
+      "old": {
+        "n": 72,
+        "both_fail": 18,
+        "gain": 10,
+        "loss": 4,
+        "both_success": 40,
+        "parent_successes": 44,
+        "candidate_successes": 50,
+        "net_gain": 6,
+        "conditional_loss": 0.09090909090909091
+      },
+      "full_panel_aggregate": true,
+      "full_panel_preservation": false,
+      "gate_note": "Diagnostic full-panel decisions, not frozen budget-matched validation.",
+      "scenes": {
+        "r35_a+00": {
+          "n": 3,
+          "both_fail": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_success": 3,
+          "parent_successes": 3,
+          "candidate_successes": 3,
+          "net_gain": 0,
+          "conditional_loss": 0.0
+        },
+        "r35_a+30": {
+          "n": 3,
+          "both_fail": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_success": 3,
+          "parent_successes": 3,
+          "candidate_successes": 3,
+          "net_gain": 0,
+          "conditional_loss": 0.0
+        },
+        "r35_a+60": {
+          "n": 3,
+          "both_fail": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_success": 3,
+          "parent_successes": 3,
+          "candidate_successes": 3,
+          "net_gain": 0,
+          "conditional_loss": 0.0
+        },
+        "r35_a-30": {
+          "n": 3,
+          "both_fail": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_success": 3,
+          "parent_successes": 3,
+          "candidate_successes": 3,
+          "net_gain": 0,
+          "conditional_loss": 0.0
+        },
+        "r35_a-60": {
+          "n": 3,
+          "both_fail": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_success": 3,
+          "parent_successes": 3,
+          "candidate_successes": 3,
+          "net_gain": 0,
+          "conditional_loss": 0.0
+        },
+        "r55_a+00": {
+          "n": 3,
+          "both_fail": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_success": 3,
+          "parent_successes": 3,
+          "candidate_successes": 3,
+          "net_gain": 0,
+          "conditional_loss": 0.0
+        },
+        "r55_a+30": {
+          "n": 3,
+          "both_fail": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_success": 3,
+          "parent_successes": 3,
+          "candidate_successes": 3,
+          "net_gain": 0,
+          "conditional_loss": 0.0
+        },
+        "r55_a+60": {
+          "n": 3,
+          "both_fail": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_success": 3,
+          "parent_successes": 3,
+          "candidate_successes": 3,
+          "net_gain": 0,
+          "conditional_loss": 0.0
+        },
+        "r55_a-30": {
+          "n": 3,
+          "both_fail": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_success": 3,
+          "parent_successes": 3,
+          "candidate_successes": 3,
+          "net_gain": 0,
+          "conditional_loss": 0.0
+        },
+        "r55_a-60": {
+          "n": 3,
+          "both_fail": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_success": 3,
+          "parent_successes": 3,
+          "candidate_successes": 3,
+          "net_gain": 0,
+          "conditional_loss": 0.0
+        },
+        "r75_a+00": {
+          "n": 3,
+          "both_fail": 0,
+          "gain": 0,
+          "loss": 1,
+          "both_success": 2,
+          "parent_successes": 3,
+          "candidate_successes": 2,
+          "net_gain": -1,
+          "conditional_loss": 0.3333333333333333
+        },
+        "r75_a+30": {
+          "n": 3,
+          "both_fail": 0,
+          "gain": 0,
+          "loss": 3,
+          "both_success": 0,
+          "parent_successes": 3,
+          "candidate_successes": 0,
+          "net_gain": -3,
+          "conditional_loss": 1.0
+        },
+        "r75_a+60": {
+          "n": 3,
+          "both_fail": 0,
+          "gain": 1,
+          "loss": 0,
+          "both_success": 2,
+          "parent_successes": 2,
+          "candidate_successes": 3,
+          "net_gain": 1,
+          "conditional_loss": 0.0
+        },
+        "r75_a-30": {
+          "n": 3,
+          "both_fail": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_success": 3,
+          "parent_successes": 3,
+          "candidate_successes": 3,
+          "net_gain": 0,
+          "conditional_loss": 0.0
+        },
+        "r75_a-60": {
+          "n": 3,
+          "both_fail": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_success": 3,
+          "parent_successes": 3,
+          "candidate_successes": 3,
+          "net_gain": 0,
+          "conditional_loss": 0.0
+        },
+        "r80_a+00": {
+          "n": 3,
+          "both_fail": 0,
+          "gain": 3,
+          "loss": 0,
+          "both_success": 0,
+          "parent_successes": 0,
+          "candidate_successes": 3,
+          "net_gain": 3,
+          "conditional_loss": null
+        },
+        "r80_a+30": {
+          "n": 3,
+          "both_fail": 0,
+          "gain": 3,
+          "loss": 0,
+          "both_success": 0,
+          "parent_successes": 0,
+          "candidate_successes": 3,
+          "net_gain": 3,
+          "conditional_loss": null
+        },
+        "r80_a+60": {
+          "n": 3,
+          "both_fail": 3,
+          "gain": 0,
+          "loss": 0,
+          "both_success": 0,
+          "parent_successes": 0,
+          "candidate_successes": 0,
+          "net_gain": 0,
+          "conditional_loss": null
+        },
+        "r80_a-30": {
+          "n": 3,
+          "both_fail": 0,
+          "gain": 3,
+          "loss": 0,
+          "both_success": 0,
+          "parent_successes": 0,
+          "candidate_successes": 3,
+          "net_gain": 3,
+          "conditional_loss": null
+        },
+        "r80_a-60": {
+          "n": 3,
+          "both_fail": 0,
+          "gain": 3,
+          "loss": 0,
+          "both_success": 0,
+          "parent_successes": 0,
+          "candidate_successes": 3,
+          "net_gain": 3,
+          "conditional_loss": null
+        },
+        "r85_a+00": {
+          "n": 3,
+          "both_fail": 3,
+          "gain": 0,
+          "loss": 0,
+          "both_success": 0,
+          "parent_successes": 0,
+          "candidate_successes": 0,
+          "net_gain": 0,
+          "conditional_loss": null
+        },
+        "r85_a+30": {
+          "n": 3,
+          "both_fail": 3,
+          "gain": 0,
+          "loss": 0,
+          "both_success": 0,
+          "parent_successes": 0,
+          "candidate_successes": 0,
+          "net_gain": 0,
+          "conditional_loss": null
+        },
+        "r85_a+60": {
+          "n": 3,
+          "both_fail": 3,
+          "gain": 0,
+          "loss": 0,
+          "both_success": 0,
+          "parent_successes": 0,
+          "candidate_successes": 0,
+          "net_gain": 0,
+          "conditional_loss": null
+        },
+        "r85_a-30": {
+          "n": 3,
+          "both_fail": 3,
+          "gain": 0,
+          "loss": 0,
+          "both_success": 0,
+          "parent_successes": 0,
+          "candidate_successes": 0,
+          "net_gain": 0,
+          "conditional_loss": null
+        },
+        "r85_a-60": {
+          "n": 3,
+          "both_fail": 3,
+          "gain": 0,
+          "loss": 0,
+          "both_success": 0,
+          "parent_successes": 0,
+          "candidate_successes": 0,
+          "net_gain": 0,
+          "conditional_loss": null
+        }
+      }
+    },
+    "radial_candidate_b": {
+      "parameters": {
+        "position_tolerance": 0.025
+      },
+      "target": {
+        "n": 3,
+        "both_fail": 0,
+        "gain": 3,
+        "loss": 0,
+        "both_success": 0,
+        "parent_successes": 0,
+        "candidate_successes": 3,
+        "net_gain": 3,
+        "conditional_loss": null
+      },
+      "old": {
+        "n": 72,
+        "both_fail": 15,
+        "gain": 13,
+        "loss": 1,
+        "both_success": 43,
+        "parent_successes": 44,
+        "candidate_successes": 56,
+        "net_gain": 12,
+        "conditional_loss": 0.022727272727272728
+      },
+      "full_panel_aggregate": true,
+      "full_panel_preservation": false,
+      "gate_note": "Diagnostic full-panel decisions, not frozen budget-matched validation.",
+      "scenes": {
+        "r35_a+00": {
+          "n": 3,
+          "both_fail": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_success": 3,
+          "parent_successes": 3,
+          "candidate_successes": 3,
+          "net_gain": 0,
+          "conditional_loss": 0.0
+        },
+        "r35_a+30": {
+          "n": 3,
+          "both_fail": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_success": 3,
+          "parent_successes": 3,
+          "candidate_successes": 3,
+          "net_gain": 0,
+          "conditional_loss": 0.0
+        },
+        "r35_a+60": {
+          "n": 3,
+          "both_fail": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_success": 3,
+          "parent_successes": 3,
+          "candidate_successes": 3,
+          "net_gain": 0,
+          "conditional_loss": 0.0
+        },
+        "r35_a-30": {
+          "n": 3,
+          "both_fail": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_success": 3,
+          "parent_successes": 3,
+          "candidate_successes": 3,
+          "net_gain": 0,
+          "conditional_loss": 0.0
+        },
+        "r35_a-60": {
+          "n": 3,
+          "both_fail": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_success": 3,
+          "parent_successes": 3,
+          "candidate_successes": 3,
+          "net_gain": 0,
+          "conditional_loss": 0.0
+        },
+        "r55_a+00": {
+          "n": 3,
+          "both_fail": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_success": 3,
+          "parent_successes": 3,
+          "candidate_successes": 3,
+          "net_gain": 0,
+          "conditional_loss": 0.0
+        },
+        "r55_a+30": {
+          "n": 3,
+          "both_fail": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_success": 3,
+          "parent_successes": 3,
+          "candidate_successes": 3,
+          "net_gain": 0,
+          "conditional_loss": 0.0
+        },
+        "r55_a+60": {
+          "n": 3,
+          "both_fail": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_success": 3,
+          "parent_successes": 3,
+          "candidate_successes": 3,
+          "net_gain": 0,
+          "conditional_loss": 0.0
+        },
+        "r55_a-30": {
+          "n": 3,
+          "both_fail": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_success": 3,
+          "parent_successes": 3,
+          "candidate_successes": 3,
+          "net_gain": 0,
+          "conditional_loss": 0.0
+        },
+        "r55_a-60": {
+          "n": 3,
+          "both_fail": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_success": 3,
+          "parent_successes": 3,
+          "candidate_successes": 3,
+          "net_gain": 0,
+          "conditional_loss": 0.0
+        },
+        "r75_a+00": {
+          "n": 3,
+          "both_fail": 0,
+          "gain": 0,
+          "loss": 1,
+          "both_success": 2,
+          "parent_successes": 3,
+          "candidate_successes": 2,
+          "net_gain": -1,
+          "conditional_loss": 0.3333333333333333
+        },
+        "r75_a+30": {
+          "n": 3,
+          "both_fail": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_success": 3,
+          "parent_successes": 3,
+          "candidate_successes": 3,
+          "net_gain": 0,
+          "conditional_loss": 0.0
+        },
+        "r75_a+60": {
+          "n": 3,
+          "both_fail": 0,
+          "gain": 1,
+          "loss": 0,
+          "both_success": 2,
+          "parent_successes": 2,
+          "candidate_successes": 3,
+          "net_gain": 1,
+          "conditional_loss": 0.0
+        },
+        "r75_a-30": {
+          "n": 3,
+          "both_fail": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_success": 3,
+          "parent_successes": 3,
+          "candidate_successes": 3,
+          "net_gain": 0,
+          "conditional_loss": 0.0
+        },
+        "r75_a-60": {
+          "n": 3,
+          "both_fail": 0,
+          "gain": 0,
+          "loss": 0,
+          "both_success": 3,
+          "parent_successes": 3,
+          "candidate_successes": 3,
+          "net_gain": 0,
+          "conditional_loss": 0.0
+        },
+        "r80_a+00": {
+          "n": 3,
+          "both_fail": 0,
+          "gain": 3,
+          "loss": 0,
+          "both_success": 0,
+          "parent_successes": 0,
+          "candidate_successes": 3,
+          "net_gain": 3,
+          "conditional_loss": null
+        },
+        "r80_a+30": {
+          "n": 3,
+          "both_fail": 0,
+          "gain": 3,
+          "loss": 0,
+          "both_success": 0,
+          "parent_successes": 0,
+          "candidate_successes": 3,
+          "net_gain": 3,
+          "conditional_loss": null
+        },
+        "r80_a+60": {
+          "n": 3,
+          "both_fail": 0,
+          "gain": 3,
+          "loss": 0,
+          "both_success": 0,
+          "parent_successes": 0,
+          "candidate_successes": 3,
+          "net_gain": 3,
+          "conditional_loss": null
+        },
+        "r80_a-30": {
+          "n": 3,
+          "both_fail": 0,
+          "gain": 3,
+          "loss": 0,
+          "both_success": 0,
+          "parent_successes": 0,
+          "candidate_successes": 3,
+          "net_gain": 3,
+          "conditional_loss": null
+        },
+        "r80_a-60": {
+          "n": 3,
+          "both_fail": 0,
+          "gain": 3,
+          "loss": 0,
+          "both_success": 0,
+          "parent_successes": 0,
+          "candidate_successes": 3,
+          "net_gain": 3,
+          "conditional_loss": null
+        },
+        "r85_a+00": {
+          "n": 3,
+          "both_fail": 3,
+          "gain": 0,
+          "loss": 0,
+          "both_success": 0,
+          "parent_successes": 0,
+          "candidate_successes": 0,
+          "net_gain": 0,
+          "conditional_loss": null
+        },
+        "r85_a+30": {
+          "n": 3,
+          "both_fail": 3,
+          "gain": 0,
+          "loss": 0,
+          "both_success": 0,
+          "parent_successes": 0,
+          "candidate_successes": 0,
+          "net_gain": 0,
+          "conditional_loss": null
+        },
+        "r85_a+60": {
+          "n": 3,
+          "both_fail": 3,
+          "gain": 0,
+          "loss": 0,
+          "both_success": 0,
+          "parent_successes": 0,
+          "candidate_successes": 0,
+          "net_gain": 0,
+          "conditional_loss": null
+        },
+        "r85_a-30": {
+          "n": 3,
+          "both_fail": 3,
+          "gain": 0,
+          "loss": 0,
+          "both_success": 0,
+          "parent_successes": 0,
+          "candidate_successes": 0,
+          "net_gain": 0,
+          "conditional_loss": null
+        },
+        "r85_a-60": {
+          "n": 3,
+          "both_fail": 3,
+          "gain": 0,
+          "loss": 0,
+          "both_success": 0,
+          "parent_successes": 0,
+          "candidate_successes": 0,
+          "net_gain": 0,
+          "conditional_loss": null
+        }
+      }
+    }
+  }
+}

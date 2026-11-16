@@ -1,0 +1,24 @@
+# Simulator runtime caches and downloaded toolchains (large, machine-specific, regenerable)
+work/isaac_runtime/
+work/tectonic/
+work/tectonic-cache/
+work/tectonic.zip
+work/aaai27-author-kit/
+work/tex-smoke/
+__pycache__/
+*.pyc
+
+# Regenerable review artifact (build with work/package_artifact.py)
+artifact/
+
+# LaTeX build by-products (main.pdf and main.bbl are kept)
+paper/*.aux
+paper/*.log
+paper/*.blg
+paper/*.out
+paper/compile*.log
+paper/bibtex.log
+
+# Extension 1 is still running; committed separately once complete
+outputs/robot_repair_study/results/ext1/
+work/ext1_*

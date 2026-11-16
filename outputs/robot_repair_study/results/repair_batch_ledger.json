@@ -1,0 +1,26 @@
+[
+  {
+    "expected_rollouts": 75,
+    "completed_rollouts": 75,
+    "exit_code": 0,
+    "started_utc": "2026-11-15T21:01:26.0302303Z",
+    "batch": "radial_candidate_a",
+    "ended_utc": "2026-11-15T21:09:34.1758430Z"
+  },
+  {
+    "expected_rollouts": 75,
+    "completed_rollouts": 75,
+    "exit_code": 0,
+    "started_utc": "2026-11-15T21:09:34.1852418Z",
+    "batch": "radial_candidate_b",
+    "ended_utc": "2026-11-15T21:23:53.1008237Z"
+  },
+  {
+    "expected_rollouts": 75,
+    "completed_rollouts": 75,
+    "exit_code": 0,
+    "started_utc": "2026-11-15T21:23:53.1064797Z",
+    "batch": "radial_parent_repeat",
+    "ended_utc": "2026-11-15T21:40:24.5185817Z"
+  }
+]

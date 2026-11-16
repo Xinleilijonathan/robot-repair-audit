@@ -1,0 +1,410 @@
+{
+  "completed_rollouts": 75,
+  "scenes": {
+    "r35_a-60": {
+      "successes": 3,
+      "n": 3,
+      "errors_m": [
+        0.016071,
+        0.016071,
+        0.016071
+      ],
+      "failures": [],
+      "steps": [
+        521,
+        521,
+        521
+      ]
+    },
+    "r35_a-30": {
+      "successes": 3,
+      "n": 3,
+      "errors_m": [
+        0.018065,
+        0.018065,
+        0.018065
+      ],
+      "failures": [],
+      "steps": [
+        484,
+        484,
+        484
+      ]
+    },
+    "r35_a+00": {
+      "successes": 3,
+      "n": 3,
+      "errors_m": [
+        0.029367,
+        0.027358,
+        0.029367
+      ],
+      "failures": [],
+      "steps": [
+        460,
+        462,
+        460
+      ]
+    },
+    "r35_a+30": {
+      "successes": 3,
+      "n": 3,
+      "errors_m": [
+        0.012555,
+        0.012555,
+        0.012555
+      ],
+      "failures": [],
+      "steps": [
+        437,
+        437,
+        437
+      ]
+    },
+    "r35_a+60": {
+      "successes": 3,
+      "n": 3,
+      "errors_m": [
+        0.016692,
+        0.016692,
+        0.016692
+      ],
+      "failures": [],
+      "steps": [
+        438,
+        438,
+        438
+      ]
+    },
+    "r55_a-60": {
+      "successes": 3,
+      "n": 3,
+      "errors_m": [
+        0.013619,
+        0.013619,
+        0.013619
+      ],
+      "failures": [],
+      "steps": [
+        655,
+        655,
+        655
+      ]
+    },
+    "r55_a-30": {
+      "successes": 3,
+      "n": 3,
+      "errors_m": [
+        0.016651,
+        0.016651,
+        0.016651
+      ],
+      "failures": [],
+      "steps": [
+        673,
+        673,
+        673
+      ]
+    },
+    "r55_a+00": {
+      "successes": 3,
+      "n": 3,
+      "errors_m": [
+        0.015787,
+        0.015847,
+        0.015847
+      ],
+      "failures": [],
+      "steps": [
+        468,
+        468,
+        468
+      ]
+    },
+    "r55_a+30": {
+      "successes": 3,
+      "n": 3,
+      "errors_m": [
+        0.015251,
+        0.015251,
+        0.015251
+      ],
+      "failures": [],
+      "steps": [
+        608,
+        608,
+        608
+      ]
+    },
+    "r55_a+60": {
+      "successes": 3,
+      "n": 3,
+      "errors_m": [
+        0.019923,
+        0.017369,
+        0.019923
+      ],
+      "failures": [],
+      "steps": [
+        555,
+        555,
+        555
+      ]
+    },
+    "r75_a-60": {
+      "successes": 3,
+      "n": 3,
+      "errors_m": [
+        0.015157,
+        0.015157,
+        0.015157
+      ],
+      "failures": [],
+      "steps": [
+        587,
+        587,
+        587
+      ]
+    },
+    "r75_a-30": {
+      "successes": 3,
+      "n": 3,
+      "errors_m": [
+        0.016047,
+        0.026846,
+        0.016047
+      ],
+      "failures": [],
+      "steps": [
+        565,
+        567,
+        565
+      ]
+    },
+    "r75_a+00": {
+      "successes": 2,
+      "n": 3,
+      "errors_m": [
+        0.039229,
+        0.013538,
+        0.015962
+      ],
+      "failures": [
+        "Cube 0 did not settle at its place goal (position error 0.039 m)."
+      ],
+      "steps": [
+        632,
+        514,
+        516
+      ]
+    },
+    "r75_a+30": {
+      "successes": 0,
+      "n": 3,
+      "errors_m": [
+        0.039484,
+        0.039484,
+        0.039484
+      ],
+      "failures": [
+        "Cube 0 did not settle at its place goal (position error 0.039 m).",
+        "Cube 0 did not settle at its place goal (position error 0.039 m).",
+        "Cube 0 did not settle at its place goal (position error 0.039 m)."
+      ],
+      "steps": [
+        612,
+        612,
+        612
+      ]
+    },
+    "r75_a+60": {
+      "successes": 3,
+      "n": 3,
+      "errors_m": [
+        0.015712,
+        0.016548,
+        0.015712
+      ],
+      "failures": [],
+      "steps": [
+        482,
+        482,
+        482
+      ]
+    },
+    "r80_a-60": {
+      "successes": 3,
+      "n": 3,
+      "errors_m": [
+        0.012219,
+        0.012219,
+        0.012219
+      ],
+      "failures": [],
+      "steps": [
+        616,
+        616,
+        616
+      ]
+    },
+    "r80_a-30": {
+      "successes": 3,
+      "n": 3,
+      "errors_m": [
+        0.015667,
+        0.015667,
+        0.017179
+      ],
+      "failures": [],
+      "steps": [
+        583,
+        583,
+        585
+      ]
+    },
+    "r80_a+00": {
+      "successes": 3,
+      "n": 3,
+      "errors_m": [
+        0.026284,
+        0.013055,
+        0.013055
+      ],
+      "failures": [],
+      "steps": [
+        557,
+        554,
+        554
+      ]
+    },
+    "r80_a+30": {
+      "successes": 3,
+      "n": 3,
+      "errors_m": [
+        0.015255,
+        0.015255,
+        0.015255
+      ],
+      "failures": [],
+      "steps": [
+        535,
+        535,
+        535
+      ]
+    },
+    "r80_a+60": {
+      "successes": 0,
+      "n": 3,
+      "errors_m": [
+        0.033618,
+        0.033618,
+        0.031473
+      ],
+      "failures": [
+        "Cube 0 did not settle at its place goal (position error 0.034 m).",
+        "Cube 0 did not settle at its place goal (position error 0.034 m).",
+        "Cube 0 did not settle at its place goal (position error 0.031 m)."
+      ],
+      "steps": [
+        646,
+        646,
+        647
+      ]
+    },
+    "r85_a-60": {
+      "successes": 0,
+      "n": 3,
+      "errors_m": [
+        1.307142,
+        1.307142,
+        1.307142
+      ],
+      "failures": [
+        "APPROACH_PICK timed out after 5.000 s (position error 0.0579 m, orientation error 0.1007 rad).",
+        "APPROACH_PICK timed out after 5.000 s (position error 0.0579 m, orientation error 0.1007 rad).",
+        "APPROACH_PICK timed out after 5.000 s (position error 0.0579 m, orientation error 0.1007 rad)."
+      ],
+      "steps": [
+        302,
+        302,
+        302
+      ]
+    },
+    "r85_a-30": {
+      "successes": 0,
+      "n": 3,
+      "errors_m": [
+        1.182159,
+        1.182159,
+        1.182159
+      ],
+      "failures": [
+        "APPROACH_PICK timed out after 5.000 s (position error 0.0579 m, orientation error 0.1011 rad).",
+        "APPROACH_PICK timed out after 5.000 s (position error 0.0579 m, orientation error 0.1011 rad).",
+        "APPROACH_PICK timed out after 5.000 s (position error 0.0579 m, orientation error 0.1011 rad)."
+      ],
+      "steps": [
+        302,
+        302,
+        302
+      ]
+    },
+    "r85_a+00": {
+      "successes": 0,
+      "n": 3,
+      "errors_m": [
+        0.986154,
+        0.986154,
+        0.986154
+      ],
+      "failures": [
+        "APPROACH_PICK timed out after 5.000 s (position error 0.0579 m, orientation error 0.1013 rad).",
+        "APPROACH_PICK timed out after 5.000 s (position error 0.0579 m, orientation error 0.1013 rad).",
+        "APPROACH_PICK timed out after 5.000 s (position error 0.0579 m, orientation error 0.1013 rad)."
+      ],
+      "steps": [
+        302,
+        302,
+        302
+      ]
+    },
+    "r85_a+30": {
+      "successes": 0,
+      "n": 3,
+      "errors_m": [
+        0.739932,
+        0.739932,
+        0.739932
+      ],
+      "failures": [
+        "APPROACH_PICK timed out after 5.000 s (position error 0.0579 m, orientation error 0.1011 rad).",
+        "APPROACH_PICK timed out after 5.000 s (position error 0.0579 m, orientation error 0.1011 rad).",
+        "APPROACH_PICK timed out after 5.000 s (position error 0.0579 m, orientation error 0.1011 rad)."
+      ],
+      "steps": [
+        302,
+        302,
+        302
+      ]
+    },
+    "r85_a+60": {
+      "successes": 0,
+      "n": 3,
+      "errors_m": [
+        0.486188,
+        0.486188,
+        0.486188
+      ],
+      "failures": [
+        "APPROACH_PICK timed out after 5.000 s (position error 0.0579 m, orientation error 0.1007 rad).",
+        "APPROACH_PICK timed out after 5.000 s (position error 0.0579 m, orientation error 0.1007 rad).",
+        "APPROACH_PICK timed out after 5.000 s (position error 0.0579 m, orientation error 0.1007 rad)."
+      ],
+      "steps": [
+        302,
+        302,
+        302
+      ]
+    }
+  }
+}

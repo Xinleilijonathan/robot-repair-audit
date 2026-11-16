@@ -1,0 +1,612 @@
+{
+  "evidence": "frozen single-context audit; 1 repair context, 2 fixed candidates",
+  "gate_decisions_committed_utc": "2026-11-15T23:14:22.131144+00:00",
+  "n_target": 40,
+  "n_old": 120,
+  "candidates": {
+    "candidate_a": {
+      "target": {
+        "n": 40,
+        "parent_successes": 15,
+        "candidate_successes": 26,
+        "lost": 0,
+        "gained": 11,
+        "parent_success_rate": 0.375,
+        "candidate_success_rate": 0.65,
+        "net_change": 0.275,
+        "unconditional_loss": 0.0,
+        "conditional_loss": 0.0,
+        "conditional_gain": 0.44,
+        "net_count": 11
+      },
+      "old": {
+        "n": 120,
+        "parent_successes": 106,
+        "candidate_successes": 102,
+        "lost": 8,
+        "gained": 4,
+        "parent_success_rate": 0.8833333333333333,
+        "candidate_success_rate": 0.85,
+        "net_change": -0.03333333333333333,
+        "unconditional_loss": 0.06666666666666667,
+        "conditional_loss": 0.07547169811320754,
+        "conditional_gain": 0.2857142857142857,
+        "net_count": -4
+      },
+      "ci95": {
+        "parent_target_success": [
+          0.375,
+          0.2422,
+          0.5297
+        ],
+        "candidate_target_success": [
+          0.65,
+          0.4951,
+          0.7787
+        ],
+        "old_conditional_loss": [
+          0.0755,
+          0.0387,
+          0.1419
+        ],
+        "old_conditional_gain": [
+          0.2857,
+          0.1172,
+          0.5465
+        ],
+        "parent_old_success": [
+          0.8833,
+          0.8137,
+          0.9292
+        ],
+        "candidate_old_success": [
+          0.85,
+          0.7753,
+          0.903
+        ]
+      },
+      "useful": {
+        "aggregate_objective": false,
+        "preservation_objective": false,
+        "preservation_5pct_tolerance": false
+      },
+      "placement_error_shift_on_old_parent_successes_m": {
+        "n": 106,
+        "median": 0.0005605169998829321,
+        "worse_gt_5mm": 19,
+        "better_gt_5mm": 10
+      },
+      "approx_tolerance_sensitivity": {
+        "0.020": {
+          "target": {
+            "parent_successes": 14,
+            "candidate_successes": 24,
+            "lost": 1,
+            "gained": 11
+          },
+          "old": {
+            "parent_successes": 84,
+            "candidate_successes": 77,
+            "lost": 14,
+            "gained": 7
+          }
+        },
+        "0.025": {
+          "target": {
+            "parent_successes": 15,
+            "candidate_successes": 25,
+            "lost": 1,
+            "gained": 11
+          },
+          "old": {
+            "parent_successes": 101,
+            "candidate_successes": 95,
+            "lost": 11,
+            "gained": 5
+          }
+        },
+        "0.030": {
+          "target": {
+            "parent_successes": 15,
+            "candidate_successes": 26,
+            "lost": 0,
+            "gained": 11
+          },
+          "old": {
+            "parent_successes": 106,
+            "candidate_successes": 102,
+            "lost": 8,
+            "gained": 4
+          }
+        },
+        "0.035": {
+          "target": {
+            "parent_successes": 15,
+            "candidate_successes": 26,
+            "lost": 0,
+            "gained": 11
+          },
+          "old": {
+            "parent_successes": 107,
+            "candidate_successes": 104,
+            "lost": 7,
+            "gained": 4
+          }
+        },
+        "0.040": {
+          "target": {
+            "parent_successes": 15,
+            "candidate_successes": 26,
+            "lost": 0,
+            "gained": 11
+          },
+          "old": {
+            "parent_successes": 110,
+            "candidate_successes": 109,
+            "lost": 2,
+            "gained": 1
+          }
+        }
+      },
+      "loss_scenes": [
+        {
+          "id": "ao014",
+          "radius_m": 0.73383,
+          "angle_deg": 29.1355,
+          "parent_err": 0.0181,
+          "cand_err": 0.0394,
+          "cand_failure": "Cube 0 did not settle at its place goal (position error 0.039 m)."
+        },
+        {
+          "id": "ao026",
+          "radius_m": 0.36337,
+          "angle_deg": 10.2402,
+          "parent_err": 0.0238,
+          "cand_err": 0.0392,
+          "cand_failure": "Cube 0 did not settle at its place goal (position error 0.039 m)."
+        },
+        {
+          "id": "ao051",
+          "radius_m": 0.40815,
+          "angle_deg": -12.4703,
+          "parent_err": 0.0193,
+          "cand_err": 0.0469,
+          "cand_failure": "Cube 0 did not settle at its place goal (position error 0.047 m)."
+        },
+        {
+          "id": "ao075",
+          "radius_m": 0.4532,
+          "angle_deg": 0.4514,
+          "parent_err": 0.0297,
+          "cand_err": 0.0308,
+          "cand_failure": "Cube 0 did not settle at its place goal (position error 0.031 m)."
+        },
+        {
+          "id": "ao079",
+          "radius_m": 0.61735,
+          "angle_deg": -21.0298,
+          "parent_err": 0.0161,
+          "cand_err": 0.0391,
+          "cand_failure": "Cube 0 did not settle at its place goal (position error 0.039 m)."
+        },
+        {
+          "id": "ao085",
+          "radius_m": 0.42518,
+          "angle_deg": -16.5264,
+          "parent_err": 0.0208,
+          "cand_err": 0.0385,
+          "cand_failure": "Cube 0 did not settle at its place goal (position error 0.039 m)."
+        },
+        {
+          "id": "ao112",
+          "radius_m": 0.53375,
+          "angle_deg": -22.0263,
+          "parent_err": 0.0242,
+          "cand_err": 0.0405,
+          "cand_failure": "Cube 0 did not settle at its place goal (position error 0.040 m)."
+        },
+        {
+          "id": "ao120",
+          "radius_m": 0.37421,
+          "angle_deg": -38.0517,
+          "parent_err": 0.0211,
+          "cand_err": 0.0302,
+          "cand_failure": "Cube 0 did not settle at its place goal (position error 0.030 m)."
+        }
+      ],
+      "gain_scenes": [
+        {
+          "id": "ao001",
+          "radius_m": 0.51922,
+          "angle_deg": -11.6482,
+          "parent_failure": "Cube 0 did not settle at its place goal (position error 0.040 m)."
+        },
+        {
+          "id": "ao017",
+          "radius_m": 0.80004,
+          "angle_deg": 25.6228,
+          "parent_failure": "LIFT timed out after 5.000 s (position error 0.0220 m, orientation error 0.0178 rad)."
+        },
+        {
+          "id": "ao084",
+          "radius_m": 0.53721,
+          "angle_deg": -19.7607,
+          "parent_failure": "Cube 0 did not settle at its place goal (position error 0.037 m)."
+        },
+        {
+          "id": "ao096",
+          "radius_m": 0.53665,
+          "angle_deg": -14.0085,
+          "parent_failure": "Cube 0 did not settle at its place goal (position error 0.039 m)."
+        }
+      ],
+      "gate_decisions": {
+        "target_only": true,
+        "aggregate": false,
+        "preservation": false,
+        "aggregate_unrestricted": false
+      }
+    },
+    "candidate_b": {
+      "target": {
+        "n": 40,
+        "parent_successes": 15,
+        "candidate_successes": 38,
+        "lost": 0,
+        "gained": 23,
+        "parent_success_rate": 0.375,
+        "candidate_success_rate": 0.95,
+        "net_change": 0.575,
+        "unconditional_loss": 0.0,
+        "conditional_loss": 0.0,
+        "conditional_gain": 0.92,
+        "net_count": 23
+      },
+      "old": {
+        "n": 120,
+        "parent_successes": 106,
+        "candidate_successes": 105,
+        "lost": 5,
+        "gained": 4,
+        "parent_success_rate": 0.8833333333333333,
+        "candidate_success_rate": 0.875,
+        "net_change": -0.008333333333333333,
+        "unconditional_loss": 0.041666666666666664,
+        "conditional_loss": 0.04716981132075472,
+        "conditional_gain": 0.2857142857142857,
+        "net_count": -1
+      },
+      "ci95": {
+        "parent_target_success": [
+          0.375,
+          0.2422,
+          0.5297
+        ],
+        "candidate_target_success": [
+          0.95,
+          0.835,
+          0.9862
+        ],
+        "old_conditional_loss": [
+          0.0472,
+          0.0203,
+          0.1057
+        ],
+        "old_conditional_gain": [
+          0.2857,
+          0.1172,
+          0.5465
+        ],
+        "parent_old_success": [
+          0.8833,
+          0.8137,
+          0.9292
+        ],
+        "candidate_old_success": [
+          0.875,
+          0.804,
+          0.9228
+        ]
+      },
+      "useful": {
+        "aggregate_objective": false,
+        "preservation_objective": false,
+        "preservation_5pct_tolerance": true
+      },
+      "placement_error_shift_on_old_parent_successes_m": {
+        "n": 106,
+        "median": -0.0016503766656626806,
+        "worse_gt_5mm": 12,
+        "better_gt_5mm": 30
+      },
+      "approx_tolerance_sensitivity": {
+        "0.020": {
+          "target": {
+            "parent_successes": 14,
+            "candidate_successes": 38,
+            "lost": 0,
+            "gained": 24
+          },
+          "old": {
+            "parent_successes": 84,
+            "candidate_successes": 89,
+            "lost": 8,
+            "gained": 13
+          }
+        },
+        "0.025": {
+          "target": {
+            "parent_successes": 15,
+            "candidate_successes": 38,
+            "lost": 0,
+            "gained": 23
+          },
+          "old": {
+            "parent_successes": 101,
+            "candidate_successes": 101,
+            "lost": 5,
+            "gained": 5
+          }
+        },
+        "0.030": {
+          "target": {
+            "parent_successes": 15,
+            "candidate_successes": 38,
+            "lost": 0,
+            "gained": 23
+          },
+          "old": {
+            "parent_successes": 106,
+            "candidate_successes": 105,
+            "lost": 5,
+            "gained": 4
+          }
+        },
+        "0.035": {
+          "target": {
+            "parent_successes": 15,
+            "candidate_successes": 38,
+            "lost": 0,
+            "gained": 23
+          },
+          "old": {
+            "parent_successes": 107,
+            "candidate_successes": 107,
+            "lost": 3,
+            "gained": 3
+          }
+        },
+        "0.040": {
+          "target": {
+            "parent_successes": 15,
+            "candidate_successes": 38,
+            "lost": 0,
+            "gained": 23
+          },
+          "old": {
+            "parent_successes": 110,
+            "candidate_successes": 109,
+            "lost": 3,
+            "gained": 2
+          }
+        }
+      },
+      "loss_scenes": [
+        {
+          "id": "ao018",
+          "radius_m": 0.45891,
+          "angle_deg": -1.4222,
+          "parent_err": 0.0299,
+          "cand_err": 0.0337,
+          "cand_failure": "Cube 0 did not settle at its place goal (position error 0.034 m)."
+        },
+        {
+          "id": "ao020",
+          "radius_m": 0.4225,
+          "angle_deg": 4.2489,
+          "parent_err": 0.0225,
+          "cand_err": 0.0321,
+          "cand_failure": "Cube 0 did not settle at its place goal (position error 0.032 m)."
+        },
+        {
+          "id": "ao021",
+          "radius_m": 0.55433,
+          "angle_deg": 10.543,
+          "parent_err": 0.0132,
+          "cand_err": 0.0377,
+          "cand_failure": "Cube 0 did not settle at its place goal (position error 0.038 m)."
+        },
+        {
+          "id": "ao032",
+          "radius_m": 0.57076,
+          "angle_deg": -13.6106,
+          "parent_err": 0.0272,
+          "cand_err": 0.0396,
+          "cand_failure": "Cube 0 did not settle at its place goal (position error 0.040 m)."
+        },
+        {
+          "id": "ao051",
+          "radius_m": 0.40815,
+          "angle_deg": -12.4703,
+          "parent_err": 0.0193,
+          "cand_err": 0.0434,
+          "cand_failure": "Cube 0 did not settle at its place goal (position error 0.043 m)."
+        }
+      ],
+      "gain_scenes": [
+        {
+          "id": "ao001",
+          "radius_m": 0.51922,
+          "angle_deg": -11.6482,
+          "parent_failure": "Cube 0 did not settle at its place goal (position error 0.040 m)."
+        },
+        {
+          "id": "ao007",
+          "radius_m": 0.80344,
+          "angle_deg": -22.7182,
+          "parent_failure": "APPROACH_PICK timed out after 5.000 s (position error 0.0241 m, orientation error 0.0121 rad)."
+        },
+        {
+          "id": "ao017",
+          "radius_m": 0.80004,
+          "angle_deg": 25.6228,
+          "parent_failure": "LIFT timed out after 5.000 s (position error 0.0220 m, orientation error 0.0178 rad)."
+        },
+        {
+          "id": "ao052",
+          "radius_m": 0.46865,
+          "angle_deg": 1.2113,
+          "parent_failure": "Cube 0 did not settle at its place goal (position error 0.032 m)."
+        }
+      ],
+      "gate_decisions": {
+        "target_only": true,
+        "aggregate": false,
+        "preservation": false,
+        "aggregate_unrestricted": false
+      }
+    }
+  },
+  "delivered": {
+    "frozen": {
+      "delivered": "parent",
+      "target_success": [
+        0.375,
+        0.2422,
+        0.5297
+      ],
+      "old_success": [
+        0.8833,
+        0.8137,
+        0.9292
+      ],
+      "old_losses": 0,
+      "old_gains": 0,
+      "missed_useful": {
+        "aggregate_objective": [],
+        "preservation_objective": [],
+        "preservation_5pct_tolerance": [
+          "candidate_b"
+        ]
+      },
+      "admitted_with_audit_losses": []
+    },
+    "target_only": {
+      "delivered": "candidate_b",
+      "target_success": [
+        0.95,
+        0.835,
+        0.9862
+      ],
+      "old_success": [
+        0.875,
+        0.804,
+        0.9228
+      ],
+      "old_losses": 5,
+      "old_gains": 4,
+      "missed_useful": {
+        "aggregate_objective": [],
+        "preservation_objective": [],
+        "preservation_5pct_tolerance": []
+      },
+      "admitted_with_audit_losses": [
+        "candidate_a",
+        "candidate_b"
+      ]
+    },
+    "aggregate": {
+      "delivered": "parent",
+      "target_success": [
+        0.375,
+        0.2422,
+        0.5297
+      ],
+      "old_success": [
+        0.8833,
+        0.8137,
+        0.9292
+      ],
+      "old_losses": 0,
+      "old_gains": 0,
+      "missed_useful": {
+        "aggregate_objective": [],
+        "preservation_objective": [],
+        "preservation_5pct_tolerance": [
+          "candidate_b"
+        ]
+      },
+      "admitted_with_audit_losses": []
+    },
+    "preservation": {
+      "delivered": "parent",
+      "target_success": [
+        0.375,
+        0.2422,
+        0.5297
+      ],
+      "old_success": [
+        0.8833,
+        0.8137,
+        0.9292
+      ],
+      "old_losses": 0,
+      "old_gains": 0,
+      "missed_useful": {
+        "aggregate_objective": [],
+        "preservation_objective": [],
+        "preservation_5pct_tolerance": [
+          "candidate_b"
+        ]
+      },
+      "admitted_with_audit_losses": []
+    },
+    "aggregate_unrestricted": {
+      "delivered": "parent",
+      "target_success": [
+        0.375,
+        0.2422,
+        0.5297
+      ],
+      "old_success": [
+        0.8833,
+        0.8137,
+        0.9292
+      ],
+      "old_losses": 0,
+      "old_gains": 0,
+      "missed_useful": {
+        "aggregate_objective": [],
+        "preservation_objective": [],
+        "preservation_5pct_tolerance": [
+          "candidate_b"
+        ]
+      },
+      "admitted_with_audit_losses": []
+    }
+  },
+  "decision_stability": {
+    "draws": 5000,
+    "seed": 20261116,
+    "admission_probability": {
+      "candidate_a": {
+        "target_only": 0.99,
+        "aggregate": 0.4704,
+        "preservation": 0.4064,
+        "aggregate_unrestricted": 0.4704
+      },
+      "candidate_b": {
+        "target_only": 1.0,
+        "aggregate": 0.739,
+        "preservation": 0.6812,
+        "aggregate_unrestricted": 0.739
+      }
+    }
+  },
+  "validation_parent_repeat_check": {
+    "labels": 20,
+    "outcome_agreement": 20,
+    "max_abs_final_error_diff_m": 0.0,
+    "step_count_mismatches": 0
+  }
+}

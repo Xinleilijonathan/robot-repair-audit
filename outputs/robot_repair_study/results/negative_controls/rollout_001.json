@@ -1,0 +1,35 @@
+{
+  "repetition": 1,
+  "steps": 900,
+  "scene_id": "no_grasp",
+  "repeat_within_scene": 0,
+  "control_mode": "no_grasp",
+  "controller_overrides": {},
+  "wall_seconds": 5.8129999999998745,
+  "controller_status": {
+    "phase": "GRASP",
+    "active_cube": 0,
+    "done": false,
+    "failed": false,
+    "failure_reason": null
+  },
+  "cube_goal": [
+    0.0,
+    0.5,
+    0.025800000876188278
+  ],
+  "cube_final": [
+    0.49999967217445374,
+    5.550151627176092e-07,
+    0.025749949738383293
+  ],
+  "final_error_m": 0.7071061586953001,
+  "lift_observed": false,
+  "object_state_success": false,
+  "released_and_retreated": false,
+  "stable": true,
+  "max_settle_linear_speed_m_s": 0.0,
+  "max_settle_orientation_drift_rad": 0.0,
+  "final_grasp_cube_separation_m": 0.0062442682683467865,
+  "success_definition": "lift above 0.0758m; final 30 frames within 0.03m of goal, grasp separation above 0.08m, linear speed below 0.02m/s, orientation drift below 0.05rad; finish before horizon"
+}

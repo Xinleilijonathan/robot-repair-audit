@@ -1,0 +1,54 @@
+﻿{
+    "frozen_local":  "2026-11-15T15:04:56.6732374-08:00",
+    "note":  "Hashed before any audit/validation rollout (protocol timestamp corrected and re-hashed at 15:0x before launch). See audit_protocol.md.",
+    "files":  [
+                  {
+                      "path":  "outputs\\robot_repair_study\\audit_protocol.md",
+                      "sha256":  "DF8BC0CA3FDE7BCEABED9DD47F1FF71FF4DFD47B58B556C24A5B64A90BEB4C26"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\audit_validation_scenes.json",
+                      "sha256":  "33C759C3E18F07662078664E4E5946A1755F72AAC6411272E0CF6C5B513BF04D"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\audit_scenes.json",
+                      "sha256":  "B5C0A034FD1542454A184C23901620761CF591B760229CA84CBAE2E96DA4BF44"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\make_audit_manifest.py",
+                      "sha256":  "280FAA4B835EDD5369D1AC7F96F7777584B3D8E3C0AAC98FF6DEFD18FDC3CD4C"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\audit_gates.py",
+                      "sha256":  "6B5DB787C1D6495D0D6091782AF88E97314D34352E592B5897B0D8254DCDCCCD"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\analyze_audit.py",
+                      "sha256":  "F8BFF70B02105DF5E7F28F955D3E564A43B83021F07CCB9AE0C90FCACC64A28F"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\audit.py",
+                      "sha256":  "BF07961A3B35D7F3F0576E1F318905B012E985374455229E25AE55094EB3B296"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\run_stock_scene.py",
+                      "sha256":  "B0982ED0D856B6AE802E32863723762ABF62AB50F7C013548BB1AF2F8FEE3C58"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\proposals\\candidate_a.json",
+                      "sha256":  "322BD60C1A994D8C69E119918A7D54043611DD48154BD5A28D87F998387084C3"
+                  },
+                  {
+                      "path":  "outputs\\robot_repair_study\\proposals\\candidate_b.json",
+                      "sha256":  "F9EE75C73C27E6DA598470BC8496295058435A437418651A307F3FE5DCF802A4"
+                  },
+                  {
+                      "path":  "work\\run_audit_batches.ps1",
+                      "sha256":  "36E882FA9B045487FC6925649CA1470F8E403D95B9C6AFB09DAEF1DA4BA340DA"
+                  },
+                  {
+                      "path":  "work\\launch_isaac.ps1",
+                      "sha256":  "BD85FB58BC4763D5D830769B1E3DC61111EFBD4050E1FC6D18680673C84A9E7C"
+                  }
+              ]
+}

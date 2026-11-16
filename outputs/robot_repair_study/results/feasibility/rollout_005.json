@@ -1,0 +1,34 @@
+{
+  "repetition": 5,
+  "steps": 502,
+  "scene_id": "pick_near",
+  "repeat_within_scene": 2,
+  "controller_overrides": {},
+  "wall_seconds": 6.6400000000001,
+  "controller_status": {
+    "phase": "DONE",
+    "active_cube": 0,
+    "done": true,
+    "failed": false,
+    "failure_reason": null
+  },
+  "cube_goal": [
+    0.0,
+    0.5,
+    0.025800000876188278
+  ],
+  "cube_final": [
+    -0.01497098058462143,
+    0.502017617225647,
+    0.025749914348125458
+  ],
+  "final_error_m": 0.01510640750127682,
+  "lift_observed": true,
+  "object_state_success": true,
+  "released_and_retreated": true,
+  "stable": true,
+  "max_settle_linear_speed_m_s": 0.0,
+  "max_settle_orientation_drift_rad": 2.9802322387695312e-08,
+  "final_grasp_cube_separation_m": 0.30040305852890015,
+  "success_definition": "lift above 0.0758m; cube within 0.03m of goal and grasp-frame separation above 0.08m for final 30 frames"
+}

@@ -1,0 +1,68 @@
+{
+  "n": 18,
+  "successes": 18,
+  "median_rollout_seconds": 6.601499999999987,
+  "total_rollout_seconds": 119.65799999999967,
+  "scene_details": {
+    "nominal": {
+      "successes": 3,
+      "repeats": 3,
+      "final_errors_m": [
+        0.025117490955491907,
+        0.025117490955491907,
+        0.025117490955491907
+      ],
+      "identical_final_positions": true
+    },
+    "pick_far": {
+      "successes": 3,
+      "repeats": 3,
+      "final_errors_m": [
+        0.02269137892927741,
+        0.014423639723790233,
+        0.014388289837162577
+      ],
+      "identical_final_positions": false
+    },
+    "pick_far_left": {
+      "successes": 3,
+      "repeats": 3,
+      "final_errors_m": [
+        0.014014215122627759,
+        0.014014215122627759,
+        0.013815369629849132
+      ],
+      "identical_final_positions": false
+    },
+    "pick_left": {
+      "successes": 3,
+      "repeats": 3,
+      "final_errors_m": [
+        0.01616110761571658,
+        0.01270602963489244,
+        0.01270602963489244
+      ],
+      "identical_final_positions": false
+    },
+    "pick_near": {
+      "successes": 3,
+      "repeats": 3,
+      "final_errors_m": [
+        0.014111870089706132,
+        0.01510640750127682,
+        0.01510640750127682
+      ],
+      "identical_final_positions": false
+    },
+    "pick_right": {
+      "successes": 3,
+      "repeats": 3,
+      "final_errors_m": [
+        0.01911918378511444,
+        0.01911918378511444,
+        0.01911918378511444
+      ],
+      "identical_final_positions": true
+    }
+  }
+}

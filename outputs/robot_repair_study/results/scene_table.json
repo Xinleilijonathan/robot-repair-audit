@@ -1,0 +1,2416 @@
+{
+  "labels": [
+    "parent_discovery",
+    "parent_repeat",
+    "cand_A",
+    "cand_B"
+  ],
+  "totals": {
+    "parent_discovery": 44,
+    "parent_repeat": 44,
+    "cand_A": 53,
+    "cand_B": 59
+  },
+  "rows": [
+    {
+      "scene_id": "r35_a-60",
+      "repeat_within_scene": 0,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.012626797436652093,
+        "steps": 556,
+        "execution_seconds": 6.6710000000002765
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.012626797436652093,
+        "steps": 556,
+        "execution_seconds": 13.29699999999957
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01607069415750537,
+        "steps": 521,
+        "execution_seconds": 6.484000000000378
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.0038643312324527753,
+        "steps": 539,
+        "execution_seconds": 6.07799999999952
+      }
+    },
+    {
+      "scene_id": "r35_a-60",
+      "repeat_within_scene": 1,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.012626797436652093,
+        "steps": 556,
+        "execution_seconds": 6.640999999999622
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.012626797436652093,
+        "steps": 556,
+        "execution_seconds": 13.094000000000051
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01607069415750537,
+        "steps": 521,
+        "execution_seconds": 6.405999999999949
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.0038643312324527753,
+        "steps": 539,
+        "execution_seconds": 6.061999999999898
+      }
+    },
+    {
+      "scene_id": "r35_a-60",
+      "repeat_within_scene": 2,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.012626797436652093,
+        "steps": 556,
+        "execution_seconds": 6.671999999999571
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.012626797436652093,
+        "steps": 556,
+        "execution_seconds": 13.421000000000276
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01607069415750537,
+        "steps": 521,
+        "execution_seconds": 6.655999999999949
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.0038643312324527753,
+        "steps": 539,
+        "execution_seconds": 6.032000000000153
+      }
+    },
+    {
+      "scene_id": "r35_a-30",
+      "repeat_within_scene": 0,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.016792456725025155,
+        "steps": 516,
+        "execution_seconds": 6.155999999999949
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.016792456725025155,
+        "steps": 516,
+        "execution_seconds": 12.54700000000048
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01806529644714942,
+        "steps": 484,
+        "execution_seconds": 6.280999999999949
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.004372768956614159,
+        "steps": 504,
+        "execution_seconds": 5.671999999999571
+      }
+    },
+    {
+      "scene_id": "r35_a-30",
+      "repeat_within_scene": 1,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.016792456725025155,
+        "steps": 516,
+        "execution_seconds": 6.203000000000429
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.016792456725025155,
+        "steps": 516,
+        "execution_seconds": 13.42199999999957
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01806529644714942,
+        "steps": 484,
+        "execution_seconds": 5.953000000000429
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.005810994293395955,
+        "steps": 504,
+        "execution_seconds": 5.717999999999847
+      }
+    },
+    {
+      "scene_id": "r35_a-30",
+      "repeat_within_scene": 2,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.016792456725025155,
+        "steps": 516,
+        "execution_seconds": 6.171999999999571
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.016792456725025155,
+        "steps": 516,
+        "execution_seconds": 12.375
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01806529644714942,
+        "steps": 484,
+        "execution_seconds": 5.967999999999847
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.005810994293395955,
+        "steps": 504,
+        "execution_seconds": 5.828000000000429
+      }
+    },
+    {
+      "scene_id": "r35_a+00",
+      "repeat_within_scene": 0,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.014111870089706132,
+        "steps": 502,
+        "execution_seconds": 6.0
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.014111870089706132,
+        "steps": 502,
+        "execution_seconds": 12.266000000000531
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.029367216065142587,
+        "steps": 460,
+        "execution_seconds": 5.546999999999571
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01437843874029599,
+        "steps": 500,
+        "execution_seconds": 5.9210000000002765
+      }
+    },
+    {
+      "scene_id": "r35_a+00",
+      "repeat_within_scene": 1,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01510640750127682,
+        "steps": 502,
+        "execution_seconds": 6.046999999999571
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01510640750127682,
+        "steps": 502,
+        "execution_seconds": 11.42199999999957
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.027358018312869013,
+        "steps": 462,
+        "execution_seconds": 5.625
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.014652925752366543,
+        "steps": 500,
+        "execution_seconds": 5.938000000000102
+      }
+    },
+    {
+      "scene_id": "r35_a+00",
+      "repeat_within_scene": 2,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01510640750127682,
+        "steps": 502,
+        "execution_seconds": 5.967999999999847
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01510640750127682,
+        "steps": 502,
+        "execution_seconds": 12.157000000000153
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.029367216065142587,
+        "steps": 460,
+        "execution_seconds": 5.530999999999949
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.014652925752366543,
+        "steps": 500,
+        "execution_seconds": 5.92200000000048
+      }
+    },
+    {
+      "scene_id": "r35_a+30",
+      "repeat_within_scene": 0,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.02067305784697873,
+        "steps": 476,
+        "execution_seconds": 5.844000000000051
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.02067305784697873,
+        "steps": 476,
+        "execution_seconds": 10.686999999999898
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.012555348557299029,
+        "steps": 437,
+        "execution_seconds": 5.344000000000051
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.017811005380722444,
+        "steps": 475,
+        "execution_seconds": 5.405999999999949
+      }
+    },
+    {
+      "scene_id": "r35_a+30",
+      "repeat_within_scene": 1,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.02067305784697873,
+        "steps": 476,
+        "execution_seconds": 5.688000000000102
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.02067305784697873,
+        "steps": 476,
+        "execution_seconds": 11.436999999999898
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.012555348557299029,
+        "steps": 437,
+        "execution_seconds": 5.280999999999949
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.017811005380722444,
+        "steps": 475,
+        "execution_seconds": 5.438000000000102
+      }
+    },
+    {
+      "scene_id": "r35_a+30",
+      "repeat_within_scene": 2,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.02067305784697873,
+        "steps": 476,
+        "execution_seconds": 5.766000000000531
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.02067305784697873,
+        "steps": 476,
+        "execution_seconds": 11.219000000000051
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.012555348557299029,
+        "steps": 437,
+        "execution_seconds": 5.3289999999997235
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.017811005380722444,
+        "steps": 475,
+        "execution_seconds": 5.45299999999952
+      }
+    },
+    {
+      "scene_id": "r35_a+60",
+      "repeat_within_scene": 0,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01564186902657001,
+        "steps": 474,
+        "execution_seconds": 5.717999999999847
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01564186902657001,
+        "steps": 474,
+        "execution_seconds": 11.063000000000102
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01669194322111538,
+        "steps": 438,
+        "execution_seconds": 5.234000000000378
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01593318500900116,
+        "steps": 461,
+        "execution_seconds": 5.29700000000048
+      }
+    },
+    {
+      "scene_id": "r35_a+60",
+      "repeat_within_scene": 1,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01564186902657001,
+        "steps": 474,
+        "execution_seconds": 5.734999999999673
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01564186902657001,
+        "steps": 474,
+        "execution_seconds": 11.79699999999957
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01669194322111538,
+        "steps": 438,
+        "execution_seconds": 5.171999999999571
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01593318500900116,
+        "steps": 461,
+        "execution_seconds": 5.436999999999898
+      }
+    },
+    {
+      "scene_id": "r35_a+60",
+      "repeat_within_scene": 2,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01564186902657001,
+        "steps": 474,
+        "execution_seconds": 5.67200000000048
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01564186902657001,
+        "steps": 474,
+        "execution_seconds": 11.70300000000043
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01669194322111538,
+        "steps": 438,
+        "execution_seconds": 5.282000000000153
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01593318500900116,
+        "steps": 461,
+        "execution_seconds": 5.671999999999571
+      }
+    },
+    {
+      "scene_id": "r55_a-60",
+      "repeat_within_scene": 0,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01329001360785291,
+        "steps": 678,
+        "execution_seconds": 8.20299999999952
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01329001360785291,
+        "steps": 678,
+        "execution_seconds": 15.610000000000582
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.013619455992206366,
+        "steps": 655,
+        "execution_seconds": 7.875
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.005416060273233234,
+        "steps": 560,
+        "execution_seconds": 10.390999999999622
+      }
+    },
+    {
+      "scene_id": "r55_a-60",
+      "repeat_within_scene": 1,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01329001360785291,
+        "steps": 678,
+        "execution_seconds": 8.235000000000582
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01329001360785291,
+        "steps": 678,
+        "execution_seconds": 17.063000000000102
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.013619455992206366,
+        "steps": 655,
+        "execution_seconds": 7.75
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.005416060273233234,
+        "steps": 560,
+        "execution_seconds": 12.95300000000043
+      }
+    },
+    {
+      "scene_id": "r55_a-60",
+      "repeat_within_scene": 2,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01329001360785291,
+        "steps": 678,
+        "execution_seconds": 8.140999999999622
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01329001360785291,
+        "steps": 678,
+        "execution_seconds": 16.64100000000053
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.013619455992206366,
+        "steps": 655,
+        "execution_seconds": 7.67200000000048
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.005416060273233234,
+        "steps": 560,
+        "execution_seconds": 13.608999999999469
+      }
+    },
+    {
+      "scene_id": "r55_a-30",
+      "repeat_within_scene": 0,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01887496602083592,
+        "steps": 699,
+        "execution_seconds": 8.391000000000531
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01887496602083592,
+        "steps": 699,
+        "execution_seconds": 16.859999999999673
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.016650960177318565,
+        "steps": 673,
+        "execution_seconds": 8.234000000000378
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.024987457991131567,
+        "steps": 536,
+        "execution_seconds": 12.70300000000043
+      }
+    },
+    {
+      "scene_id": "r55_a-30",
+      "repeat_within_scene": 1,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01887496602083592,
+        "steps": 699,
+        "execution_seconds": 8.282000000000153
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01887496602083592,
+        "steps": 699,
+        "execution_seconds": 17.20299999999952
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.016650960177318565,
+        "steps": 673,
+        "execution_seconds": 8.014999999999418
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.024987457991131567,
+        "steps": 536,
+        "execution_seconds": 13.17199999999957
+      }
+    },
+    {
+      "scene_id": "r55_a-30",
+      "repeat_within_scene": 2,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01887496602083592,
+        "steps": 699,
+        "execution_seconds": 8.25
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01887496602083592,
+        "steps": 699,
+        "execution_seconds": 16.96900000000005
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.016650960177318565,
+        "steps": 673,
+        "execution_seconds": 8.219000000000051
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.024987457991131567,
+        "steps": 536,
+        "execution_seconds": 12.95299999999952
+      }
+    },
+    {
+      "scene_id": "r55_a+00",
+      "repeat_within_scene": 0,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01852257936012182,
+        "steps": 496,
+        "execution_seconds": 5.859000000000378
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01852257936012182,
+        "steps": 496,
+        "execution_seconds": 12.094000000000051
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01578686171489794,
+        "steps": 468,
+        "execution_seconds": 5.640999999999622
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.021878442716635207,
+        "steps": 491,
+        "execution_seconds": 11.594000000000051
+      }
+    },
+    {
+      "scene_id": "r55_a+00",
+      "repeat_within_scene": 1,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01852257936012182,
+        "steps": 496,
+        "execution_seconds": 5.953000000000429
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01852257936012182,
+        "steps": 496,
+        "execution_seconds": 11.54700000000048
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.015847454689921315,
+        "steps": 468,
+        "execution_seconds": 5.530999999999949
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.021878442716635207,
+        "steps": 491,
+        "execution_seconds": 11.875
+      }
+    },
+    {
+      "scene_id": "r55_a+00",
+      "repeat_within_scene": 2,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01852257936012182,
+        "steps": 496,
+        "execution_seconds": 6.016000000000531
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01852257936012182,
+        "steps": 496,
+        "execution_seconds": 12.140000000000327
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.015847454689921315,
+        "steps": 468,
+        "execution_seconds": 5.532000000000153
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.021878442716635207,
+        "steps": 491,
+        "execution_seconds": 11.811999999999898
+      }
+    },
+    {
+      "scene_id": "r55_a+30",
+      "repeat_within_scene": 0,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.015830264974147572,
+        "steps": 635,
+        "execution_seconds": 7.5
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.015830264974147572,
+        "steps": 635,
+        "execution_seconds": 15.67200000000048
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01525063859825499,
+        "steps": 608,
+        "execution_seconds": 7.046999999999571
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.014803293227482141,
+        "steps": 472,
+        "execution_seconds": 11.54699999999957
+      }
+    },
+    {
+      "scene_id": "r55_a+30",
+      "repeat_within_scene": 1,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.015830264974147572,
+        "steps": 635,
+        "execution_seconds": 7.57799999999952
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.015830264974147572,
+        "steps": 635,
+        "execution_seconds": 15.125
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01525063859825499,
+        "steps": 608,
+        "execution_seconds": 7.17200000000048
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.014803293227482141,
+        "steps": 472,
+        "execution_seconds": 11.657000000000153
+      }
+    },
+    {
+      "scene_id": "r55_a+30",
+      "repeat_within_scene": 2,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.015830264974147572,
+        "steps": 635,
+        "execution_seconds": 7.530999999999949
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.015830264974147572,
+        "steps": 635,
+        "execution_seconds": 15.936999999999898
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01525063859825499,
+        "steps": 608,
+        "execution_seconds": 7.125
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.014803293227482141,
+        "steps": 472,
+        "execution_seconds": 11.436999999999898
+      }
+    },
+    {
+      "scene_id": "r55_a+60",
+      "repeat_within_scene": 0,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.02172213584365139,
+        "steps": 576,
+        "execution_seconds": 6.983999999999469
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.02172213584365139,
+        "steps": 576,
+        "execution_seconds": 14.140999999999622
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01992290538006762,
+        "steps": 555,
+        "execution_seconds": 6.7039999999997235
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.016550798229845592,
+        "steps": 469,
+        "execution_seconds": 11.484000000000378
+      }
+    },
+    {
+      "scene_id": "r55_a+60",
+      "repeat_within_scene": 1,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.026995584050442657,
+        "steps": 576,
+        "execution_seconds": 6.890999999999622
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.026995584050442657,
+        "steps": 576,
+        "execution_seconds": 14.155999999999949
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.017368823368938222,
+        "steps": 555,
+        "execution_seconds": 6.453000000000429
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.016550798229845592,
+        "steps": 469,
+        "execution_seconds": 12.07800000000043
+      }
+    },
+    {
+      "scene_id": "r55_a+60",
+      "repeat_within_scene": 2,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.015978519040455788,
+        "steps": 575,
+        "execution_seconds": 6.79700000000048
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.015978519040455788,
+        "steps": 575,
+        "execution_seconds": 13.844000000000051
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01992290538006762,
+        "steps": 555,
+        "execution_seconds": 6.390000000000327
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.016550798229845592,
+        "steps": 469,
+        "execution_seconds": 11.25
+      }
+    },
+    {
+      "scene_id": "r75_a-60",
+      "repeat_within_scene": 0,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.005323931591576969,
+        "steps": 596,
+        "execution_seconds": 7.094000000000051
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.005323931591576969,
+        "steps": 596,
+        "execution_seconds": 14.640000000000327
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.015156779201813866,
+        "steps": 587,
+        "execution_seconds": 6.95299999999952
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.0042035443325165395,
+        "steps": 583,
+        "execution_seconds": 14.219000000000051
+      }
+    },
+    {
+      "scene_id": "r75_a-60",
+      "repeat_within_scene": 1,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.013238400174417386,
+        "steps": 608,
+        "execution_seconds": 7.280999999999949
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.013238400174417386,
+        "steps": 608,
+        "execution_seconds": 14.032000000000153
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.015156779201813866,
+        "steps": 587,
+        "execution_seconds": 6.844000000000051
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.0042035443325165395,
+        "steps": 583,
+        "execution_seconds": 13.717999999999847
+      }
+    },
+    {
+      "scene_id": "r75_a-60",
+      "repeat_within_scene": 2,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.013238400174417386,
+        "steps": 608,
+        "execution_seconds": 7.280999999999949
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.013238400174417386,
+        "steps": 608,
+        "execution_seconds": 14.532000000000153
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.015156779201813866,
+        "steps": 587,
+        "execution_seconds": 6.891000000000531
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.0042035443325165395,
+        "steps": 583,
+        "execution_seconds": 14.42199999999957
+      }
+    },
+    {
+      "scene_id": "r75_a-30",
+      "repeat_within_scene": 0,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.019420439269932154,
+        "steps": 591,
+        "execution_seconds": 7.061999999999898
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.019420439269932154,
+        "steps": 591,
+        "execution_seconds": 14.719000000000051
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.016046887417443947,
+        "steps": 565,
+        "execution_seconds": 6.625
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.016616142181415095,
+        "steps": 582,
+        "execution_seconds": 13.813000000000102
+      }
+    },
+    {
+      "scene_id": "r75_a-30",
+      "repeat_within_scene": 1,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.019420439269932154,
+        "steps": 591,
+        "execution_seconds": 7.046999999999571
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.019420439269932154,
+        "steps": 591,
+        "execution_seconds": 14.125
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.026846134396901002,
+        "steps": 567,
+        "execution_seconds": 6.609999999999673
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.016616142181415095,
+        "steps": 582,
+        "execution_seconds": 14.219000000000051
+      }
+    },
+    {
+      "scene_id": "r75_a-30",
+      "repeat_within_scene": 2,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.014566595387564961,
+        "steps": 590,
+        "execution_seconds": 7.108999999999469
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.014566595387564961,
+        "steps": 590,
+        "execution_seconds": 13.969000000000051
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.016046887417443947,
+        "steps": 565,
+        "execution_seconds": 6.688000000000102
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.016616142181415095,
+        "steps": 582,
+        "execution_seconds": 13.561999999999898
+      }
+    },
+    {
+      "scene_id": "r75_a+00",
+      "repeat_within_scene": 0,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.011678007243663031,
+        "steps": 545,
+        "execution_seconds": 6.5
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.011678007243663031,
+        "steps": 545,
+        "execution_seconds": 13.875
+      },
+      "cand_A": {
+        "success": false,
+        "phase": "Cube",
+        "final_error_m": 0.03922895058306253,
+        "steps": 632,
+        "execution_seconds": 7.188000000000102
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.013885717584266754,
+        "steps": 534,
+        "execution_seconds": 12.765000000000327
+      }
+    },
+    {
+      "scene_id": "r75_a+00",
+      "repeat_within_scene": 1,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.016905073832435738,
+        "steps": 545,
+        "execution_seconds": 6.532000000000153
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.016905073832435738,
+        "steps": 545,
+        "execution_seconds": 14.0
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.013538386976841598,
+        "steps": 514,
+        "execution_seconds": 5.969000000000051
+      },
+      "cand_B": {
+        "success": false,
+        "phase": "Cube",
+        "final_error_m": 0.03849129083403367,
+        "steps": 652,
+        "execution_seconds": 14.859999999999673
+      }
+    },
+    {
+      "scene_id": "r75_a+00",
+      "repeat_within_scene": 2,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.012886985562573118,
+        "steps": 546,
+        "execution_seconds": 6.609000000000378
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.012886985562573118,
+        "steps": 546,
+        "execution_seconds": 12.67199999999957
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01596216764159499,
+        "steps": 516,
+        "execution_seconds": 6.234000000000378
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01800767998128513,
+        "steps": 536,
+        "execution_seconds": 13.313000000000102
+      }
+    },
+    {
+      "scene_id": "r75_a+30",
+      "repeat_within_scene": 0,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01694189828001043,
+        "steps": 527,
+        "execution_seconds": 6.29700000000048
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01694189828001043,
+        "steps": 527,
+        "execution_seconds": 13.0
+      },
+      "cand_A": {
+        "success": false,
+        "phase": "Cube",
+        "final_error_m": 0.039484262722708885,
+        "steps": 612,
+        "execution_seconds": 7.078000000000429
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.014162540012758225,
+        "steps": 515,
+        "execution_seconds": 12.07799999999952
+      }
+    },
+    {
+      "scene_id": "r75_a+30",
+      "repeat_within_scene": 1,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01694189828001043,
+        "steps": 527,
+        "execution_seconds": 6.359000000000378
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01694189828001043,
+        "steps": 527,
+        "execution_seconds": 12.484000000000378
+      },
+      "cand_A": {
+        "success": false,
+        "phase": "Cube",
+        "final_error_m": 0.039484262722708885,
+        "steps": 612,
+        "execution_seconds": 7.0
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.020516873468190762,
+        "steps": 517,
+        "execution_seconds": 12.342999999999847
+      }
+    },
+    {
+      "scene_id": "r75_a+30",
+      "repeat_within_scene": 2,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01694189828001043,
+        "steps": 527,
+        "execution_seconds": 6.265000000000327
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01694189828001043,
+        "steps": 527,
+        "execution_seconds": 12.938000000000102
+      },
+      "cand_A": {
+        "success": false,
+        "phase": "Cube",
+        "final_error_m": 0.039484262722708885,
+        "steps": 612,
+        "execution_seconds": 6.953000000000429
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.014162540012758225,
+        "steps": 515,
+        "execution_seconds": 12.094000000000051
+      }
+    },
+    {
+      "scene_id": "r75_a+60",
+      "repeat_within_scene": 0,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01892449882201422,
+        "steps": 517,
+        "execution_seconds": 6.233999999999469
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01892449882201422,
+        "steps": 517,
+        "execution_seconds": 12.155999999999949
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.015711567032730318,
+        "steps": 482,
+        "execution_seconds": 5.609999999999673
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.023618159989037747,
+        "steps": 506,
+        "execution_seconds": 12.484999999999673
+      }
+    },
+    {
+      "scene_id": "r75_a+60",
+      "repeat_within_scene": 1,
+      "parent_discovery": {
+        "success": false,
+        "phase": "Cube",
+        "final_error_m": 0.030818039101256845,
+        "steps": 631,
+        "execution_seconds": 7.061999999999898
+      },
+      "parent_repeat": {
+        "success": false,
+        "phase": "Cube",
+        "final_error_m": 0.030818039101256845,
+        "steps": 631,
+        "execution_seconds": 13.594000000000051
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01654846402770534,
+        "steps": 482,
+        "execution_seconds": 5.641000000000531
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.023618159989037747,
+        "steps": 506,
+        "execution_seconds": 12.342999999999847
+      }
+    },
+    {
+      "scene_id": "r75_a+60",
+      "repeat_within_scene": 2,
+      "parent_discovery": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01892449882201422,
+        "steps": 517,
+        "execution_seconds": 6.125
+      },
+      "parent_repeat": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01892449882201422,
+        "steps": 517,
+        "execution_seconds": 12.311999999999898
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.015711567032730318,
+        "steps": 482,
+        "execution_seconds": 5.75
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.023618159989037747,
+        "steps": 506,
+        "execution_seconds": 13.078999999999724
+      }
+    },
+    {
+      "scene_id": "r80_a-60",
+      "repeat_within_scene": 0,
+      "parent_discovery": {
+        "success": false,
+        "phase": "LIFT",
+        "final_error_m": 1.278667717543865,
+        "steps": 507,
+        "execution_seconds": 6.061999999999898
+      },
+      "parent_repeat": {
+        "success": false,
+        "phase": "LIFT",
+        "final_error_m": 1.278667717543865,
+        "steps": 507,
+        "execution_seconds": 12.57799999999952
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.012218642820948518,
+        "steps": 616,
+        "execution_seconds": 6.969000000000051
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.006947808828972774,
+        "steps": 624,
+        "execution_seconds": 14.983999999999469
+      }
+    },
+    {
+      "scene_id": "r80_a-60",
+      "repeat_within_scene": 1,
+      "parent_discovery": {
+        "success": false,
+        "phase": "LIFT",
+        "final_error_m": 1.278667717543865,
+        "steps": 507,
+        "execution_seconds": 6.030999999999949
+      },
+      "parent_repeat": {
+        "success": false,
+        "phase": "LIFT",
+        "final_error_m": 1.278664517007703,
+        "steps": 507,
+        "execution_seconds": 12.313000000000102
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.012218642820948518,
+        "steps": 616,
+        "execution_seconds": 7.015000000000327
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.006947808828972774,
+        "steps": 624,
+        "execution_seconds": 14.844000000000051
+      }
+    },
+    {
+      "scene_id": "r80_a-60",
+      "repeat_within_scene": 2,
+      "parent_discovery": {
+        "success": false,
+        "phase": "LIFT",
+        "final_error_m": 1.278667717543865,
+        "steps": 507,
+        "execution_seconds": 6.014999999999418
+      },
+      "parent_repeat": {
+        "success": false,
+        "phase": "LIFT",
+        "final_error_m": 1.278667717543865,
+        "steps": 507,
+        "execution_seconds": 11.655999999999949
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.012218642820948518,
+        "steps": 616,
+        "execution_seconds": 6.92200000000048
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.006947808828972774,
+        "steps": 624,
+        "execution_seconds": 13.95299999999952
+      }
+    },
+    {
+      "scene_id": "r80_a-30",
+      "repeat_within_scene": 0,
+      "parent_discovery": {
+        "success": false,
+        "phase": "LIFT",
+        "final_error_m": 1.162805858001465,
+        "steps": 488,
+        "execution_seconds": 5.859000000000378
+      },
+      "parent_repeat": {
+        "success": false,
+        "phase": "LIFT",
+        "final_error_m": 1.162805858001465,
+        "steps": 488,
+        "execution_seconds": 11.655999999999949
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.015667180901569423,
+        "steps": 583,
+        "execution_seconds": 6.561999999999898
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.016360876676691616,
+        "steps": 599,
+        "execution_seconds": 14.734000000000378
+      }
+    },
+    {
+      "scene_id": "r80_a-30",
+      "repeat_within_scene": 1,
+      "parent_discovery": {
+        "success": false,
+        "phase": "LIFT",
+        "final_error_m": 1.162805858001465,
+        "steps": 488,
+        "execution_seconds": 5.859000000000378
+      },
+      "parent_repeat": {
+        "success": false,
+        "phase": "LIFT",
+        "final_error_m": 1.162805858001465,
+        "steps": 488,
+        "execution_seconds": 12.094000000000051
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.015667180901569423,
+        "steps": 583,
+        "execution_seconds": 6.5
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.014507158144181074,
+        "steps": 598,
+        "execution_seconds": 13.717999999999847
+      }
+    },
+    {
+      "scene_id": "r80_a-30",
+      "repeat_within_scene": 2,
+      "parent_discovery": {
+        "success": false,
+        "phase": "LIFT",
+        "final_error_m": 1.162805858001465,
+        "steps": 488,
+        "execution_seconds": 5.875
+      },
+      "parent_repeat": {
+        "success": false,
+        "phase": "LIFT",
+        "final_error_m": 1.1627935262339875,
+        "steps": 488,
+        "execution_seconds": 12.140999999999622
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.017179135899865042,
+        "steps": 585,
+        "execution_seconds": 6.578000000000429
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.014507158144181074,
+        "steps": 598,
+        "execution_seconds": 14.5
+      }
+    },
+    {
+      "scene_id": "r80_a+00",
+      "repeat_within_scene": 0,
+      "parent_discovery": {
+        "success": false,
+        "phase": "LIFT",
+        "final_error_m": 0.9797633071179973,
+        "steps": 478,
+        "execution_seconds": 5.719000000000051
+      },
+      "parent_repeat": {
+        "success": false,
+        "phase": "LIFT",
+        "final_error_m": 0.9797633071179973,
+        "steps": 478,
+        "execution_seconds": 11.483999999999469
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.02628361874194369,
+        "steps": 557,
+        "execution_seconds": 6.282000000000153
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01412744238924918,
+        "steps": 566,
+        "execution_seconds": 13.719000000000051
+      }
+    },
+    {
+      "scene_id": "r80_a+00",
+      "repeat_within_scene": 1,
+      "parent_discovery": {
+        "success": false,
+        "phase": "LIFT",
+        "final_error_m": 0.9802619081249515,
+        "steps": 478,
+        "execution_seconds": 5.796999999999571
+      },
+      "parent_repeat": {
+        "success": false,
+        "phase": "LIFT",
+        "final_error_m": 0.9802619081249515,
+        "steps": 478,
+        "execution_seconds": 11.469000000000051
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.013055289096383588,
+        "steps": 554,
+        "execution_seconds": 6.186999999999898
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.016270388669609604,
+        "steps": 569,
+        "execution_seconds": 13.57800000000043
+      }
+    },
+    {
+      "scene_id": "r80_a+00",
+      "repeat_within_scene": 2,
+      "parent_discovery": {
+        "success": false,
+        "phase": "LIFT",
+        "final_error_m": 0.9802619081249515,
+        "steps": 478,
+        "execution_seconds": 5.733999999999469
+      },
+      "parent_repeat": {
+        "success": false,
+        "phase": "LIFT",
+        "final_error_m": 0.9802619081249515,
+        "steps": 478,
+        "execution_seconds": 11.640999999999622
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.013055289096383588,
+        "steps": 554,
+        "execution_seconds": 6.188000000000102
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01138245555380151,
+        "steps": 569,
+        "execution_seconds": 13.765000000000327
+      }
+    },
+    {
+      "scene_id": "r80_a+30",
+      "repeat_within_scene": 0,
+      "parent_discovery": {
+        "success": false,
+        "phase": "LIFT",
+        "final_error_m": 0.750398468306304,
+        "steps": 486,
+        "execution_seconds": 5.82799999999952
+      },
+      "parent_repeat": {
+        "success": false,
+        "phase": "LIFT",
+        "final_error_m": 0.750398468306304,
+        "steps": 486,
+        "execution_seconds": 12.625
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.015254595608201032,
+        "steps": 535,
+        "execution_seconds": 6.140999999999622
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.006784848807712844,
+        "steps": 545,
+        "execution_seconds": 12.813000000000102
+      }
+    },
+    {
+      "scene_id": "r80_a+30",
+      "repeat_within_scene": 1,
+      "parent_discovery": {
+        "success": false,
+        "phase": "LIFT",
+        "final_error_m": 0.750398468306304,
+        "steps": 486,
+        "execution_seconds": 5.921999999999571
+      },
+      "parent_repeat": {
+        "success": false,
+        "phase": "LIFT",
+        "final_error_m": 0.750398468306304,
+        "steps": 486,
+        "execution_seconds": 12.20300000000043
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.015254595608201032,
+        "steps": 535,
+        "execution_seconds": 6.0
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.006784848807712844,
+        "steps": 545,
+        "execution_seconds": 12.92199999999957
+      }
+    },
+    {
+      "scene_id": "r80_a+30",
+      "repeat_within_scene": 2,
+      "parent_discovery": {
+        "success": false,
+        "phase": "LIFT",
+        "final_error_m": 0.7503767369023306,
+        "steps": 486,
+        "execution_seconds": 5.82799999999952
+      },
+      "parent_repeat": {
+        "success": false,
+        "phase": "LIFT",
+        "final_error_m": 0.750398468306304,
+        "steps": 486,
+        "execution_seconds": 10.92199999999957
+      },
+      "cand_A": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.015254595608201032,
+        "steps": 535,
+        "execution_seconds": 5.984000000000378
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.01708759907987463,
+        "steps": 551,
+        "execution_seconds": 13.344000000000051
+      }
+    },
+    {
+      "scene_id": "r80_a+60",
+      "repeat_within_scene": 0,
+      "parent_discovery": {
+        "success": false,
+        "phase": "LIFT",
+        "final_error_m": 0.5186769061968503,
+        "steps": 509,
+        "execution_seconds": 6.110000000000582
+      },
+      "parent_repeat": {
+        "success": false,
+        "phase": "LIFT",
+        "final_error_m": 0.5186659364753179,
+        "steps": 509,
+        "execution_seconds": 11.79699999999957
+      },
+      "cand_A": {
+        "success": false,
+        "phase": "Cube",
+        "final_error_m": 0.03361757541383979,
+        "steps": 646,
+        "execution_seconds": 7.046999999999571
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.013764021510056368,
+        "steps": 552,
+        "execution_seconds": 13.859000000000378
+      }
+    },
+    {
+      "scene_id": "r80_a+60",
+      "repeat_within_scene": 1,
+      "parent_discovery": {
+        "success": false,
+        "phase": "LIFT",
+        "final_error_m": 0.5186659364753179,
+        "steps": 509,
+        "execution_seconds": 6.078000000000429
+      },
+      "parent_repeat": {
+        "success": false,
+        "phase": "LIFT",
+        "final_error_m": 0.5186659364753179,
+        "steps": 509,
+        "execution_seconds": 12.765999999999622
+      },
+      "cand_A": {
+        "success": false,
+        "phase": "Cube",
+        "final_error_m": 0.03361757541383979,
+        "steps": 646,
+        "execution_seconds": 7.07799999999952
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.013764021510056368,
+        "steps": 552,
+        "execution_seconds": 12.859999999999673
+      }
+    },
+    {
+      "scene_id": "r80_a+60",
+      "repeat_within_scene": 2,
+      "parent_discovery": {
+        "success": false,
+        "phase": "LIFT",
+        "final_error_m": 0.5186769061968503,
+        "steps": 509,
+        "execution_seconds": 6.078000000000429
+      },
+      "parent_repeat": {
+        "success": false,
+        "phase": "LIFT",
+        "final_error_m": 0.5186659364753179,
+        "steps": 509,
+        "execution_seconds": 12.67199999999957
+      },
+      "cand_A": {
+        "success": false,
+        "phase": "Cube",
+        "final_error_m": 0.03147341134878,
+        "steps": 647,
+        "execution_seconds": 7.0460000000002765
+      },
+      "cand_B": {
+        "success": true,
+        "phase": "OK",
+        "final_error_m": 0.013594085078135346,
+        "steps": 549,
+        "execution_seconds": 13.20299999999952
+      }
+    },
+    {
+      "scene_id": "r85_a-60",
+      "repeat_within_scene": 0,
+      "parent_discovery": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 1.3071421046863945,
+        "steps": 302,
+        "execution_seconds": 3.561999999999898
+      },
+      "parent_repeat": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 1.3071421046863945,
+        "steps": 302,
+        "execution_seconds": 7.811999999999898
+      },
+      "cand_A": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 1.3071421046863945,
+        "steps": 302,
+        "execution_seconds": 3.3590000000003783
+      },
+      "cand_B": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 1.3071421046863945,
+        "steps": 302,
+        "execution_seconds": 7.782000000000153
+      }
+    },
+    {
+      "scene_id": "r85_a-60",
+      "repeat_within_scene": 1,
+      "parent_discovery": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 1.3071421046863945,
+        "steps": 302,
+        "execution_seconds": 3.610000000000582
+      },
+      "parent_repeat": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 1.3071421046863945,
+        "steps": 302,
+        "execution_seconds": 7.578000000000429
+      },
+      "cand_A": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 1.3071421046863945,
+        "steps": 302,
+        "execution_seconds": 3.32799999999952
+      },
+      "cand_B": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 1.3071421046863945,
+        "steps": 302,
+        "execution_seconds": 6.984000000000378
+      }
+    },
+    {
+      "scene_id": "r85_a-60",
+      "repeat_within_scene": 2,
+      "parent_discovery": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 1.3071421046863945,
+        "steps": 302,
+        "execution_seconds": 3.655999999999949
+      },
+      "parent_repeat": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 1.3071421046863945,
+        "steps": 302,
+        "execution_seconds": 7.405999999999949
+      },
+      "cand_A": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 1.3071421046863945,
+        "steps": 302,
+        "execution_seconds": 3.3590000000003783
+      },
+      "cand_B": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 1.3071421046863945,
+        "steps": 302,
+        "execution_seconds": 7.5789999999997235
+      }
+    },
+    {
+      "scene_id": "r85_a-30",
+      "repeat_within_scene": 0,
+      "parent_discovery": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 1.1821586800878034,
+        "steps": 302,
+        "execution_seconds": 3.688000000000102
+      },
+      "parent_repeat": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 1.1821586800878034,
+        "steps": 302,
+        "execution_seconds": 7.969000000000051
+      },
+      "cand_A": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 1.1821586800878034,
+        "steps": 302,
+        "execution_seconds": 3.42200000000048
+      },
+      "cand_B": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 1.1821586800878034,
+        "steps": 302,
+        "execution_seconds": 7.358999999999469
+      }
+    },
+    {
+      "scene_id": "r85_a-30",
+      "repeat_within_scene": 1,
+      "parent_discovery": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 1.1821586800878034,
+        "steps": 302,
+        "execution_seconds": 3.7030000000004293
+      },
+      "parent_repeat": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 1.1821586800878034,
+        "steps": 302,
+        "execution_seconds": 7.219000000000051
+      },
+      "cand_A": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 1.1821586800878034,
+        "steps": 302,
+        "execution_seconds": 3.342999999999847
+      },
+      "cand_B": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 1.1821586800878034,
+        "steps": 302,
+        "execution_seconds": 7.125
+      }
+    },
+    {
+      "scene_id": "r85_a-30",
+      "repeat_within_scene": 2,
+      "parent_discovery": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 1.1821586800878034,
+        "steps": 302,
+        "execution_seconds": 3.625
+      },
+      "parent_repeat": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 1.1821586800878034,
+        "steps": 302,
+        "execution_seconds": 7.25
+      },
+      "cand_A": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 1.1821586800878034,
+        "steps": 302,
+        "execution_seconds": 3.375
+      },
+      "cand_B": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 1.1821586800878034,
+        "steps": 302,
+        "execution_seconds": 7.75
+      }
+    },
+    {
+      "scene_id": "r85_a+00",
+      "repeat_within_scene": 0,
+      "parent_discovery": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 0.9861541129294656,
+        "steps": 302,
+        "execution_seconds": 3.625
+      },
+      "parent_repeat": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 0.9861541129294656,
+        "steps": 302,
+        "execution_seconds": 7.25
+      },
+      "cand_A": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 0.9861541129294656,
+        "steps": 302,
+        "execution_seconds": 3.45299999999952
+      },
+      "cand_B": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 0.9861541129294656,
+        "steps": 302,
+        "execution_seconds": 7.359999999999673
+      }
+    },
+    {
+      "scene_id": "r85_a+00",
+      "repeat_within_scene": 1,
+      "parent_discovery": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 0.9861541129294656,
+        "steps": 302,
+        "execution_seconds": 3.57799999999952
+      },
+      "parent_repeat": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 0.9861541129294656,
+        "steps": 302,
+        "execution_seconds": 7.25
+      },
+      "cand_A": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 0.9861541129294656,
+        "steps": 302,
+        "execution_seconds": 3.3590000000003783
+      },
+      "cand_B": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 0.9861541129294656,
+        "steps": 302,
+        "execution_seconds": 7.57799999999952
+      }
+    },
+    {
+      "scene_id": "r85_a+00",
+      "repeat_within_scene": 2,
+      "parent_discovery": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 0.9861541129294656,
+        "steps": 302,
+        "execution_seconds": 3.5469999999995707
+      },
+      "parent_repeat": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 0.9861541129294656,
+        "steps": 302,
+        "execution_seconds": 7.5
+      },
+      "cand_A": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 0.9861541129294656,
+        "steps": 302,
+        "execution_seconds": 3.375
+      },
+      "cand_B": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 0.9861541129294656,
+        "steps": 302,
+        "execution_seconds": 6.921999999999571
+      }
+    },
+    {
+      "scene_id": "r85_a+30",
+      "repeat_within_scene": 0,
+      "parent_discovery": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 0.7399323831866471,
+        "steps": 302,
+        "execution_seconds": 3.563000000000102
+      },
+      "parent_repeat": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 0.7399323831866471,
+        "steps": 302,
+        "execution_seconds": 6.609000000000378
+      },
+      "cand_A": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 0.7399323831866471,
+        "steps": 302,
+        "execution_seconds": 3.311999999999898
+      },
+      "cand_B": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 0.7399323831866471,
+        "steps": 302,
+        "execution_seconds": 7.719000000000051
+      }
+    },
+    {
+      "scene_id": "r85_a+30",
+      "repeat_within_scene": 1,
+      "parent_discovery": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 0.7399323831866471,
+        "steps": 302,
+        "execution_seconds": 3.563000000000102
+      },
+      "parent_repeat": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 0.7399323831866471,
+        "steps": 302,
+        "execution_seconds": 7.438000000000102
+      },
+      "cand_A": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 0.7399323831866471,
+        "steps": 302,
+        "execution_seconds": 3.32799999999952
+      },
+      "cand_B": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 0.7399323831866471,
+        "steps": 302,
+        "execution_seconds": 7.203000000000429
+      }
+    },
+    {
+      "scene_id": "r85_a+30",
+      "repeat_within_scene": 2,
+      "parent_discovery": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 0.7399323831866471,
+        "steps": 302,
+        "execution_seconds": 3.530999999999949
+      },
+      "parent_repeat": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 0.7399323831866471,
+        "steps": 302,
+        "execution_seconds": 6.984000000000378
+      },
+      "cand_A": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 0.7399323831866471,
+        "steps": 302,
+        "execution_seconds": 3.4219999999995707
+      },
+      "cand_B": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 0.7399323831866471,
+        "steps": 302,
+        "execution_seconds": 7.171999999999571
+      }
+    },
+    {
+      "scene_id": "r85_a+60",
+      "repeat_within_scene": 0,
+      "parent_discovery": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 0.48618792259041965,
+        "steps": 302,
+        "execution_seconds": 3.5159999999996217
+      },
+      "parent_repeat": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 0.48618792259041965,
+        "steps": 302,
+        "execution_seconds": 7.282000000000153
+      },
+      "cand_A": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 0.48618792259041965,
+        "steps": 302,
+        "execution_seconds": 3.344000000000051
+      },
+      "cand_B": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 0.48618792259041965,
+        "steps": 302,
+        "execution_seconds": 7.186999999999898
+      }
+    },
+    {
+      "scene_id": "r85_a+60",
+      "repeat_within_scene": 1,
+      "parent_discovery": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 0.48618792259041965,
+        "steps": 302,
+        "execution_seconds": 3.6090000000003783
+      },
+      "parent_repeat": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 0.48618792259041965,
+        "steps": 302,
+        "execution_seconds": 7.859000000000378
+      },
+      "cand_A": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 0.48618792259041965,
+        "steps": 302,
+        "execution_seconds": 3.375
+      },
+      "cand_B": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 0.48618792259041965,
+        "steps": 302,
+        "execution_seconds": 7.030999999999949
+      }
+    },
+    {
+      "scene_id": "r85_a+60",
+      "repeat_within_scene": 2,
+      "parent_discovery": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 0.48618792259041965,
+        "steps": 302,
+        "execution_seconds": 3.561999999999898
+      },
+      "parent_repeat": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 0.48618792259041965,
+        "steps": 302,
+        "execution_seconds": 7.405999999999949
+      },
+      "cand_A": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 0.48618792259041965,
+        "steps": 302,
+        "execution_seconds": 3.32799999999952
+      },
+      "cand_B": {
+        "success": false,
+        "phase": "APPROACH_PICK",
+        "final_error_m": 0.48618792259041965,
+        "steps": 302,
+        "execution_seconds": 7.030999999999949
+      }
+    }
+  ]
+}

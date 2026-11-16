@@ -1,0 +1,9 @@
+﻿BATCH_COMPLETE audit_validation_parent exit=0 rollouts=20/20
+BATCH_COMPLETE audit_validation_candidate_a exit=0 rollouts=20/20
+BATCH_COMPLETE audit_validation_candidate_b exit=0 rollouts=20/20
+GATES_COMMITTED exit=0
+BATCH_COMPLETE audit_parent exit=0 rollouts=160/160
+BATCH_COMPLETE audit_candidate_a exit=0 rollouts=160/160
+BATCH_COMPLETE audit_candidate_b exit=0 rollouts=160/160
+BATCH_COMPLETE audit_validation_parent_repeat exit=0 rollouts=20/20
+AUDIT_QUEUE_DONE

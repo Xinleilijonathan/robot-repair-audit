@@ -1,0 +1,5 @@
+[
+ {"id":"no_motion","control_mode":"no_motion"},
+ {"id":"no_grasp","control_mode":"no_grasp"},
+ {"id":"hold_at_goal","control_mode":"hold_at_goal"}
+]
