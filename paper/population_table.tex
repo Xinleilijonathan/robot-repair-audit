@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3.0pt}
+\begin{tabular}{lcccccc}
+\toprule
+ & \multicolumn{3}{c}{Admitted} & \multicolumn{2}{c}{Agg.-useful} & \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-6}
+Gate & /26 & w/ loss & losses & adm. & missed & Deliv. \\
+\midrule
+Target-only & 10 & 10 & 61 & 7 & 0 & B \\
+Aggregate & 5 & 5 & 33 & 4 & 3 & B \\
+Preservation & 4 & 4 & 17 & 4 & 3 & B \\
+\bottomrule
+\end{tabular}
+\caption{Post-hoc extension: committed gate decisions over 26 candidates (A, B and 24 seeded random edits), scored on a fresh audit of 30 target and 90 old scenes. Losses are summed over admitted candidates. Under the aggregate objective 7 candidates are useful; under the zero-loss objective, none.}
+\label{tab:population}
+\end{table}

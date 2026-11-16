@@ -1,5 +1,16 @@
 # Workshop research plan
 
+## Extension 1 complete — November 15, approximately 23:59
+
+The post-hoc candidate-population extension finished: 26 candidates (A, B and 24 seeded random edits), 3,800 rollouts, no failures. The results are in `extension1_report.md`.
+
+- **Q1.** 10/10 target improvers lost old successes.
+- **Q2.** 13/26 candidates gained at least as many old scenes as they lost. The only committed aggregate-vs-preservation disagreement was r14.
+- **Q3.** Admitted losses were 61 (target-only), 33 (aggregate) and 17 (preservation). The stricter gates each missed 3 aggregate-useful candidates. All gates delivered B.
+- **Q4.** A's and B's conditional loss rates replicated, while the sign of their old net change flipped to positive.
+
+The paper now includes a clearly labelled post-hoc section. The remaining user decisions are unchanged (see below), plus confirmation of whether references count toward the 4-page limit.
+
 ## Frozen audit complete — November 15, approximately 16:30
 
 The audit ran 560 rollouts in 61 minutes, every batch with exit code 0; gate decisions were committed 22 s before the first audit rollout, and the parent repeat matched 20/20. Full results are in `audit_report.md`.

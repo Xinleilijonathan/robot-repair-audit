@@ -1,0 +1,503 @@
+﻿[
+    {
+        "batch":  "audit_validation_parent",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T00:47:28.9145046Z",
+        "ended_utc":  "2026-11-16T00:49:53.6730142Z",
+        "exit_code":  0,
+        "completed_rollouts":  20,
+        "expected_rollouts":  20
+    },
+    {
+        "batch":  "audit_validation_candidate_a",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T00:49:53.6920137Z",
+        "ended_utc":  "2026-11-16T00:52:18.5570531Z",
+        "exit_code":  0,
+        "completed_rollouts":  20,
+        "expected_rollouts":  20
+    },
+    {
+        "batch":  "audit_validation_candidate_b",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T00:52:18.5610536Z",
+        "ended_utc":  "2026-11-16T00:54:54.2567032Z",
+        "exit_code":  0,
+        "completed_rollouts":  20,
+        "expected_rollouts":  20
+    },
+    {
+        "batch":  "audit_validation_r01",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T00:54:54.2597033Z",
+        "ended_utc":  "2026-11-16T00:57:21.5302735Z",
+        "exit_code":  0,
+        "completed_rollouts":  20,
+        "expected_rollouts":  20
+    },
+    {
+        "batch":  "audit_validation_r02",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T00:57:21.5332746Z",
+        "ended_utc":  "2026-11-16T00:59:46.4699956Z",
+        "exit_code":  0,
+        "completed_rollouts":  20,
+        "expected_rollouts":  20
+    },
+    {
+        "batch":  "audit_validation_r03",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T00:59:46.4729979Z",
+        "ended_utc":  "2026-11-16T01:02:08.9256443Z",
+        "exit_code":  0,
+        "completed_rollouts":  20,
+        "expected_rollouts":  20
+    },
+    {
+        "batch":  "audit_validation_r04",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T01:02:08.9276343Z",
+        "ended_utc":  "2026-11-16T01:04:40.6658366Z",
+        "exit_code":  0,
+        "completed_rollouts":  20,
+        "expected_rollouts":  20
+    },
+    {
+        "batch":  "audit_validation_r05",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T01:04:40.6677498Z",
+        "ended_utc":  "2026-11-16T01:06:31.9415021Z",
+        "exit_code":  0,
+        "completed_rollouts":  20,
+        "expected_rollouts":  20
+    },
+    {
+        "batch":  "audit_validation_r06",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T01:06:31.9445014Z",
+        "ended_utc":  "2026-11-16T01:08:45.7893929Z",
+        "exit_code":  0,
+        "completed_rollouts":  20,
+        "expected_rollouts":  20
+    },
+    {
+        "batch":  "audit_validation_r07",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T01:08:45.7913838Z",
+        "ended_utc":  "2026-11-16T01:10:56.7302331Z",
+        "exit_code":  0,
+        "completed_rollouts":  20,
+        "expected_rollouts":  20
+    },
+    {
+        "batch":  "audit_validation_r08",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T01:10:56.7342351Z",
+        "ended_utc":  "2026-11-16T01:13:11.1356054Z",
+        "exit_code":  0,
+        "completed_rollouts":  20,
+        "expected_rollouts":  20
+    },
+    {
+        "batch":  "audit_validation_r09",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T01:13:11.1386071Z",
+        "ended_utc":  "2026-11-16T01:15:30.5387504Z",
+        "exit_code":  0,
+        "completed_rollouts":  20,
+        "expected_rollouts":  20
+    },
+    {
+        "batch":  "audit_validation_r10",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T01:15:30.5407511Z",
+        "ended_utc":  "2026-11-16T01:17:51.2320751Z",
+        "exit_code":  0,
+        "completed_rollouts":  20,
+        "expected_rollouts":  20
+    },
+    {
+        "batch":  "audit_validation_r11",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T01:17:51.2350747Z",
+        "ended_utc":  "2026-11-16T01:20:08.1392944Z",
+        "exit_code":  0,
+        "completed_rollouts":  20,
+        "expected_rollouts":  20
+    },
+    {
+        "batch":  "audit_validation_r12",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T01:20:08.1412899Z",
+        "ended_utc":  "2026-11-16T01:22:00.9100062Z",
+        "exit_code":  0,
+        "completed_rollouts":  20,
+        "expected_rollouts":  20
+    },
+    {
+        "batch":  "audit_validation_r13",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T01:22:00.9149984Z",
+        "ended_utc":  "2026-11-16T01:24:23.3782004Z",
+        "exit_code":  0,
+        "completed_rollouts":  20,
+        "expected_rollouts":  20
+    },
+    {
+        "batch":  "audit_validation_r14",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T01:24:23.3811953Z",
+        "ended_utc":  "2026-11-16T01:26:58.4152724Z",
+        "exit_code":  0,
+        "completed_rollouts":  20,
+        "expected_rollouts":  20
+    },
+    {
+        "batch":  "audit_validation_r15",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T01:26:58.4212821Z",
+        "ended_utc":  "2026-11-16T01:29:27.6127039Z",
+        "exit_code":  0,
+        "completed_rollouts":  20,
+        "expected_rollouts":  20
+    },
+    {
+        "batch":  "audit_validation_r16",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T01:29:27.6157075Z",
+        "ended_utc":  "2026-11-16T01:31:51.7910431Z",
+        "exit_code":  0,
+        "completed_rollouts":  20,
+        "expected_rollouts":  20
+    },
+    {
+        "batch":  "audit_validation_r17",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T01:31:51.7960430Z",
+        "ended_utc":  "2026-11-16T01:33:45.9180583Z",
+        "exit_code":  0,
+        "completed_rollouts":  20,
+        "expected_rollouts":  20
+    },
+    {
+        "batch":  "audit_validation_r18",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T01:33:45.9210589Z",
+        "ended_utc":  "2026-11-16T01:36:20.2662148Z",
+        "exit_code":  0,
+        "completed_rollouts":  20,
+        "expected_rollouts":  20
+    },
+    {
+        "batch":  "audit_validation_r19",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T01:36:20.2722237Z",
+        "ended_utc":  "2026-11-16T01:38:35.3031704Z",
+        "exit_code":  0,
+        "completed_rollouts":  20,
+        "expected_rollouts":  20
+    },
+    {
+        "batch":  "audit_validation_r20",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T01:38:35.3081792Z",
+        "ended_utc":  "2026-11-16T01:40:51.9666703Z",
+        "exit_code":  0,
+        "completed_rollouts":  20,
+        "expected_rollouts":  20
+    },
+    {
+        "batch":  "audit_validation_r21",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T01:40:51.9735938Z",
+        "ended_utc":  "2026-11-16T01:42:57.2549520Z",
+        "exit_code":  0,
+        "completed_rollouts":  20,
+        "expected_rollouts":  20
+    },
+    {
+        "batch":  "audit_validation_r22",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T01:42:57.2619518Z",
+        "ended_utc":  "2026-11-16T01:45:17.4924831Z",
+        "exit_code":  0,
+        "completed_rollouts":  20,
+        "expected_rollouts":  20
+    },
+    {
+        "batch":  "audit_validation_r23",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T01:45:17.4944843Z",
+        "ended_utc":  "2026-11-16T01:47:46.2525719Z",
+        "exit_code":  0,
+        "completed_rollouts":  20,
+        "expected_rollouts":  20
+    },
+    {
+        "batch":  "audit_validation_r24",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T01:47:46.2555948Z",
+        "ended_utc":  "2026-11-16T01:50:01.2938176Z",
+        "exit_code":  0,
+        "completed_rollouts":  20,
+        "expected_rollouts":  20
+    },
+    {
+        "batch":  "gate_decisions",
+        "ended_utc":  "2026-11-16T01:50:04.2295259Z",
+        "exit_code":  0,
+        "candidates":  26
+    },
+    {
+        "batch":  "audit_parent",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T01:50:04.2596438Z",
+        "ended_utc":  "2026-11-16T02:02:18.7831319Z",
+        "exit_code":  0,
+        "completed_rollouts":  120,
+        "expected_rollouts":  120
+    },
+    {
+        "batch":  "audit_candidate_a",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T02:02:18.7881319Z",
+        "ended_utc":  "2026-11-16T02:14:06.9095018Z",
+        "exit_code":  0,
+        "completed_rollouts":  120,
+        "expected_rollouts":  120
+    },
+    {
+        "batch":  "audit_candidate_b",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T02:14:06.9114949Z",
+        "ended_utc":  "2026-11-16T02:27:12.9797976Z",
+        "exit_code":  0,
+        "completed_rollouts":  120,
+        "expected_rollouts":  120
+    },
+    {
+        "batch":  "audit_r01",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T02:27:12.9827184Z",
+        "ended_utc":  "2026-11-16T02:39:28.3246673Z",
+        "exit_code":  0,
+        "completed_rollouts":  120,
+        "expected_rollouts":  120
+    },
+    {
+        "batch":  "audit_r02",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T02:39:28.3281878Z",
+        "ended_utc":  "2026-11-16T02:51:41.6427648Z",
+        "exit_code":  0,
+        "completed_rollouts":  120,
+        "expected_rollouts":  120
+    },
+    {
+        "batch":  "audit_r03",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T02:51:41.6457656Z",
+        "ended_utc":  "2026-11-16T03:04:50.4699616Z",
+        "exit_code":  0,
+        "completed_rollouts":  120,
+        "expected_rollouts":  120
+    },
+    {
+        "batch":  "audit_r04",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T03:04:50.4769529Z",
+        "ended_utc":  "2026-11-16T03:18:22.8273830Z",
+        "exit_code":  0,
+        "completed_rollouts":  120,
+        "expected_rollouts":  120
+    },
+    {
+        "batch":  "audit_r05",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T03:18:22.8324542Z",
+        "ended_utc":  "2026-11-16T03:30:18.1369452Z",
+        "exit_code":  0,
+        "completed_rollouts":  120,
+        "expected_rollouts":  120
+    },
+    {
+        "batch":  "audit_r06",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T03:30:18.1429445Z",
+        "ended_utc":  "2026-11-16T03:42:19.5201013Z",
+        "exit_code":  0,
+        "completed_rollouts":  120,
+        "expected_rollouts":  120
+    },
+    {
+        "batch":  "audit_r07",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T03:42:19.5251931Z",
+        "ended_utc":  "2026-11-16T03:55:29.3989116Z",
+        "exit_code":  0,
+        "completed_rollouts":  120,
+        "expected_rollouts":  120
+    },
+    {
+        "batch":  "audit_r08",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T03:55:29.4019147Z",
+        "ended_utc":  "2026-11-16T04:08:15.8369884Z",
+        "exit_code":  0,
+        "completed_rollouts":  120,
+        "expected_rollouts":  120
+    },
+    {
+        "batch":  "audit_r09",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T04:08:15.8429809Z",
+        "ended_utc":  "2026-11-16T04:20:53.4857872Z",
+        "exit_code":  0,
+        "completed_rollouts":  120,
+        "expected_rollouts":  120
+    },
+    {
+        "batch":  "audit_r10",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T04:20:53.4917887Z",
+        "ended_utc":  "2026-11-16T04:33:40.7189562Z",
+        "exit_code":  0,
+        "completed_rollouts":  120,
+        "expected_rollouts":  120
+    },
+    {
+        "batch":  "audit_r11",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T04:33:40.7219563Z",
+        "ended_utc":  "2026-11-16T04:47:19.5846858Z",
+        "exit_code":  0,
+        "completed_rollouts":  120,
+        "expected_rollouts":  120
+    },
+    {
+        "batch":  "audit_r12",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T04:47:19.5901928Z",
+        "ended_utc":  "2026-11-16T04:59:48.3921584Z",
+        "exit_code":  0,
+        "completed_rollouts":  120,
+        "expected_rollouts":  120
+    },
+    {
+        "batch":  "audit_r13",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T04:59:48.4001587Z",
+        "ended_utc":  "2026-11-16T05:12:17.1039090Z",
+        "exit_code":  0,
+        "completed_rollouts":  120,
+        "expected_rollouts":  120
+    },
+    {
+        "batch":  "audit_r14",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T05:12:17.1104026Z",
+        "ended_utc":  "2026-11-16T05:25:25.0368386Z",
+        "exit_code":  0,
+        "completed_rollouts":  120,
+        "expected_rollouts":  120
+    },
+    {
+        "batch":  "audit_r15",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T05:25:25.0418567Z",
+        "ended_utc":  "2026-11-16T05:38:24.6669842Z",
+        "exit_code":  0,
+        "completed_rollouts":  120,
+        "expected_rollouts":  120
+    },
+    {
+        "batch":  "audit_r16",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T05:38:24.6699842Z",
+        "ended_utc":  "2026-11-16T05:50:56.7372847Z",
+        "exit_code":  0,
+        "completed_rollouts":  120,
+        "expected_rollouts":  120
+    },
+    {
+        "batch":  "audit_r17",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T05:50:56.7402787Z",
+        "ended_utc":  "2026-11-16T06:02:35.9291600Z",
+        "exit_code":  0,
+        "completed_rollouts":  120,
+        "expected_rollouts":  120
+    },
+    {
+        "batch":  "audit_r18",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T06:02:35.9321621Z",
+        "ended_utc":  "2026-11-16T06:16:44.1987490Z",
+        "exit_code":  0,
+        "completed_rollouts":  120,
+        "expected_rollouts":  120
+    },
+    {
+        "batch":  "audit_r19",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T06:16:44.2037480Z",
+        "ended_utc":  "2026-11-16T06:28:53.7408080Z",
+        "exit_code":  0,
+        "completed_rollouts":  120,
+        "expected_rollouts":  120
+    },
+    {
+        "batch":  "audit_r20",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T06:28:53.7448094Z",
+        "ended_utc":  "2026-11-16T06:40:43.2584939Z",
+        "exit_code":  0,
+        "completed_rollouts":  120,
+        "expected_rollouts":  120
+    },
+    {
+        "batch":  "audit_r21",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T06:40:43.2624141Z",
+        "ended_utc":  "2026-11-16T06:52:47.9502187Z",
+        "exit_code":  0,
+        "completed_rollouts":  120,
+        "expected_rollouts":  120
+    },
+    {
+        "batch":  "audit_r22",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T06:52:47.9549332Z",
+        "ended_utc":  "2026-11-16T07:05:56.0776038Z",
+        "exit_code":  0,
+        "completed_rollouts":  120,
+        "expected_rollouts":  120
+    },
+    {
+        "batch":  "audit_r23",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T07:05:56.0816054Z",
+        "ended_utc":  "2026-11-16T07:18:47.7445569Z",
+        "exit_code":  0,
+        "completed_rollouts":  120,
+        "expected_rollouts":  120
+    },
+    {
+        "batch":  "audit_r24",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T07:18:47.7485553Z",
+        "ended_utc":  "2026-11-16T07:30:31.0354537Z",
+        "exit_code":  0,
+        "completed_rollouts":  120,
+        "expected_rollouts":  120
+    },
+    {
+        "batch":  "audit_validation_parent_repeat",
+        "attempt":  1,
+        "started_utc":  "2026-11-16T07:30:31.0424525Z",
+        "ended_utc":  "2026-11-16T07:39:37.2156556Z",
+        "exit_code":  0,
+        "completed_rollouts":  20,
+        "expected_rollouts":  20
+    }
+]

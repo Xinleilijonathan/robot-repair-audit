@@ -1,0 +1,375 @@
+Starting kit application with the following args:  ['C:\\Users\\Jonat\\Documents\\Codex\\isaac-sim-env\\Lib\\site-packages\\isaacsim\\exts\\isaacsim.simulation_app\\isaacsim\\simulation_app\\simulation_app.py', 'C:\\Users\\Jonat\\Documents\\Codex\\isaac-sim-env\\Lib\\site-packages\\isaacsim\\apps/isaacsim.exp.base.python.kit', '--/app/tokens/exe-path=C:\\Users\\Jonat\\Documents\\Codex\\isaac-sim-env\\Lib\\site-packages\\isaacsim\\kit', '--/persistent/app/viewport/displayOptions=3094', '--/rtx/materialDb/syncLoads=True', '--/rtx/hydra/materialSyncLoads=True', '--/omni/kit/plugin/syncUsdLoads=True', '--/app/renderer/resolution/width=640', '--/app/renderer/resolution/height=480', '--/app/window/width=1440', '--/app/window/height=900', '--/renderer/multiGpu/enabled=True', '--/app/fastShutdown=True', '--/app/installSignalHandlers=0', '--ext-folder', 'C:\\Users\\Jonat\\Documents\\Codex\\isaac-sim-env\\Lib\\site-packages\\isaacsim/exts', '--ext-folder', 'C:\\Users\\Jonat\\Documents\\Codex\\isaac-sim-env\\Lib\\site-packages\\isaacsim/apps', '--/physics/cudaDevice=0', '--/plugins/carb.tasking.plugin/threadCount=16', '--/plugins/omni.tbb.globalcontrol/maxThreadCount=16', '--no-window', '--/app/window/hideUi=1']
+Passing the following args to the base kit application:  ['--portable-root', 'C:\\Users\\Jonat\\Documents\\Codex\\2026-11-15\\t\\work\\isaac_runtime']
+2026-11-16T01:02:11Z [Info] [carb] Logging to file: C:/Users/Jonat/Documents/Codex/2026-11-15/t/work/isaac_runtime/logs/Kit/Isaac-Sim Python/6.2/kit_20261115_170211.log
+[0.153s] [ext: omni.assets.plugins-0.0.0] startup
+[0.160s] [ext: omni.blobkey-1.1.2] startup
+[0.164s] [ext: omni.kit.async_engine-0.0.5] startup
+[0.366s] [ext: omni.client.lib-1.1.1] startup
+[0.385s] [ext: omni.client-1.3.0] startup
+[0.395s] [ext: omni.protobuf.lib-1.0.1] startup
+[0.398s] [ext: omni.grpc.lib-1.0.1] startup
+[0.402s] [ext: omni.metrics.core-0.0.3] startup
+[0.406s] [ext: omni.datastore-0.0.0] startup
+[0.411s] [ext: omni.gpu_foundation.shadercache.vulkan-1.0.0] startup
+[0.422s] [ext: omni.hsscclient-1.1.4] startup
+[0.426s] [ext: omni.stats-1.0.1] startup
+[0.431s] [ext: omni.ujitso.default-1.0.0] startup
+[0.450s] [ext: omni.gpu_foundation-0.0.0] startup
+[0.476s] [ext: carb.windowing.plugins-1.0.1] startup
+[0.482s] [ext: omni.kit.renderer.init-1.0.1] startup
+[0.486s] [ext: omni.kit.pipapi-0.0.0] startup
+[0.494s] [ext: omni.kit.telemetry-0.5.2] startup
+[0.515s] [ext: omni.kit.loop-isaac-1.6.2] startup
+[0.523s] [ext: omni.kit.test-2.2.3] startup
+[0.679s] [ext: omni.materialx.libs-1.0.9] startup
+[0.695s] [ext: omni.gpucompute.plugins-0.0.0] startup
+[0.700s] [ext: omni.usd.config-1.0.8] startup
+[0.724s] [ext: omni.usd.libs-1.0.3] startup
+[0.783s] [ext: omni.iray.libs-0.0.1] startup
+[0.809s] [ext: omni.mdl-57.0.6] startup
+[0.833s] [ext: omni.mdl.neuraylib-0.2.23] startup
+2026-11-16T01:02:11Z [748ms] [Warning] [omni.rtx] Skipping unsupported non-NVIDIA GPU: Intel(R) UHD Graphics 770
+2026-11-16T01:02:11Z [749ms] [Warning] [omni.rtx] Skipping unsupported non-NVIDIA GPU: Intel(R) UHD Graphics 770
+[0.843s] [ext: omni.kit.usd.mdl-1.1.12] startup
+[0.977s] [ext: omni.appwindow-1.2.2] startup
+[0.985s] [ext: omni.kit.renderer.core-1.3.2] startup
+[1.002s] [ext: omni.kit.renderer.capture-2.0.2] startup
+[1.012s] [ext: omni.kit.renderer.imgui-2.2.1] startup
+[1.027s] [ext: omni.ui-3.3.10] startup
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 610.88        | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA GeForce RTX 4070 Ti SUPER | Yes: 0 |     | 16061   MB | 10de      | d22d0100.. |
+|     |                                  |        |     |            | 2705      | 8a7de5fc.. |
+|     |                                  |        |     |            | 1         |            |
+|---------------------------------------------------------------------------------------------|
+| 1   | Intel(R) UHD Graphics 770        |        |     | 16242   MB | 8086      | 08400100.. |
+|     |                                  |        |     |            | a780      | 868080a7.. |
+|     |                                  |        |     |            | N/A       |            |
+|=============================================================================================|
+| OS: Windows 11 Pro, Version: 10.0 (25H2), Build: 26200, Kernel: 10.0.26100.9974
+| Processor: 13th Gen Intel(R) Core(TM) i5-13600K
+| Cores: 14 | Logical Cores: 20
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 32484 | Free Memory: 17802
+| Total Page/Swap (MB): 34532 | Free Page/Swap: 11684
+|---------------------------------------------------------------------------------------------|
+[1.045s] [ext: omni.kit.mainwindow-1.0.4] startup
+[1.164s] [ext: carb.audio-0.1.0] startup
+[1.168s] [ext: omni.uiaudio-1.0.0] startup
+[1.175s] [ext: omni.kit.uiapp-0.0.0] startup
+[1.178s] [ext: omni.usd.schema.metrics.assembler-110.1.1] startup
+[1.193s] [ext: omni.usd.schema.audio-0.0.1] startup
+[1.203s] [ext: omni.usd_resolver-1.0.0] startup
+[1.213s] [ext: omni.usd.core-1.10.42] startup
+[1.220s] [ext: omni.metropolis.schema-0.0.3] startup
+[1.225s] [ext: isaacsim.anim.robot.schema-0.1.1] startup
+[1.230s] [ext: isaacsim.common-6.2.0] startup
+[1.236s] [ext: omni.usd.schema.anim-0.0.1] startup
+[1.260s] [ext: omni.usd.schema.geospatial-0.0.1] startup
+[1.267s] [ext: omni.usd.schema.omnigraph-1.0.1] startup
+[1.278s] [ext: omni.usd.schema.semantics-0.0.0] startup
+[1.286s] [ext: omni.activity.core-1.0.4] startup
+[1.292s] [ext: omni.cubric-0.1.0] startup
+[1.296s] [ext: omni.graph.exec-0.9.6] startup
+[1.300s] [ext: omni.hydra.scene_delegate-0.3.5] startup
+[1.306s] [ext: usdrt.scenegraph-7.6.3] startup
+[1.350s] [ext: omni.hydra.usdrt_delegate-7.5.2] startup
+[1.363s] [ext: omni.inspect-1.0.2] startup
+[1.369s] [ext: omni.kit.actions.core-1.2.1] startup
+[1.378s] [ext: omni.kit.audiodeviceenum-1.0.2] startup
+[1.385s] [ext: omni.kit.commands-1.6.2] startup
+[1.398s] [ext: omni.kit.exec.core-0.13.6] startup
+[1.406s] [ext: omni.kit.usd_undo-0.1.8] startup
+[1.410s] [ext: omni.kit.window.popup_dialog-2.0.26] startup
+[1.422s] [ext: omni.kit.widget.connection_manager-1.0.4] startup
+[1.440s] [ext: omni.timeline-1.1.2] startup
+[1.446s] [ext: omni.usd-1.19.11] startup
+[1.501s] [ext: omni.graph.core-3.1.8] startup
+[1.508s] [ext: omni.kit.notification_manager-1.0.17] startup
+[1.517s] [ext: isaacsim.core.deprecation_manager-0.4.5] startup
+[1.523s] [ext: isaacsim.replicator.agent.schema-0.1.2] startup
+[1.530s] [ext: isaacsim.robot.schema-7.0.2] startup
+[1.543s] [ext: isaacsim.robot_motion.schema-0.2.2] startup
+[1.550s] [ext: omni.anim.behavior.schema-110.4.0] startup
+[1.555s] [ext: omni.anim.graph.schema-110.4.0] startup
+[1.561s] [ext: omni.anim.navigation.schema-110.4.0] startup
+[1.566s] [ext: omni.behavior.tree.schema-110.4.0] startup
+[1.572s] [ext: omni.kit.asset_converter-6.1.0] startup
+[1.588s] [ext: omni.usd.schema.flow-110.0.0] startup
+[1.592s] [ext: omni.usd.schema.newton-1.5.0] startup
+[1.598s] [ext: omni.usd.schema.mujoco-1.1.4] startup
+[1.603s] [ext: omni.usd.schema.omni_dome_light-1.0.0] startup
+[1.609s] [ext: omni.usd.schema.omni_lens_distortion-1.0.0] startup
+[1.614s] [ext: omni.usd.schema.omni_projectors-1.0.0] startup
+[1.619s] [ext: omni.usd.schema.omni_sensors-0.0.0] startup
+[1.632s] [ext: omni.usd.schema.omniscripting-1.0.1] startup
+[1.643s] [ext: omni.usd.schema.physical_lighting-0.1.0] startup
+[1.651s] [ext: omni.usd.schema.physx-110.4.4] startup
+[1.679s] [ext: omni.usd.schema.render_settings.rtx-1.0.3] startup
+[1.691s] [ext: omni.usd.schema.usd_particle_field-1.0.0] startup
+[1.697s] [ext: omni.kit.menu.core-1.3.0] startup
+[1.702s] [ext: omni.kit.menu.utils-2.2.8] startup
+[1.720s] [ext: omni.kit.usd.layers-2.7.9] startup
+[1.737s] [ext: omni.kit.primitive.mesh-1.1.1] startup
+[1.750s] [ext: omni.kit.stage_template.core-1.1.23] startup
+[1.755s] [ext: omni.kit.stage_templates-2.0.3] startup
+[1.764s] [ext: omni.usd.metrics.assembler-110.1.2] startup
+[1.773s] [ext: omni.warp.core-1.17.0] startup
+[1.942s] [ext: isaacsim.core.experimental.utils-0.23.3] startup
+[1.951s] [ext: omni.convexdecomposition-110.4.4] startup
+[1.959s] [ext: omni.physics-110.4.4] startup
+[1.968s] [ext: omni.physx.gpu-110.4.4] startup
+[1.972s] [ext: omni.physx.foundation-110.4.4] startup
+[1.988s] [ext: omni.usdphysics-110.4.4] startup
+[1.995s] [ext: omni.physx.cooking-110.4.4] startup
+[2.033s] [ext: omni.physx-110.4.4] startup
+[2.051s] [ext: omni.physics.physx-110.4.4] startup
+[2.058s] [ext: omni.physics.stageupdate-110.4.4] startup
+[2.067s] [ext: omni.physics.tensors-110.4.4] startup
+[2.083s] [ext: omni.physx.tensors-110.4.4] startup
+[2.090s] [ext: omni.usdex.libs-3.0.0] startup
+[2.104s] [ext: isaacsim.core.simulation_manager-1.17.4] startup
+[2.129s] [ext: isaacsim.test.docstring-1.3.2] startup
+[2.157s] [ext: isaacsim.core.experimental.prims-1.12.1] startup
+[2.485s] [ext: isaacsim.core.experimental.primdata-0.3.6] startup
+[2.493s] [ext: omni.kit.clipboard-1.1.1] startup
+[2.498s] [ext: omni.kit.widget.context_menu-1.5.0] startup
+[2.507s] [ext: omni.kit.context_menu-1.10.0] startup
+[2.514s] [ext: omni.kit.helper.file_utils-0.1.10] startup
+[2.520s] [ext: omni.kit.widget.nucleus_info-2.0.2] startup
+[2.526s] [ext: omni.kit.search_core-1.0.8] startup
+[2.532s] [ext: omni.kit.widget.path_field-2.0.14] startup
+[2.538s] [ext: omni.kit.widget.browser_bar-2.0.11] startup
+[2.545s] [ext: omni.kit.widget.filebrowser-2.14.5] startup
+[2.559s] [ext: omni.kit.widget.nucleus_connector-2.4.0] startup
+[2.564s] [ext: omni.kit.widget.options_menu-1.1.7] startup
+[2.576s] [ext: omni.kit.widget.options_button-1.0.3] startup
+[2.583s] [ext: omni.kit.widget.search_delegate-1.0.10] startup
+[2.589s] [ext: omni.ui.scene-2.1.1] startup
+[2.599s] [ext: omni.kit.window.filepicker-3.0.18] startup
+[2.641s] [ext: omni.kit.window.file_importer-1.1.22] startup
+[2.649s] [ext: omni.kit.material.library-3.1.8] startup
+[2.665s] [ext: isaacsim.core.experimental.materials-0.11.1] startup
+[2.677s] [ext: isaacsim.core.experimental.objects-0.9.1] startup
+[2.785s] [ext: isaacsim.robot_motion.experimental.motion_generation-7.2.0] startup
+[2.820s] [ext: isaacsim.robot_motion.controllers-0.4.0] startup
+[2.838s] [ext: isaacsim.robot_motion.cumotion-1.5.0] startup
+[2.861s] [ext: isaacsim.core.version-2.2.1] startup
+[2.871s] [ext: isaacsim.app.about-2.3.2] startup
+[2.881s] [ext: isaacsim.asset.transformer-6.2.1] startup
+[2.893s] [ext: omni.scene.optimizer.core-110.3.1] startup
+[2.946s] [ext: isaacsim.asset.importer.utils-1.9.1] startup
+[2.960s] [ext: isaacsim.asset.exporter.urdf-2.2.10] startup
+[2.979s] [ext: isaacsim.asset.transformer.rules-1.7.25] startup
+[3.006s] [ext: isaacsim.asset.importer.mjcf-3.13.0] startup
+[3.015s] [ext: isaacsim.asset.importer.urdf-3.11.12] startup
+[3.028s] [ext: isaacsim.storage.native-1.12.2] startup
+[3.036s] [ext: omni.usd.metrics.assembler.physics-110.4.4] startup
+[3.044s] [ext: isaacsim.core.utils-4.1.9] startup
+[3.053s] [ext: isaacsim.core.prims-0.11.7] startup
+[3.083s] [ext: isaacsim.core.api-5.3.2] startup
+[3.112s] [ext: isaacsim.core.cloner-1.7.6] startup
+[3.121s] [ext: omni.graph.tools-1.81.0] startup
+[3.182s] [ext: omni.graph-1.142.6] startup
+[3.246s] [ext: isaacsim.core.experimental.actuators-0.2.1] startup
+[3.283s] [ext: omni.hydra.engine.stats-1.0.5] startup
+[3.290s] [ext: omni.hydra.rtx.shadercache.vulkan-1.0.0] startup
+[3.297s] [ext: omni.index.libs-392300.2120.0] startup
+[3.301s] [ext: omni.index-1.0.1] startup
+[3.305s] [ext: omni.ujitso.client-0.0.0] startup
+[3.309s] [ext: omni.usd.schema.playback-1.1.0] startup
+[3.314s] [ext: omni.volume-0.5.2] startup
+[3.322s] [ext: omni.hydra.rtx-1.0.5] startup
+[3.363s] [ext: omni.kit.hydra_texture-1.6.2] startup
+[3.371s] [ext: omni.kit.raycast.query-1.2.0] startup
+[3.380s] [ext: omni.kit.viewport.legacy_gizmos-1.0.24] startup
+[3.386s] [ext: omni.kit.viewport.registry-104.0.6] startup
+[3.392s] [ext: omni.kit.viewport.scene_camera_model-1.0.7] startup
+[3.399s] [ext: omni.kit.widget.viewport-110.0.1] startup
+[3.415s] [ext: omni.kit.window.drop_support-1.0.8] startup
+[3.421s] [ext: omni.kit.viewport.window-110.0.5] startup
+[3.664s] [ext: omni.kit.viewport.utility-2.1.2] startup
+[3.678s] [ext: isaacsim.core.rendering_manager-0.5.3] startup
+[3.688s] [ext: omni.graph.action_core-1.1.9] startup
+[3.696s] [ext: omni.graph.action_nodes_core-2.11.0] startup
+[3.704s] [ext: omni.graph.action_nodes-2.11.0] startup
+[3.752s] [ext: omni.graph.action-2.10.2] startup
+[3.758s] [ext: omni.graph.image.core-0.6.1] startup
+[3.763s] [ext: omni.graph.image.nodes-1.3.2] startup
+[3.769s] [ext: omni.graph.nodes_core-2.11.0] startup
+[3.781s] [ext: omni.graph.nodes-2.12.1] startup
+[3.792s] [ext: omni.kit.hotkeys.core-1.6.1] startup
+[3.796s] [ext: omni.kit.property.adapter.core-1.1.1] startup
+[3.806s] [ext: omni.kit.property.adapter.usd-1.0.6] startup
+[3.813s] [ext: omni.kit.widget.filter-1.1.9] startup
+[3.819s] [ext: omni.kit.widget.highlight_label-1.0.3] startup
+[3.826s] [ext: omni.kit.widget.searchfield-1.1.8] startup
+[3.833s] [ext: omni.kit.window.file_exporter-1.0.38] startup
+[3.840s] [ext: omni.kit.widget.stage-4.7.2] startup
+[3.866s] [ext: omni.kit.window.content_browser_registry-0.0.6] startup
+[3.873s] [ext: omni.kit.window.file-2.0.17] startup
+[3.883s] [ext: omni.kit.window.content_browser-3.1.14] startup
+[3.902s] [ext: omni.kit.window.property-1.15.2] startup
+[3.945s] [ext: omni.kit.property.usd-4.9.18] startup
+[3.973s] [ext: omni.graph.scriptnode-2.10.2] startup
+[3.998s] [ext: omni.kit.widget.searchable_combobox-1.0.7] startup
+[4.005s] [ext: omni.kit.widget.settings-2.0.1] startup
+[4.013s] [ext: omni.kit.window.preferences-1.8.5] startup
+[4.033s] [ext: omni.kit.viewport.menubar.core-110.0.4] startup
+[4.071s] [ext: omni.syntheticdata-0.6.17] startup
+[4.122s] [ext: omni.replicator.nv-1.1.7] startup
+[4.134s] [ext: omni.videoencoding-0.2.1] startup
+[4.142s] [ext: omni.replicator.core-1.13.38] startup
+2026-11-16T01:02:15Z [4,069ms] [Warning] [pxr.Semantics] pxr.Semantics is deprecated - please use Semantics instead
+Warp 1.17.0 initialized:
+   CUDA Toolkit 12.9, Driver 13.3
+   Devices:
+     "cpu"      : "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel"
+     "cuda:0"   : "NVIDIA GeForce RTX 4070 Ti SUPER" (16 GiB, sm_89, mempool enabled)
+   Kernel cache:
+     \\?\C:\Users\Jonat\Documents\Codex\2026-11-15\t\work\isaac_runtime\warp\1.17.0
+2026-11-16T01:02:15Z [4,176ms] [Warning] [omni.replicator.core.scripts.extension] No material configuration file, adding configuration to material settings directly.
+[4.554s] [ext: isaacsim.core.nodes-5.10.15] startup
+[4.651s] [ext: isaacsim.core.throttling-2.3.7] startup
+[4.658s] [ext: omni.kit.manipulator.viewport-107.0.1] startup
+[4.666s] [ext: omni.graph.visualization.nodes-2.1.4] startup
+[4.705s] [ext: omni.kit.window.extensions-1.7.0] startup
+[4.724s] [ext: isaacsim.gui.components-1.8.9] startup
+[4.738s] [ext: isaacsim.examples.base-1.3.4] startup
+[4.747s] [ext: omni.kit.widget.zoombar-1.0.7] startup
+[4.754s] [ext: omni.kit.browser.core-2.3.18] startup
+[4.773s] [ext: omni.kit.browser.folder.core-2.0.3] startup
+[4.792s] [ext: omni.kit.widget.stage_icons-1.0.8] startup
+[4.798s] [ext: omni.kit.window.stage-2.6.4] startup
+[4.808s] [ext: omni.kit.menu.stage-1.2.7] startup
+[4.814s] [ext: omni.kit.usd.collect-3.0.7] startup
+[4.824s] [ext: omni.kit.widget.prompt-1.0.7] startup
+[4.830s] [ext: omni.kit.tool.collect-2.3.0] startup
+[4.841s] [ext: isaacsim.examples.browser-0.3.4] startup
+[4.851s] [ext: omni.kit.search.files-1.0.4] startup
+[4.857s] [ext: omni.kit.widget.calendar-1.0.9] startup
+[4.864s] [ext: omni.kit.widget.extended_searchfield-1.0.31] startup
+[4.886s] [ext: omni.simready.content.browser-0.3.10] startup
+[5.098s] [ext: isaacsim.gui.content_browser-0.5.1] startup
+[5.107s] [ext: omni.kit.selection-0.1.6] startup
+[5.114s] [ext: isaacsim.gui.menu-2.10.12] startup
+[5.136s] [ext: isaacsim.gui.property-1.6.4] startup
+[5.152s] [ext: omni.kit.viewport.actions-110.1.1] startup
+[5.161s] [ext: omni.kit.viewport.menubar.display-110.0.0] startup
+[5.169s] [ext: isaacsim.gui.sensors.icon-2.2.4] startup
+[5.180s] [ext: omni.behavior.scripting.core-110.4.0] startup
+[5.192s] [ext: isaacsim.replicator.behavior-1.6.2] startup
+[5.212s] [ext: isaacsim.replicator.experimental.domain_randomization-1.2.12] startup
+[5.268s] [ext: isaacsim.replicator.domain_randomization-1.2.4] startup
+[5.353s] [ext: isaacsim.replicator.writers-1.5.7] startup
+[5.422s] [ext: isaacsim.robot.experimental.wheeled_robots-0.2.17] startup
+[5.464s] [ext: isaacsim.robot.surface_gripper-3.7.1] startup
+[5.500s] [ext: isaacsim.robot.manipulators-3.4.5] startup
+[5.535s] [ext: isaacsim.robot.policy.examples-7.2.3] startup
+[5.603s] [ext: isaacsim.robot.wheeled_robots-5.2.5] startup
+[5.617s] [ext: isaacsim.robot.wheeled_robots.nodes-0.1.14] startup
+[5.675s] [ext: isaacsim.robot_motion.lula-4.1.4] startup
+[5.687s] [ext: isaacsim.robot_motion.motion_generation-9.0.0] startup
+[5.710s] [ext: omni.kit.numpy.common-0.1.3] startup
+[5.716s] [ext: omni.rtx.spg-0.4.0] startup
+[5.728s] [ext: omni.sensors.nv.camera-1.4.0] startup
+[5.749s] [ext: isaacsim.sensors.camera-1.7.13] startup
+[5.787s] [ext: isaacsim.sensors.experimental.physics-4.0.0] startup
+[5.809s] [ext: omni.sensors.net-1.4.0] startup
+[5.826s] [ext: omni.sensors.nv.common-3.4.0] startup
+[5.852s] [ext: omni.sensors.nv.materials-2.4.0] startup
+[5.867s] [ext: omni.sensors.nv.acoustic-3.4.0] startup
+[5.879s] [ext: omni.sensors.nv.ids-2.4.0] startup
+[5.887s] [ext: omni.sensors.nv.lidar-3.4.0] startup
+[5.898s] [ext: omni.sensors.nv.radar-3.4.0] startup
+[5.910s] [ext: isaacsim.sensors.experimental.rtx-2.0.1] startup
+[6.179s] [ext: isaacsim.sensors.physics.nodes-1.6.2] startup
+[6.198s] [ext: isaacsim.util.debug_draw-3.2.8] startup
+[6.213s] [ext: isaacsim.sensors.physx-2.5.7] startup
+[6.233s] [ext: isaacsim.sensors.rtx-15.17.5] startup
+[6.258s] [ext: isaacsim.simulation_app-2.19.0] startup
+[6.263s] [ext: omni.anim.curve.core-1.6.1] startup
+[6.285s] [ext: omni.graph.ui_nodes-2.11.2] startup
+[6.362s] [ext: omni.kit.manipulator.camera-110.1.1] startup
+[6.375s] [ext: omni.kit.manipulator.selector-1.1.4] startup
+[6.382s] [ext: omni.kit.manipulator.transform-107.0.1] startup
+[6.396s] [ext: omni.kit.widget.toolbar-2.1.0] startup
+[6.415s] [ext: omni.kit.manipulator.tool.snap-1.5.15] startup
+[6.429s] [ext: omni.kit.viewport.manipulator.transform-107.0.4] startup
+[6.438s] [ext: omni.kit.manipulator.prim.core-108.0.2] startup
+[6.454s] [ext: omni.kit.manipulator.prim.usd-107.0.3] startup
+[6.462s] [ext: omni.kit.manipulator.prim-108.0.0] startup
+[6.465s] [ext: omni.kit.manipulator.selection-110.1.0] startup
+[6.473s] [ext: omni.kit.menu.create-2.0.2] startup
+[6.479s] [ext: omni.kit.property.audio-1.0.18] startup
+[6.489s] [ext: omni.kit.property.camera-1.0.14] startup
+[6.496s] [ext: omni.kit.property.geometry-2.1.2] startup
+[6.506s] [ext: omni.kit.property.light-1.0.16] startup
+[6.572s] [ext: omni.kit.property.material-1.15.1] startup
+[6.597s] [ext: omni.kit.property.render-1.2.2] startup
+[6.604s] [ext: omni.kit.property.transform-1.6.13] startup
+[6.616s] [ext: omni.kit.property.bundle-1.5.3] startup
+[6.624s] [ext: omni.kit.usdz_export-1.1.1] startup
+[6.633s] [ext: omni.kit.tool.asset_importer-6.0.4] startup
+[6.655s] [ext: omni.kit.ui.actions-1.0.5] startup
+[6.663s] [ext: omni.kit.viewport.menubar.camera-107.0.16] startup
+[6.682s] [ext: omni.kit.viewport.menubar.lighting-107.3.4] startup
+[6.694s] [ext: omni.kit.viewport.menubar.render-110.1.1] startup
+[6.706s] [ext: omni.kit.viewport.menubar.settings-110.0.2] startup
+[6.723s] [ext: omni.kit.window.console-1.1.12] startup
+[6.736s] [ext: omni.kit.window.status_bar-0.1.11] startup
+[6.742s] [ext: omni.kit.window.toolbar-3.0.3] startup
+[6.749s] [ext: omni.ocio-0.1.1] startup
+[6.754s] [ext: omni.physx.commands-110.4.4] startup
+[6.762s] [ext: omni.replicator.replicator_yaml-2.0.12] startup
+[6.799s] [ext: omni.rtx.window.settings-0.8.5] startup
+[6.812s] [ext: omni.rtx.settings.core-0.7.2] startup
+[6.823s] [ext: omni.usd.metrics.assembler.ui-110.1.3] startup
+[6.838s] [ext: semantics.schema.editor-2.0.2] startup
+[6.847s] [ext: semantics.schema.property-2.0.2] startup
+[6.854s] [ext: omni.kit.menu.common-2.0.2] startup
+[6.860s] [ext: isaacsim.exp.base-6.2.0] startup
+[6.864s] [ext: isaacsim.exp.base.python-6.2.0] startup
+[6.871s] Simulation App Starting
+2026-11-16T01:02:17Z [6,786ms] [Warning] [carb.omniclient.plugin]  Main: core: Core::getServerInfo: rejecting empty URL as invalid
+2026-11-16T01:02:19Z [8,819ms] [Warning] [omni.rtx] DLSS increasing input dimensions: Render resolution of (320, 240) is below minimal input resolution of 300.
+[9.029s] Simulation App Startup Complete
+[9.038s] app ready
+[9.326s] [ext: isaacsim.asset.gen.conveyor-1.2.4] startup
+[9.349s] [ext: omni.behavior.tree.core-110.4.0] startup
+[9.370s] [ext: isaacsim.robot_motion.examples-0.2.6] startup
+2026-11-16T01:02:21Z [10,148ms] [Warning] [omni.usd] Encountered USD Warnings but USD Diagnostics are currently muted. To view USD Warnings, please set the '/persistent/app/usd/muteUsdDiagnostics' setting to false in Preferences page.
+2026-11-16T01:02:21Z [10,246ms] [Warning] [isaacsim.core.experimental.prims.impl.articulation] DOF types mismatch: USD ([<DofType.Rotation: 0>, <DofType.Rotation: 0>, <DofType.Rotation: 0>, <DofType.Rotation: 0>, <DofType.Rotation: 0>, <DofType.Rotation: 0>, <DofType.Rotation: 0>, <DofType.Translation: 1>, <DofType.Invalid: 255>]) != Physics tensor ([<DofType.Rotation: 0>, <DofType.Rotation: 0>, <DofType.Rotation: 0>, <DofType.Rotation: 0>, <DofType.Rotation: 0>, <DofType.Rotation: 0>, <DofType.Rotation: 0>, <DofType.Translation: 1>, <DofType.Translation: 1>])
+Module isaacsim.core.experimental.utils.impl.transform 8f562e8 load on device 'cpu' took 1.48 ms  (cached)
+Module isaacsim.core.experimental.utils.impl.transform 304225a load on device 'cpu' took 0.58 ms  (cached)
+Module isaacsim.core.experimental.utils.impl.transform e518880 load on device 'cpu' took 0.46 ms  (cached)
+Module isaacsim.core.experimental.utils.impl.transform b5baf88 load on device 'cpu' took 0.43 ms  (cached)
+Module isaacsim.core.experimental.utils.impl.transform 43d3bbe load on device 'cpu' took 0.42 ms  (cached)
+Module isaacsim.core.experimental.utils.impl.ops 721da51 load on device 'cpu' took 0.57 ms  (cached)
+PILOT_RESULT {"repetition": 0, "steps": 470, "scene_id": "vo02", "repeat_within_scene": 0, "control_mode": "normal", "controller_overrides": {"position_tolerance": 0.033}, "wall_seconds": 5.703000000001339, "startup_seconds": 9.312000000001717, "setup_seconds": 1.625, "reset_seconds": 0.15599999999903957, "execution_seconds": 5.421999999998661, "evaluation_seconds": 0.28100000000267755, "process_peak_working_set_bytes": 5409673216, "controller_status": {"phase": "DONE", "active_cube": 0, "done": true, "failed": false, "failure_reason": null}, "cube_goal": [0.0, 0.5, 0.025800000876188278], "cube_final": [-0.008792204782366753, 0.4870123565196991, 0.025750018656253815], "final_error_m": 0.01568388492462199, "lift_observed": true, "object_state_success": true, "released_and_retreated": true, "stable": true, "max_settle_linear_speed_m_s": 0.0, "max_settle_angular_speed_rad_s": 0.0, "max_settle_orientation_drift_rad": 0.0, "final_grasp_cube_separation_m": 0.30014756321907043, "success_definition": "v2: lift above 0.0758m; final 30 frames within 0.03m of goal, grasp separation above 0.08m, linear speed below 0.02m/s, angular speed below 0.1rad/s, orientation drift below 0.05rad; finish before horizon"}
+PILOT_RESULT {"repetition": 1, "steps": 470, "scene_id": "vo05", "repeat_within_scene": 0, "control_mode": "normal", "controller_overrides": {"position_tolerance": 0.033}, "wall_seconds": 5.546999999998661, "startup_seconds": 9.312000000001717, "setup_seconds": 1.625, "reset_seconds": 0.14099999999962165, "execution_seconds": 5.296999999998661, "evaluation_seconds": 0.25, "process_peak_working_set_bytes": 5409673216, "controller_status": {"phase": "DONE", "active_cube": 0, "done": true, "failed": false, "failure_reason": null}, "cube_goal": [0.0, 0.5, 0.025800000876188278], "cube_final": [-0.004005391150712967, 0.4861571192741394, 0.025750011205673218], "final_error_m": 0.014410794704934587, "lift_observed": true, "object_state_success": true, "released_and_retreated": true, "stable": true, "max_settle_linear_speed_m_s": 0.0, "max_settle_angular_speed_rad_s": 0.0, "max_settle_orientation_drift_rad": 2.9802322387695312e-08, "final_grasp_cube_separation_m": 0.3002404570579529, "success_definition": "v2: lift above 0.0758m; final 30 frames within 0.03m of goal, grasp separation above 0.08m, linear speed below 0.02m/s, angular speed below 0.1rad/s, orientation drift below 0.05rad; finish before horizon"}
+PILOT_RESULT {"repetition": 2, "steps": 498, "scene_id": "vo08", "repeat_within_scene": 0, "control_mode": "normal", "controller_overrides": {"position_tolerance": 0.033}, "wall_seconds": 5.859000000000378, "startup_seconds": 9.312000000001717, "setup_seconds": 1.625, "reset_seconds": 0.18800000000192085, "execution_seconds": 5.609000000000378, "evaluation_seconds": 0.25, "process_peak_working_set_bytes": 5409673216, "controller_status": {"phase": "DONE", "active_cube": 0, "done": true, "failed": false, "failure_reason": null}, "cube_goal": [0.0, 0.5, 0.025800000876188278], "cube_final": [-0.0030578430742025375, 0.4876922070980072, 0.025749852880835533], "final_error_m": 0.012682061551901986, "lift_observed": true, "object_state_success": true, "released_and_retreated": true, "stable": true, "max_settle_linear_speed_m_s": 0.0, "max_settle_angular_speed_rad_s": 0.0, "max_settle_orientation_drift_rad": 0.0, "final_grasp_cube_separation_m": 0.3001902401447296, "success_definition": "v2: lift above 0.0758m; final 30 frames within 0.03m of goal, grasp separation above 0.08m, linear speed below 0.02m/s, angular speed below 0.1rad/s, orientation drift below 0.05rad; finish before horizon"}
+PILOT_RESULT {"repetition": 3, "steps": 619, "scene_id": "vt09", "repeat_within_scene": 0, "control_mode": "normal", "controller_overrides": {"position_tolerance": 0.033}, "wall_seconds": 7.296999999998661, "startup_seconds": 9.312000000001717, "setup_seconds": 1.625, "reset_seconds": 0.14099999999962165, "execution_seconds": 7.03099999999904, "evaluation_seconds": 0.26599999999962165, "process_peak_working_set_bytes": 5409673216, "controller_status": {"phase": "DONE", "active_cube": 0, "done": true, "failed": false, "failure_reason": null}, "cube_goal": [0.0, 0.5, 0.025800000876188278], "cube_final": [0.00789323914796114, 0.5090100765228271, 0.025749918073415756], "final_error_m": 0.011978614756358133, "lift_observed": true, "object_state_success": true, "released_and_retreated": true, "stable": true, "max_settle_linear_speed_m_s": 0.0, "max_settle_angular_speed_rad_s": 0.0, "max_settle_orientation_drift_rad": 4.2146848510894035e-08, "final_grasp_cube_separation_m": 0.30040431022644043, "success_definition": "v2: lift above 0.0758m; final 30 frames within 0.03m of goal, grasp separation above 0.08m, linear speed below 0.02m/s, angular speed below 0.1rad/s, orientation drift below 0.05rad; finish before horizon"}
+PILOT_RESULT {"repetition": 4, "steps": 611, "scene_id": "vt07", "repeat_within_scene": 0, "control_mode": "normal", "controller_overrides": {"position_tolerance": 0.033}, "wall_seconds": 7.203000000001339, "startup_seconds": 9.312000000001717, "setup_seconds": 1.625, "reset_seconds": 0.13999999999941792, "execution_seconds": 6.953000000001339, "evaluation_seconds": 0.25, "process_peak_working_set_bytes": 5409673216, "controller_status": {"phase": "DONE", "active_cube": 0, "done": true, "failed": false, "failure_reason": null}, "cube_goal": [0.0, 0.5, 0.025800000876188278], "cube_final": [0.010107659734785557, 0.5037291049957275, 0.02575000561773777], "final_error_m": 0.010773741639246453, "lift_observed": true, "object_state_success": true, "released_and_retreated": true, "stable": true, "max_settle_linear_speed_m_s": 0.0, "max_settle_angular_speed_rad_s": 0.0, "max_settle_orientation_drift_rad": 0.0, "final_grasp_cube_separation_m": 0.3005097210407257, "success_definition": "v2: lift above 0.0758m; final 30 frames within 0.03m of goal, grasp separation above 0.08m, linear speed below 0.02m/s, angular speed below 0.1rad/s, orientation drift below 0.05rad; finish before horizon"}
+PILOT_RESULT {"repetition": 5, "steps": 501, "scene_id": "vo04", "repeat_within_scene": 0, "control_mode": "normal", "controller_overrides": {"position_tolerance": 0.033}, "wall_seconds": 5.968000000000757, "startup_seconds": 9.312000000001717, "setup_seconds": 1.625, "reset_seconds": 0.1569999999992433, "execution_seconds": 5.718000000000757, "evaluation_seconds": 0.25, "process_peak_working_set_bytes": 5409673216, "controller_status": {"phase": "DONE", "active_cube": 0, "done": true, "failed": false, "failure_reason": null}, "cube_goal": [0.0, 0.5, 0.025800000876188278], "cube_final": [-0.016775185242295265, 0.4809402525424957, 0.02574990503489971], "final_error_m": 0.02539061485373042, "lift_observed": true, "object_state_success": true, "released_and_retreated": true, "stable": true, "max_settle_linear_speed_m_s": 0.0, "max_settle_angular_speed_rad_s": 0.0, "max_settle_orientation_drift_rad": 2.9802322387695312e-08, "final_grasp_cube_separation_m": 0.30120599269866943, "success_definition": "v2: lift above 0.0758m; final 30 frames within 0.03m of goal, grasp separation above 0.08m, linear speed below 0.02m/s, angular speed below 0.1rad/s, orientation drift below 0.05rad; finish before horizon"}
+PILOT_RESULT {"repetition": 6, "steps": 631, "scene_id": "vt08", "repeat_within_scene": 0, "control_mode": "normal", "controller_overrides": {"position_tolerance": 0.033}, "wall_seconds": 7.4209999999984575, "startup_seconds": 9.312000000001717, "setup_seconds": 1.625, "reset_seconds": 0.14099999999962165, "execution_seconds": 7.1709999999984575, "evaluation_seconds": 0.25, "process_peak_working_set_bytes": 5409673216, "controller_status": {"phase": "DONE", "active_cube": 0, "done": true, "failed": false, "failure_reason": null}, "cube_goal": [0.0, 0.5, 0.025800000876188278], "cube_final": [0.005277759395539761, 0.5093305706977844, 0.025749921798706055], "final_error_m": 0.0107199254520525, "lift_observed": true, "object_state_success": true, "released_and_retreated": true, "stable": true, "max_settle_linear_speed_m_s": 0.0, "max_settle_angular_speed_rad_s": 0.0, "max_settle_orientation_drift_rad": 0.0, "final_grasp_cube_separation_m": 0.30029529333114624, "success_definition": "v2: lift above 0.0758m; final 30 frames within 0.03m of goal, grasp separation above 0.08m, linear speed below 0.02m/s, angular speed below 0.1rad/s, orientation drift below 0.05rad; finish before horizon"}
+PILOT_RESULT {"repetition": 7, "steps": 476, "scene_id": "vo03", "repeat_within_scene": 0, "control_mode": "normal", "controller_overrides": {"position_tolerance": 0.033}, "wall_seconds": 5.73399999999674, "startup_seconds": 9.312000000001717, "setup_seconds": 1.625, "reset_seconds": 0.14100000000325963, "execution_seconds": 5.4689999999973224, "evaluation_seconds": 0.2649999999994179, "process_peak_working_set_bytes": 5409673216, "controller_status": {"phase": "DONE", "active_cube": 0, "done": true, "failed": false, "failure_reason": null}, "cube_goal": [0.0, 0.5, 0.025800000876188278], "cube_final": [-0.004798378795385361, 0.4859832525253296, 0.025749899446964264], "final_error_m": 0.014815402761514567, "lift_observed": true, "object_state_success": true, "released_and_retreated": true, "stable": true, "max_settle_linear_speed_m_s": 0.0, "max_settle_angular_speed_rad_s": 0.0, "max_settle_orientation_drift_rad": 0.0, "final_grasp_cube_separation_m": 0.30026865005493164, "success_definition": "v2: lift above 0.0758m; final 30 frames within 0.03m of goal, grasp separation above 0.08m, linear speed below 0.02m/s, angular speed below 0.1rad/s, orientation drift below 0.05rad; finish before horizon"}
+PILOT_RESULT {"repetition": 8, "steps": 607, "scene_id": "vt12", "repeat_within_scene": 0, "control_mode": "normal", "controller_overrides": {"position_tolerance": 0.033}, "wall_seconds": 7.15599999999904, "startup_seconds": 9.312000000001717, "setup_seconds": 1.625, "reset_seconds": 0.15700000000288128, "execution_seconds": 6.875, "evaluation_seconds": 0.2809999999990396, "process_peak_working_set_bytes": 5409673216, "controller_status": {"phase": "DONE", "active_cube": 0, "done": true, "failed": false, "failure_reason": null}, "cube_goal": [0.0, 0.5, 0.025800000876188278], "cube_final": [0.005426256917417049, 0.5102593898773193, 0.025749914348125458], "final_error_m": 0.011606112762202176, "lift_observed": true, "object_state_success": true, "released_and_retreated": true, "stable": true, "max_settle_linear_speed_m_s": 0.0, "max_settle_angular_speed_rad_s": 0.0, "max_settle_orientation_drift_rad": 0.0, "final_grasp_cube_separation_m": 0.30081266164779663, "success_definition": "v2: lift above 0.0758m; final 30 frames within 0.03m of goal, grasp separation above 0.08m, linear speed below 0.02m/s, angular speed below 0.1rad/s, orientation drift below 0.05rad; finish before horizon"}
+PILOT_RESULT {"repetition": 9, "steps": 610, "scene_id": "vt10", "repeat_within_scene": 0, "control_mode": "normal", "controller_overrides": {"position_tolerance": 0.033}, "wall_seconds": 7.25, "startup_seconds": 9.312000000001717, "setup_seconds": 1.625, "reset_seconds": 0.14099999999962165, "execution_seconds": 6.968000000000757, "evaluation_seconds": 0.2819999999992433, "process_peak_working_set_bytes": 5409673216, "controller_status": {"phase": "DONE", "active_cube": 0, "done": true, "failed": false, "failure_reason": null}, "cube_goal": [0.0, 0.5, 0.025800000876188278], "cube_final": [0.006384584121406078, 0.49830615520477295, 0.025749897584319115], "final_error_m": 0.006605644172484961, "lift_observed": true, "object_state_success": true, "released_and_retreated": true, "stable": true, "max_settle_linear_speed_m_s": 0.0, "max_settle_angular_speed_rad_s": 0.0, "max_settle_orientation_drift_rad": 0.0, "final_grasp_cube_separation_m": 0.30086633563041687, "success_definition": "v2: lift above 0.0758m; final 30 frames within 0.03m of goal, grasp separation above 0.08m, linear speed below 0.02m/s, angular speed below 0.1rad/s, orientation drift below 0.05rad; finish before horizon"}
+PILOT_RESULT {"repetition": 10, "steps": 608, "scene_id": "vt04", "repeat_within_scene": 0, "control_mode": "normal", "controller_overrides": {"position_tolerance": 0.033}, "wall_seconds": 7.125, "startup_seconds": 9.312000000001717, "setup_seconds": 1.625, "reset_seconds": 0.13999999999941792, "execution_seconds": 6.875, "evaluation_seconds": 0.25, "process_peak_working_set_bytes": 5409673216, "controller_status": {"phase": "DONE", "active_cube": 0, "done": true, "failed": false, "failure_reason": null}, "cube_goal": [0.0, 0.5, 0.025800000876188278], "cube_final": [0.004889890551567078, 0.5097105503082275, 0.025749919936060905], "final_error_m": 0.010872365197853086, "lift_observed": true, "object_state_success": true, "released_and_retreated": true, "stable": true, "max_settle_linear_speed_m_s": 0.0, "max_settle_angular_speed_rad_s": 0.0, "max_settle_orientation_drift_rad": 2.9802322387695312e-08, "final_grasp_cube_separation_m": 0.30101266503334045, "success_definition": "v2: lift above 0.0758m; final 30 frames within 0.03m of goal, grasp separation above 0.08m, linear speed below 0.02m/s, angular speed below 0.1rad/s, orientation drift below 0.05rad; finish before horizon"}
+PILOT_RESULT {"repetition": 11, "steps": 617, "scene_id": "vt03", "repeat_within_scene": 0, "control_mode": "normal", "controller_overrides": {"position_tolerance": 0.033}, "wall_seconds": 7.21900000000096, "startup_seconds": 9.312000000001717, "setup_seconds": 1.625, "reset_seconds": 0.13999999999941792, "execution_seconds": 6.9540000000015425, "evaluation_seconds": 0.2649999999994179, "process_peak_working_set_bytes": 5409673216, "controller_status": {"phase": "DONE", "active_cube": 0, "done": true, "failed": false, "failure_reason": null}, "cube_goal": [0.0, 0.5, 0.025800000876188278], "cube_final": [0.006271518301218748, 0.4979458153247833, 0.025750024244189262], "final_error_m": 0.006599554086918502, "lift_observed": true, "object_state_success": true, "released_and_retreated": true, "stable": true, "max_settle_linear_speed_m_s": 0.0, "max_settle_angular_speed_rad_s": 0.0, "max_settle_orientation_drift_rad": 5.16191365590357e-08, "final_grasp_cube_separation_m": 0.3002937138080597, "success_definition": "v2: lift above 0.0758m; final 30 frames within 0.03m of goal, grasp separation above 0.08m, linear speed below 0.02m/s, angular speed below 0.1rad/s, orientation drift below 0.05rad; finish before horizon"}
+PILOT_RESULT {"repetition": 12, "steps": 619, "scene_id": "vt01", "repeat_within_scene": 0, "control_mode": "normal", "controller_overrides": {"position_tolerance": 0.033}, "wall_seconds": 7.264999999999418, "startup_seconds": 9.312000000001717, "setup_seconds": 1.625, "reset_seconds": 0.14099999999962165, "execution_seconds": 7.0, "evaluation_seconds": 0.2649999999994179, "process_peak_working_set_bytes": 5409673216, "controller_status": {"phase": "DONE", "active_cube": 0, "done": true, "failed": false, "failure_reason": null}, "cube_goal": [0.0, 0.5, 0.025800000876188278], "cube_final": [0.005147692281752825, 0.5095717310905457, 0.02574991062283516], "final_error_m": 0.010868269454279135, "lift_observed": true, "object_state_success": true, "released_and_retreated": true, "stable": true, "max_settle_linear_speed_m_s": 0.0, "max_settle_angular_speed_rad_s": 0.0, "max_settle_orientation_drift_rad": 0.0, "final_grasp_cube_separation_m": 0.3004010021686554, "success_definition": "v2: lift above 0.0758m; final 30 frames within 0.03m of goal, grasp separation above 0.08m, linear speed below 0.02m/s, angular speed below 0.1rad/s, orientation drift below 0.05rad; finish before horizon"}
+PILOT_RESULT {"repetition": 13, "steps": 648, "scene_id": "vt05", "repeat_within_scene": 0, "control_mode": "normal", "controller_overrides": {"position_tolerance": 0.033}, "wall_seconds": 7.577999999997701, "startup_seconds": 9.312000000001717, "setup_seconds": 1.625, "reset_seconds": 0.14100000000325963, "execution_seconds": 7.312999999998283, "evaluation_seconds": 0.2649999999994179, "process_peak_working_set_bytes": 5409673216, "controller_status": {"phase": "DONE", "active_cube": 0, "done": true, "failed": false, "failure_reason": null}, "cube_goal": [0.0, 0.5, 0.025800000876188278], "cube_final": [0.008364702574908733, 0.4976971447467804, 0.025749925523996353], "final_error_m": 0.00867605319398533, "lift_observed": true, "object_state_success": true, "released_and_retreated": true, "stable": true, "max_settle_linear_speed_m_s": 0.0, "max_settle_angular_speed_rad_s": 0.0, "max_settle_orientation_drift_rad": 0.0, "final_grasp_cube_separation_m": 0.30189234018325806, "success_definition": "v2: lift above 0.0758m; final 30 frames within 0.03m of goal, grasp separation above 0.08m, linear speed below 0.02m/s, angular speed below 0.1rad/s, orientation drift below 0.05rad; finish before horizon"}
+PILOT_RESULT {"repetition": 14, "steps": 628, "scene_id": "vt06", "repeat_within_scene": 0, "control_mode": "normal", "controller_overrides": {"position_tolerance": 0.033}, "wall_seconds": 7.34400000000096, "startup_seconds": 9.312000000001717, "setup_seconds": 1.625, "reset_seconds": 0.14099999999962165, "execution_seconds": 7.078000000001339, "evaluation_seconds": 0.26599999999962165, "process_peak_working_set_bytes": 5409673216, "controller_status": {"phase": "DONE", "active_cube": 0, "done": true, "failed": false, "failure_reason": null}, "cube_goal": [0.0, 0.5, 0.025800000876188278], "cube_final": [0.00809062272310257, 0.5091931223869324, 0.02574991248548031], "final_error_m": 0.012246394739497193, "lift_observed": true, "object_state_success": true, "released_and_retreated": true, "stable": true, "max_settle_linear_speed_m_s": 0.0, "max_settle_angular_speed_rad_s": 0.0, "max_settle_orientation_drift_rad": 0.0, "final_grasp_cube_separation_m": 0.30039408802986145, "success_definition": "v2: lift above 0.0758m; final 30 frames within 0.03m of goal, grasp separation above 0.08m, linear speed below 0.02m/s, angular speed below 0.1rad/s, orientation drift below 0.05rad; finish before horizon"}
+PILOT_RESULT {"repetition": 15, "steps": 519, "scene_id": "vo07", "repeat_within_scene": 0, "control_mode": "normal", "controller_overrides": {"position_tolerance": 0.033}, "wall_seconds": 6.139999999999418, "startup_seconds": 9.312000000001717, "setup_seconds": 1.625, "reset_seconds": 0.14099999999962165, "execution_seconds": 5.875, "evaluation_seconds": 0.2649999999994179, "process_peak_working_set_bytes": 5409673216, "controller_status": {"phase": "DONE", "active_cube": 0, "done": true, "failed": false, "failure_reason": null}, "cube_goal": [0.0, 0.5, 0.025800000876188278], "cube_final": [0.015490854158997536, 0.48450571298599243, 0.025749897584319115], "final_error_m": 0.021909860861895745, "lift_observed": true, "object_state_success": true, "released_and_retreated": true, "stable": true, "max_settle_linear_speed_m_s": 0.0, "max_settle_angular_speed_rad_s": 0.0, "max_settle_orientation_drift_rad": 5.16191365590357e-08, "final_grasp_cube_separation_m": 0.30215948820114136, "success_definition": "v2: lift above 0.0758m; final 30 frames within 0.03m of goal, grasp separation above 0.08m, linear speed below 0.02m/s, angular speed below 0.1rad/s, orientation drift below 0.05rad; finish before horizon"}
+PILOT_RESULT {"repetition": 16, "steps": 463, "scene_id": "vo01", "repeat_within_scene": 0, "control_mode": "normal", "controller_overrides": {"position_tolerance": 0.033}, "wall_seconds": 5.48399999999674, "startup_seconds": 9.312000000001717, "setup_seconds": 1.625, "reset_seconds": 0.125, "execution_seconds": 5.202999999997701, "evaluation_seconds": 0.2809999999990396, "process_peak_working_set_bytes": 5409673216, "controller_status": {"phase": "DONE", "active_cube": 0, "done": true, "failed": false, "failure_reason": null}, "cube_goal": [0.0, 0.5, 0.025800000876188278], "cube_final": [-0.003973676823079586, 0.4841747581958771, 0.025749897584319115], "final_error_m": 0.016316583465698198, "lift_observed": true, "object_state_success": true, "released_and_retreated": true, "stable": true, "max_settle_linear_speed_m_s": 0.0, "max_settle_angular_speed_rad_s": 0.0, "max_settle_orientation_drift_rad": 0.0, "final_grasp_cube_separation_m": 0.30034953355789185, "success_definition": "v2: lift above 0.0758m; final 30 frames within 0.03m of goal, grasp separation above 0.08m, linear speed below 0.02m/s, angular speed below 0.1rad/s, orientation drift below 0.05rad; finish before horizon"}
+PILOT_RESULT {"repetition": 17, "steps": 553, "scene_id": "vo06", "repeat_within_scene": 0, "control_mode": "normal", "controller_overrides": {"position_tolerance": 0.033}, "wall_seconds": 6.515999999999622, "startup_seconds": 9.312000000001717, "setup_seconds": 1.625, "reset_seconds": 0.14100000000325963, "execution_seconds": 6.25, "evaluation_seconds": 0.26599999999962165, "process_peak_working_set_bytes": 5409673216, "controller_status": {"phase": "DONE", "active_cube": 0, "done": true, "failed": false, "failure_reason": null}, "cube_goal": [0.0, 0.5, 0.025800000876188278], "cube_final": [0.006258891895413399, 0.5009781718254089, 0.02574988082051277], "final_error_m": 0.006335065895353914, "lift_observed": true, "object_state_success": true, "released_and_retreated": true, "stable": true, "max_settle_linear_speed_m_s": 0.0, "max_settle_angular_speed_rad_s": 0.0, "max_settle_orientation_drift_rad": 0.0, "final_grasp_cube_separation_m": 0.3013618588447571, "success_definition": "v2: lift above 0.0758m; final 30 frames within 0.03m of goal, grasp separation above 0.08m, linear speed below 0.02m/s, angular speed below 0.1rad/s, orientation drift below 0.05rad; finish before horizon"}
+PILOT_RESULT {"repetition": 18, "steps": 625, "scene_id": "vt02", "repeat_within_scene": 0, "control_mode": "normal", "controller_overrides": {"position_tolerance": 0.033}, "wall_seconds": 7.406999999999243, "startup_seconds": 9.312000000001717, "setup_seconds": 1.625, "reset_seconds": 0.13999999999941792, "execution_seconds": 7.156999999999243, "evaluation_seconds": 0.25, "process_peak_working_set_bytes": 5409673216, "controller_status": {"phase": "DONE", "active_cube": 0, "done": true, "failed": false, "failure_reason": null}, "cube_goal": [0.0, 0.5, 0.025800000876188278], "cube_final": [0.007592092268168926, 0.4869964122772217, 0.025749895721673965], "final_error_m": 0.015057744492416198, "lift_observed": true, "object_state_success": true, "released_and_retreated": true, "stable": true, "max_settle_linear_speed_m_s": 0.0, "max_settle_angular_speed_rad_s": 0.0, "max_settle_orientation_drift_rad": 0.0, "final_grasp_cube_separation_m": 0.30120834708213806, "success_definition": "v2: lift above 0.0758m; final 30 frames within 0.03m of goal, grasp separation above 0.08m, linear speed below 0.02m/s, angular speed below 0.1rad/s, orientation drift below 0.05rad; finish before horizon"}
+PILOT_RESULT {"repetition": 19, "steps": 649, "scene_id": "vt11", "repeat_within_scene": 0, "control_mode": "normal", "controller_overrides": {"position_tolerance": 0.033}, "wall_seconds": 7.639999999999418, "startup_seconds": 9.312000000001717, "setup_seconds": 1.625, "reset_seconds": 0.14099999999962165, "execution_seconds": 7.375, "evaluation_seconds": 0.2649999999994179, "process_peak_working_set_bytes": 5409673216, "controller_status": {"phase": "DONE", "active_cube": 0, "done": true, "failed": false, "failure_reason": null}, "cube_goal": [0.0, 0.5, 0.025800000876188278], "cube_final": [0.006888641510158777, 0.4976462423801422, 0.025749899446964264], "final_error_m": 0.007279839760718053, "lift_observed": true, "object_state_success": true, "released_and_retreated": true, "stable": true, "max_settle_linear_speed_m_s": 0.0, "max_settle_angular_speed_rad_s": 0.0, "max_settle_orientation_drift_rad": 2.9802322387695312e-08, "final_grasp_cube_separation_m": 0.30169743299484253, "success_definition": "v2: lift above 0.0758m; final 30 frames within 0.03m of goal, grasp separation above 0.08m, linear speed below 0.02m/s, angular speed below 0.1rad/s, orientation drift below 0.05rad; finish before horizon"}
+[149.259s] Simulation App Shutting Down

@@ -1,6 +1,18 @@
 # Robot repair study — artifact
 
-This folder accompanies `../initial_paper.md` (historical pre-experiment draft) and `../research_plan.md`. The current manuscript is `paper/main.tex`. Results write-ups are `../repair_pilot_report.md` (development pilot) and `../audit_report.md` (frozen audit).
+This folder accompanies `../initial_paper.md` (historical pre-experiment draft) and `../research_plan.md`. The current manuscript is `paper/main.tex`. Results write-ups are `../repair_pilot_report.md` (development pilot), `../audit_report.md` (frozen audit) and `../extension1_report.md` (post-hoc candidate-population extension).
+
+## Extension 1 (post-hoc candidate population, Nov 15–16)
+
+Protocol `extension1_protocol.md`, hashes `extension1_frozen_hashes.json`, results in `results/ext1/`. Queue: `scripts/run_extension1.ps1` with `scripts/launch_isaac_ps51_timeout.ps1`. Commands are run from this directory; `R=results/ext1`.
+
+| Output | Command |
+|---|---|
+| Committed gate decisions | written once by the queue: `$R/audit_gate_decisions.json` |
+| Per-candidate analysis | `analyze_audit.py --manifest ext1_audit_scenes.json --parent $R/audit_parent --candidates $R/audit_candidate_a $R/audit_candidate_b $R/audit_r01 … $R/audit_r24 --gates $R/audit_gate_decisions.json --validation-manifest ext1_validation_scenes.json --validation-parent $R/audit_validation_parent --validation-parent-repeat $R/audit_validation_parent_repeat --output $R/audit_analysis.json` |
+| Population analysis (Q1–Q4) | `analyze_population.py --analysis $R/audit_analysis.json --gates $R/audit_gate_decisions.json --index proposals/ext1/index.json --first-audit results/audit_analysis.json --output $R/population_analysis.json` |
+| Figure 2 | `plot_population.py --population $R/population_analysis.json --output fig_population.pdf` |
+| Table 4 | `make_population_table.py $R/population_analysis.json $R/audit_analysis.json OUT_DIR` (`paper/` locally; `scripts/` in the review artifact) |
 
 ## Reproducing the reported numbers (Nov 15 update)
 

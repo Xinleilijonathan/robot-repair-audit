@@ -26,7 +26,7 @@
 \maketitle
 
 \begin{abstract}
-When a coding agent edits a persistent robot controller to fix a failure, aggregate success can hide losses on scenes the controller used to solve. We test this in a small, fully controlled case. We use the scripted Franka pick-and-place controller in Isaac Sim, a measured-state evaluator that rejects four negative controls, and a workspace-boundary failure found by documented search. The unchanged controller replays exactly, so every paired transition is caused by an edit. On the development panel, two frozen single-parameter repairs each fixed the target. They lost 4 and 1 of 44 earlier successes but gained more elsewhere, so aggregate and zero-loss admission disagreed. On a frozen audit of 160 fresh scenes this compensation did not replicate. Both repairs improved the target neighborhood (from 15/40 to 26/40 and 38/40), but they lost 8 and 5 of 106 old successes against 4 gains each. Budget-matched aggregate and zero-loss gates, committed before the audit, both rejected both repairs. Across 5{,}000 resampled validation draws they disagreed in about 6\% of draws, while a target-only gate almost always admitted. Every loss was a centimeter-scale placement regression in the workspace interior, far from the repaired boundary. In this case the composition of the old-scene panel mattered more than the choice between aggregate and zero-loss admission.
+When a coding agent edits a persistent robot controller to fix a failure, aggregate success can hide losses on scenes the controller used to solve. We test this in a small, fully controlled case: the scripted Franka pick-and-place controller in Isaac Sim, a measured-state evaluator that rejects four negative controls, and a workspace-boundary failure found by documented search. The unchanged controller replays exactly, so every paired transition is caused by an edit. On the development panel, two frozen single-parameter repairs each fixed the target and lost 4 and 1 of 44 earlier successes, but gained more elsewhere, so aggregate and zero-loss admission disagreed. On a frozen audit of 160 fresh scenes this compensation did not replicate. Both repairs improved the target neighborhood (from 15/40 to 26/40 and 38/40) but lost 8 and 5 of 106 old successes against 4 gains each, and budget-matched aggregate and zero-loss gates, committed before the audit, both rejected both. A post-hoc extension tested 24 seeded random edits alongside the two repairs on a fresh draw. All ten candidates that improved the target lost old successes, and the two repairs' old net change turned positive while their conditional loss rates replicated. Every loss of a target-improving candidate was a centimeter-scale placement regression far from the repaired boundary. In this case the composition of the old-scene panel mattered more than the choice between aggregate and zero-loss admission.
 \end{abstract}
 
 \section{Introduction}
@@ -37,6 +37,7 @@ Whether that happens for robot skills, and how admission rules respond, has most
 \item A simulation setup in which the unchanged parent replays exactly, so each success-to-failure transition after an edit is caused by the edit, not reset noise.
 \item A development pilot in which both frozen repairs of a boundary failure lost earlier successes that were offset by gains, so aggregate and zero-loss admission disagreed.
 \item A frozen audit on 160 fresh scenes, with gate decisions committed before execution. The compensation disappears, the two rules agree, and what decides the outcome is whether, and from where, old scenes are sampled.
+\item A post-hoc population extension of 26 candidates and 3{,}800 rollouts. Every target-improving edit lost old successes, and the sign of the aggregate change for the same two repairs depended on the scene draw.
 \end{itemize}
 We do not propose a new verifier, learning algorithm or safety guarantee; regression testing and paired evaluation are established tools. The contribution is controlled evidence about directional gains and losses, and about when the choice of admission objective matters.
 
@@ -126,17 +127,35 @@ Useful updates were declared in advance. Under the aggregate objective, a candid
 
 \paragraph{Why the compensation disappeared.} The development panel was dominated by the boundary ring: 9 of its 24 old scenes lay at 0.80\,m or beyond, four of them sharing the target's lift stall. Uniform sampling of the same region places only 10 of 120 old scenes there. A regression panel assembled around the failure being repaired over-represents that failure's family, which inflates compensating gains. That is exactly the condition under which aggregate admission tolerates losses.
 
+\section{Post-hoc Extension: A Candidate Population}
+\paragraph{Design.} After the audit results were known, we froze and hashed a second protocol to ask whether its patterns hold beyond two candidates. It adds 24 edits drawn with a fixed seed from the same interface: one or two parameters, each set uniformly within its bounds. They form a non-agent proposal distribution, not tuned to the target, and say nothing about proposer quality. A and B are re-tested unchanged. Fresh validation (12 target, 8 old) and audit (30 target, 90 old) scenes are drawn from the same populations, and the unchanged gate and analysis scripts are used. Gate decisions were committed before the first audit rollout. All 3{,}800 rollouts completed without retries, and the parent repeat again reproduced all 20 outcomes.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{fig_population}
+\caption{Post-hoc extension, one marker per candidate. Left: audit target change against old losses; no target-improving candidate sits at zero losses. Right: old gains against old losses; below the dashed line, gains outnumber losses. Shading marks the strictest committed gate that admitted the candidate.}
+\label{fig:population}
+\end{figure}
+
+\input{population_table}
+
+\paragraph{Every target improvement lost old successes.} Ten of the 26 candidates improve the target neighborhood, and all ten lose some of the parent's 73 old successes (10/10; Wilson 95\% interval 72--100\%). Their 61 losses are all placement regressions at radii below 0.80\,m. No candidate is useful under the zero-loss objective, and seven are useful under the aggregate objective. Gains and losses usually co-occur: 23 candidates have both, and 13 gain at least as many old scenes as they lose (Figure~\ref{fig:population}). The three edits that change only the grasp tolerance reproduce the parent on all 120 scenes.
+
+\paragraph{Gates.} Target-only admitted exactly the ten target improvers, which carry 61 old losses (Table~\ref{tab:population}). Aggregate admitted five and preservation four, and every admitted candidate had audit losses: 33 and 17 in total. The stricter gates rejected three aggregate-useful candidates, each with a one-scene target gain. The two rules disagree in committed decisions only on r14, which fixes all 30 target scenes but loses 16 old successes for a net old change of $-6$: aggregate admitted it and preservation did not. Over resampled validation draws they disagree in 29\% of draws for r14 and 3\% on average. All three gates delivered B.
+
+\paragraph{A and B on a new draw.} Their target gains replicate (from 10/30 to 15/30 and 27/30), and so does the conditional loss: 8.2\% and 5.5\%, against 7.5\% and 4.7\% in the first audit. The sign of the old net change does not. A and B now gain 8 and 7 old scenes against 6 and 4 losses, for net changes of $+2$ and $+3$, which makes both useful under the aggregate objective. Most of these gains are interior parent failures that settle just outside the 3\,cm tolerance, with parent errors of 3.0--4.5\,cm. This draw contains 8 such scenes among 90 old scenes, while the first audit had 4 among 120. The same placement perturbation that breaks some interior scenes rescues others, and the net balance depends on how many near-threshold failures the panel happens to contain.
+
 \section{Discussion and Limitations}
 Three observations follow, each specific to this case.
 \begin{itemize}
-\item Aggregate success hides losses only when gains offset them. Whether they do depends on how the old panel is composed, and panels inherited from failure discovery can manufacture the offset.
-\item When gains are rare, aggregate and zero-loss admission nearly coincide at a 12-pair budget. What changed the delivered controller was whether old scenes were checked at all.
-\item Whether B should be deployed has no evidence-only answer: it adds 23 target successes and loses one old success on net. The tolerance for loss, and the placement precision the deployment needs, must be declared before such evidence is read.
+\item Aggregate success hides losses only when gains offset them. Whether they do depends on how the old panel is composed. Panels inherited from failure discovery can manufacture the offset, and two uniform draws of the same region gave opposite net signs for the same repairs, while their conditional loss rates agreed.
+\item When gains are rare, aggregate and zero-loss admission nearly coincide at a 12-pair budget. Across 26 candidates they disagreed once, on the most harmful admitted edit. Stricter gates cut admitted losses from 61 to 33 to 17, but none admitted a loss-free improvement, because none existed.
+\item Whether B should be deployed has no evidence-only answer. Across the two audits it added 23 and 17 target successes and lost 5 and 4 old successes, for net old changes of $-1$ and $+3$. The tolerance for loss, and the placement precision the deployment needs, must be declared before such evidence is read.
 \end{itemize}
 
-The study is narrow: one robot, one task, one repair context and two interactively proposed candidates. It makes no claim about agent competence, how common regressions are, or which gate is better in general. Intervals reflect sampling over scenes for this context only. Scripted parameter edits are not learned-policy updates, and simulation says nothing about physical safety. The failure was found by adaptive search near the workspace boundary. A broader study needs many repair contexts, a frozen sampled proposer with resampling baselines, and several tasks.
+The study is narrow: one robot, one task and one repair context. The two repairs were proposed interactively, and the population extension, designed after the audit, uses random edits rather than an agent. The study makes no claim about agent competence, how common regressions are for real agent edits, or which gate is better in general. Intervals reflect sampling over scenes and candidates for this context only. Scripted parameter edits are not learned-policy updates, and simulation says nothing about physical safety. The failure was found by adaptive search near the workspace boundary. A broader study needs many repair contexts, a frozen sampled proposer with resampling baselines, and several tasks.
 
-\paragraph{Reproducibility.} An anonymized artifact contains the runner, scene manifests, every rollout record, frozen hashes and the scripts that regenerate all tables and the figure.
+\paragraph{Reproducibility.} An anonymized artifact contains the runner, scene manifests, every rollout record, frozen hashes and the scripts that regenerate all tables and figures.
 
 \bibliography{refs}
 

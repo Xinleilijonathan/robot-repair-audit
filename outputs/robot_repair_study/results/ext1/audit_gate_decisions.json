@@ -1,0 +1,1117 @@
+{
+  "committed_utc": "2026-11-16T01:50:01.585750+00:00",
+  "manifest_sha256": "91cbb0208df04a2e73d2dfff36f79da3e96c7f054bf81db9606de0064c7d1397",
+  "parent_folder": "audit_validation_parent",
+  "rule_note": "Budget-matched: aggregate/preservation share 4 target + 8 old pairs (24 rollouts); target-only uses 12 target pairs (24 rollouts). Parent rollouts are shared across candidates.",
+  "candidates": {
+    "candidate_a": {
+      "overrides": {
+        "lift_height": 0.2
+      },
+      "aggregate_evidence": {
+        "target": {
+          "n": 4,
+          "parent_successes": 2,
+          "candidate_successes": 4,
+          "lost": 0,
+          "gained": 2,
+          "parent_success_rate": 0.5,
+          "candidate_success_rate": 1.0,
+          "net_change": 0.5,
+          "unconditional_loss": 0.0,
+          "conditional_loss": 0.0
+        },
+        "old": {
+          "n": 8,
+          "parent_successes": 5,
+          "candidate_successes": 7,
+          "lost": 0,
+          "gained": 2,
+          "parent_success_rate": 0.625,
+          "candidate_success_rate": 0.875,
+          "net_change": 0.25,
+          "unconditional_loss": 0.0,
+          "conditional_loss": 0.0
+        },
+        "evaluable": true
+      },
+      "target_only_evidence": {
+        "parent_successes": 5,
+        "candidate_successes": 9,
+        "n": 12
+      },
+      "target_only": true,
+      "aggregate": true,
+      "preservation": true,
+      "aggregate_unrestricted": true,
+      "validation_folder": "audit_validation_candidate_a"
+    },
+    "candidate_b": {
+      "overrides": {
+        "position_tolerance": 0.025
+      },
+      "aggregate_evidence": {
+        "target": {
+          "n": 4,
+          "parent_successes": 2,
+          "candidate_successes": 4,
+          "lost": 0,
+          "gained": 2,
+          "parent_success_rate": 0.5,
+          "candidate_success_rate": 1.0,
+          "net_change": 0.5,
+          "unconditional_loss": 0.0,
+          "conditional_loss": 0.0
+        },
+        "old": {
+          "n": 8,
+          "parent_successes": 5,
+          "candidate_successes": 8,
+          "lost": 0,
+          "gained": 3,
+          "parent_success_rate": 0.625,
+          "candidate_success_rate": 1.0,
+          "net_change": 0.375,
+          "unconditional_loss": 0.0,
+          "conditional_loss": 0.0
+        },
+        "evaluable": true
+      },
+      "target_only_evidence": {
+        "parent_successes": 5,
+        "candidate_successes": 12,
+        "n": 12
+      },
+      "target_only": true,
+      "aggregate": true,
+      "preservation": true,
+      "aggregate_unrestricted": true,
+      "validation_folder": "audit_validation_candidate_b"
+    },
+    "r01": {
+      "overrides": {
+        "approach_height": 0.152
+      },
+      "aggregate_evidence": {
+        "target": {
+          "n": 4,
+          "parent_successes": 2,
+          "candidate_successes": 2,
+          "lost": 0,
+          "gained": 0,
+          "parent_success_rate": 0.5,
+          "candidate_success_rate": 0.5,
+          "net_change": 0.0,
+          "unconditional_loss": 0.0,
+          "conditional_loss": 0.0
+        },
+        "old": {
+          "n": 8,
+          "parent_successes": 5,
+          "candidate_successes": 7,
+          "lost": 1,
+          "gained": 3,
+          "parent_success_rate": 0.625,
+          "candidate_success_rate": 0.875,
+          "net_change": 0.25,
+          "unconditional_loss": 0.125,
+          "conditional_loss": 0.2
+        },
+        "evaluable": true
+      },
+      "target_only_evidence": {
+        "parent_successes": 5,
+        "candidate_successes": 6,
+        "n": 12
+      },
+      "target_only": true,
+      "aggregate": false,
+      "preservation": false,
+      "aggregate_unrestricted": false,
+      "validation_folder": "audit_validation_r01"
+    },
+    "r02": {
+      "overrides": {
+        "grasp_position_tolerance": 0.012
+      },
+      "aggregate_evidence": {
+        "target": {
+          "n": 4,
+          "parent_successes": 2,
+          "candidate_successes": 2,
+          "lost": 0,
+          "gained": 0,
+          "parent_success_rate": 0.5,
+          "candidate_success_rate": 0.5,
+          "net_change": 0.0,
+          "unconditional_loss": 0.0,
+          "conditional_loss": 0.0
+        },
+        "old": {
+          "n": 8,
+          "parent_successes": 5,
+          "candidate_successes": 5,
+          "lost": 0,
+          "gained": 0,
+          "parent_success_rate": 0.625,
+          "candidate_success_rate": 0.625,
+          "net_change": 0.0,
+          "unconditional_loss": 0.0,
+          "conditional_loss": 0.0
+        },
+        "evaluable": true
+      },
+      "target_only_evidence": {
+        "parent_successes": 5,
+        "candidate_successes": 5,
+        "n": 12
+      },
+      "target_only": false,
+      "aggregate": false,
+      "preservation": false,
+      "aggregate_unrestricted": false,
+      "validation_folder": "audit_validation_r02"
+    },
+    "r03": {
+      "overrides": {
+        "lift_height": 0.397,
+        "position_tolerance": 0.026
+      },
+      "aggregate_evidence": {
+        "target": {
+          "n": 4,
+          "parent_successes": 2,
+          "candidate_successes": 0,
+          "lost": 2,
+          "gained": 0,
+          "parent_success_rate": 0.5,
+          "candidate_success_rate": 0.0,
+          "net_change": -0.5,
+          "unconditional_loss": 0.5,
+          "conditional_loss": 1.0
+        },
+        "old": {
+          "n": 8,
+          "parent_successes": 5,
+          "candidate_successes": 7,
+          "lost": 0,
+          "gained": 2,
+          "parent_success_rate": 0.625,
+          "candidate_success_rate": 0.875,
+          "net_change": 0.25,
+          "unconditional_loss": 0.0,
+          "conditional_loss": 0.0
+        },
+        "evaluable": true
+      },
+      "target_only_evidence": {
+        "parent_successes": 5,
+        "candidate_successes": 0,
+        "n": 12
+      },
+      "target_only": false,
+      "aggregate": false,
+      "preservation": false,
+      "aggregate_unrestricted": false,
+      "validation_folder": "audit_validation_r03"
+    },
+    "r04": {
+      "overrides": {
+        "position_tolerance": 0.033
+      },
+      "aggregate_evidence": {
+        "target": {
+          "n": 4,
+          "parent_successes": 2,
+          "candidate_successes": 4,
+          "lost": 0,
+          "gained": 2,
+          "parent_success_rate": 0.5,
+          "candidate_success_rate": 1.0,
+          "net_change": 0.5,
+          "unconditional_loss": 0.0,
+          "conditional_loss": 0.0
+        },
+        "old": {
+          "n": 8,
+          "parent_successes": 5,
+          "candidate_successes": 8,
+          "lost": 0,
+          "gained": 3,
+          "parent_success_rate": 0.625,
+          "candidate_success_rate": 1.0,
+          "net_change": 0.375,
+          "unconditional_loss": 0.0,
+          "conditional_loss": 0.0
+        },
+        "evaluable": true
+      },
+      "target_only_evidence": {
+        "parent_successes": 5,
+        "candidate_successes": 12,
+        "n": 12
+      },
+      "target_only": true,
+      "aggregate": true,
+      "preservation": true,
+      "aggregate_unrestricted": true,
+      "validation_folder": "audit_validation_r04"
+    },
+    "r05": {
+      "overrides": {
+        "approach_height": 0.397,
+        "gripper_dwell": 0.21
+      },
+      "aggregate_evidence": {
+        "target": {
+          "n": 4,
+          "parent_successes": 2,
+          "candidate_successes": 0,
+          "lost": 2,
+          "gained": 0,
+          "parent_success_rate": 0.5,
+          "candidate_success_rate": 0.0,
+          "net_change": -0.5,
+          "unconditional_loss": 0.5,
+          "conditional_loss": 1.0
+        },
+        "old": {
+          "n": 8,
+          "parent_successes": 5,
+          "candidate_successes": 8,
+          "lost": 0,
+          "gained": 3,
+          "parent_success_rate": 0.625,
+          "candidate_success_rate": 1.0,
+          "net_change": 0.375,
+          "unconditional_loss": 0.0,
+          "conditional_loss": 0.0
+        },
+        "evaluable": true
+      },
+      "target_only_evidence": {
+        "parent_successes": 5,
+        "candidate_successes": 0,
+        "n": 12
+      },
+      "target_only": false,
+      "aggregate": false,
+      "preservation": false,
+      "aggregate_unrestricted": false,
+      "validation_folder": "audit_validation_r05"
+    },
+    "r06": {
+      "overrides": {
+        "approach_height": 0.073,
+        "grasp_position_tolerance": 0.011
+      },
+      "aggregate_evidence": {
+        "target": {
+          "n": 4,
+          "parent_successes": 2,
+          "candidate_successes": 2,
+          "lost": 0,
+          "gained": 0,
+          "parent_success_rate": 0.5,
+          "candidate_success_rate": 0.5,
+          "net_change": 0.0,
+          "unconditional_loss": 0.0,
+          "conditional_loss": 0.0
+        },
+        "old": {
+          "n": 8,
+          "parent_successes": 5,
+          "candidate_successes": 8,
+          "lost": 0,
+          "gained": 3,
+          "parent_success_rate": 0.625,
+          "candidate_success_rate": 1.0,
+          "net_change": 0.375,
+          "unconditional_loss": 0.0,
+          "conditional_loss": 0.0
+        },
+        "evaluable": true
+      },
+      "target_only_evidence": {
+        "parent_successes": 5,
+        "candidate_successes": 6,
+        "n": 12
+      },
+      "target_only": true,
+      "aggregate": false,
+      "preservation": false,
+      "aggregate_unrestricted": false,
+      "validation_folder": "audit_validation_r06"
+    },
+    "r07": {
+      "overrides": {
+        "position_tolerance": 0.012,
+        "gripper_dwell": 0.749
+      },
+      "aggregate_evidence": {
+        "target": {
+          "n": 4,
+          "parent_successes": 2,
+          "candidate_successes": 0,
+          "lost": 2,
+          "gained": 0,
+          "parent_success_rate": 0.5,
+          "candidate_success_rate": 0.0,
+          "net_change": -0.5,
+          "unconditional_loss": 0.5,
+          "conditional_loss": 1.0
+        },
+        "old": {
+          "n": 8,
+          "parent_successes": 5,
+          "candidate_successes": 7,
+          "lost": 0,
+          "gained": 2,
+          "parent_success_rate": 0.625,
+          "candidate_success_rate": 0.875,
+          "net_change": 0.25,
+          "unconditional_loss": 0.0,
+          "conditional_loss": 0.0
+        },
+        "evaluable": true
+      },
+      "target_only_evidence": {
+        "parent_successes": 5,
+        "candidate_successes": 1,
+        "n": 12
+      },
+      "target_only": false,
+      "aggregate": false,
+      "preservation": false,
+      "aggregate_unrestricted": false,
+      "validation_folder": "audit_validation_r07"
+    },
+    "r08": {
+      "overrides": {
+        "lift_height": 0.395
+      },
+      "aggregate_evidence": {
+        "target": {
+          "n": 4,
+          "parent_successes": 2,
+          "candidate_successes": 0,
+          "lost": 2,
+          "gained": 0,
+          "parent_success_rate": 0.5,
+          "candidate_success_rate": 0.0,
+          "net_change": -0.5,
+          "unconditional_loss": 0.5,
+          "conditional_loss": 1.0
+        },
+        "old": {
+          "n": 8,
+          "parent_successes": 5,
+          "candidate_successes": 6,
+          "lost": 0,
+          "gained": 1,
+          "parent_success_rate": 0.625,
+          "candidate_success_rate": 0.75,
+          "net_change": 0.125,
+          "unconditional_loss": 0.0,
+          "conditional_loss": 0.0
+        },
+        "evaluable": true
+      },
+      "target_only_evidence": {
+        "parent_successes": 5,
+        "candidate_successes": 0,
+        "n": 12
+      },
+      "target_only": false,
+      "aggregate": false,
+      "preservation": false,
+      "aggregate_unrestricted": false,
+      "validation_folder": "audit_validation_r08"
+    },
+    "r09": {
+      "overrides": {
+        "gripper_dwell": 0.134
+      },
+      "aggregate_evidence": {
+        "target": {
+          "n": 4,
+          "parent_successes": 2,
+          "candidate_successes": 1,
+          "lost": 1,
+          "gained": 0,
+          "parent_success_rate": 0.5,
+          "candidate_success_rate": 0.25,
+          "net_change": -0.25,
+          "unconditional_loss": 0.25,
+          "conditional_loss": 0.5
+        },
+        "old": {
+          "n": 8,
+          "parent_successes": 5,
+          "candidate_successes": 7,
+          "lost": 0,
+          "gained": 2,
+          "parent_success_rate": 0.625,
+          "candidate_success_rate": 0.875,
+          "net_change": 0.25,
+          "unconditional_loss": 0.0,
+          "conditional_loss": 0.0
+        },
+        "evaluable": true
+      },
+      "target_only_evidence": {
+        "parent_successes": 5,
+        "candidate_successes": 4,
+        "n": 12
+      },
+      "target_only": false,
+      "aggregate": false,
+      "preservation": false,
+      "aggregate_unrestricted": false,
+      "validation_folder": "audit_validation_r09"
+    },
+    "r10": {
+      "overrides": {
+        "approach_height": 0.156
+      },
+      "aggregate_evidence": {
+        "target": {
+          "n": 4,
+          "parent_successes": 2,
+          "candidate_successes": 2,
+          "lost": 0,
+          "gained": 0,
+          "parent_success_rate": 0.5,
+          "candidate_success_rate": 0.5,
+          "net_change": 0.0,
+          "unconditional_loss": 0.0,
+          "conditional_loss": 0.0
+        },
+        "old": {
+          "n": 8,
+          "parent_successes": 5,
+          "candidate_successes": 7,
+          "lost": 1,
+          "gained": 3,
+          "parent_success_rate": 0.625,
+          "candidate_success_rate": 0.875,
+          "net_change": 0.25,
+          "unconditional_loss": 0.125,
+          "conditional_loss": 0.2
+        },
+        "evaluable": true
+      },
+      "target_only_evidence": {
+        "parent_successes": 5,
+        "candidate_successes": 6,
+        "n": 12
+      },
+      "target_only": true,
+      "aggregate": false,
+      "preservation": false,
+      "aggregate_unrestricted": false,
+      "validation_folder": "audit_validation_r10"
+    },
+    "r11": {
+      "overrides": {
+        "stability_duration": 0.267
+      },
+      "aggregate_evidence": {
+        "target": {
+          "n": 4,
+          "parent_successes": 2,
+          "candidate_successes": 1,
+          "lost": 1,
+          "gained": 0,
+          "parent_success_rate": 0.5,
+          "candidate_success_rate": 0.25,
+          "net_change": -0.25,
+          "unconditional_loss": 0.25,
+          "conditional_loss": 0.5
+        },
+        "old": {
+          "n": 8,
+          "parent_successes": 5,
+          "candidate_successes": 5,
+          "lost": 2,
+          "gained": 2,
+          "parent_success_rate": 0.625,
+          "candidate_success_rate": 0.625,
+          "net_change": 0.0,
+          "unconditional_loss": 0.25,
+          "conditional_loss": 0.4
+        },
+        "evaluable": true
+      },
+      "target_only_evidence": {
+        "parent_successes": 5,
+        "candidate_successes": 4,
+        "n": 12
+      },
+      "target_only": false,
+      "aggregate": false,
+      "preservation": false,
+      "aggregate_unrestricted": false,
+      "validation_folder": "audit_validation_r11"
+    },
+    "r12": {
+      "overrides": {
+        "lift_height": 0.361,
+        "position_tolerance": 0.009
+      },
+      "aggregate_evidence": {
+        "target": {
+          "n": 4,
+          "parent_successes": 2,
+          "candidate_successes": 0,
+          "lost": 2,
+          "gained": 0,
+          "parent_success_rate": 0.5,
+          "candidate_success_rate": 0.0,
+          "net_change": -0.5,
+          "unconditional_loss": 0.5,
+          "conditional_loss": 1.0
+        },
+        "old": {
+          "n": 8,
+          "parent_successes": 5,
+          "candidate_successes": 6,
+          "lost": 1,
+          "gained": 2,
+          "parent_success_rate": 0.625,
+          "candidate_success_rate": 0.75,
+          "net_change": 0.125,
+          "unconditional_loss": 0.125,
+          "conditional_loss": 0.2
+        },
+        "evaluable": true
+      },
+      "target_only_evidence": {
+        "parent_successes": 5,
+        "candidate_successes": 0,
+        "n": 12
+      },
+      "target_only": false,
+      "aggregate": false,
+      "preservation": false,
+      "aggregate_unrestricted": false,
+      "validation_folder": "audit_validation_r12"
+    },
+    "r13": {
+      "overrides": {
+        "grasp_position_tolerance": 0.021
+      },
+      "aggregate_evidence": {
+        "target": {
+          "n": 4,
+          "parent_successes": 2,
+          "candidate_successes": 2,
+          "lost": 0,
+          "gained": 0,
+          "parent_success_rate": 0.5,
+          "candidate_success_rate": 0.5,
+          "net_change": 0.0,
+          "unconditional_loss": 0.0,
+          "conditional_loss": 0.0
+        },
+        "old": {
+          "n": 8,
+          "parent_successes": 5,
+          "candidate_successes": 5,
+          "lost": 0,
+          "gained": 0,
+          "parent_success_rate": 0.625,
+          "candidate_success_rate": 0.625,
+          "net_change": 0.0,
+          "unconditional_loss": 0.0,
+          "conditional_loss": 0.0
+        },
+        "evaluable": true
+      },
+      "target_only_evidence": {
+        "parent_successes": 5,
+        "candidate_successes": 5,
+        "n": 12
+      },
+      "target_only": false,
+      "aggregate": false,
+      "preservation": false,
+      "aggregate_unrestricted": false,
+      "validation_folder": "audit_validation_r13"
+    },
+    "r14": {
+      "overrides": {
+        "approach_height": 0.178,
+        "position_tolerance": 0.026
+      },
+      "aggregate_evidence": {
+        "target": {
+          "n": 4,
+          "parent_successes": 2,
+          "candidate_successes": 4,
+          "lost": 0,
+          "gained": 2,
+          "parent_success_rate": 0.5,
+          "candidate_success_rate": 1.0,
+          "net_change": 0.5,
+          "unconditional_loss": 0.0,
+          "conditional_loss": 0.0
+        },
+        "old": {
+          "n": 8,
+          "parent_successes": 5,
+          "candidate_successes": 5,
+          "lost": 2,
+          "gained": 2,
+          "parent_success_rate": 0.625,
+          "candidate_success_rate": 0.625,
+          "net_change": 0.0,
+          "unconditional_loss": 0.25,
+          "conditional_loss": 0.4
+        },
+        "evaluable": true
+      },
+      "target_only_evidence": {
+        "parent_successes": 5,
+        "candidate_successes": 11,
+        "n": 12
+      },
+      "target_only": true,
+      "aggregate": true,
+      "preservation": false,
+      "aggregate_unrestricted": true,
+      "validation_folder": "audit_validation_r14"
+    },
+    "r15": {
+      "overrides": {
+        "approach_height": 0.249,
+        "grasp_position_tolerance": 0.025
+      },
+      "aggregate_evidence": {
+        "target": {
+          "n": 4,
+          "parent_successes": 2,
+          "candidate_successes": 2,
+          "lost": 0,
+          "gained": 0,
+          "parent_success_rate": 0.5,
+          "candidate_success_rate": 0.5,
+          "net_change": 0.0,
+          "unconditional_loss": 0.0,
+          "conditional_loss": 0.0
+        },
+        "old": {
+          "n": 8,
+          "parent_successes": 5,
+          "candidate_successes": 7,
+          "lost": 0,
+          "gained": 2,
+          "parent_success_rate": 0.625,
+          "candidate_success_rate": 0.875,
+          "net_change": 0.25,
+          "unconditional_loss": 0.0,
+          "conditional_loss": 0.0
+        },
+        "evaluable": true
+      },
+      "target_only_evidence": {
+        "parent_successes": 5,
+        "candidate_successes": 5,
+        "n": 12
+      },
+      "target_only": false,
+      "aggregate": false,
+      "preservation": false,
+      "aggregate_unrestricted": false,
+      "validation_folder": "audit_validation_r15"
+    },
+    "r16": {
+      "overrides": {
+        "grasp_position_tolerance": 0.026
+      },
+      "aggregate_evidence": {
+        "target": {
+          "n": 4,
+          "parent_successes": 2,
+          "candidate_successes": 2,
+          "lost": 0,
+          "gained": 0,
+          "parent_success_rate": 0.5,
+          "candidate_success_rate": 0.5,
+          "net_change": 0.0,
+          "unconditional_loss": 0.0,
+          "conditional_loss": 0.0
+        },
+        "old": {
+          "n": 8,
+          "parent_successes": 5,
+          "candidate_successes": 5,
+          "lost": 0,
+          "gained": 0,
+          "parent_success_rate": 0.625,
+          "candidate_success_rate": 0.625,
+          "net_change": 0.0,
+          "unconditional_loss": 0.0,
+          "conditional_loss": 0.0
+        },
+        "evaluable": true
+      },
+      "target_only_evidence": {
+        "parent_successes": 5,
+        "candidate_successes": 5,
+        "n": 12
+      },
+      "target_only": false,
+      "aggregate": false,
+      "preservation": false,
+      "aggregate_unrestricted": false,
+      "validation_folder": "audit_validation_r16"
+    },
+    "r17": {
+      "overrides": {
+        "approach_height": 0.394
+      },
+      "aggregate_evidence": {
+        "target": {
+          "n": 4,
+          "parent_successes": 2,
+          "candidate_successes": 0,
+          "lost": 2,
+          "gained": 0,
+          "parent_success_rate": 0.5,
+          "candidate_success_rate": 0.0,
+          "net_change": -0.5,
+          "unconditional_loss": 0.5,
+          "conditional_loss": 1.0
+        },
+        "old": {
+          "n": 8,
+          "parent_successes": 5,
+          "candidate_successes": 7,
+          "lost": 0,
+          "gained": 2,
+          "parent_success_rate": 0.625,
+          "candidate_success_rate": 0.875,
+          "net_change": 0.25,
+          "unconditional_loss": 0.0,
+          "conditional_loss": 0.0
+        },
+        "evaluable": true
+      },
+      "target_only_evidence": {
+        "parent_successes": 5,
+        "candidate_successes": 0,
+        "n": 12
+      },
+      "target_only": false,
+      "aggregate": false,
+      "preservation": false,
+      "aggregate_unrestricted": false,
+      "validation_folder": "audit_validation_r17"
+    },
+    "r18": {
+      "overrides": {
+        "gripper_dwell": 0.896
+      },
+      "aggregate_evidence": {
+        "target": {
+          "n": 4,
+          "parent_successes": 2,
+          "candidate_successes": 2,
+          "lost": 0,
+          "gained": 0,
+          "parent_success_rate": 0.5,
+          "candidate_success_rate": 0.5,
+          "net_change": 0.0,
+          "unconditional_loss": 0.0,
+          "conditional_loss": 0.0
+        },
+        "old": {
+          "n": 8,
+          "parent_successes": 5,
+          "candidate_successes": 7,
+          "lost": 0,
+          "gained": 2,
+          "parent_success_rate": 0.625,
+          "candidate_success_rate": 0.875,
+          "net_change": 0.25,
+          "unconditional_loss": 0.0,
+          "conditional_loss": 0.0
+        },
+        "evaluable": true
+      },
+      "target_only_evidence": {
+        "parent_successes": 5,
+        "candidate_successes": 6,
+        "n": 12
+      },
+      "target_only": true,
+      "aggregate": false,
+      "preservation": false,
+      "aggregate_unrestricted": false,
+      "validation_folder": "audit_validation_r18"
+    },
+    "r19": {
+      "overrides": {
+        "approach_height": 0.062,
+        "grasp_position_tolerance": 0.018
+      },
+      "aggregate_evidence": {
+        "target": {
+          "n": 4,
+          "parent_successes": 2,
+          "candidate_successes": 2,
+          "lost": 0,
+          "gained": 0,
+          "parent_success_rate": 0.5,
+          "candidate_success_rate": 0.5,
+          "net_change": 0.0,
+          "unconditional_loss": 0.0,
+          "conditional_loss": 0.0
+        },
+        "old": {
+          "n": 8,
+          "parent_successes": 5,
+          "candidate_successes": 8,
+          "lost": 0,
+          "gained": 3,
+          "parent_success_rate": 0.625,
+          "candidate_success_rate": 1.0,
+          "net_change": 0.375,
+          "unconditional_loss": 0.0,
+          "conditional_loss": 0.0
+        },
+        "evaluable": true
+      },
+      "target_only_evidence": {
+        "parent_successes": 5,
+        "candidate_successes": 6,
+        "n": 12
+      },
+      "target_only": true,
+      "aggregate": false,
+      "preservation": false,
+      "aggregate_unrestricted": false,
+      "validation_folder": "audit_validation_r19"
+    },
+    "r20": {
+      "overrides": {
+        "grasp_position_tolerance": 0.006,
+        "gripper_dwell": 0.44
+      },
+      "aggregate_evidence": {
+        "target": {
+          "n": 4,
+          "parent_successes": 2,
+          "candidate_successes": 2,
+          "lost": 0,
+          "gained": 0,
+          "parent_success_rate": 0.5,
+          "candidate_success_rate": 0.5,
+          "net_change": 0.0,
+          "unconditional_loss": 0.0,
+          "conditional_loss": 0.0
+        },
+        "old": {
+          "n": 8,
+          "parent_successes": 5,
+          "candidate_successes": 5,
+          "lost": 0,
+          "gained": 0,
+          "parent_success_rate": 0.625,
+          "candidate_success_rate": 0.625,
+          "net_change": 0.0,
+          "unconditional_loss": 0.0,
+          "conditional_loss": 0.0
+        },
+        "evaluable": true
+      },
+      "target_only_evidence": {
+        "parent_successes": 5,
+        "candidate_successes": 5,
+        "n": 12
+      },
+      "target_only": false,
+      "aggregate": false,
+      "preservation": false,
+      "aggregate_unrestricted": false,
+      "validation_folder": "audit_validation_r20"
+    },
+    "r21": {
+      "overrides": {
+        "approach_height": 0.325
+      },
+      "aggregate_evidence": {
+        "target": {
+          "n": 4,
+          "parent_successes": 2,
+          "candidate_successes": 1,
+          "lost": 1,
+          "gained": 0,
+          "parent_success_rate": 0.5,
+          "candidate_success_rate": 0.25,
+          "net_change": -0.25,
+          "unconditional_loss": 0.25,
+          "conditional_loss": 0.5
+        },
+        "old": {
+          "n": 8,
+          "parent_successes": 5,
+          "candidate_successes": 6,
+          "lost": 1,
+          "gained": 2,
+          "parent_success_rate": 0.625,
+          "candidate_success_rate": 0.75,
+          "net_change": 0.125,
+          "unconditional_loss": 0.125,
+          "conditional_loss": 0.2
+        },
+        "evaluable": true
+      },
+      "target_only_evidence": {
+        "parent_successes": 5,
+        "candidate_successes": 4,
+        "n": 12
+      },
+      "target_only": false,
+      "aggregate": false,
+      "preservation": false,
+      "aggregate_unrestricted": false,
+      "validation_folder": "audit_validation_r21"
+    },
+    "r22": {
+      "overrides": {
+        "stability_duration": 0.164
+      },
+      "aggregate_evidence": {
+        "target": {
+          "n": 4,
+          "parent_successes": 2,
+          "candidate_successes": 1,
+          "lost": 1,
+          "gained": 0,
+          "parent_success_rate": 0.5,
+          "candidate_success_rate": 0.25,
+          "net_change": -0.25,
+          "unconditional_loss": 0.25,
+          "conditional_loss": 0.5
+        },
+        "old": {
+          "n": 8,
+          "parent_successes": 5,
+          "candidate_successes": 5,
+          "lost": 0,
+          "gained": 0,
+          "parent_success_rate": 0.625,
+          "candidate_success_rate": 0.625,
+          "net_change": 0.0,
+          "unconditional_loss": 0.0,
+          "conditional_loss": 0.0
+        },
+        "evaluable": true
+      },
+      "target_only_evidence": {
+        "parent_successes": 5,
+        "candidate_successes": 4,
+        "n": 12
+      },
+      "target_only": false,
+      "aggregate": false,
+      "preservation": false,
+      "aggregate_unrestricted": false,
+      "validation_folder": "audit_validation_r22"
+    },
+    "r23": {
+      "overrides": {
+        "approach_height": 0.244
+      },
+      "aggregate_evidence": {
+        "target": {
+          "n": 4,
+          "parent_successes": 2,
+          "candidate_successes": 2,
+          "lost": 0,
+          "gained": 0,
+          "parent_success_rate": 0.5,
+          "candidate_success_rate": 0.5,
+          "net_change": 0.0,
+          "unconditional_loss": 0.0,
+          "conditional_loss": 0.0
+        },
+        "old": {
+          "n": 8,
+          "parent_successes": 5,
+          "candidate_successes": 7,
+          "lost": 0,
+          "gained": 2,
+          "parent_success_rate": 0.625,
+          "candidate_success_rate": 0.875,
+          "net_change": 0.25,
+          "unconditional_loss": 0.0,
+          "conditional_loss": 0.0
+        },
+        "evaluable": true
+      },
+      "target_only_evidence": {
+        "parent_successes": 5,
+        "candidate_successes": 5,
+        "n": 12
+      },
+      "target_only": false,
+      "aggregate": false,
+      "preservation": false,
+      "aggregate_unrestricted": false,
+      "validation_folder": "audit_validation_r23"
+    },
+    "r24": {
+      "overrides": {
+        "lift_height": 0.105,
+        "gripper_dwell": 0.202
+      },
+      "aggregate_evidence": {
+        "target": {
+          "n": 4,
+          "parent_successes": 2,
+          "candidate_successes": 3,
+          "lost": 1,
+          "gained": 2,
+          "parent_success_rate": 0.5,
+          "candidate_success_rate": 0.75,
+          "net_change": 0.25,
+          "unconditional_loss": 0.25,
+          "conditional_loss": 0.5
+        },
+        "old": {
+          "n": 8,
+          "parent_successes": 5,
+          "candidate_successes": 7,
+          "lost": 0,
+          "gained": 2,
+          "parent_success_rate": 0.625,
+          "candidate_success_rate": 0.875,
+          "net_change": 0.25,
+          "unconditional_loss": 0.0,
+          "conditional_loss": 0.0
+        },
+        "evaluable": true
+      },
+      "target_only_evidence": {
+        "parent_successes": 5,
+        "candidate_successes": 8,
+        "n": 12
+      },
+      "target_only": true,
+      "aggregate": true,
+      "preservation": true,
+      "aggregate_unrestricted": true,
+      "validation_folder": "audit_validation_r24"
+    }
+  },
+  "delivered": {
+    "frozen": "parent",
+    "target_only": "candidate_b",
+    "aggregate": "candidate_b",
+    "preservation": "candidate_b",
+    "aggregate_unrestricted": "candidate_b"
+  }
+}

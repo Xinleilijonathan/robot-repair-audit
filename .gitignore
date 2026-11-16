@@ -18,7 +18,3 @@ paper/*.blg
 paper/*.out
 paper/compile*.log
 paper/bibtex.log
-
-# Extension 1 is still running; committed separately once complete
-outputs/robot_repair_study/results/ext1/
-work/ext1_*

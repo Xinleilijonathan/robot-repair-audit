@@ -1,0 +1,45 @@
+{
+  "repetition": 2,
+  "steps": 564,
+  "scene_id": "vo08",
+  "repeat_within_scene": 0,
+  "control_mode": "normal",
+  "controller_overrides": {
+    "lift_height": 0.361,
+    "position_tolerance": 0.009
+  },
+  "wall_seconds": 6.782000000002881,
+  "startup_seconds": 9.484000000000378,
+  "setup_seconds": 1.6559999999990396,
+  "reset_seconds": 0.13999999999941792,
+  "execution_seconds": 6.51600000000326,
+  "evaluation_seconds": 0.26599999999962165,
+  "process_peak_working_set_bytes": 5398446080,
+  "controller_status": {
+    "phase": "DONE",
+    "active_cube": 0,
+    "done": true,
+    "failed": false,
+    "failure_reason": null
+  },
+  "cube_goal": [
+    0.0,
+    0.5,
+    0.025800000876188278
+  ],
+  "cube_final": [
+    -0.0055187055841088295,
+    0.4727848470211029,
+    0.025749901309609413
+  ],
+  "final_error_m": 0.02776910464806917,
+  "lift_observed": true,
+  "object_state_success": true,
+  "released_and_retreated": true,
+  "stable": true,
+  "max_settle_linear_speed_m_s": 0.0,
+  "max_settle_angular_speed_rad_s": 0.0,
+  "max_settle_orientation_drift_rad": 4.2146848510894035e-08,
+  "final_grasp_cube_separation_m": 0.3612290620803833,
+  "success_definition": "v2: lift above 0.0758m; final 30 frames within 0.03m of goal, grasp separation above 0.08m, linear speed below 0.02m/s, angular speed below 0.1rad/s, orientation drift below 0.05rad; finish before horizon"
+}

@@ -1,5 +1,26 @@
 # Handoff to Claude: robot-repair workshop paper
 
+> **Update, Nov 15 ~23:59 (Claude): EXTENSION 1 COMPLETE and in the paper.**
+> - **Run.** 3,800/3,800 rollouts, no retries, no exclusions. Gates were committed before the audit. The parent repeat matched 20/20. All 39 frozen hashes were re-verified.
+> - **Results.** Full write-up in `outputs/extension1_report.md`.
+>   - All 10 target-improving candidates lost old successes.
+>   - No candidate is useful under the zero-loss objective.
+>   - A's and B's old net changes flipped to +2 and +3, while their conditional loss rates replicated.
+>   - Aggregate vs preservation disagreed only on r14.
+>   - All gates delivered B.
+> - **Analysis files.** `results/ext1/audit_analysis.json` and `population_analysis.json`.
+> - **Paper.** `paper/main.tex` has a new post-hoc section with Figure 2 (`fig_population.pdf`, from `plot_population.py`) and Table 4 (`population_table.tex`, from `paper/make_population_table.py`). The body is 4 pages, and the references end on page 5.
+>   - **Open:** whether references count toward the 4-page limit.
+> - **Disclosure.** At the user's request, a read-only interim tally of 23/26 candidates was printed at ~22:54. Nothing depended on it; it is disclosed in the report.
+> - **Artifact.** Rebuilt with the extension queue scripts and the table script. `.gitignore` no longer excludes ext1.
+
+> **Git (Nov 15 ~17:10).**
+> - **Repo.** The project is a git repo pushed to the **private** GitHub repo `Xinleilijonathan/robot-repair-audit`, with initial commit `b1afbd4`. Commits use the GitHub no-reply address, set in the local repo config only. `.gitignore` excludes caches, toolchains, `artifact/` and the in-progress `results/ext1/` and `work/ext1_*`.
+> - **Tools.** Git is at `C:\Program Files\Git\cmd\git.exe`. gh is at `%LOCALAPPDATA%\Microsoft\WinGet\Packages\GitHub.cli_Microsoft.Winget.Source_8wekyb3d8bbwe\bin\gh.exe`.
+> - **Pushing.** No global credential helper is configured, so push with `git -c credential.helper= -c "credential.helper=!'<gh path with forward slashes>' auth git-credential" push`.
+> - **After extension 1 completes:** remove the two `ext1` lines from `.gitignore`, then commit and push.
+> - **Visibility.** Do not make the repo public or link it from the submission during double-blind review.
+>
 > **Update, Nov 15 ~16:50 (Claude): EXTENSION 1 RUNNING (overnight).**
 > - **Setup.** The protocol is `outputs/robot_repair_study/extension1_protocol.md`. Its materials (39 files) were frozen at 16:47 in `extension1_frozen_hashes.json`. It tests 24 seeded random edits plus A and B on a fresh scene draw: 3,800 rollouts, about 7–9 hours.
 > - **Queue.** `work/run_extension1.ps1`, launched about 16:48. It logs to `work/ext1_queue.log`, writes results under `outputs/robot_repair_study/results/ext1/`, and keeps a ledger at `results/ext1/ext1_batch_ledger.json`.
