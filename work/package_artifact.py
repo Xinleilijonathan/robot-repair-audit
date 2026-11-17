@@ -40,6 +40,9 @@ def main():
         shutil.copy2(ROOT / 'work' / name, stage / 'scripts' / name)
     for name in PAPER_SCRIPTS:
         shutil.copy2(ROOT / 'paper' / name, stage / 'scripts' / name)
+    kit = ROOT / 'outputs' / 'regression_audit_kit'
+    if kit.exists():
+        shutil.copytree(kit, stage / 'regression_audit_kit', ignore=shutil.ignore_patterns('__pycache__'))
     changed = []
     for path in stage.rglob('*'):
         if path.is_file() and path.suffix.lower() in TEXT:

@@ -1,5 +1,16 @@
 # Handoff to Claude: robot-repair workshop paper
 
+> **Update, Nov 16 ~22:00 (Claude): EXTENSION 2 RUNNING overnight (user-approved).**
+> - **Question.** A confirmatory test of whether loss histories predict future regressions. Protocol: `outputs/robot_repair_study/extension2_protocol.md`. It was frozen at 21:52 in `extension2_frozen_hashes.json` (42 files) and pushed as commit `1a49f07` before any rollout.
+> - **Design.** 24 new random edits (r25–r48). An 8-scene history suite (the scenes Extension 1 edits broke most often) against an 8-scene uniform suite, on the Extension 1 audit panel. 3,520 rollouts, about 6.5 hours.
+> - **Queue.** `work/run_extension2.ps1`. Logs: `work/ext2_queue.log` and `work/ext2_*.log`. Results: `outputs/robot_repair_study/results/ext2/`. Ledger: `results/ext2/ext2_batch_ledger.json`.
+> - **If it stopped:** rerun `work/run_extension2.ps1` from the project root. It is resumable. Never run two simulators at once.
+> - **After completion:**
+>   1. Run `analyze_ext2.py`, with the arguments listed in the protocol and shown in its argparse.
+>   2. Report P1 against the pre-registered criterion, whatever the outcome.
+>   3. Only then decide the paper changes. The current `main.tex` and `main_short.tex` remain the fallback.
+> - **Motivation.** The exploratory analyses are in `results/exploratory/`, made by the `explore_*.py` scripts. They are post hoc and labelled as such.
+
 > **Page-limit decision (user, Nov 16 ~00:15).**
 > - **The question.** The user is emailing the organizers (trust4rsi.agent@gmail.com; primary contact Haolun Wu) to ask whether references count toward the 4-page short-paper limit.
 > - **The two versions.**
