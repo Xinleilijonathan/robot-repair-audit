@@ -1,0 +1,415 @@
+{
+  "kind": "controller_parameter_pilot",
+  "isaacsim": "6.2.0.0",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "script_sha256": "b0982ed0d856b6ae802e32863723762abf62ab50f7c013548bb1af2f8fee3c58",
+  "physics_dt": 0.016666666666666666,
+  "physics_device": "cpu",
+  "max_steps": 1800,
+  "note": "Exploratory parameter edit; not an independently sampled autonomous repair benchmark.",
+  "scenes": [
+    {
+      "id": "ao034",
+      "split": "ext2_validation",
+      "regime": "old",
+      "radius_m": 0.524,
+      "angle_deg": -38.6583,
+      "pick": [
+        0.4091837,
+        -0.3273291,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ],
+      "suite": [
+        "history"
+      ]
+    },
+    {
+      "id": "ao027",
+      "split": "ext2_validation",
+      "regime": "old",
+      "radius_m": 0.58933,
+      "angle_deg": -47.6948,
+      "pick": [
+        0.3966657,
+        -0.43585,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ],
+      "suite": [
+        "uniform"
+      ]
+    },
+    {
+      "id": "ao018",
+      "split": "ext2_validation",
+      "regime": "old",
+      "radius_m": 0.77305,
+      "angle_deg": 21.628,
+      "pick": [
+        0.7186229,
+        0.2849287,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ],
+      "suite": [
+        "history"
+      ]
+    },
+    {
+      "id": "ao056",
+      "split": "ext2_validation",
+      "regime": "old",
+      "radius_m": 0.74645,
+      "angle_deg": 59.5843,
+      "pick": [
+        0.3779073,
+        0.6437222,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ],
+      "suite": [
+        "uniform"
+      ]
+    },
+    {
+      "id": "ao077",
+      "split": "ext2_validation",
+      "regime": "old",
+      "radius_m": 0.56394,
+      "angle_deg": -48.5928,
+      "pick": [
+        0.3729952,
+        -0.4229734,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ],
+      "suite": [
+        "uniform"
+      ]
+    },
+    {
+      "id": "ao083",
+      "split": "ext2_validation",
+      "regime": "old",
+      "radius_m": 0.79299,
+      "angle_deg": 17.8386,
+      "pick": [
+        0.7548636,
+        0.2429207,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ],
+      "suite": [
+        "history"
+      ]
+    },
+    {
+      "id": "ao024",
+      "split": "ext2_validation",
+      "regime": "old",
+      "radius_m": 0.7094,
+      "angle_deg": -58.2434,
+      "pick": [
+        0.373364,
+        -0.603194,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ],
+      "suite": [
+        "uniform"
+      ]
+    },
+    {
+      "id": "ao057",
+      "split": "ext2_validation",
+      "regime": "old",
+      "radius_m": 0.5101,
+      "angle_deg": -35.0048,
+      "pick": [
+        0.4178229,
+        -0.2926152,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ],
+      "suite": [
+        "uniform"
+      ]
+    },
+    {
+      "id": "vt04",
+      "split": "ext2_validation",
+      "regime": "target",
+      "radius_m": 0.79267,
+      "angle_deg": -61.8143,
+      "pick": [
+        0.3743996,
+        -0.6986722,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ],
+      "suite": [
+        "target"
+      ]
+    },
+    {
+      "id": "ao020",
+      "split": "ext2_validation",
+      "regime": "old",
+      "radius_m": 0.3834,
+      "angle_deg": 2.0818,
+      "pick": [
+        0.3831492,
+        0.0139275,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ],
+      "suite": [
+        "history"
+      ]
+    },
+    {
+      "id": "ao005",
+      "split": "ext2_validation",
+      "regime": "old",
+      "radius_m": 0.6941,
+      "angle_deg": 52.2703,
+      "pick": [
+        0.4247466,
+        0.5489699,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ],
+      "suite": [
+        "uniform"
+      ]
+    },
+    {
+      "id": "ao052",
+      "split": "ext2_validation",
+      "regime": "old",
+      "radius_m": 0.77141,
+      "angle_deg": 39.366,
+      "pick": [
+        0.5963867,
+        0.4892844,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ],
+      "suite": [
+        "history"
+      ]
+    },
+    {
+      "id": "ao028",
+      "split": "ext2_validation",
+      "regime": "old",
+      "radius_m": 0.67189,
+      "angle_deg": 33.389,
+      "pick": [
+        0.5609971,
+        0.3697546,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ],
+      "suite": [
+        "uniform"
+      ]
+    },
+    {
+      "id": "vt03",
+      "split": "ext2_validation",
+      "regime": "target",
+      "radius_m": 0.79539,
+      "angle_deg": -59.4464,
+      "pick": [
+        0.4043329,
+        -0.6849561,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ],
+      "suite": [
+        "target"
+      ]
+    },
+    {
+      "id": "ao014",
+      "split": "ext2_validation",
+      "regime": "old",
+      "radius_m": 0.57867,
+      "angle_deg": 36.6318,
+      "pick": [
+        0.4643735,
+        0.3452739,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ],
+      "suite": [
+        "uniform"
+      ]
+    },
+    {
+      "id": "ao048",
+      "split": "ext2_validation",
+      "regime": "old",
+      "radius_m": 0.78492,
+      "angle_deg": -27.2117,
+      "pick": [
+        0.6980509,
+        -0.3589296,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ],
+      "suite": [
+        "history"
+      ]
+    },
+    {
+      "id": "ao001",
+      "split": "ext2_validation",
+      "regime": "old",
+      "radius_m": 0.78038,
+      "angle_deg": 30.6757,
+      "pick": [
+        0.6711785,
+        0.3981313,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ],
+      "suite": [
+        "history"
+      ]
+    },
+    {
+      "id": "vt02",
+      "split": "ext2_validation",
+      "regime": "target",
+      "radius_m": 0.79774,
+      "angle_deg": -61.7986,
+      "pick": [
+        0.3769901,
+        -0.7030431,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ],
+      "suite": [
+        "target"
+      ]
+    },
+    {
+      "id": "vt01",
+      "split": "ext2_validation",
+      "regime": "target",
+      "radius_m": 0.79719,
+      "angle_deg": -59.8394,
+      "pick": [
+        0.4005308,
+        -0.6892699,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ],
+      "suite": [
+        "target"
+      ]
+    },
+    {
+      "id": "ao002",
+      "split": "ext2_validation",
+      "regime": "old",
+      "radius_m": 0.49812,
+      "angle_deg": -26.0678,
+      "pick": [
+        0.4474498,
+        -0.218892,
+        0.0258
+      ],
+      "place": [
+        0.0,
+        0.5,
+        0.0258
+      ],
+      "suite": [
+        "history"
+      ]
+    }
+  ],
+  "controller_overrides": {
+    "lift_height": 0.258
+  }
+}

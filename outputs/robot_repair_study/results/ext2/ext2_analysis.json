@@ -1,0 +1,1141 @@
+{
+  "evidence": "Extension 2: confirmatory test of a hypothesis generated from Extension 1 (loss-history suites); 24 new seeded random edits; one robot, task and repair context",
+  "gate_decisions_committed_utc": "2026-11-17T06:54:01.504752+00:00",
+  "n_candidates": 24,
+  "n_lossy": 20,
+  "n_parent_old_successes": 73,
+  "P1_primary": {
+    "history8_batch_detect_rate": 0.7,
+    "uniform8_expected_detect_rate": 0.3612,
+    "difference_mean_ci95": [
+      0.3387,
+      0.1589,
+      0.5104
+    ],
+    "H1_supported": true
+  },
+  "S1_realized_uniform": {
+    "uniform8_batch_detect_rate": 0.35,
+    "history_only": 10,
+    "uniform_only": 3,
+    "mcnemar_exact_p": 0.0923
+  },
+  "S2_k4": {
+    "history4_batch_detect_rate": 0.6,
+    "uniform4_expected_detect_rate": 0.2183,
+    "difference_mean_ci95": [
+      0.3817,
+      0.1884,
+      0.5747
+    ],
+    "current_practice8_expected_detect_rate": 0.311
+  },
+  "S3_concentration": {
+    "total_losses": 97,
+    "on_history_suite": 31,
+    "on_uniform_suite": 6,
+    "share_on_history_suite": 0.3196,
+    "share_expected_if_uniform": 0.1096
+  },
+  "S_admission": {
+    "target_gate": {
+      "admitted": 8,
+      "admitted_with_audit_losses": 8,
+      "total_audit_losses_among_admitted": 31,
+      "admitted_useful": {
+        "aggregate_objective": 8,
+        "preservation_objective": 0,
+        "preservation_5pct_tolerance": 4
+      },
+      "missed_useful": {
+        "aggregate_objective": 2,
+        "preservation_objective": 0,
+        "preservation_5pct_tolerance": 2
+      }
+    },
+    "uniform_gate": {
+      "admitted": 7,
+      "admitted_with_audit_losses": 7,
+      "total_audit_losses_among_admitted": 28,
+      "admitted_useful": {
+        "aggregate_objective": 7,
+        "preservation_objective": 0,
+        "preservation_5pct_tolerance": 3
+      },
+      "missed_useful": {
+        "aggregate_objective": 3,
+        "preservation_objective": 0,
+        "preservation_5pct_tolerance": 3
+      }
+    },
+    "history_gate": {
+      "admitted": 1,
+      "admitted_with_audit_losses": 1,
+      "total_audit_losses_among_admitted": 2,
+      "admitted_useful": {
+        "aggregate_objective": 1,
+        "preservation_objective": 0,
+        "preservation_5pct_tolerance": 1
+      },
+      "missed_useful": {
+        "aggregate_objective": 9,
+        "preservation_objective": 0,
+        "preservation_5pct_tolerance": 5
+      }
+    },
+    "history4_gate": {
+      "admitted": 2,
+      "admitted_with_audit_losses": 2,
+      "total_audit_losses_among_admitted": 6,
+      "admitted_useful": {
+        "aggregate_objective": 2,
+        "preservation_objective": 0,
+        "preservation_5pct_tolerance": 1
+      },
+      "missed_useful": {
+        "aggregate_objective": 8,
+        "preservation_objective": 0,
+        "preservation_5pct_tolerance": 5
+      }
+    }
+  },
+  "useful_counts": {
+    "aggregate_objective": 10,
+    "preservation_objective": 0,
+    "preservation_5pct_tolerance": 6
+  },
+  "target_improving": 11,
+  "target_improving_with_old_loss": 11,
+  "S4_suite_batch_vs_audit_agreement": {
+    "candidate_outcomes_agree": [
+      367,
+      384
+    ],
+    "parent_outcomes_agree": [
+      16,
+      16
+    ]
+  },
+  "S5_replay": {
+    "audit_parent_vs_ext1_audit_parent": {
+      "labels": 120,
+      "outcome_agreement": 120,
+      "max_abs_final_error_diff_m": 0.0,
+      "step_count_mismatches": 0
+    },
+    "validation_parent_repeat": {
+      "labels": 20,
+      "outcome_agreement": 20,
+      "max_abs_final_error_diff_m": 0.0,
+      "step_count_mismatches": 0
+    }
+  },
+  "exploratory_loo_history_minus_uniform8": {
+    "new_only": [
+      0.4388,
+      0.2689,
+      0.597
+    ],
+    "ext1_plus_new": [
+      0.4887,
+      0.3238,
+      0.6403
+    ]
+  },
+  "candidates": [
+    {
+      "id": "r25",
+      "overrides": {
+        "grasp_position_tolerance": 0.034
+      },
+      "target_parent": 10,
+      "target_candidate": 10,
+      "target_net": 0,
+      "old_lost": 0,
+      "old_gained": 0,
+      "old_net": 0,
+      "conditional_loss": 0.0,
+      "useful": {
+        "aggregate_objective": false,
+        "preservation_objective": false,
+        "preservation_5pct_tolerance": false
+      },
+      "gates": {
+        "target_gate": false,
+        "uniform_gate": false,
+        "history_gate": false,
+        "history4_gate": false
+      },
+      "detect": {
+        "history8_batch": false,
+        "uniform8_batch": false,
+        "history4_batch": false,
+        "history8_audit": false,
+        "uniform8_audit": false,
+        "history4_audit": false,
+        "uniform8_expected": 0.0,
+        "uniform4_expected": 0.0,
+        "current_practice8_expected": 0.0
+      },
+      "losses_on_history_suite": 0,
+      "losses_on_uniform_suite": 0,
+      "suite_batch_vs_audit_agreement": [
+        16,
+        16
+      ]
+    },
+    {
+      "id": "r26",
+      "overrides": {
+        "grasp_position_tolerance": 0.021,
+        "gripper_dwell": 0.157
+      },
+      "target_parent": 10,
+      "target_candidate": 10,
+      "target_net": 0,
+      "old_lost": 2,
+      "old_gained": 5,
+      "old_net": 3,
+      "conditional_loss": 0.0274,
+      "useful": {
+        "aggregate_objective": false,
+        "preservation_objective": false,
+        "preservation_5pct_tolerance": false
+      },
+      "gates": {
+        "target_gate": false,
+        "uniform_gate": false,
+        "history_gate": false,
+        "history4_gate": false
+      },
+      "detect": {
+        "history8_batch": true,
+        "uniform8_batch": false,
+        "history4_batch": false,
+        "history8_audit": false,
+        "uniform8_audit": false,
+        "history4_audit": false,
+        "uniform8_expected": 0.2085,
+        "uniform4_expected": 0.1073,
+        "current_practice8_expected": 0.1708
+      },
+      "losses_on_history_suite": 0,
+      "losses_on_uniform_suite": 0,
+      "suite_batch_vs_audit_agreement": [
+        15,
+        16
+      ]
+    },
+    {
+      "id": "r27",
+      "overrides": {
+        "grasp_position_tolerance": 0.022
+      },
+      "target_parent": 10,
+      "target_candidate": 10,
+      "target_net": 0,
+      "old_lost": 0,
+      "old_gained": 0,
+      "old_net": 0,
+      "conditional_loss": 0.0,
+      "useful": {
+        "aggregate_objective": false,
+        "preservation_objective": false,
+        "preservation_5pct_tolerance": false
+      },
+      "gates": {
+        "target_gate": false,
+        "uniform_gate": false,
+        "history_gate": false,
+        "history4_gate": false
+      },
+      "detect": {
+        "history8_batch": false,
+        "uniform8_batch": false,
+        "history4_batch": false,
+        "history8_audit": false,
+        "uniform8_audit": false,
+        "history4_audit": false,
+        "uniform8_expected": 0.0,
+        "uniform4_expected": 0.0,
+        "current_practice8_expected": 0.0
+      },
+      "losses_on_history_suite": 0,
+      "losses_on_uniform_suite": 0,
+      "suite_batch_vs_audit_agreement": [
+        16,
+        16
+      ]
+    },
+    {
+      "id": "r28",
+      "overrides": {
+        "lift_height": 0.253
+      },
+      "target_parent": 10,
+      "target_candidate": 15,
+      "target_net": 5,
+      "old_lost": 5,
+      "old_gained": 7,
+      "old_net": 2,
+      "conditional_loss": 0.0685,
+      "useful": {
+        "aggregate_objective": true,
+        "preservation_objective": false,
+        "preservation_5pct_tolerance": false
+      },
+      "gates": {
+        "target_gate": true,
+        "uniform_gate": true,
+        "history_gate": false,
+        "history4_gate": false
+      },
+      "detect": {
+        "history8_batch": true,
+        "uniform8_batch": false,
+        "history4_batch": true,
+        "history8_audit": true,
+        "uniform8_audit": false,
+        "history4_audit": true,
+        "uniform8_expected": 0.4501,
+        "uniform4_expected": 0.2518,
+        "current_practice8_expected": 0.3792
+      },
+      "losses_on_history_suite": 2,
+      "losses_on_uniform_suite": 0,
+      "suite_batch_vs_audit_agreement": [
+        14,
+        16
+      ]
+    },
+    {
+      "id": "r29",
+      "overrides": {
+        "lift_height": 0.343,
+        "position_tolerance": 0.018
+      },
+      "target_parent": 10,
+      "target_candidate": 0,
+      "target_net": -10,
+      "old_lost": 2,
+      "old_gained": 4,
+      "old_net": 2,
+      "conditional_loss": 0.0274,
+      "useful": {
+        "aggregate_objective": false,
+        "preservation_objective": false,
+        "preservation_5pct_tolerance": false
+      },
+      "gates": {
+        "target_gate": false,
+        "uniform_gate": false,
+        "history_gate": false,
+        "history4_gate": false
+      },
+      "detect": {
+        "history8_batch": true,
+        "uniform8_batch": false,
+        "history4_batch": true,
+        "history8_audit": true,
+        "uniform8_audit": false,
+        "history4_audit": true,
+        "uniform8_expected": 0.2085,
+        "uniform4_expected": 0.1073,
+        "current_practice8_expected": 0.1708
+      },
+      "losses_on_history_suite": 2,
+      "losses_on_uniform_suite": 0,
+      "suite_batch_vs_audit_agreement": [
+        16,
+        16
+      ]
+    },
+    {
+      "id": "r30",
+      "overrides": {
+        "approach_height": 0.085
+      },
+      "target_parent": 10,
+      "target_candidate": 11,
+      "target_net": 1,
+      "old_lost": 1,
+      "old_gained": 8,
+      "old_net": 7,
+      "conditional_loss": 0.0137,
+      "useful": {
+        "aggregate_objective": true,
+        "preservation_objective": false,
+        "preservation_5pct_tolerance": true
+      },
+      "gates": {
+        "target_gate": false,
+        "uniform_gate": false,
+        "history_gate": false,
+        "history4_gate": false
+      },
+      "detect": {
+        "history8_batch": false,
+        "uniform8_batch": true,
+        "history4_batch": false,
+        "history8_audit": false,
+        "uniform8_audit": false,
+        "history4_audit": false,
+        "uniform8_expected": 0.1096,
+        "uniform4_expected": 0.0548,
+        "current_practice8_expected": 0.0889
+      },
+      "losses_on_history_suite": 0,
+      "losses_on_uniform_suite": 0,
+      "suite_batch_vs_audit_agreement": [
+        15,
+        16
+      ]
+    },
+    {
+      "id": "r31",
+      "overrides": {
+        "position_tolerance": 0.013
+      },
+      "target_parent": 10,
+      "target_candidate": 4,
+      "target_net": -6,
+      "old_lost": 6,
+      "old_gained": 5,
+      "old_net": -1,
+      "conditional_loss": 0.0822,
+      "useful": {
+        "aggregate_objective": false,
+        "preservation_objective": false,
+        "preservation_5pct_tolerance": false
+      },
+      "gates": {
+        "target_gate": false,
+        "uniform_gate": false,
+        "history_gate": false,
+        "history4_gate": false
+      },
+      "detect": {
+        "history8_batch": true,
+        "uniform8_batch": true,
+        "history4_batch": true,
+        "history8_audit": true,
+        "uniform8_audit": true,
+        "history4_audit": true,
+        "uniform8_expected": 0.5148,
+        "uniform4_expected": 0.2958,
+        "current_practice8_expected": 0.4376
+      },
+      "losses_on_history_suite": 2,
+      "losses_on_uniform_suite": 1,
+      "suite_batch_vs_audit_agreement": [
+        15,
+        16
+      ]
+    },
+    {
+      "id": "r32",
+      "overrides": {
+        "grasp_position_tolerance": 0.016,
+        "stability_duration": 0.454
+      },
+      "target_parent": 10,
+      "target_candidate": 5,
+      "target_net": -5,
+      "old_lost": 2,
+      "old_gained": 8,
+      "old_net": 6,
+      "conditional_loss": 0.0274,
+      "useful": {
+        "aggregate_objective": false,
+        "preservation_objective": false,
+        "preservation_5pct_tolerance": false
+      },
+      "gates": {
+        "target_gate": false,
+        "uniform_gate": false,
+        "history_gate": false,
+        "history4_gate": false
+      },
+      "detect": {
+        "history8_batch": true,
+        "uniform8_batch": false,
+        "history4_batch": true,
+        "history8_audit": true,
+        "uniform8_audit": false,
+        "history4_audit": true,
+        "uniform8_expected": 0.2085,
+        "uniform4_expected": 0.1073,
+        "current_practice8_expected": 0.1708
+      },
+      "losses_on_history_suite": 1,
+      "losses_on_uniform_suite": 0,
+      "suite_batch_vs_audit_agreement": [
+        16,
+        16
+      ]
+    },
+    {
+      "id": "r33",
+      "overrides": {
+        "approach_height": 0.181,
+        "position_tolerance": 0.009
+      },
+      "target_parent": 10,
+      "target_candidate": 0,
+      "target_net": -10,
+      "old_lost": 25,
+      "old_gained": 6,
+      "old_net": -19,
+      "conditional_loss": 0.3425,
+      "useful": {
+        "aggregate_objective": false,
+        "preservation_objective": false,
+        "preservation_5pct_tolerance": false
+      },
+      "gates": {
+        "target_gate": false,
+        "uniform_gate": false,
+        "history_gate": false,
+        "history4_gate": false
+      },
+      "detect": {
+        "history8_batch": true,
+        "uniform8_batch": true,
+        "history4_batch": true,
+        "history8_audit": true,
+        "uniform8_audit": false,
+        "history4_audit": true,
+        "uniform8_expected": 0.9719,
+        "uniform4_expected": 0.8212,
+        "current_practice8_expected": 0.9349
+      },
+      "losses_on_history_suite": 6,
+      "losses_on_uniform_suite": 0,
+      "suite_batch_vs_audit_agreement": [
+        14,
+        16
+      ]
+    },
+    {
+      "id": "r34",
+      "overrides": {
+        "grasp_position_tolerance": 0.011
+      },
+      "target_parent": 10,
+      "target_candidate": 10,
+      "target_net": 0,
+      "old_lost": 0,
+      "old_gained": 0,
+      "old_net": 0,
+      "conditional_loss": 0.0,
+      "useful": {
+        "aggregate_objective": false,
+        "preservation_objective": false,
+        "preservation_5pct_tolerance": false
+      },
+      "gates": {
+        "target_gate": false,
+        "uniform_gate": false,
+        "history_gate": false,
+        "history4_gate": false
+      },
+      "detect": {
+        "history8_batch": false,
+        "uniform8_batch": false,
+        "history4_batch": false,
+        "history8_audit": false,
+        "uniform8_audit": false,
+        "history4_audit": false,
+        "uniform8_expected": 0.0,
+        "uniform4_expected": 0.0,
+        "current_practice8_expected": 0.0
+      },
+      "losses_on_history_suite": 0,
+      "losses_on_uniform_suite": 0,
+      "suite_batch_vs_audit_agreement": [
+        16,
+        16
+      ]
+    },
+    {
+      "id": "r35",
+      "overrides": {
+        "lift_height": 0.128,
+        "stability_duration": 0.432
+      },
+      "target_parent": 10,
+      "target_candidate": 7,
+      "target_net": -3,
+      "old_lost": 1,
+      "old_gained": 9,
+      "old_net": 8,
+      "conditional_loss": 0.0137,
+      "useful": {
+        "aggregate_objective": false,
+        "preservation_objective": false,
+        "preservation_5pct_tolerance": false
+      },
+      "gates": {
+        "target_gate": false,
+        "uniform_gate": false,
+        "history_gate": false,
+        "history4_gate": false
+      },
+      "detect": {
+        "history8_batch": false,
+        "uniform8_batch": false,
+        "history4_batch": false,
+        "history8_audit": false,
+        "uniform8_audit": false,
+        "history4_audit": false,
+        "uniform8_expected": 0.1096,
+        "uniform4_expected": 0.0548,
+        "current_practice8_expected": 0.0889
+      },
+      "losses_on_history_suite": 0,
+      "losses_on_uniform_suite": 0,
+      "suite_batch_vs_audit_agreement": [
+        16,
+        16
+      ]
+    },
+    {
+      "id": "r36",
+      "overrides": {
+        "position_tolerance": 0.028
+      },
+      "target_parent": 10,
+      "target_candidate": 27,
+      "target_net": 17,
+      "old_lost": 3,
+      "old_gained": 8,
+      "old_net": 5,
+      "conditional_loss": 0.0411,
+      "useful": {
+        "aggregate_objective": true,
+        "preservation_objective": false,
+        "preservation_5pct_tolerance": true
+      },
+      "gates": {
+        "target_gate": true,
+        "uniform_gate": false,
+        "history_gate": false,
+        "history4_gate": false
+      },
+      "detect": {
+        "history8_batch": true,
+        "uniform8_batch": true,
+        "history4_batch": true,
+        "history8_audit": true,
+        "uniform8_audit": true,
+        "history4_audit": true,
+        "uniform8_expected": 0.2977,
+        "uniform4_expected": 0.1576,
+        "current_practice8_expected": 0.2462
+      },
+      "losses_on_history_suite": 2,
+      "losses_on_uniform_suite": 1,
+      "suite_batch_vs_audit_agreement": [
+        16,
+        16
+      ]
+    },
+    {
+      "id": "r37",
+      "overrides": {
+        "approach_height": 0.168
+      },
+      "target_parent": 10,
+      "target_candidate": 11,
+      "target_net": 1,
+      "old_lost": 14,
+      "old_gained": 7,
+      "old_net": -7,
+      "conditional_loss": 0.1918,
+      "useful": {
+        "aggregate_objective": false,
+        "preservation_objective": false,
+        "preservation_5pct_tolerance": false
+      },
+      "gates": {
+        "target_gate": false,
+        "uniform_gate": false,
+        "history_gate": false,
+        "history4_gate": false
+      },
+      "detect": {
+        "history8_batch": true,
+        "uniform8_batch": true,
+        "history4_batch": true,
+        "history8_audit": true,
+        "uniform8_audit": true,
+        "history4_audit": true,
+        "uniform8_expected": 0.835,
+        "uniform4_expected": 0.5819,
+        "current_practice8_expected": 0.7567
+      },
+      "losses_on_history_suite": 2,
+      "losses_on_uniform_suite": 3,
+      "suite_batch_vs_audit_agreement": [
+        15,
+        16
+      ]
+    },
+    {
+      "id": "r38",
+      "overrides": {
+        "stability_duration": 0.068
+      },
+      "target_parent": 10,
+      "target_candidate": 10,
+      "target_net": 0,
+      "old_lost": 3,
+      "old_gained": 8,
+      "old_net": 5,
+      "conditional_loss": 0.0411,
+      "useful": {
+        "aggregate_objective": false,
+        "preservation_objective": false,
+        "preservation_5pct_tolerance": false
+      },
+      "gates": {
+        "target_gate": false,
+        "uniform_gate": false,
+        "history_gate": false,
+        "history4_gate": false
+      },
+      "detect": {
+        "history8_batch": false,
+        "uniform8_batch": true,
+        "history4_batch": false,
+        "history8_audit": true,
+        "uniform8_audit": false,
+        "history4_audit": true,
+        "uniform8_expected": 0.2977,
+        "uniform4_expected": 0.1576,
+        "current_practice8_expected": 0.2462
+      },
+      "losses_on_history_suite": 2,
+      "losses_on_uniform_suite": 0,
+      "suite_batch_vs_audit_agreement": [
+        13,
+        16
+      ]
+    },
+    {
+      "id": "r39",
+      "overrides": {
+        "lift_height": 0.187
+      },
+      "target_parent": 10,
+      "target_candidate": 14,
+      "target_net": 4,
+      "old_lost": 7,
+      "old_gained": 8,
+      "old_net": 1,
+      "conditional_loss": 0.0959,
+      "useful": {
+        "aggregate_objective": true,
+        "preservation_objective": false,
+        "preservation_5pct_tolerance": false
+      },
+      "gates": {
+        "target_gate": true,
+        "uniform_gate": true,
+        "history_gate": false,
+        "history4_gate": false
+      },
+      "detect": {
+        "history8_batch": true,
+        "uniform8_batch": false,
+        "history4_batch": true,
+        "history8_audit": true,
+        "uniform8_audit": false,
+        "history4_audit": true,
+        "uniform8_expected": 0.5727,
+        "uniform4_expected": 0.3378,
+        "current_practice8_expected": 0.4912
+      },
+      "losses_on_history_suite": 4,
+      "losses_on_uniform_suite": 0,
+      "suite_batch_vs_audit_agreement": [
+        13,
+        16
+      ]
+    },
+    {
+      "id": "r40",
+      "overrides": {
+        "lift_height": 0.303,
+        "position_tolerance": 0.026
+      },
+      "target_parent": 10,
+      "target_candidate": 28,
+      "target_net": 18,
+      "old_lost": 2,
+      "old_gained": 4,
+      "old_net": 2,
+      "conditional_loss": 0.0274,
+      "useful": {
+        "aggregate_objective": true,
+        "preservation_objective": false,
+        "preservation_5pct_tolerance": true
+      },
+      "gates": {
+        "target_gate": true,
+        "uniform_gate": true,
+        "history_gate": false,
+        "history4_gate": false
+      },
+      "detect": {
+        "history8_batch": true,
+        "uniform8_batch": false,
+        "history4_batch": true,
+        "history8_audit": true,
+        "uniform8_audit": false,
+        "history4_audit": true,
+        "uniform8_expected": 0.2085,
+        "uniform4_expected": 0.1073,
+        "current_practice8_expected": 0.1708
+      },
+      "losses_on_history_suite": 1,
+      "losses_on_uniform_suite": 0,
+      "suite_batch_vs_audit_agreement": [
+        16,
+        16
+      ]
+    },
+    {
+      "id": "r41",
+      "overrides": {
+        "lift_height": 0.147,
+        "position_tolerance": 0.013
+      },
+      "target_parent": 10,
+      "target_candidate": 12,
+      "target_net": 2,
+      "old_lost": 4,
+      "old_gained": 10,
+      "old_net": 6,
+      "conditional_loss": 0.0548,
+      "useful": {
+        "aggregate_objective": true,
+        "preservation_objective": false,
+        "preservation_5pct_tolerance": false
+      },
+      "gates": {
+        "target_gate": true,
+        "uniform_gate": true,
+        "history_gate": false,
+        "history4_gate": true
+      },
+      "detect": {
+        "history8_batch": true,
+        "uniform8_batch": false,
+        "history4_batch": false,
+        "history8_audit": false,
+        "uniform8_audit": false,
+        "history4_audit": false,
+        "uniform8_expected": 0.378,
+        "uniform4_expected": 0.2057,
+        "current_practice8_expected": 0.3155
+      },
+      "losses_on_history_suite": 0,
+      "losses_on_uniform_suite": 0,
+      "suite_batch_vs_audit_agreement": [
+        15,
+        16
+      ]
+    },
+    {
+      "id": "r42",
+      "overrides": {
+        "gripper_dwell": 0.78
+      },
+      "target_parent": 10,
+      "target_candidate": 11,
+      "target_net": 1,
+      "old_lost": 1,
+      "old_gained": 8,
+      "old_net": 7,
+      "conditional_loss": 0.0137,
+      "useful": {
+        "aggregate_objective": true,
+        "preservation_objective": false,
+        "preservation_5pct_tolerance": true
+      },
+      "gates": {
+        "target_gate": false,
+        "uniform_gate": false,
+        "history_gate": false,
+        "history4_gate": false
+      },
+      "detect": {
+        "history8_batch": false,
+        "uniform8_batch": false,
+        "history4_batch": false,
+        "history8_audit": true,
+        "uniform8_audit": false,
+        "history4_audit": true,
+        "uniform8_expected": 0.1096,
+        "uniform4_expected": 0.0548,
+        "current_practice8_expected": 0.0889
+      },
+      "losses_on_history_suite": 1,
+      "losses_on_uniform_suite": 0,
+      "suite_batch_vs_audit_agreement": [
+        15,
+        16
+      ]
+    },
+    {
+      "id": "r43",
+      "overrides": {
+        "stability_duration": 0.134
+      },
+      "target_parent": 10,
+      "target_candidate": 10,
+      "target_net": 0,
+      "old_lost": 6,
+      "old_gained": 6,
+      "old_net": 0,
+      "conditional_loss": 0.0822,
+      "useful": {
+        "aggregate_objective": false,
+        "preservation_objective": false,
+        "preservation_5pct_tolerance": false
+      },
+      "gates": {
+        "target_gate": false,
+        "uniform_gate": false,
+        "history_gate": false,
+        "history4_gate": false
+      },
+      "detect": {
+        "history8_batch": true,
+        "uniform8_batch": false,
+        "history4_batch": true,
+        "history8_audit": true,
+        "uniform8_audit": false,
+        "history4_audit": true,
+        "uniform8_expected": 0.5148,
+        "uniform4_expected": 0.2958,
+        "current_practice8_expected": 0.4376
+      },
+      "losses_on_history_suite": 1,
+      "losses_on_uniform_suite": 0,
+      "suite_batch_vs_audit_agreement": [
+        16,
+        16
+      ]
+    },
+    {
+      "id": "r44",
+      "overrides": {
+        "position_tolerance": 0.03,
+        "grasp_position_tolerance": 0.019
+      },
+      "target_parent": 10,
+      "target_candidate": 30,
+      "target_net": 20,
+      "old_lost": 2,
+      "old_gained": 8,
+      "old_net": 6,
+      "conditional_loss": 0.0274,
+      "useful": {
+        "aggregate_objective": true,
+        "preservation_objective": false,
+        "preservation_5pct_tolerance": true
+      },
+      "gates": {
+        "target_gate": true,
+        "uniform_gate": true,
+        "history_gate": false,
+        "history4_gate": false
+      },
+      "detect": {
+        "history8_batch": true,
+        "uniform8_batch": false,
+        "history4_batch": true,
+        "history8_audit": true,
+        "uniform8_audit": false,
+        "history4_audit": true,
+        "uniform8_expected": 0.2085,
+        "uniform4_expected": 0.1073,
+        "current_practice8_expected": 0.1708
+      },
+      "losses_on_history_suite": 2,
+      "losses_on_uniform_suite": 0,
+      "suite_batch_vs_audit_agreement": [
+        16,
+        16
+      ]
+    },
+    {
+      "id": "r45",
+      "overrides": {
+        "grasp_position_tolerance": 0.026,
+        "gripper_dwell": 0.215
+      },
+      "target_parent": 10,
+      "target_candidate": 10,
+      "target_net": 0,
+      "old_lost": 0,
+      "old_gained": 0,
+      "old_net": 0,
+      "conditional_loss": 0.0,
+      "useful": {
+        "aggregate_objective": false,
+        "preservation_objective": false,
+        "preservation_5pct_tolerance": false
+      },
+      "gates": {
+        "target_gate": false,
+        "uniform_gate": false,
+        "history_gate": false,
+        "history4_gate": false
+      },
+      "detect": {
+        "history8_batch": false,
+        "uniform8_batch": false,
+        "history4_batch": false,
+        "history8_audit": false,
+        "uniform8_audit": false,
+        "history4_audit": false,
+        "uniform8_expected": 0.0,
+        "uniform4_expected": 0.0,
+        "current_practice8_expected": 0.0
+      },
+      "losses_on_history_suite": 0,
+      "losses_on_uniform_suite": 0,
+      "suite_batch_vs_audit_agreement": [
+        16,
+        16
+      ]
+    },
+    {
+      "id": "r46",
+      "overrides": {
+        "lift_height": 0.258
+      },
+      "target_parent": 10,
+      "target_candidate": 15,
+      "target_net": 5,
+      "old_lost": 6,
+      "old_gained": 8,
+      "old_net": 2,
+      "conditional_loss": 0.0822,
+      "useful": {
+        "aggregate_objective": true,
+        "preservation_objective": false,
+        "preservation_5pct_tolerance": false
+      },
+      "gates": {
+        "target_gate": true,
+        "uniform_gate": true,
+        "history_gate": false,
+        "history4_gate": false
+      },
+      "detect": {
+        "history8_batch": true,
+        "uniform8_batch": false,
+        "history4_batch": true,
+        "history8_audit": true,
+        "uniform8_audit": false,
+        "history4_audit": true,
+        "uniform8_expected": 0.5148,
+        "uniform4_expected": 0.2958,
+        "current_practice8_expected": 0.4376
+      },
+      "losses_on_history_suite": 2,
+      "losses_on_uniform_suite": 0,
+      "suite_batch_vs_audit_agreement": [
+        16,
+        16
+      ]
+    },
+    {
+      "id": "r47",
+      "overrides": {
+        "gripper_dwell": 0.319
+      },
+      "target_parent": 10,
+      "target_candidate": 10,
+      "target_net": 0,
+      "old_lost": 3,
+      "old_gained": 6,
+      "old_net": 3,
+      "conditional_loss": 0.0411,
+      "useful": {
+        "aggregate_objective": false,
+        "preservation_objective": false,
+        "preservation_5pct_tolerance": false
+      },
+      "gates": {
+        "target_gate": false,
+        "uniform_gate": false,
+        "history_gate": false,
+        "history4_gate": false
+      },
+      "detect": {
+        "history8_batch": false,
+        "uniform8_batch": true,
+        "history4_batch": false,
+        "history8_audit": true,
+        "uniform8_audit": true,
+        "history4_audit": false,
+        "uniform8_expected": 0.2977,
+        "uniform4_expected": 0.1576,
+        "current_practice8_expected": 0.2462
+      },
+      "losses_on_history_suite": 1,
+      "losses_on_uniform_suite": 1,
+      "suite_batch_vs_audit_agreement": [
+        15,
+        16
+      ]
+    },
+    {
+      "id": "r48",
+      "overrides": {
+        "lift_height": 0.24,
+        "gripper_dwell": 0.191
+      },
+      "target_parent": 10,
+      "target_candidate": 15,
+      "target_net": 5,
+      "old_lost": 2,
+      "old_gained": 7,
+      "old_net": 5,
+      "conditional_loss": 0.0274,
+      "useful": {
+        "aggregate_objective": true,
+        "preservation_objective": false,
+        "preservation_5pct_tolerance": true
+      },
+      "gates": {
+        "target_gate": true,
+        "uniform_gate": true,
+        "history_gate": true,
+        "history4_gate": true
+      },
+      "detect": {
+        "history8_batch": false,
+        "uniform8_batch": false,
+        "history4_batch": false,
+        "history8_audit": false,
+        "uniform8_audit": false,
+        "history4_audit": false,
+        "uniform8_expected": 0.2085,
+        "uniform4_expected": 0.1073,
+        "current_practice8_expected": 0.1708
+      },
+      "losses_on_history_suite": 0,
+      "losses_on_uniform_suite": 0,
+      "suite_batch_vs_audit_agreement": [
+        16,
+        16
+      ]
+    }
+  ]
+}

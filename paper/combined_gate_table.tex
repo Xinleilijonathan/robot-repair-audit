@@ -1,0 +1,25 @@
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3.0pt}
+\begin{tabular}{lccccc}
+\toprule
+ & \multicolumn{3}{c}{Admitted} & \multicolumn{2}{c}{Agg.-useful} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-6}
+Gate & no. & w/ loss & losses & adm. & missed \\
+\midrule
+\multicolumn{6}{l}{\emph{Post-hoc population: 26 candidates, 7 agg.-useful}} \\
+Target-only & 10 & 10 & 61 & 7 & 0 \\
+Aggregate & 5 & 5 & 33 & 4 & 3 \\
+Preservation & 4 & 4 & 17 & 4 & 3 \\
+\midrule
+\multicolumn{6}{l}{\emph{Pre-registered test: 24 new edits, 10 agg.-useful}} \\
+Target-only & 8 & 8 & 31 & 8 & 2 \\
+Uniform suite, 8 & 7 & 7 & 28 & 7 & 3 \\
+History suite, 4 & 2 & 2 & 6 & 2 & 8 \\
+History suite, 8 & 1 & 1 & 2 & 1 & 9 \\
+\bottomrule
+\end{tabular}
+\caption{Committed gate decisions in the two candidate populations, scored on each population's audit (30 target and 90 old scenes; the parent solves 73 old scenes in both). Losses are summed over admitted candidates. No candidate in either population is useful under the zero-loss objective. Suite gates spend 4 target and $k$ old pairs and admit only with a target gain and zero suite losses.}
+\label{tab:gates2}
+\end{table}

@@ -1,0 +1,545 @@
+{
+  "label": "POST-HOC descriptive analysis; not part of the pre-registered Extension 2 protocol",
+  "n_eligible": 73,
+  "ext1_total_losses": 163,
+  "ext2_total_losses": 97,
+  "spearman_ext1_vs_ext2_counts": 0.4179,
+  "ext2_share_on_ext1_topk": {
+    "4": 0.2268,
+    "8": 0.3196,
+    "10": 0.4433,
+    "20": 0.6495
+  },
+  "expected_share_if_uniform": {
+    "4": 0.0548,
+    "8": 0.1096,
+    "10": 0.137,
+    "20": 0.274
+  },
+  "ext2_scenes_never_lost_by_ext1": {
+    "scenes": 19,
+    "ext2_losses_on_them": 14
+  },
+  "target_improvers_pooled": {
+    "improvers_with_loss": 21,
+    "improvers": 21,
+    "wilson95": [
+      1.0,
+      0.8454,
+      1.0
+    ]
+  },
+  "per_scene": [
+    {
+      "scene": "ao002",
+      "ext1_losses": 7,
+      "ext2_losses": 4,
+      "history_suite": true,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao004",
+      "ext1_losses": 2,
+      "ext2_losses": 2,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao017",
+      "ext1_losses": 5,
+      "ext2_losses": 7,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao087",
+      "ext1_losses": 4,
+      "ext2_losses": 1,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao015",
+      "ext1_losses": 2,
+      "ext2_losses": 0,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao051",
+      "ext1_losses": 1,
+      "ext2_losses": 0,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao009",
+      "ext1_losses": 2,
+      "ext2_losses": 1,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao073",
+      "ext1_losses": 1,
+      "ext2_losses": 1,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao005",
+      "ext1_losses": 1,
+      "ext2_losses": 0,
+      "history_suite": false,
+      "uniform_suite": true
+    },
+    {
+      "scene": "ao001",
+      "ext1_losses": 6,
+      "ext2_losses": 2,
+      "history_suite": true,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao083",
+      "ext1_losses": 10,
+      "ext2_losses": 5,
+      "history_suite": true,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao023",
+      "ext1_losses": 1,
+      "ext2_losses": 0,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao030",
+      "ext1_losses": 2,
+      "ext2_losses": 0,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao053",
+      "ext1_losses": 1,
+      "ext2_losses": 0,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao059",
+      "ext1_losses": 2,
+      "ext2_losses": 0,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao056",
+      "ext1_losses": 4,
+      "ext2_losses": 3,
+      "history_suite": false,
+      "uniform_suite": true
+    },
+    {
+      "scene": "ao029",
+      "ext1_losses": 0,
+      "ext2_losses": 1,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao039",
+      "ext1_losses": 1,
+      "ext2_losses": 0,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao043",
+      "ext1_losses": 2,
+      "ext2_losses": 0,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao049",
+      "ext1_losses": 3,
+      "ext2_losses": 0,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao033",
+      "ext1_losses": 0,
+      "ext2_losses": 2,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao061",
+      "ext1_losses": 2,
+      "ext2_losses": 1,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao042",
+      "ext1_losses": 1,
+      "ext2_losses": 1,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao057",
+      "ext1_losses": 2,
+      "ext2_losses": 2,
+      "history_suite": false,
+      "uniform_suite": true
+    },
+    {
+      "scene": "ao054",
+      "ext1_losses": 1,
+      "ext2_losses": 1,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao079",
+      "ext1_losses": 1,
+      "ext2_losses": 4,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao089",
+      "ext1_losses": 1,
+      "ext2_losses": 1,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao044",
+      "ext1_losses": 2,
+      "ext2_losses": 0,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao090",
+      "ext1_losses": 2,
+      "ext2_losses": 0,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao022",
+      "ext1_losses": 5,
+      "ext2_losses": 5,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao026",
+      "ext1_losses": 0,
+      "ext2_losses": 4,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao034",
+      "ext1_losses": 5,
+      "ext2_losses": 4,
+      "history_suite": true,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao028",
+      "ext1_losses": 0,
+      "ext2_losses": 0,
+      "history_suite": false,
+      "uniform_suite": true
+    },
+    {
+      "scene": "ao048",
+      "ext1_losses": 6,
+      "ext2_losses": 1,
+      "history_suite": true,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao018",
+      "ext1_losses": 7,
+      "ext2_losses": 2,
+      "history_suite": true,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao021",
+      "ext1_losses": 0,
+      "ext2_losses": 1,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao006",
+      "ext1_losses": 0,
+      "ext2_losses": 0,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao027",
+      "ext1_losses": 2,
+      "ext2_losses": 1,
+      "history_suite": false,
+      "uniform_suite": true
+    },
+    {
+      "scene": "ao024",
+      "ext1_losses": 2,
+      "ext2_losses": 0,
+      "history_suite": false,
+      "uniform_suite": true
+    },
+    {
+      "scene": "ao064",
+      "ext1_losses": 4,
+      "ext2_losses": 5,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao052",
+      "ext1_losses": 9,
+      "ext2_losses": 3,
+      "history_suite": true,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao031",
+      "ext1_losses": 0,
+      "ext2_losses": 1,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao072",
+      "ext1_losses": 0,
+      "ext2_losses": 1,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao032",
+      "ext1_losses": 0,
+      "ext2_losses": 0,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao013",
+      "ext1_losses": 0,
+      "ext2_losses": 1,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao063",
+      "ext1_losses": 2,
+      "ext2_losses": 0,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao062",
+      "ext1_losses": 0,
+      "ext2_losses": 0,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao078",
+      "ext1_losses": 4,
+      "ext2_losses": 4,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao020",
+      "ext1_losses": 9,
+      "ext2_losses": 10,
+      "history_suite": true,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao060",
+      "ext1_losses": 4,
+      "ext2_losses": 0,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao038",
+      "ext1_losses": 4,
+      "ext2_losses": 2,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao077",
+      "ext1_losses": 1,
+      "ext2_losses": 0,
+      "history_suite": false,
+      "uniform_suite": true
+    },
+    {
+      "scene": "ao066",
+      "ext1_losses": 0,
+      "ext2_losses": 0,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao019",
+      "ext1_losses": 1,
+      "ext2_losses": 2,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao045",
+      "ext1_losses": 0,
+      "ext2_losses": 1,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao007",
+      "ext1_losses": 4,
+      "ext2_losses": 0,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao075",
+      "ext1_losses": 3,
+      "ext2_losses": 2,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao076",
+      "ext1_losses": 0,
+      "ext2_losses": 0,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao012",
+      "ext1_losses": 1,
+      "ext2_losses": 0,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao008",
+      "ext1_losses": 2,
+      "ext2_losses": 0,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao014",
+      "ext1_losses": 0,
+      "ext2_losses": 0,
+      "history_suite": false,
+      "uniform_suite": true
+    },
+    {
+      "scene": "ao050",
+      "ext1_losses": 0,
+      "ext2_losses": 1,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao035",
+      "ext1_losses": 3,
+      "ext2_losses": 0,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao010",
+      "ext1_losses": 2,
+      "ext2_losses": 0,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao055",
+      "ext1_losses": 1,
+      "ext2_losses": 0,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao046",
+      "ext1_losses": 2,
+      "ext2_losses": 0,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao082",
+      "ext1_losses": 0,
+      "ext2_losses": 0,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao085",
+      "ext1_losses": 3,
+      "ext2_losses": 3,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao088",
+      "ext1_losses": 3,
+      "ext2_losses": 2,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao047",
+      "ext1_losses": 2,
+      "ext2_losses": 1,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao041",
+      "ext1_losses": 3,
+      "ext2_losses": 0,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao069",
+      "ext1_losses": 0,
+      "ext2_losses": 0,
+      "history_suite": false,
+      "uniform_suite": false
+    },
+    {
+      "scene": "ao065",
+      "ext1_losses": 0,
+      "ext2_losses": 1,
+      "history_suite": false,
+      "uniform_suite": false
+    }
+  ]
+}

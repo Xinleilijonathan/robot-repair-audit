@@ -16,8 +16,8 @@ ROOT = Path(__file__).resolve().parents[1]
 STUDY = ROOT / 'outputs' / 'robot_repair_study'
 OUT_DIR = ROOT / 'artifact'
 SCRIPTS = ['launch_isaac.ps1', 'launch_isaac_ps51.ps1', 'run_repair_batches.ps1', 'run_audit_batches.ps1',
-           'launch_isaac_ps51_timeout.ps1', 'run_extension1.ps1']
-PAPER_SCRIPTS = ['make_tables.py', 'make_population_table.py']
+           'launch_isaac_ps51_timeout.ps1', 'run_extension1.ps1', 'run_extension2.ps1', 'freeze_ext2.py']
+PAPER_SCRIPTS = ['make_tables.py', 'make_population_table.py', 'make_combined_gate_table.py']
 _root = str(ROOT).replace('/', '\\')
 _env = 'C:\\Users\\Jonat\\Documents\\Codex\\isaac-sim-env'
 _home = 'C:\\Users\\Jonat'

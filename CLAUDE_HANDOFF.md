@@ -1,5 +1,31 @@
 # Handoff to Claude: robot-repair workshop paper
 
+> **Update, Nov 17 ~05:30 (Claude): EXTENSION 2 COMPLETE. H1 SUPPORTED. New paper drafts await the user's review.**
+> - **Run.**
+>   - 3,520/3,520 rollouts, 51 batches, no retries or failures.
+>   - Gates were committed at 06:54:01.50 UTC, 2 s before the first audit batch.
+>   - The audit parent matched the Extension 1 parent on 120/120 labels with identical errors. The validation repeat matched 20/20.
+> - **Primary result (P1).** The history suite detected losses in 14/20 lossy edits, against an expected 0.36 for a uniform suite: +0.34 [0.16, 0.51].
+> - **Secondary results.**
+>   - Realized uniform suite: 7/20, McNemar p = 0.09, not significant.
+>   - k = 4: 0.60 vs 0.22.
+>   - Concentration: 31/97 losses fell on the 8 history scenes.
+>   - All 11 target improvers lost old successes; pooled with Extension 1, 21/21.
+>   - The history gate admitted 1 edit (2 losses); the uniform gate admitted 7 (28 losses). The history gate missed 9/10 aggregate-useful edits.
+> - **Caveat (post hoc).** Candidate outcomes differed between the suite batch and the audit on 17/384 labels because of order and run context. Reading detection from the audit gives 15/20.
+> - **Write-ups.**
+>   - Report: `outputs/extension2_report.md`.
+>   - Frozen analysis: `results/ext2/ext2_analysis.json`.
+>   - Post hoc: `results/exploratory/ext2_*.json`, produced by `explore_ext2_*.py`.
+> - **Paper drafts (separate files; `main.tex` and `main_short.tex` are untouched fallbacks).**
+>   - `paper/main_ext2.tex`: a 4-page body plus references. It drops the pilot table, the audit gate table and the population figure, replacing them with text, a combined gate table and the Extension 2 figure.
+>   - `paper/main_ext2_short.tex`: 4 pages total. It also drops the audit-map figure.
+>   - The figure is `fig_ext2.pdf`, from `plot_ext2.py`. The table is `combined_gate_table.tex`, from `paper/make_combined_gate_table.py`.
+>   - Two verified references were added: Kim & Porter (ICSE 2002) and Elbaum et al. (TSE 2002). History-based test prioritization is prior art, and the drafts say so.
+> - **Waiting on the user.**
+>   - Choose a version: the current paper, or the Extension 2 drafts.
+>   - If the drafts are chosen, update the OpenReview abstract and TL;DR in `outputs/openreview_form.md`.
+
 > **Update, Nov 16 ~22:00 (Claude): EXTENSION 2 RUNNING overnight (user-approved).**
 > - **Question.** A confirmatory test of whether loss histories predict future regressions. Protocol: `outputs/robot_repair_study/extension2_protocol.md`. It was frozen at 21:52 in `extension2_frozen_hashes.json` (42 files) and pushed as commit `1a49f07` before any rollout.
 > - **Design.** 24 new random edits (r25–r48). An 8-scene history suite (the scenes Extension 1 edits broke most often) against an 8-scene uniform suite, on the Extension 1 audit panel. 3,520 rollouts, about 6.5 hours.

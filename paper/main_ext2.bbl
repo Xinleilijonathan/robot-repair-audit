@@ -1,0 +1,64 @@
+\begin{thebibliography}{10}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[{Aphale and Singh(2026)}]{aphale2026selfrepair}
+Aphale, S.; and Singh, A. 2026.
+\newblock Rethinking Self-Repair in Code-as-Policy Agents: What Drives Retry
+  Success?
+\newblock arXiv:2611.06863. CoRL 2026 Learn@Deploy Workshop.
+
+\bibitem[{Elbaum, Malishevsky, and Rothermel(2002)}]{elbaum2002prioritization}
+Elbaum, S.; Malishevsky, A.~G.; and Rothermel, G. 2002.
+\newblock Test Case Prioritization: A Family of Empirical Studies.
+\newblock \emph{IEEE Transactions on Software Engineering}, 28(2): 159--182.
+
+\bibitem[{Gao, Yang, and Yang(2026)}]{gao2026looping}
+Gao, X.; Yang, J.; and Yang, Q. 2026.
+\newblock Looping Is Not Reliability: State-Bound Evidence and Typed Revision
+  Contracts for Agentic Code Repair.
+\newblock arXiv:2607.24604. AgenticDev 2026.
+
+\bibitem[{Kim and Porter(2002)}]{kim2002history}
+Kim, J.-M.; and Porter, A. 2002.
+\newblock A History-Based Test Prioritization Technique for Regression Testing
+  in Resource Constrained Environments.
+\newblock In \emph{Proceedings of the 24th International Conference on Software
+  Engineering (ICSE)}, 119--129.
+
+\bibitem[{Kuroki, Kawaharazuka, and Tang(2026)}]{kuroki2026closedloop}
+Kuroki, S.; Kawaharazuka, K.; and Tang, Y. 2026.
+\newblock Learning and Transferring Closed-Loop Robot Software.
+\newblock arXiv:2609.19906.
+
+\bibitem[{Ma and Wu(2026)}]{ma2026validation}
+Ma, Q.; and Wu, R. 2026.
+\newblock When Validation Stops Learning: Auditing Update Admission for
+  Continual Embodied Agents.
+\newblock arXiv:2609.10873.
+
+\bibitem[{{NVIDIA}(2026)}]{nvidia2026franka}
+{NVIDIA}. 2026.
+\newblock Isaac Sim 6.2: Franka Pick-and-Place Manipulation Example.
+\newblock Isaac Sim documentation, version 6.2.0.
+
+\bibitem[{Xiao et~al.(2026)Xiao, Xie, Zhang, Lin, Fu, Xue, Lu, Yang, Dai, Wang,
+  Wu, Wang, Sastry, Goldberg, Fan, Zhu, and Shi}]{xiao2026enpire}
+Xiao, W.; Xie, J.; Zhang, T.; Lin, H.; Fu, L.; Xue, H.; Lu, J.; Yang, Y.; Dai,
+  C.; Wang, Z.; Wu, J.; Wang, G.; Sastry, S.~S.; Goldberg, K.; Fan, L.; Zhu,
+  Y.; and Shi, G. 2026.
+\newblock {ENPIRE}: Agentic Robot Policy Self-Improvement in the Real World.
+\newblock arXiv:2606.19980. Conference on Robot Learning (CoRL) 2026.
+
+\bibitem[{Xu and Wu(2026)}]{xu2026evidence}
+Xu, X.; and Wu, W. 2026.
+\newblock Validation Evidence in {LLM} Repair Agents: How Much of What Passes
+  Actually Tests the Bug?
+\newblock arXiv:2607.28871.
+
+\bibitem[{Zhang et~al.(2026)Zhang, Zhu, Lin, Cardie, Ding, and
+  Zhou}]{zhang2026verification}
+Zhang, Z.; Zhu, E.; Lin, Y.; Cardie, C.; Ding, B.; and Zhou, J. 2026.
+\newblock Rethinking Verification in Agent Harnesses.
+\newblock arXiv:2610.34577.
+
+\end{thebibliography}

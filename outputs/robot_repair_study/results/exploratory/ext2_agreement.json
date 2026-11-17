@@ -1,0 +1,421 @@
+{
+  "label": "POST-HOC sensitivity analysis; not part of the pre-registered Extension 2 protocol",
+  "n_lossy": 20,
+  "disagreeing_labels": 17,
+  "by_direction": {
+    "batch_fail_audit_success": 9,
+    "batch_success_audit_fail": 8
+  },
+  "by_suite": {
+    "history": 13,
+    "uniform": 4
+  },
+  "candidates_with_disagreement": [
+    "r26",
+    "r28",
+    "r30",
+    "r31",
+    "r33",
+    "r37",
+    "r38",
+    "r39",
+    "r41",
+    "r42",
+    "r47"
+  ],
+  "P1_as_frozen_batch_detection": {
+    "history8_detect_rate": 0.7,
+    "uniform8_expected_detect_rate": 0.3613,
+    "difference_mean_ci95": [
+      0.3387,
+      0.1589,
+      0.5104
+    ]
+  },
+  "P1_with_audit_detection": {
+    "history8_detect_rate": 0.75,
+    "uniform8_expected_detect_rate": 0.3613,
+    "difference_mean_ci95": [
+      0.3887,
+      0.209,
+      0.5579
+    ]
+  },
+  "realized_uniform_audit": {
+    "uniform8_audit_detect_rate": 0.2,
+    "history_only": 11,
+    "uniform_only": 0,
+    "mcnemar_exact_p": 0.001
+  },
+  "per_candidate": [
+    {
+      "id": "r26",
+      "m": 2,
+      "history8_batch": 1,
+      "history8_audit": 0,
+      "uniform8_batch": 0,
+      "uniform8_audit": 0,
+      "uniform8_expected": 0.20852359208523596
+    },
+    {
+      "id": "r28",
+      "m": 5,
+      "history8_batch": 1,
+      "history8_audit": 1,
+      "uniform8_batch": 0,
+      "uniform8_audit": 0,
+      "uniform8_expected": 0.45008626306179345
+    },
+    {
+      "id": "r29",
+      "m": 2,
+      "history8_batch": 1,
+      "history8_audit": 1,
+      "uniform8_batch": 0,
+      "uniform8_audit": 0,
+      "uniform8_expected": 0.20852359208523596
+    },
+    {
+      "id": "r30",
+      "m": 1,
+      "history8_batch": 0,
+      "history8_audit": 0,
+      "uniform8_batch": 1,
+      "uniform8_audit": 0,
+      "uniform8_expected": 0.1095890410958904
+    },
+    {
+      "id": "r31",
+      "m": 6,
+      "history8_batch": 1,
+      "history8_audit": 1,
+      "uniform8_batch": 1,
+      "uniform8_audit": 1,
+      "uniform8_expected": 0.5147819968192295
+    },
+    {
+      "id": "r32",
+      "m": 2,
+      "history8_batch": 1,
+      "history8_audit": 1,
+      "uniform8_batch": 0,
+      "uniform8_audit": 0,
+      "uniform8_expected": 0.20852359208523596
+    },
+    {
+      "id": "r33",
+      "m": 25,
+      "history8_batch": 1,
+      "history8_audit": 1,
+      "uniform8_batch": 1,
+      "uniform8_audit": 0,
+      "uniform8_expected": 0.971927878623927
+    },
+    {
+      "id": "r35",
+      "m": 1,
+      "history8_batch": 0,
+      "history8_audit": 0,
+      "uniform8_batch": 0,
+      "uniform8_audit": 0,
+      "uniform8_expected": 0.1095890410958904
+    },
+    {
+      "id": "r36",
+      "m": 3,
+      "history8_batch": 1,
+      "history8_audit": 1,
+      "uniform8_batch": 1,
+      "uniform8_audit": 1,
+      "uniform8_expected": 0.29770403241366006
+    },
+    {
+      "id": "r37",
+      "m": 14,
+      "history8_batch": 1,
+      "history8_audit": 1,
+      "uniform8_batch": 1,
+      "uniform8_audit": 1,
+      "uniform8_expected": 0.8350356639331644
+    },
+    {
+      "id": "r38",
+      "m": 3,
+      "history8_batch": 0,
+      "history8_audit": 1,
+      "uniform8_batch": 1,
+      "uniform8_audit": 0,
+      "uniform8_expected": 0.29770403241366006
+    },
+    {
+      "id": "r39",
+      "m": 7,
+      "history8_batch": 1,
+      "history8_audit": 1,
+      "uniform8_batch": 0,
+      "uniform8_audit": 0,
+      "uniform8_expected": 0.5727184748109633
+    },
+    {
+      "id": "r40",
+      "m": 2,
+      "history8_batch": 1,
+      "history8_audit": 1,
+      "uniform8_batch": 0,
+      "uniform8_audit": 0,
+      "uniform8_expected": 0.20852359208523596
+    },
+    {
+      "id": "r41",
+      "m": 4,
+      "history8_batch": 1,
+      "history8_audit": 0,
+      "uniform8_batch": 0,
+      "uniform8_audit": 0,
+      "uniform8_expected": 0.3779664287092418
+    },
+    {
+      "id": "r42",
+      "m": 1,
+      "history8_batch": 0,
+      "history8_audit": 1,
+      "uniform8_batch": 0,
+      "uniform8_audit": 0,
+      "uniform8_expected": 0.1095890410958904
+    },
+    {
+      "id": "r43",
+      "m": 6,
+      "history8_batch": 1,
+      "history8_audit": 1,
+      "uniform8_batch": 0,
+      "uniform8_audit": 0,
+      "uniform8_expected": 0.5147819968192295
+    },
+    {
+      "id": "r44",
+      "m": 2,
+      "history8_batch": 1,
+      "history8_audit": 1,
+      "uniform8_batch": 0,
+      "uniform8_audit": 0,
+      "uniform8_expected": 0.20852359208523596
+    },
+    {
+      "id": "r46",
+      "m": 6,
+      "history8_batch": 1,
+      "history8_audit": 1,
+      "uniform8_batch": 0,
+      "uniform8_audit": 0,
+      "uniform8_expected": 0.5147819968192295
+    },
+    {
+      "id": "r47",
+      "m": 3,
+      "history8_batch": 0,
+      "history8_audit": 1,
+      "uniform8_batch": 1,
+      "uniform8_audit": 1,
+      "uniform8_expected": 0.29770403241366006
+    },
+    {
+      "id": "r48",
+      "m": 2,
+      "history8_batch": 0,
+      "history8_audit": 0,
+      "uniform8_batch": 0,
+      "uniform8_audit": 0,
+      "uniform8_expected": 0.20852359208523596
+    }
+  ],
+  "cells": [
+    {
+      "candidate": "r26",
+      "scene": "ao001",
+      "suite": "history",
+      "parent_audit": 1,
+      "parent_batch": 1,
+      "candidate_batch": 0,
+      "candidate_audit": 1,
+      "final_error_batch_m": 0.04264,
+      "final_error_audit_m": 0.01028
+    },
+    {
+      "candidate": "r28",
+      "scene": "ao002",
+      "suite": "history",
+      "parent_audit": 1,
+      "parent_batch": 1,
+      "candidate_batch": 0,
+      "candidate_audit": 1,
+      "final_error_batch_m": 0.03304,
+      "final_error_audit_m": 0.02832
+    },
+    {
+      "candidate": "r28",
+      "scene": "ao001",
+      "suite": "history",
+      "parent_audit": 1,
+      "parent_batch": 1,
+      "candidate_batch": 1,
+      "candidate_audit": 0,
+      "final_error_batch_m": 0.01435,
+      "final_error_audit_m": 0.03199
+    },
+    {
+      "candidate": "r30",
+      "scene": "ao056",
+      "suite": "uniform",
+      "parent_audit": 1,
+      "parent_batch": 1,
+      "candidate_batch": 0,
+      "candidate_audit": 1,
+      "final_error_batch_m": 0.03464,
+      "final_error_audit_m": 0.01881
+    },
+    {
+      "candidate": "r31",
+      "scene": "ao001",
+      "suite": "history",
+      "parent_audit": 1,
+      "parent_batch": 1,
+      "candidate_batch": 0,
+      "candidate_audit": 1,
+      "final_error_batch_m": 0.03162,
+      "final_error_audit_m": 0.02421
+    },
+    {
+      "candidate": "r33",
+      "scene": "ao056",
+      "suite": "uniform",
+      "parent_audit": 1,
+      "parent_batch": 1,
+      "candidate_batch": 0,
+      "candidate_audit": 1,
+      "final_error_batch_m": 0.03798,
+      "final_error_audit_m": 0.01813
+    },
+    {
+      "candidate": "r33",
+      "scene": "ao057",
+      "suite": "uniform",
+      "parent_audit": 1,
+      "parent_batch": 1,
+      "candidate_batch": 0,
+      "candidate_audit": 1,
+      "final_error_batch_m": 0.03192,
+      "final_error_audit_m": 0.02425
+    },
+    {
+      "candidate": "r37",
+      "scene": "ao083",
+      "suite": "history",
+      "parent_audit": 1,
+      "parent_batch": 1,
+      "candidate_batch": 0,
+      "candidate_audit": 1,
+      "final_error_batch_m": 0.03049,
+      "final_error_audit_m": 0.02749
+    },
+    {
+      "candidate": "r38",
+      "scene": "ao052",
+      "suite": "history",
+      "parent_audit": 1,
+      "parent_batch": 1,
+      "candidate_batch": 1,
+      "candidate_audit": 0,
+      "final_error_batch_m": 0.00431,
+      "final_error_audit_m": 0.04356
+    },
+    {
+      "candidate": "r38",
+      "scene": "ao020",
+      "suite": "history",
+      "parent_audit": 1,
+      "parent_batch": 1,
+      "candidate_batch": 1,
+      "candidate_audit": 0,
+      "final_error_batch_m": 0.01138,
+      "final_error_audit_m": 0.03465
+    },
+    {
+      "candidate": "r38",
+      "scene": "ao028",
+      "suite": "uniform",
+      "parent_audit": 1,
+      "parent_batch": 1,
+      "candidate_batch": 0,
+      "candidate_audit": 1,
+      "final_error_batch_m": 0.03935,
+      "final_error_audit_m": 0.01173
+    },
+    {
+      "candidate": "r39",
+      "scene": "ao020",
+      "suite": "history",
+      "parent_audit": 1,
+      "parent_batch": 1,
+      "candidate_batch": 1,
+      "candidate_audit": 0,
+      "final_error_batch_m": 0.02588,
+      "final_error_audit_m": 0.03665
+    },
+    {
+      "candidate": "r39",
+      "scene": "ao002",
+      "suite": "history",
+      "parent_audit": 1,
+      "parent_batch": 1,
+      "candidate_batch": 1,
+      "candidate_audit": 0,
+      "final_error_batch_m": 0.02941,
+      "final_error_audit_m": 0.03583
+    },
+    {
+      "candidate": "r39",
+      "scene": "ao034",
+      "suite": "history",
+      "parent_audit": 1,
+      "parent_batch": 1,
+      "candidate_batch": 1,
+      "candidate_audit": 0,
+      "final_error_batch_m": 0.01744,
+      "final_error_audit_m": 0.03084
+    },
+    {
+      "candidate": "r41",
+      "scene": "ao034",
+      "suite": "history",
+      "parent_audit": 1,
+      "parent_batch": 1,
+      "candidate_batch": 0,
+      "candidate_audit": 1,
+      "final_error_batch_m": 0.03075,
+      "final_error_audit_m": 0.02139
+    },
+    {
+      "candidate": "r42",
+      "scene": "ao083",
+      "suite": "history",
+      "parent_audit": 1,
+      "parent_batch": 1,
+      "candidate_batch": 1,
+      "candidate_audit": 0,
+      "final_error_batch_m": 0.01271,
+      "final_error_audit_m": 0.03019
+    },
+    {
+      "candidate": "r47",
+      "scene": "ao018",
+      "suite": "history",
+      "parent_audit": 1,
+      "parent_batch": 1,
+      "candidate_batch": 1,
+      "candidate_audit": 0,
+      "final_error_batch_m": 0.01902,
+      "final_error_audit_m": 0.03081
+    }
+  ]
+}

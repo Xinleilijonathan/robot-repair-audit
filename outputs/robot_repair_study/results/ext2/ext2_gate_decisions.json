@@ -1,0 +1,1092 @@
+{
+  "committed_utc": "2026-11-17T06:54:01.504752+00:00",
+  "manifest_sha256": "a7e8c7210c43b968e36a5f3df07a6ac3a8f171a598cf6b1735b611962f56029e",
+  "suites_sha256": "033a99c367997f37921258cfac31f3f51e9b46f387d50dc95380775eb38e28a9",
+  "parent_folder": "ext2_validation_parent",
+  "parent_suite_successes": {
+    "target": 2,
+    "history": 8,
+    "uniform": 8
+  },
+  "rule_note": "Zero-loss gates; each spends 4 target + k old pairs. Parent rollouts shared.",
+  "candidates": {
+    "r25": {
+      "overrides": {
+        "grasp_position_tolerance": 0.034
+      },
+      "validation_folder": "ext2_validation_r25",
+      "target": {
+        "n": 4,
+        "parent_successes": 2,
+        "candidate_successes": 2,
+        "lost": [],
+        "gained": []
+      },
+      "history": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 8,
+        "lost": [],
+        "gained": []
+      },
+      "history_k4": {
+        "n": 4,
+        "parent_successes": 4,
+        "candidate_successes": 4,
+        "lost": [],
+        "gained": []
+      },
+      "uniform": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 8,
+        "lost": [],
+        "gained": []
+      },
+      "target_net": 0,
+      "target_gate": false,
+      "history_gate": false,
+      "history4_gate": false,
+      "uniform_gate": false
+    },
+    "r26": {
+      "overrides": {
+        "grasp_position_tolerance": 0.021,
+        "gripper_dwell": 0.157
+      },
+      "validation_folder": "ext2_validation_r26",
+      "target": {
+        "n": 4,
+        "parent_successes": 2,
+        "candidate_successes": 1,
+        "lost": [
+          "vt03"
+        ],
+        "gained": []
+      },
+      "history": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 7,
+        "lost": [
+          "ao001"
+        ],
+        "gained": []
+      },
+      "history_k4": {
+        "n": 4,
+        "parent_successes": 4,
+        "candidate_successes": 4,
+        "lost": [],
+        "gained": []
+      },
+      "uniform": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 8,
+        "lost": [],
+        "gained": []
+      },
+      "target_net": -1,
+      "target_gate": false,
+      "history_gate": false,
+      "history4_gate": false,
+      "uniform_gate": false
+    },
+    "r27": {
+      "overrides": {
+        "grasp_position_tolerance": 0.022
+      },
+      "validation_folder": "ext2_validation_r27",
+      "target": {
+        "n": 4,
+        "parent_successes": 2,
+        "candidate_successes": 2,
+        "lost": [],
+        "gained": []
+      },
+      "history": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 8,
+        "lost": [],
+        "gained": []
+      },
+      "history_k4": {
+        "n": 4,
+        "parent_successes": 4,
+        "candidate_successes": 4,
+        "lost": [],
+        "gained": []
+      },
+      "uniform": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 8,
+        "lost": [],
+        "gained": []
+      },
+      "target_net": 0,
+      "target_gate": false,
+      "history_gate": false,
+      "history4_gate": false,
+      "uniform_gate": false
+    },
+    "r28": {
+      "overrides": {
+        "lift_height": 0.253
+      },
+      "validation_folder": "ext2_validation_r28",
+      "target": {
+        "n": 4,
+        "parent_successes": 2,
+        "candidate_successes": 4,
+        "lost": [],
+        "gained": [
+          "vt01",
+          "vt02"
+        ]
+      },
+      "history": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 6,
+        "lost": [
+          "ao020",
+          "ao002"
+        ],
+        "gained": []
+      },
+      "history_k4": {
+        "n": 4,
+        "parent_successes": 4,
+        "candidate_successes": 2,
+        "lost": [
+          "ao020",
+          "ao002"
+        ],
+        "gained": []
+      },
+      "uniform": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 8,
+        "lost": [],
+        "gained": []
+      },
+      "target_net": 2,
+      "target_gate": true,
+      "history_gate": false,
+      "history4_gate": false,
+      "uniform_gate": true
+    },
+    "r29": {
+      "overrides": {
+        "lift_height": 0.343,
+        "position_tolerance": 0.018
+      },
+      "validation_folder": "ext2_validation_r29",
+      "target": {
+        "n": 4,
+        "parent_successes": 2,
+        "candidate_successes": 0,
+        "lost": [
+          "vt03",
+          "vt04"
+        ],
+        "gained": []
+      },
+      "history": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 6,
+        "lost": [
+          "ao083",
+          "ao020"
+        ],
+        "gained": []
+      },
+      "history_k4": {
+        "n": 4,
+        "parent_successes": 4,
+        "candidate_successes": 2,
+        "lost": [
+          "ao083",
+          "ao020"
+        ],
+        "gained": []
+      },
+      "uniform": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 8,
+        "lost": [],
+        "gained": []
+      },
+      "target_net": -2,
+      "target_gate": false,
+      "history_gate": false,
+      "history4_gate": false,
+      "uniform_gate": false
+    },
+    "r30": {
+      "overrides": {
+        "approach_height": 0.085
+      },
+      "validation_folder": "ext2_validation_r30",
+      "target": {
+        "n": 4,
+        "parent_successes": 2,
+        "candidate_successes": 2,
+        "lost": [],
+        "gained": []
+      },
+      "history": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 8,
+        "lost": [],
+        "gained": []
+      },
+      "history_k4": {
+        "n": 4,
+        "parent_successes": 4,
+        "candidate_successes": 4,
+        "lost": [],
+        "gained": []
+      },
+      "uniform": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 7,
+        "lost": [
+          "ao056"
+        ],
+        "gained": []
+      },
+      "target_net": 0,
+      "target_gate": false,
+      "history_gate": false,
+      "history4_gate": false,
+      "uniform_gate": false
+    },
+    "r31": {
+      "overrides": {
+        "position_tolerance": 0.013
+      },
+      "validation_folder": "ext2_validation_r31",
+      "target": {
+        "n": 4,
+        "parent_successes": 2,
+        "candidate_successes": 0,
+        "lost": [
+          "vt03",
+          "vt04"
+        ],
+        "gained": []
+      },
+      "history": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 5,
+        "lost": [
+          "ao083",
+          "ao052",
+          "ao001"
+        ],
+        "gained": []
+      },
+      "history_k4": {
+        "n": 4,
+        "parent_successes": 4,
+        "candidate_successes": 2,
+        "lost": [
+          "ao083",
+          "ao052"
+        ],
+        "gained": []
+      },
+      "uniform": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 7,
+        "lost": [
+          "ao057"
+        ],
+        "gained": []
+      },
+      "target_net": -2,
+      "target_gate": false,
+      "history_gate": false,
+      "history4_gate": false,
+      "uniform_gate": false
+    },
+    "r32": {
+      "overrides": {
+        "grasp_position_tolerance": 0.016,
+        "stability_duration": 0.454
+      },
+      "validation_folder": "ext2_validation_r32",
+      "target": {
+        "n": 4,
+        "parent_successes": 2,
+        "candidate_successes": 1,
+        "lost": [
+          "vt03"
+        ],
+        "gained": []
+      },
+      "history": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 7,
+        "lost": [
+          "ao083"
+        ],
+        "gained": []
+      },
+      "history_k4": {
+        "n": 4,
+        "parent_successes": 4,
+        "candidate_successes": 3,
+        "lost": [
+          "ao083"
+        ],
+        "gained": []
+      },
+      "uniform": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 8,
+        "lost": [],
+        "gained": []
+      },
+      "target_net": -1,
+      "target_gate": false,
+      "history_gate": false,
+      "history4_gate": false,
+      "uniform_gate": false
+    },
+    "r33": {
+      "overrides": {
+        "approach_height": 0.181,
+        "position_tolerance": 0.009
+      },
+      "validation_folder": "ext2_validation_r33",
+      "target": {
+        "n": 4,
+        "parent_successes": 2,
+        "candidate_successes": 0,
+        "lost": [
+          "vt03",
+          "vt04"
+        ],
+        "gained": []
+      },
+      "history": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 2,
+        "lost": [
+          "ao083",
+          "ao020",
+          "ao018",
+          "ao048",
+          "ao001",
+          "ao034"
+        ],
+        "gained": []
+      },
+      "history_k4": {
+        "n": 4,
+        "parent_successes": 4,
+        "candidate_successes": 2,
+        "lost": [
+          "ao083",
+          "ao020"
+        ],
+        "gained": []
+      },
+      "uniform": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 6,
+        "lost": [
+          "ao056",
+          "ao057"
+        ],
+        "gained": []
+      },
+      "target_net": -2,
+      "target_gate": false,
+      "history_gate": false,
+      "history4_gate": false,
+      "uniform_gate": false
+    },
+    "r34": {
+      "overrides": {
+        "grasp_position_tolerance": 0.011
+      },
+      "validation_folder": "ext2_validation_r34",
+      "target": {
+        "n": 4,
+        "parent_successes": 2,
+        "candidate_successes": 2,
+        "lost": [],
+        "gained": []
+      },
+      "history": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 8,
+        "lost": [],
+        "gained": []
+      },
+      "history_k4": {
+        "n": 4,
+        "parent_successes": 4,
+        "candidate_successes": 4,
+        "lost": [],
+        "gained": []
+      },
+      "uniform": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 8,
+        "lost": [],
+        "gained": []
+      },
+      "target_net": 0,
+      "target_gate": false,
+      "history_gate": false,
+      "history4_gate": false,
+      "uniform_gate": false
+    },
+    "r35": {
+      "overrides": {
+        "lift_height": 0.128,
+        "stability_duration": 0.432
+      },
+      "validation_folder": "ext2_validation_r35",
+      "target": {
+        "n": 4,
+        "parent_successes": 2,
+        "candidate_successes": 1,
+        "lost": [
+          "vt03"
+        ],
+        "gained": []
+      },
+      "history": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 8,
+        "lost": [],
+        "gained": []
+      },
+      "history_k4": {
+        "n": 4,
+        "parent_successes": 4,
+        "candidate_successes": 4,
+        "lost": [],
+        "gained": []
+      },
+      "uniform": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 8,
+        "lost": [],
+        "gained": []
+      },
+      "target_net": -1,
+      "target_gate": false,
+      "history_gate": false,
+      "history4_gate": false,
+      "uniform_gate": false
+    },
+    "r36": {
+      "overrides": {
+        "position_tolerance": 0.028
+      },
+      "validation_folder": "ext2_validation_r36",
+      "target": {
+        "n": 4,
+        "parent_successes": 2,
+        "candidate_successes": 4,
+        "lost": [],
+        "gained": [
+          "vt01",
+          "vt02"
+        ]
+      },
+      "history": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 6,
+        "lost": [
+          "ao020",
+          "ao002"
+        ],
+        "gained": []
+      },
+      "history_k4": {
+        "n": 4,
+        "parent_successes": 4,
+        "candidate_successes": 2,
+        "lost": [
+          "ao020",
+          "ao002"
+        ],
+        "gained": []
+      },
+      "uniform": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 7,
+        "lost": [
+          "ao056"
+        ],
+        "gained": []
+      },
+      "target_net": 2,
+      "target_gate": true,
+      "history_gate": false,
+      "history4_gate": false,
+      "uniform_gate": false
+    },
+    "r37": {
+      "overrides": {
+        "approach_height": 0.168
+      },
+      "validation_folder": "ext2_validation_r37",
+      "target": {
+        "n": 4,
+        "parent_successes": 2,
+        "candidate_successes": 2,
+        "lost": [],
+        "gained": []
+      },
+      "history": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 5,
+        "lost": [
+          "ao083",
+          "ao002",
+          "ao034"
+        ],
+        "gained": []
+      },
+      "history_k4": {
+        "n": 4,
+        "parent_successes": 4,
+        "candidate_successes": 2,
+        "lost": [
+          "ao083",
+          "ao002"
+        ],
+        "gained": []
+      },
+      "uniform": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 5,
+        "lost": [
+          "ao027",
+          "ao056",
+          "ao057"
+        ],
+        "gained": []
+      },
+      "target_net": 0,
+      "target_gate": false,
+      "history_gate": false,
+      "history4_gate": false,
+      "uniform_gate": false
+    },
+    "r38": {
+      "overrides": {
+        "stability_duration": 0.068
+      },
+      "validation_folder": "ext2_validation_r38",
+      "target": {
+        "n": 4,
+        "parent_successes": 2,
+        "candidate_successes": 2,
+        "lost": [],
+        "gained": []
+      },
+      "history": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 8,
+        "lost": [],
+        "gained": []
+      },
+      "history_k4": {
+        "n": 4,
+        "parent_successes": 4,
+        "candidate_successes": 4,
+        "lost": [],
+        "gained": []
+      },
+      "uniform": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 7,
+        "lost": [
+          "ao028"
+        ],
+        "gained": []
+      },
+      "target_net": 0,
+      "target_gate": false,
+      "history_gate": false,
+      "history4_gate": false,
+      "uniform_gate": false
+    },
+    "r39": {
+      "overrides": {
+        "lift_height": 0.187
+      },
+      "validation_folder": "ext2_validation_r39",
+      "target": {
+        "n": 4,
+        "parent_successes": 2,
+        "candidate_successes": 3,
+        "lost": [
+          "vt04"
+        ],
+        "gained": [
+          "vt01",
+          "vt02"
+        ]
+      },
+      "history": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 7,
+        "lost": [
+          "ao052"
+        ],
+        "gained": []
+      },
+      "history_k4": {
+        "n": 4,
+        "parent_successes": 4,
+        "candidate_successes": 3,
+        "lost": [
+          "ao052"
+        ],
+        "gained": []
+      },
+      "uniform": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 8,
+        "lost": [],
+        "gained": []
+      },
+      "target_net": 1,
+      "target_gate": true,
+      "history_gate": false,
+      "history4_gate": false,
+      "uniform_gate": true
+    },
+    "r40": {
+      "overrides": {
+        "lift_height": 0.303,
+        "position_tolerance": 0.026
+      },
+      "validation_folder": "ext2_validation_r40",
+      "target": {
+        "n": 4,
+        "parent_successes": 2,
+        "candidate_successes": 4,
+        "lost": [],
+        "gained": [
+          "vt01",
+          "vt02"
+        ]
+      },
+      "history": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 7,
+        "lost": [
+          "ao020"
+        ],
+        "gained": []
+      },
+      "history_k4": {
+        "n": 4,
+        "parent_successes": 4,
+        "candidate_successes": 3,
+        "lost": [
+          "ao020"
+        ],
+        "gained": []
+      },
+      "uniform": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 8,
+        "lost": [],
+        "gained": []
+      },
+      "target_net": 2,
+      "target_gate": true,
+      "history_gate": false,
+      "history4_gate": false,
+      "uniform_gate": true
+    },
+    "r41": {
+      "overrides": {
+        "lift_height": 0.147,
+        "position_tolerance": 0.013
+      },
+      "validation_folder": "ext2_validation_r41",
+      "target": {
+        "n": 4,
+        "parent_successes": 2,
+        "candidate_successes": 4,
+        "lost": [],
+        "gained": [
+          "vt01",
+          "vt02"
+        ]
+      },
+      "history": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 7,
+        "lost": [
+          "ao034"
+        ],
+        "gained": []
+      },
+      "history_k4": {
+        "n": 4,
+        "parent_successes": 4,
+        "candidate_successes": 4,
+        "lost": [],
+        "gained": []
+      },
+      "uniform": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 8,
+        "lost": [],
+        "gained": []
+      },
+      "target_net": 2,
+      "target_gate": true,
+      "history_gate": false,
+      "history4_gate": true,
+      "uniform_gate": true
+    },
+    "r42": {
+      "overrides": {
+        "gripper_dwell": 0.78
+      },
+      "validation_folder": "ext2_validation_r42",
+      "target": {
+        "n": 4,
+        "parent_successes": 2,
+        "candidate_successes": 2,
+        "lost": [],
+        "gained": []
+      },
+      "history": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 8,
+        "lost": [],
+        "gained": []
+      },
+      "history_k4": {
+        "n": 4,
+        "parent_successes": 4,
+        "candidate_successes": 4,
+        "lost": [],
+        "gained": []
+      },
+      "uniform": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 8,
+        "lost": [],
+        "gained": []
+      },
+      "target_net": 0,
+      "target_gate": false,
+      "history_gate": false,
+      "history4_gate": false,
+      "uniform_gate": false
+    },
+    "r43": {
+      "overrides": {
+        "stability_duration": 0.134
+      },
+      "validation_folder": "ext2_validation_r43",
+      "target": {
+        "n": 4,
+        "parent_successes": 2,
+        "candidate_successes": 1,
+        "lost": [
+          "vt03"
+        ],
+        "gained": []
+      },
+      "history": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 7,
+        "lost": [
+          "ao020"
+        ],
+        "gained": []
+      },
+      "history_k4": {
+        "n": 4,
+        "parent_successes": 4,
+        "candidate_successes": 3,
+        "lost": [
+          "ao020"
+        ],
+        "gained": []
+      },
+      "uniform": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 8,
+        "lost": [],
+        "gained": []
+      },
+      "target_net": -1,
+      "target_gate": false,
+      "history_gate": false,
+      "history4_gate": false,
+      "uniform_gate": false
+    },
+    "r44": {
+      "overrides": {
+        "position_tolerance": 0.03,
+        "grasp_position_tolerance": 0.019
+      },
+      "validation_folder": "ext2_validation_r44",
+      "target": {
+        "n": 4,
+        "parent_successes": 2,
+        "candidate_successes": 4,
+        "lost": [],
+        "gained": [
+          "vt01",
+          "vt02"
+        ]
+      },
+      "history": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 6,
+        "lost": [
+          "ao020",
+          "ao002"
+        ],
+        "gained": []
+      },
+      "history_k4": {
+        "n": 4,
+        "parent_successes": 4,
+        "candidate_successes": 2,
+        "lost": [
+          "ao020",
+          "ao002"
+        ],
+        "gained": []
+      },
+      "uniform": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 8,
+        "lost": [],
+        "gained": []
+      },
+      "target_net": 2,
+      "target_gate": true,
+      "history_gate": false,
+      "history4_gate": false,
+      "uniform_gate": true
+    },
+    "r45": {
+      "overrides": {
+        "grasp_position_tolerance": 0.026,
+        "gripper_dwell": 0.215
+      },
+      "validation_folder": "ext2_validation_r45",
+      "target": {
+        "n": 4,
+        "parent_successes": 2,
+        "candidate_successes": 2,
+        "lost": [],
+        "gained": []
+      },
+      "history": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 8,
+        "lost": [],
+        "gained": []
+      },
+      "history_k4": {
+        "n": 4,
+        "parent_successes": 4,
+        "candidate_successes": 4,
+        "lost": [],
+        "gained": []
+      },
+      "uniform": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 8,
+        "lost": [],
+        "gained": []
+      },
+      "target_net": 0,
+      "target_gate": false,
+      "history_gate": false,
+      "history4_gate": false,
+      "uniform_gate": false
+    },
+    "r46": {
+      "overrides": {
+        "lift_height": 0.258
+      },
+      "validation_folder": "ext2_validation_r46",
+      "target": {
+        "n": 4,
+        "parent_successes": 2,
+        "candidate_successes": 4,
+        "lost": [],
+        "gained": [
+          "vt01",
+          "vt02"
+        ]
+      },
+      "history": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 6,
+        "lost": [
+          "ao020",
+          "ao034"
+        ],
+        "gained": []
+      },
+      "history_k4": {
+        "n": 4,
+        "parent_successes": 4,
+        "candidate_successes": 3,
+        "lost": [
+          "ao020"
+        ],
+        "gained": []
+      },
+      "uniform": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 8,
+        "lost": [],
+        "gained": []
+      },
+      "target_net": 2,
+      "target_gate": true,
+      "history_gate": false,
+      "history4_gate": false,
+      "uniform_gate": true
+    },
+    "r47": {
+      "overrides": {
+        "gripper_dwell": 0.319
+      },
+      "validation_folder": "ext2_validation_r47",
+      "target": {
+        "n": 4,
+        "parent_successes": 2,
+        "candidate_successes": 2,
+        "lost": [],
+        "gained": []
+      },
+      "history": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 8,
+        "lost": [],
+        "gained": []
+      },
+      "history_k4": {
+        "n": 4,
+        "parent_successes": 4,
+        "candidate_successes": 4,
+        "lost": [],
+        "gained": []
+      },
+      "uniform": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 7,
+        "lost": [
+          "ao056"
+        ],
+        "gained": []
+      },
+      "target_net": 0,
+      "target_gate": false,
+      "history_gate": false,
+      "history4_gate": false,
+      "uniform_gate": false
+    },
+    "r48": {
+      "overrides": {
+        "lift_height": 0.24,
+        "gripper_dwell": 0.191
+      },
+      "validation_folder": "ext2_validation_r48",
+      "target": {
+        "n": 4,
+        "parent_successes": 2,
+        "candidate_successes": 3,
+        "lost": [],
+        "gained": [
+          "vt02"
+        ]
+      },
+      "history": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 8,
+        "lost": [],
+        "gained": []
+      },
+      "history_k4": {
+        "n": 4,
+        "parent_successes": 4,
+        "candidate_successes": 4,
+        "lost": [],
+        "gained": []
+      },
+      "uniform": {
+        "n": 8,
+        "parent_successes": 8,
+        "candidate_successes": 8,
+        "lost": [],
+        "gained": []
+      },
+      "target_net": 1,
+      "target_gate": true,
+      "history_gate": true,
+      "history4_gate": true,
+      "uniform_gate": true
+    }
+  }
+}

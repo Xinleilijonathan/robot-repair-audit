@@ -15,7 +15,11 @@ Use this to audit an update to a persistent skill (a robot controller, a policy,
    - Admit a new edit only if it improves the target and loses nothing on the history suite (`zero_loss_gate`).
    - Commit the decision before running the full audit, then run the full audit to measure what the gate missed.
 
-In the paper's robot study, an 8-scene suite built from earlier edits' losses caught a held-out edit's regressions far more often than 8 random old scenes. That finding was exploratory (leave-one-out on Extension 1). The paper reports its pre-registered test on new edits, Extension 2.
+**Evidence from the robot study.**
+- **Origin.** The idea came from exploratory leave-one-out analysis of Extension 1.
+- **Pre-registered test (Extension 2).** The test used 24 new random edits. An 8-scene suite built from 26 earlier edits' losses detected at least one loss in 14 of the 20 edits that had any. Eight random old scenes are expected to detect 36%. The difference was +0.34, 95% CI 0.16–0.51.
+- **Cost.** As a zero-loss gate, the suite was strict. It admitted 1 edit, with 2 losses, where a random suite admitted 7, with 28 losses. It also rejected 9 of the 10 edits that were useful under an aggregate objective.
+- **Prior art.** Ordering tests by their history is established in software regression testing (Kim and Porter, ICSE 2002; Elbaum, Malishevsky and Rothermel, IEEE TSE 2002). The study's contribution is checking that the idea carries over to an evolving robot skill.
 
 ## Data format
 
@@ -56,6 +60,7 @@ python -m unittest -v test_regaudit.py
 ## Limits
 
 - **Exact replay.** The cheapest version of this protocol needs exact parent replay. Without it, repeat each scene and treat flips statistically.
+- **Run context.** In the robot study, a scene's outcome could depend on what ran before it in the same process. Candidates flipped on 17 of 384 near-threshold labels between the 20-scene suite batch and the 120-scene audit. A suite check run in a different order is therefore an imperfect proxy for the full audit, so compare parent and candidate in the same order.
 - **Fixed panel.** A loss history is defined over a fixed set of old scenes. It helps when updates keep being checked against the same behaviours. When the panel is redrawn, it has to be rebuilt.
 - **One case.** The evidence behind it is one robot, one task and one repair context, with seeded random edits and two assistant-proposed repairs. Check that the pattern holds in your own system before relying on it.
 - **No guarantees.** Zero observed losses on a small suite is not a safety guarantee.

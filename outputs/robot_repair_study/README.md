@@ -1,6 +1,21 @@
 # Robot repair study — artifact
 
-This folder accompanies `../initial_paper.md` (historical pre-experiment draft) and `../research_plan.md`. The current manuscript is `paper/main.tex`. Results write-ups are `../repair_pilot_report.md` (development pilot), `../audit_report.md` (frozen audit) and `../extension1_report.md` (post-hoc candidate-population extension).
+This folder accompanies `../initial_paper.md` (historical pre-experiment draft) and `../research_plan.md`. The current manuscript is `paper/main.tex`; the draft that adds Extension 2 is `paper/main_ext2.tex`, with a 4-page-total variant in `paper/main_ext2_short.tex`. Results write-ups are `../repair_pilot_report.md` (development pilot), `../audit_report.md` (frozen audit), `../extension1_report.md` (post-hoc candidate-population extension) and `../extension2_report.md` (pre-registered loss-history test).
+
+## Extension 2 (pre-registered loss-history test, Nov 16–17)
+
+Protocol `extension2_protocol.md`, hashes `extension2_frozen_hashes.json` (written by `scripts/freeze_ext2.py`), materials from `make_ext2_materials.py`, results in `results/ext2/`. Queue: `scripts/run_extension2.ps1` with `scripts/launch_isaac_ps51_timeout.ps1`. Commands are run from this directory; `R=results/ext2`.
+
+| Output | Command |
+|---|---|
+| Committed gate decisions | written once by the queue (`ext2_gates.py`): `$R/ext2_gate_decisions.json` |
+| Frozen analysis (P1, S1–S5) | `analyze_ext2.py --audit-manifest ext1_audit_scenes.json --parent $R/audit_parent --candidates $R/audit_r25 … $R/audit_r48 --gates $R/ext2_gate_decisions.json --suites ext2_suites.json --ext1-parent results/ext1/audit_parent --validation-manifest ext2_validation_scenes.json --validation-parent $R/ext2_validation_parent --validation-parent-repeat $R/ext2_validation_parent_repeat --output $R/ext2_analysis.json` |
+| Post-hoc: suite batch vs audit | `explore_ext2_agreement.py --output results/exploratory/ext2_agreement.json` |
+| Post-hoc: per-scene loss counts | `explore_ext2_scenes.py --output results/exploratory/ext2_scenes.json` |
+| Extension 2 figure | `plot_ext2.py --analysis $R/ext2_analysis.json --scenes results/exploratory/ext2_scenes.json --suites ext2_suites.json --output fig_ext2.pdf` |
+| Combined gate table | `make_combined_gate_table.py results/ext1/population_analysis.json $R/ext2_analysis.json OUT_DIR` (`paper/` locally; `scripts/` in the review artifact) |
+
+Every analysis script refuses to overwrite an existing output; write to a new path to re-check.
 
 ## Extension 1 (post-hoc candidate population, Nov 15–16)
 
