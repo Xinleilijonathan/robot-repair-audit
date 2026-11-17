@@ -1,0 +1,217 @@
+{
+ "seed": 20261121,
+ "stock_values": {
+  "approach_height": 0.3,
+  "lift_height": 0.3,
+  "position_tolerance": 0.015,
+  "grasp_position_tolerance": 0.015,
+  "stability_duration": 0.1,
+  "gripper_dwell": 0.2
+ },
+ "bounds": {
+  "approach_height": [
+   0.05,
+   0.4
+  ],
+  "lift_height": [
+   0.1,
+   0.4
+  ],
+  "position_tolerance": [
+   0.005,
+   0.035
+  ],
+  "grasp_position_tolerance": [
+   0.005,
+   0.035
+  ],
+  "stability_duration": [
+   0.05,
+   0.5
+  ],
+  "gripper_dwell": [
+   0.1,
+   1.0
+  ]
+ },
+ "candidates": [
+  {
+   "id": "r25",
+   "origin": "random",
+   "overrides": {
+    "grasp_position_tolerance": 0.034
+   }
+  },
+  {
+   "id": "r26",
+   "origin": "random",
+   "overrides": {
+    "grasp_position_tolerance": 0.021,
+    "gripper_dwell": 0.157
+   }
+  },
+  {
+   "id": "r27",
+   "origin": "random",
+   "overrides": {
+    "grasp_position_tolerance": 0.022
+   }
+  },
+  {
+   "id": "r28",
+   "origin": "random",
+   "overrides": {
+    "lift_height": 0.253
+   }
+  },
+  {
+   "id": "r29",
+   "origin": "random",
+   "overrides": {
+    "lift_height": 0.343,
+    "position_tolerance": 0.018
+   }
+  },
+  {
+   "id": "r30",
+   "origin": "random",
+   "overrides": {
+    "approach_height": 0.085
+   }
+  },
+  {
+   "id": "r31",
+   "origin": "random",
+   "overrides": {
+    "position_tolerance": 0.013
+   }
+  },
+  {
+   "id": "r32",
+   "origin": "random",
+   "overrides": {
+    "grasp_position_tolerance": 0.016,
+    "stability_duration": 0.454
+   }
+  },
+  {
+   "id": "r33",
+   "origin": "random",
+   "overrides": {
+    "approach_height": 0.181,
+    "position_tolerance": 0.009
+   }
+  },
+  {
+   "id": "r34",
+   "origin": "random",
+   "overrides": {
+    "grasp_position_tolerance": 0.011
+   }
+  },
+  {
+   "id": "r35",
+   "origin": "random",
+   "overrides": {
+    "lift_height": 0.128,
+    "stability_duration": 0.432
+   }
+  },
+  {
+   "id": "r36",
+   "origin": "random",
+   "overrides": {
+    "position_tolerance": 0.028
+   }
+  },
+  {
+   "id": "r37",
+   "origin": "random",
+   "overrides": {
+    "approach_height": 0.168
+   }
+  },
+  {
+   "id": "r38",
+   "origin": "random",
+   "overrides": {
+    "stability_duration": 0.068
+   }
+  },
+  {
+   "id": "r39",
+   "origin": "random",
+   "overrides": {
+    "lift_height": 0.187
+   }
+  },
+  {
+   "id": "r40",
+   "origin": "random",
+   "overrides": {
+    "lift_height": 0.303,
+    "position_tolerance": 0.026
+   }
+  },
+  {
+   "id": "r41",
+   "origin": "random",
+   "overrides": {
+    "lift_height": 0.147,
+    "position_tolerance": 0.013
+   }
+  },
+  {
+   "id": "r42",
+   "origin": "random",
+   "overrides": {
+    "gripper_dwell": 0.78
+   }
+  },
+  {
+   "id": "r43",
+   "origin": "random",
+   "overrides": {
+    "stability_duration": 0.134
+   }
+  },
+  {
+   "id": "r44",
+   "origin": "random",
+   "overrides": {
+    "position_tolerance": 0.03,
+    "grasp_position_tolerance": 0.019
+   }
+  },
+  {
+   "id": "r45",
+   "origin": "random",
+   "overrides": {
+    "grasp_position_tolerance": 0.026,
+    "gripper_dwell": 0.215
+   }
+  },
+  {
+   "id": "r46",
+   "origin": "random",
+   "overrides": {
+    "lift_height": 0.258
+   }
+  },
+  {
+   "id": "r47",
+   "origin": "random",
+   "overrides": {
+    "gripper_dwell": 0.319
+   }
+  },
+  {
+   "id": "r48",
+   "origin": "random",
+   "overrides": {
+    "lift_height": 0.24,
+    "gripper_dwell": 0.191
+   }
+  }
+ ]
+}

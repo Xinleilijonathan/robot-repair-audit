@@ -1,0 +1,167 @@
+{
+  "evidence": "EXPLORATORY post-hoc analysis of existing audit rollouts; not pre-registered",
+  "first_audit": {
+    "n_old": 120,
+    "n_parent_successes": 106,
+    "parent_success_error_cm_quantiles": {
+      "0.1": 1.22,
+      "0.25": 1.35,
+      "0.5": 1.61,
+      "0.75": 1.91,
+      "0.9": 2.26
+    },
+    "pooled_auc_parent_error_predicts_loss": 0.807,
+    "n_loss_events": 13,
+    "per_candidate_auc_(>=3 losses)": {
+      "candidate_a": 0.83,
+      "candidate_b": 0.774
+    },
+    "loss_rate_by_parent_error": [
+      {
+        "parent_error_cm": "0.0-1.0",
+        "scenes": 2,
+        "loss_rate_per_candidate_scene": 0.0,
+        "share_of_all_losses": 0.0
+      },
+      {
+        "parent_error_cm": "1.0-1.5",
+        "scenes": 36,
+        "loss_rate_per_candidate_scene": 0.014,
+        "share_of_all_losses": 0.077
+      },
+      {
+        "parent_error_cm": "1.5-2.0",
+        "scenes": 46,
+        "loss_rate_per_candidate_scene": 0.043,
+        "share_of_all_losses": 0.308
+      },
+      {
+        "parent_error_cm": "2.0-2.5",
+        "scenes": 17,
+        "loss_rate_per_candidate_scene": 0.147,
+        "share_of_all_losses": 0.385
+      },
+      {
+        "parent_error_cm": "2.5-3.0",
+        "scenes": 5,
+        "loss_rate_per_candidate_scene": 0.3,
+        "share_of_all_losses": 0.231
+      }
+    ],
+    "share_of_losses_in_most_fragile_20pct": 0.615
+  },
+  "extension": {
+    "n_old": 90,
+    "n_parent_successes": 73,
+    "parent_success_error_cm_quantiles": {
+      "0.1": 1.26,
+      "0.25": 1.48,
+      "0.5": 1.65,
+      "0.75": 1.83,
+      "0.9": 2.08
+    },
+    "pooled_auc_parent_error_predicts_loss": 0.493,
+    "n_loss_events": 163,
+    "per_candidate_auc_(>=3 losses)": {
+      "candidate_a": 0.856,
+      "candidate_b": 0.562,
+      "r01": 0.367,
+      "r03": 0.353,
+      "r04": 0.381,
+      "r05": 0.411,
+      "r06": 0.457,
+      "r07": 0.248,
+      "r08": 0.648,
+      "r09": 0.695,
+      "r10": 0.552,
+      "r11": 0.517,
+      "r12": 0.494,
+      "r14": 0.47,
+      "r15": 0.448,
+      "r17": 0.471,
+      "r19": 0.247,
+      "r20": 0.543,
+      "r21": 0.533,
+      "r22": 0.532,
+      "r23": 0.44,
+      "r24": 0.649
+    },
+    "loss_rate_by_parent_error": [
+      {
+        "parent_error_cm": "0.0-1.0",
+        "scenes": 0,
+        "loss_rate_per_candidate_scene": null,
+        "share_of_all_losses": 0.0
+      },
+      {
+        "parent_error_cm": "1.0-1.5",
+        "scenes": 20,
+        "loss_rate_per_candidate_scene": 0.096,
+        "share_of_all_losses": 0.307
+      },
+      {
+        "parent_error_cm": "1.5-2.0",
+        "scenes": 44,
+        "loss_rate_per_candidate_scene": 0.07,
+        "share_of_all_losses": 0.491
+      },
+      {
+        "parent_error_cm": "2.0-2.5",
+        "scenes": 8,
+        "loss_rate_per_candidate_scene": 0.115,
+        "share_of_all_losses": 0.147
+      },
+      {
+        "parent_error_cm": "2.5-3.0",
+        "scenes": 1,
+        "loss_rate_per_candidate_scene": 0.346,
+        "share_of_all_losses": 0.055
+      }
+    ],
+    "share_of_losses_in_most_fragile_20pct": 0.239
+  },
+  "extension_power": {
+    "candidates_with_losses": 23,
+    "screening_pool": 40,
+    "draws": 5000,
+    "P(detect >=1 loss)": {
+      "k=4": {
+        "uniform_old": 0.271,
+        "uniform_parent_successes": 0.321,
+        "margin_targeted": 0.479
+      },
+      "k=8": {
+        "uniform_old": 0.46,
+        "uniform_parent_successes": 0.532,
+        "margin_targeted": 0.562
+      },
+      "k=12": {
+        "uniform_old": 0.589,
+        "uniform_parent_successes": 0.664,
+        "margin_targeted": 0.624
+      }
+    }
+  },
+  "first_audit_power": {
+    "candidates_with_losses": 2,
+    "screening_pool": 40,
+    "draws": 5000,
+    "P(detect >=1 loss)": {
+      "k=4": {
+        "uniform_old": 0.196,
+        "uniform_parent_successes": 0.227,
+        "margin_targeted": 0.693
+      },
+      "k=8": {
+        "uniform_old": 0.368,
+        "uniform_parent_successes": 0.408,
+        "margin_targeted": 0.827
+      },
+      "k=12": {
+        "uniform_old": 0.495,
+        "uniform_parent_successes": 0.54,
+        "margin_targeted": 0.866
+      }
+    }
+  }
+}

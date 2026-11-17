@@ -1,0 +1,13 @@
+# EXPLORATORY post-hoc output of explore_history.py, generated 2026-11-17T05:48:04Z before Extension 2 was frozen
+parent successes: 73 | loss events: 163 | scenes never lost: 19
+losses per scene (sorted, top 15): [10, 9, 9, 7, 7, 6, 6, 5, 5, 5, 4, 4, 4, 4, 4]
+share of all loss events on the 5 most-lost scenes: 0.258
+share of all loss events on the 10 most-lost scenes: 0.423
+share of all loss events on the 15 most-lost scenes: 0.546
+
+leave-one-candidate-out detection of >=1 loss (and mean losses caught), budget k old scenes:
+  k= 4: history suite P(detect)=0.826, mean caught=1.22 | uniform parent successes P(detect)=0.326, mean caught=0.39
+  k= 8: history suite P(detect)=0.913, mean caught=2.09 | uniform parent successes P(detect)=0.530, mean caught=0.78
+  k=12: history suite P(detect)=0.957, mean caught=2.70 | uniform parent successes P(detect)=0.664, mean caught=1.16
+
+mean pairwise Jaccard of lost sets: 0.104 (independent-placement expectation ~0.045), pairs=231
