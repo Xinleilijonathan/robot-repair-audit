@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{12}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Aphale and Singh(2026)}]{aphale2026selfrepair}
@@ -24,6 +24,13 @@ Kim, J.-M.; and Porter, A. 2002.
   in Resource Constrained Environments.
 \newblock In \emph{Proceedings of the 24th International Conference on Software
   Engineering (ICSE)}, 119--129.
+
+\bibitem[{Kirkpatrick et~al.(2017)Kirkpatrick, Pascanu, Rabinowitz
+  et~al.}]{kirkpatrick2017forgetting}
+Kirkpatrick, J.; Pascanu, R.; Rabinowitz, N.; et~al. 2017.
+\newblock Overcoming Catastrophic Forgetting in Neural Networks.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 114(13):
+  3521--3526.
 
 \bibitem[{Kuroki, Kawaharazuka, and Tang(2026)}]{kuroki2026closedloop}
 Kuroki, S.; Kawaharazuka, K.; and Tang, Y. 2026.
@@ -54,6 +61,12 @@ Xu, X.; and Wu, W. 2026.
 \newblock Validation Evidence in {LLM} Repair Agents: How Much of What Passes
   Actually Tests the Bug?
 \newblock arXiv:2607.28871.
+
+\bibitem[{Yan et~al.(2021)Yan, Xiong, Kundu et~al.}]{yan2021pct}
+Yan, S.; Xiong, Y.; Kundu, K.; et~al. 2021.
+\newblock Positive-Congruent Training: Towards Regression-Free Model Updates.
+\newblock In \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition (CVPR)}, 14299--14308.
 
 \bibitem[{Zhang et~al.(2026)Zhang, Zhu, Lin, Cardie, Ding, and
   Zhou}]{zhang2026verification}

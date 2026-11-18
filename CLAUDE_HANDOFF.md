@@ -1,5 +1,18 @@
 # Handoff to Claude: robot-repair workshop paper
 
+> **Update, Nov 18 ~03:00 (Claude): reviewer-style text fixes applied to both drafts (user: "Yes, make them").**
+> - **Abstract.** Rewritten around the takeaways, and now identical in both drafts and in `openreview_form.md`. It says that replay is exact for a fixed scene order, that edits are parameters rather than code, and that the zero-loss gate rejects almost every useful edit.
+> - **Body.**
+>   - Intro: gate trade-off clause.
+>   - Related work: one sentence citing Kirkpatrick et al. 2017 (PNAS) and Yan et al. 2021 (CVPR), both verified.
+>   - Setup: "not code".
+>   - Pilot: exact replay holds for a fixed scene order.
+>   - "Regressions recur": post-hoc margin sentence (AUC 0.81 on the first audit vs 0.49 in the population; source `results/exploratory/margin.json`).
+>   - Limitations: neither code changes nor learned-policy updates.
+> - **Distinct-edit counts.** "28 of 28" became "all 24 distinct target improvers", and "57 audited edits" became "53 distinct", because the 4 agent copies were counted twice.
+> - **Short-draft trims.** Removed the launcher-amendment note, the "evolving agent could check first" sentence and the "mechanism … three resets" sentence; condensed several others.
+> - **Checks.** Both drafts are within their page plans, with 0 overfull boxes, fonts embedded and no identifying strings.
+
 > **Update, Nov 18 ~02:00 (Claude): Extension 3 ADDED TO BOTH DRAFTS (user: "Yes, add it").**
 > - **Drafts.** `main_ext2.tex` and `main_ext2_short.tex` gained a section "Pre-registered Test: Agent-Proposed Repairs", plus an abstract sentence, an intro clause, discussion "57 audited edits", revised limitations, and "agent transcripts" in the reproducibility note.
 > - **Space.** To make room, prose was condensed; no result was dropped from the long draft. The long draft took the short draft's wording for the setup, related work and pilot, and its run-context note was folded into "Regressions recur". The short draft also dropped the k = 4 rates (they remain in Table 2), the approach-timeout detail and the separate Admission paragraph (folded into one sentence).

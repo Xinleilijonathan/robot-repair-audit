@@ -7,7 +7,7 @@
   - The 16 valid proposals reduce to 7 distinct edits. All 7 fixed target scenes: 5 to 20 of the 20 that the original controller fails.
   - All 7 also broke 2 to 6 of the 73 old scenes that the original controller solves. No agent produced a loss-free repair.
   - All 7 still solved more scenes overall, because each also rescued 6 to 9 old failures.
-  - Pooled with the 50 earlier edits, 28 of 28 target-improving edits broke old successes (Wilson 95% interval 88–100%).
+  - Pooled with the 50 earlier edits, 28 of 28 target-improving edits broke old successes (Wilson 95% interval 88–100%). The frozen analysis counts the 4 copies twice; counted as distinct parameter settings, it is 24 of 24, which is what the paper reports.
 - **P1 is supported by its pre-registered criterion.** The 8-scene history suite, built from the 50 earlier edits, caught a loss in 6 of 7 lossy agent edits (0.86). An 8-scene uniform suite is expected to catch 0.39.
   - The difference is +0.47, 95% bootstrap CI [0.12, 0.68]. The lower bound is above 0.
 - **Main caveat.** 4 of the 7 distinct edits are exact copies of earlier audited edits, and they reproduced those runs exactly.
