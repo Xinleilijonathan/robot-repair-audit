@@ -1,0 +1,808 @@
+{
+ "collected_utc": [
+  "2026-11-18T07:07:26.413720+00:00",
+  "2026-11-18T07:08:27.539441+00:00"
+ ],
+ "sandbox_root": "C:\\Users\\Jonat\\AppData\\Local\\Temp\\ext3_agent_sandbox",
+ "timeout_s": 900,
+ "candidates": [
+  {
+   "id": "opus_b1",
+   "agent": "claude-opus",
+   "vendor": "Anthropic",
+   "cli": "claude",
+   "model_requested": "opus",
+   "condition": "blind",
+   "sample": 1,
+   "prompt_sha256": "7edd5be876c3821a3e4983090584f20ccd989fda888c2be618542eecb69aced1",
+   "overrides": {
+    "lift_height": 0.15
+   },
+   "excluded": false,
+   "exclusion_reason": null,
+   "rationale": "At pick radius 0.80 m with a 0.3 m lift, the downward-pointing gripper puts the wrist well above shoulder height, near the edge of the Panda's reach, so the arm stalls about 2 cm short and LIFT times out. A 0.15 m lift keeps the wrist near shoulder height, where horizontal reach is largest, so the target becomes reachable within the normal 1.5 cm tolerance. It still clears the 7.58 cm lift threshold and keeps the place-side tolerances unchanged.",
+   "expected_risk": "The lower lift and retreat give less clearance when carrying the cube or backing away from it at the goal, though APPROACH_PLACE still rises to 0.3 m above the goal. Scenes at the far edge of the workspace (above 0.85 m) may still be out of reach.",
+   "attempts": [
+    {
+     "started_utc": "2026-11-18T07:07:26.415713+00:00",
+     "seconds": 15.2,
+     "exit_code": 0,
+     "workdir": "C:\\Users\\Jonat\\AppData\\Local\\Temp\\ext3_agent_sandbox\\opus_b1_a1_efkyg1t2",
+     "workdir_empty_after": true,
+     "transcript": "transcripts/opus_b1_a1.stdout.txt",
+     "final_text": "{\"overrides\": {\"lift_height\": 0.15}, \"rationale\": \"At pick radius 0.80 m with a 0.3 m lift, the downward-pointing gripper puts the wrist well above shoulder height, near the edge of the Panda's reach, so the arm stalls about 2 cm short and LIFT times out. A 0.15 m lift keeps the wrist near shoulder height, where horizontal reach is largest, so the target becomes reachable within the normal 1.5 cm tolerance. It still clears the 7.58 cm lift threshold and keeps the place-side tolerances unchanged.\", \"expected_risk\": \"The lower lift and retreat give less clearance when carrying the cube or backing away from it at the goal, though APPROACH_PLACE still rises to 0.3 m above the goal. Scenes at the far edge of the workspace (above 0.85 m) may still be out of reach.\"}",
+     "information_tool_calls": 0,
+     "models_reported": [
+      "claude-opus-5-5"
+     ],
+     "cli_error": null,
+     "valid": true,
+     "invalid_reason": null
+    }
+   ],
+   "noop": null,
+   "duplicate_of": null,
+   "run": true
+  },
+  {
+   "id": "opus_b2",
+   "agent": "claude-opus",
+   "vendor": "Anthropic",
+   "cli": "claude",
+   "model_requested": "opus",
+   "condition": "blind",
+   "sample": 2,
+   "prompt_sha256": "7edd5be876c3821a3e4983090584f20ccd989fda888c2be618542eecb69aced1",
+   "overrides": {
+    "lift_height": 0.15
+   },
+   "excluded": false,
+   "exclusion_reason": null,
+   "rationale": "At 0.80-0.85 m the LIFT target 0.30 m above the cube is near the Panda's reach limit for a top-down grasp, so the tool stalls about 2 cm short of the target and the phase times out. Lowering the lift offset to 0.15 m keeps the wrist close to the extension the arm already reached at the pick pose, while the cube still clears the 7.58 cm lift threshold. The same offset in RETREAT at the nearer place goal is easily reachable, and every tolerance stays as it is, so scenes that already work keep their pick and place precision.",
+   "expected_risk": null,
+   "attempts": [
+    {
+     "started_utc": "2026-11-18T07:07:41.654205+00:00",
+     "seconds": 19.4,
+     "exit_code": 0,
+     "workdir": "C:\\Users\\Jonat\\AppData\\Local\\Temp\\ext3_agent_sandbox\\opus_b2_a1_mi2kikem",
+     "workdir_empty_after": true,
+     "transcript": "transcripts/opus_b2_a1.stdout.txt",
+     "final_text": "{\"overrides\": {\"lift_height\": 0.15}, \"rationale\": \"At 0.80-0.85 m the LIFT target 0.30 m above the cube is near the Panda's reach limit for a top-down grasp, so the tool stalls about 2 cm short of the target and the phase times out. Lowering the lift offset to 0.15 m keeps the wrist close to the extension the arm already reached at the pick pose, while the cube still clears the 7.58 cm lift threshold. The same offset in RETREAT at the nearer place goal is easily reachable, and every tolerance stays as it is, so scenes that already work keep their pick and place precision.\"}, \"expected_risk\": \"If the stall comes from motion-generation or joint-limit behaviour rather than reach, a lower lift may not remove the 2 cm error, and APPROACH_PLACE then starts lower but is otherwise unchanged. The carry and retreat motions have less vertical clearance, which matters only if the scene has obstacles near the table.\"}",
+     "information_tool_calls": 0,
+     "models_reported": [
+      "claude-opus-5-5"
+     ],
+     "cli_error": null,
+     "valid": true,
+     "invalid_reason": null
+    }
+   ],
+   "noop": null,
+   "duplicate_of": "opus_b1",
+   "run": false
+  },
+  {
+   "id": "opus_m1",
+   "agent": "claude-opus",
+   "vendor": "Anthropic",
+   "cli": "claude",
+   "model_requested": "opus",
+   "condition": "memory",
+   "sample": 1,
+   "prompt_sha256": "459a574c4c8520d11b992bc5361721fbe0647ee552d4ccbba4bf9a066080902c",
+   "overrides": {
+    "position_tolerance": 0.03,
+    "grasp_position_tolerance": 0.019
+   },
+   "excluded": false,
+   "exclusion_reason": null,
+   "rationale": "The LIFT timeout comes from a steady-state tool error of about 2 cm at the 0.80-0.85 m reach limit, so it cannot converge to the 1.5 cm shared tolerance. Loosening position_tolerance clears that plateau, and this exact combination was the best-tested edit in memory (#46: +20/-0 on target scenes, only 2 of 73 workspace successes broken, 8 failures fixed). Grasp tolerance changes alone showed no effect, so the 0.019 value just keeps the tested configuration unchanged.",
+   "expected_risk": "The looser tolerance also applies to DESCEND_PLACE, so release can happen up to 3 cm off target and push a few borderline scenes just outside the 3 cm goal window. This is the main way edits broke workspace scenes, and the tested effect was small (2 broken).",
+   "attempts": [
+    {
+     "started_utc": "2026-11-18T07:08:01.063076+00:00",
+     "seconds": 14.2,
+     "exit_code": 0,
+     "workdir": "C:\\Users\\Jonat\\AppData\\Local\\Temp\\ext3_agent_sandbox\\opus_m1_a1_6nu1qvrx",
+     "workdir_empty_after": true,
+     "transcript": "transcripts/opus_m1_a1.stdout.txt",
+     "final_text": "{\"overrides\": {\"position_tolerance\": 0.03, \"grasp_position_tolerance\": 0.019}, \"rationale\": \"The LIFT timeout comes from a steady-state tool error of about 2 cm at the 0.80-0.85 m reach limit, so it cannot converge to the 1.5 cm shared tolerance. Loosening position_tolerance clears that plateau, and this exact combination was the best-tested edit in memory (#46: +20/-0 on target scenes, only 2 of 73 workspace successes broken, 8 failures fixed). Grasp tolerance changes alone showed no effect, so the 0.019 value just keeps the tested configuration unchanged.\", \"expected_risk\": \"The looser tolerance also applies to DESCEND_PLACE, so release can happen up to 3 cm off target and push a few borderline scenes just outside the 3 cm goal window. This is the main way edits broke workspace scenes, and the tested effect was small (2 broken).\"}",
+     "information_tool_calls": 0,
+     "models_reported": [
+      "claude-opus-5-5"
+     ],
+     "cli_error": null,
+     "valid": true,
+     "invalid_reason": null
+    }
+   ],
+   "noop": null,
+   "duplicate_of": null,
+   "run": true
+  },
+  {
+   "id": "opus_m2",
+   "agent": "claude-opus",
+   "vendor": "Anthropic",
+   "cli": "claude",
+   "model_requested": "opus",
+   "condition": "memory",
+   "sample": 2,
+   "prompt_sha256": "459a574c4c8520d11b992bc5361721fbe0647ee552d4ccbba4bf9a066080902c",
+   "overrides": {
+    "position_tolerance": 0.03,
+    "grasp_position_tolerance": 0.019
+   },
+   "excluded": false,
+   "exclusion_reason": null,
+   "rationale": "At radius 0.80 m the arm is near its reach limit, so LIFT settles with a 0.0203 m steady-state error and never meets the 0.015 m convergence tolerance; loosening position_tolerance above that error lets LIFT and the later phases converge. Changing grasp_position_tolerance alone had no effect in every earlier test, so the grasp check stays tight and pick accuracy is unaffected. This exact combination (edit #46) gave the best tested trade-off: it newly solved 20 target scenes and lost none, broke only 2 workspace successes and fixed 8 workspace failures.",
+   "expected_risk": "A looser tolerance during DESCEND_PLACE can let RELEASE start while the tool is up to 3 cm from the place pose, which could leave the cube 3.0-4.7 cm from the goal in a few scenes. Earlier results suggest about 2 such breaks out of 73 workspace successes, which is roughly the run-to-run variation seen across edits.",
+   "attempts": [
+    {
+     "started_utc": "2026-11-18T07:08:15.234056+00:00",
+     "seconds": 12.3,
+     "exit_code": 0,
+     "workdir": "C:\\Users\\Jonat\\AppData\\Local\\Temp\\ext3_agent_sandbox\\opus_m2_a1_8y8tgaxb",
+     "workdir_empty_after": true,
+     "transcript": "transcripts/opus_m2_a1.stdout.txt",
+     "final_text": "{\"overrides\": {\"position_tolerance\": 0.03, \"grasp_position_tolerance\": 0.019}, \"rationale\": \"At radius 0.80 m the arm is near its reach limit, so LIFT settles with a 0.0203 m steady-state error and never meets the 0.015 m convergence tolerance; loosening position_tolerance above that error lets LIFT and the later phases converge. Changing grasp_position_tolerance alone had no effect in every earlier test, so the grasp check stays tight and pick accuracy is unaffected. This exact combination (edit #46) gave the best tested trade-off: it newly solved 20 target scenes and lost none, broke only 2 workspace successes and fixed 8 workspace failures.\", \"expected_risk\": \"A looser tolerance during DESCEND_PLACE can let RELEASE start while the tool is up to 3 cm from the place pose, which could leave the cube 3.0-4.7 cm from the goal in a few scenes. Earlier results suggest about 2 such breaks out of 73 workspace successes, which is roughly the run-to-run variation seen across edits.\"}",
+     "information_tool_calls": 0,
+     "models_reported": [
+      "claude-opus-5-5"
+     ],
+     "cli_error": null,
+     "valid": true,
+     "invalid_reason": null
+    }
+   ],
+   "noop": null,
+   "duplicate_of": "opus_m1",
+   "run": false
+  },
+  {
+   "id": "sonnet_b1",
+   "agent": "claude-sonnet",
+   "vendor": "Anthropic",
+   "cli": "claude",
+   "model_requested": "sonnet",
+   "condition": "blind",
+   "sample": 1,
+   "prompt_sha256": "7edd5be876c3821a3e4983090584f20ccd989fda888c2be618542eecb69aced1",
+   "overrides": {
+    "lift_height": 0.15
+   },
+   "excluded": false,
+   "exclusion_reason": null,
+   "rationale": "The failure is a LIFT timeout at the edge of the arm's reach (radius 0.80-0.85 m), where a 0.30 m vertical offset puts the target near the kinematic limit and leaves a 2 cm residual error. Lowering lift_height to 0.15 m brings the LIFT and RETREAT targets well inside reach. It still clears the 7.58 cm lift threshold with margin. The tolerances stay untouched, so placement precision is unchanged.",
+   "expected_risk": "A lower carry height gives less clearance over the table, which could matter if other objects were present, but the scene has only the cube. Retreat at the goal (radius 0.5 m) is unaffected in reachability.",
+   "attempts": [
+    {
+     "started_utc": "2026-11-18T07:07:26.415713+00:00",
+     "seconds": 14.1,
+     "exit_code": 0,
+     "workdir": "C:\\Users\\Jonat\\AppData\\Local\\Temp\\ext3_agent_sandbox\\sonnet_b1_a1_fismiol1",
+     "workdir_empty_after": true,
+     "transcript": "transcripts/sonnet_b1_a1.stdout.txt",
+     "final_text": "{\"overrides\": {\"lift_height\": 0.15}, \"rationale\": \"The failure is a LIFT timeout at the edge of the arm's reach (radius 0.80-0.85 m), where a 0.30 m vertical offset puts the target near the kinematic limit and leaves a 2 cm residual error. Lowering lift_height to 0.15 m brings the LIFT and RETREAT targets well inside reach. It still clears the 7.58 cm lift threshold with margin. The tolerances stay untouched, so placement precision is unchanged.\", \"expected_risk\": \"A lower carry height gives less clearance over the table, which could matter if other objects were present, but the scene has only the cube. Retreat at the goal (radius 0.5 m) is unaffected in reachability.\"}",
+     "information_tool_calls": 0,
+     "models_reported": [
+      "claude-sonnet-5-5"
+     ],
+     "cli_error": null,
+     "valid": true,
+     "invalid_reason": null
+    }
+   ],
+   "noop": null,
+   "duplicate_of": "opus_b1",
+   "run": false
+  },
+  {
+   "id": "sonnet_b2",
+   "agent": "claude-sonnet",
+   "vendor": "Anthropic",
+   "cli": "claude",
+   "model_requested": "sonnet",
+   "condition": "blind",
+   "sample": 2,
+   "prompt_sha256": "7edd5be876c3821a3e4983090584f20ccd989fda888c2be618542eecb69aced1",
+   "overrides": {
+    "lift_height": 0.2,
+    "position_tolerance": 0.022
+   },
+   "excluded": false,
+   "exclusion_reason": null,
+   "rationale": "At radius 0.80-0.85 m, a 0.3 m lift sits near the edge of the arm's reach and settles about 0.0203 m short of the target, so LIFT times out. Lowering lift_height to 0.2 puts the target well inside reach, and raising position_tolerance to 0.022 gives margin over the observed 0.0203 m residual. grasp_position_tolerance is left at 0.015, so grasp precision is unchanged.",
+   "expected_risk": "A looser position_tolerance in DESCEND_PLACE could let the cube be released up to about 2 cm off the goal, which is close to the 3 cm scoring limit. A lower lift_height gives less clearance over the table and other objects when carrying the cube.",
+   "attempts": [
+    {
+     "started_utc": "2026-11-18T07:07:40.503822+00:00",
+     "seconds": 8.8,
+     "exit_code": 0,
+     "workdir": "C:\\Users\\Jonat\\AppData\\Local\\Temp\\ext3_agent_sandbox\\sonnet_b2_a1_zc64uoow",
+     "workdir_empty_after": true,
+     "transcript": "transcripts/sonnet_b2_a1.stdout.txt",
+     "final_text": "{\"overrides\": {\"lift_height\": 0.2, \"position_tolerance\": 0.022}, \"rationale\": \"At radius 0.80-0.85 m, a 0.3 m lift sits near the edge of the arm's reach and settles about 0.0203 m short of the target, so LIFT times out. Lowering lift_height to 0.2 puts the target well inside reach, and raising position_tolerance to 0.022 gives margin over the observed 0.0203 m residual. grasp_position_tolerance is left at 0.015, so grasp precision is unchanged.\", \"expected_risk\": \"A looser position_tolerance in DESCEND_PLACE could let the cube be released up to about 2 cm off the goal, which is close to the 3 cm scoring limit. A lower lift_height gives less clearance over the table and other objects when carrying the cube.\"}",
+     "information_tool_calls": 0,
+     "models_reported": [
+      "claude-sonnet-5-5"
+     ],
+     "cli_error": null,
+     "valid": true,
+     "invalid_reason": null
+    }
+   ],
+   "noop": null,
+   "duplicate_of": null,
+   "run": true
+  },
+  {
+   "id": "sonnet_m1",
+   "agent": "claude-sonnet",
+   "vendor": "Anthropic",
+   "cli": "claude",
+   "model_requested": "sonnet",
+   "condition": "memory",
+   "sample": 1,
+   "prompt_sha256": "459a574c4c8520d11b992bc5361721fbe0647ee552d4ccbba4bf9a066080902c",
+   "overrides": {
+    "position_tolerance": 0.03,
+    "grasp_position_tolerance": 0.019
+   },
+   "excluded": false,
+   "exclusion_reason": null,
+   "rationale": "The failure is LIFT timing out with a 0.0203 m error against a 0.015 m tolerance, so loosening position_tolerance to 0.03 lets LIFT converge. This exact edit (#46) fixed 20 of the 30 near-failure scenes with none newly failed, and fixed 8 of the 17 workspace failures.",
+   "expected_risk": "Edit #46 broke 2 of the 73 workspace successes, likely because a looser tolerance at the place phase leaves the cube just over 3 cm from the goal. The 30 near-failure scenes are fully covered only if the 10 that already worked still pass, which edit #46's -0 result suggests.",
+   "attempts": [
+    {
+     "started_utc": "2026-11-18T07:07:49.325826+00:00",
+     "seconds": 9.8,
+     "exit_code": 0,
+     "workdir": "C:\\Users\\Jonat\\AppData\\Local\\Temp\\ext3_agent_sandbox\\sonnet_m1_a1_oaf19yp3",
+     "workdir_empty_after": true,
+     "transcript": "transcripts/sonnet_m1_a1.stdout.txt",
+     "final_text": "{\"overrides\": {\"position_tolerance\": 0.03, \"grasp_position_tolerance\": 0.019}, \"rationale\": \"The failure is LIFT timing out with a 0.0203 m error against a 0.015 m tolerance, so loosening position_tolerance to 0.03 lets LIFT converge. This exact edit (#46) fixed 20 of the 30 near-failure scenes with none newly failed, and fixed 8 of the 17 workspace failures.\", \"expected_risk\": \"Edit #46 broke 2 of the 73 workspace successes, likely because a looser tolerance at the place phase leaves the cube just over 3 cm from the goal. The 30 near-failure scenes are fully covered only if the 10 that already worked still pass, which edit #46's -0 result suggests.\"}",
+     "information_tool_calls": 0,
+     "models_reported": [
+      "claude-sonnet-5-5"
+     ],
+     "cli_error": null,
+     "valid": true,
+     "invalid_reason": null
+    }
+   ],
+   "noop": null,
+   "duplicate_of": "opus_m1",
+   "run": false
+  },
+  {
+   "id": "sonnet_m2",
+   "agent": "claude-sonnet",
+   "vendor": "Anthropic",
+   "cli": "claude",
+   "model_requested": "sonnet",
+   "condition": "memory",
+   "sample": 2,
+   "prompt_sha256": "459a574c4c8520d11b992bc5361721fbe0647ee552d4ccbba4bf9a066080902c",
+   "overrides": {
+    "position_tolerance": 0.03,
+    "grasp_position_tolerance": 0.019
+   },
+   "excluded": false,
+   "exclusion_reason": null,
+   "rationale": "The LIFT phase times out with a 0.0203 m error against a 0.015 m tolerance, so loosening position_tolerance to 0.03 lets the phase converge at long reach. In the earlier edit history, this exact combination solved 20 of 30 target scenes with none newly failed, broke only 2 of 73 workspace successes, and fixed 8 of 17 workspace failures. That is the best trade-off among the tested edits. grasp_position_tolerance only affects GRASP and appears harmless, so I keep the 0.019 value that was tested.",
+   "expected_risk": "A looser tolerance can advance phases before the arm settles, so a few workspace scenes may end 3-4.7 cm from the goal, as the 2 broken successes in the earlier test did. Those scenes are mostly at long or short reach.",
+   "attempts": [
+    {
+     "started_utc": "2026-11-18T07:07:59.144525+00:00",
+     "seconds": 7.8,
+     "exit_code": 0,
+     "workdir": "C:\\Users\\Jonat\\AppData\\Local\\Temp\\ext3_agent_sandbox\\sonnet_m2_a1_pr929uam",
+     "workdir_empty_after": true,
+     "transcript": "transcripts/sonnet_m2_a1.stdout.txt",
+     "final_text": "{\"overrides\": {\"position_tolerance\": 0.03, \"grasp_position_tolerance\": 0.019}, \"rationale\": \"The LIFT phase times out with a 0.0203 m error against a 0.015 m tolerance, so loosening position_tolerance to 0.03 lets the phase converge at long reach. In the earlier edit history, this exact combination solved 20 of 30 target scenes with none newly failed, broke only 2 of 73 workspace successes, and fixed 8 of 17 workspace failures. That is the best trade-off among the tested edits. grasp_position_tolerance only affects GRASP and appears harmless, so I keep the 0.019 value that was tested.\", \"expected_risk\": \"A looser tolerance can advance phases before the arm settles, so a few workspace scenes may end 3-4.7 cm from the goal, as the 2 broken successes in the earlier test did. Those scenes are mostly at long or short reach.\"}",
+     "information_tool_calls": 0,
+     "models_reported": [
+      "claude-sonnet-5-5"
+     ],
+     "cli_error": null,
+     "valid": true,
+     "invalid_reason": null
+    }
+   ],
+   "noop": null,
+   "duplicate_of": "opus_m1",
+   "run": false
+  },
+  {
+   "id": "haiku_b1",
+   "agent": "claude-haiku",
+   "vendor": "Anthropic",
+   "cli": "claude",
+   "model_requested": "haiku",
+   "condition": "blind",
+   "sample": 1,
+   "prompt_sha256": "7edd5be876c3821a3e4983090584f20ccd989fda888c2be618542eecb69aced1",
+   "overrides": {
+    "lift_height": 0.2
+   },
+   "excluded": false,
+   "exclusion_reason": null,
+   "rationale": "The failure is in LIFT, where the target is the pick pose plus lift_height (0.3 m above the cube), and at radius 0.8 m that raised target likely sits near the arm's reach limit, so the 0.0203 m error persists. Lowering lift_height to 0.2 m still lifts the 5 cm cube well past the 7.58 cm threshold and asks for a less extended pose, while leaving all pick, grasp, and approach-phase tolerances unchanged. The cause is inferred from the error pattern and has not been verified in simulation.",
+   "expected_risk": "RETREAT also uses lift_height, so the gripper rises less after release and could clip the placed cube, which would fail the final-30-frame placement check. Scenes that already pass should be largely unaffected because the lift still clears the table by a wide margin.",
+   "attempts": [
+    {
+     "started_utc": "2026-11-18T07:07:26.416716+00:00",
+     "seconds": 9.4,
+     "exit_code": 0,
+     "workdir": "C:\\Users\\Jonat\\AppData\\Local\\Temp\\ext3_agent_sandbox\\haiku_b1_a1__yobvq81",
+     "workdir_empty_after": true,
+     "transcript": "transcripts/haiku_b1_a1.stdout.txt",
+     "final_text": "{\"overrides\": {\"lift_height\": 0.2}, \"rationale\": \"The failure is in LIFT, where the target is the pick pose plus lift_height (0.3 m above the cube), and at radius 0.8 m that raised target likely sits near the arm's reach limit, so the 0.0203 m error persists. Lowering lift_height to 0.2 m still lifts the 5 cm cube well past the 7.58 cm threshold and asks for a less extended pose, while leaving all pick, grasp, and approach-phase tolerances unchanged. The cause is inferred from the error pattern and has not been verified in simulation.\", \"expected_risk\": \"RETREAT also uses lift_height, so the gripper rises less after release and could clip the placed cube, which would fail the final-30-frame placement check. Scenes that already pass should be largely unaffected because the lift still clears the table by a wide margin.\"}",
+     "information_tool_calls": 0,
+     "models_reported": [
+      "claude-haiku-5-5"
+     ],
+     "cli_error": null,
+     "valid": true,
+     "invalid_reason": null
+    }
+   ],
+   "noop": null,
+   "duplicate_of": null,
+   "run": true
+  },
+  {
+   "id": "haiku_b2",
+   "agent": "claude-haiku",
+   "vendor": "Anthropic",
+   "cli": "claude",
+   "model_requested": "haiku",
+   "condition": "blind",
+   "sample": 2,
+   "prompt_sha256": "7edd5be876c3821a3e4983090584f20ccd989fda888c2be618542eecb69aced1",
+   "overrides": {
+    "position_tolerance": 0.022
+   },
+   "excluded": false,
+   "exclusion_reason": null,
+   "rationale": "The failing LIFT phase stalls at a 0.0203 m error, just above the 0.015 m tolerance, so loosening position_tolerance to 0.022 m lets it converge. grasp_position_tolerance is stored separately, so the GRASP phase that already works keeps its 0.015 m tolerance. Only the non-grasp phases that use position_tolerance change.",
+   "expected_risk": "Other phases may now advance with up to 2.2 cm of tool error, which could leave the cube a little off the goal near the 3 cm scoring limit. The fix is unverified, and it may not help if the LIFT error is a reachability limit rather than a tolerance problem.",
+   "attempts": [
+    {
+     "started_utc": "2026-11-18T07:07:35.778135+00:00",
+     "seconds": 8.8,
+     "exit_code": 0,
+     "workdir": "C:\\Users\\Jonat\\AppData\\Local\\Temp\\ext3_agent_sandbox\\haiku_b2_a1_e9lg5_0x",
+     "workdir_empty_after": true,
+     "transcript": "transcripts/haiku_b2_a1.stdout.txt",
+     "final_text": "{\"overrides\": {\"position_tolerance\": 0.022}, \"rationale\": \"The failing LIFT phase stalls at a 0.0203 m error, just above the 0.015 m tolerance, so loosening position_tolerance to 0.022 m lets it converge. grasp_position_tolerance is stored separately, so the GRASP phase that already works keeps its 0.015 m tolerance. Only the non-grasp phases that use position_tolerance change.\", \"expected_risk\": \"Other phases may now advance with up to 2.2 cm of tool error, which could leave the cube a little off the goal near the 3 cm scoring limit. The fix is unverified, and it may not help if the LIFT error is a reachability limit rather than a tolerance problem.\"}",
+     "information_tool_calls": 0,
+     "models_reported": [
+      "claude-haiku-5-5"
+     ],
+     "cli_error": null,
+     "valid": true,
+     "invalid_reason": null
+    }
+   ],
+   "noop": null,
+   "duplicate_of": null,
+   "run": true
+  },
+  {
+   "id": "haiku_m1",
+   "agent": "claude-haiku",
+   "vendor": "Anthropic",
+   "cli": "claude",
+   "model_requested": "haiku",
+   "condition": "memory",
+   "sample": 1,
+   "prompt_sha256": "459a574c4c8520d11b992bc5361721fbe0647ee552d4ccbba4bf9a066080902c",
+   "overrides": {
+    "position_tolerance": 0.033
+   },
+   "excluded": false,
+   "exclusion_reason": null,
+   "rationale": "The failing phase is LIFT, which uses position_tolerance, and its 0.0203 m error sits above the current 0.015 m limit. In the prior panel, position_tolerance = 0.033 solved 19 of 19 target scenes with no target regressions, broke 3 of 73 workspace successes, and fixed 9 of 17 workspace failures. grasp_position_tolerance is unchanged, so the GRASP phase keeps its current behavior.",
+   "expected_risk": "Looser convergence can advance phases while the tool is up to 3.3 cm off target, which can leave the cube short of the 3.0 cm goal band; the panel showed 3 workspace successes lost. The edit is tested on the same panel, so the result on unseen scenes may differ.",
+   "attempts": [
+    {
+     "started_utc": "2026-11-18T07:07:44.623563+00:00",
+     "seconds": 8.1,
+     "exit_code": 0,
+     "workdir": "C:\\Users\\Jonat\\AppData\\Local\\Temp\\ext3_agent_sandbox\\haiku_m1_a1_aryt_14_",
+     "workdir_empty_after": true,
+     "transcript": "transcripts/haiku_m1_a1.stdout.txt",
+     "final_text": "{\"overrides\": {\"position_tolerance\": 0.033}, \"rationale\": \"The failing phase is LIFT, which uses position_tolerance, and its 0.0203 m error sits above the current 0.015 m limit. In the prior panel, position_tolerance = 0.033 solved 19 of 19 target scenes with no target regressions, broke 3 of 73 workspace successes, and fixed 9 of 17 workspace failures. grasp_position_tolerance is unchanged, so the GRASP phase keeps its current behavior.\", \"expected_risk\": \"Looser convergence can advance phases while the tool is up to 3.3 cm off target, which can leave the cube short of the 3.0 cm goal band; the panel showed 3 workspace successes lost. The edit is tested on the same panel, so the result on unseen scenes may differ.\"}",
+     "information_tool_calls": 0,
+     "models_reported": [
+      "claude-haiku-5-5"
+     ],
+     "cli_error": null,
+     "valid": true,
+     "invalid_reason": null
+    }
+   ],
+   "noop": null,
+   "duplicate_of": null,
+   "run": true
+  },
+  {
+   "id": "haiku_m2",
+   "agent": "claude-haiku",
+   "vendor": "Anthropic",
+   "cli": "claude",
+   "model_requested": "haiku",
+   "condition": "memory",
+   "sample": 2,
+   "prompt_sha256": "459a574c4c8520d11b992bc5361721fbe0647ee552d4ccbba4bf9a066080902c",
+   "overrides": {
+    "position_tolerance": 0.03,
+    "grasp_position_tolerance": 0.019
+   },
+   "excluded": false,
+   "exclusion_reason": null,
+   "rationale": "The failing LIFT phase stalls at a 0.0203 m error against a 0.015 m tolerance, so loosening position_tolerance to 0.03 lets it converge. Earlier edit 46 with this same pair solved 20 of 20 target scenes and broke only 2 of 73 workspace successes, the best trade-off in the table. Keeping grasp_position_tolerance at 0.019 leaves GRASP slightly looser than before, which should be harmless because that phase is not the failure.",
+   "expected_risk": "Looser convergence can let the cube settle 3.0-4.7 cm from the goal, which is the main way earlier edits broke workspace scenes, so some scenes that now succeed may fail the 3 cm placement check. The result comes from the 90-scene memory panel, not the held-out test scenes, so the broken and fixed counts may not transfer.",
+   "attempts": [
+    {
+     "started_utc": "2026-11-18T07:07:52.698136+00:00",
+     "seconds": 7.5,
+     "exit_code": 0,
+     "workdir": "C:\\Users\\Jonat\\AppData\\Local\\Temp\\ext3_agent_sandbox\\haiku_m2_a1_y_509bm5",
+     "workdir_empty_after": true,
+     "transcript": "transcripts/haiku_m2_a1.stdout.txt",
+     "final_text": "{\"overrides\": {\"position_tolerance\": 0.03, \"grasp_position_tolerance\": 0.019}, \"rationale\": \"The failing LIFT phase stalls at a 0.0203 m error against a 0.015 m tolerance, so loosening position_tolerance to 0.03 lets it converge. Earlier edit 46 with this same pair solved 20 of 20 target scenes and broke only 2 of 73 workspace successes, the best trade-off in the table. Keeping grasp_position_tolerance at 0.019 leaves GRASP slightly looser than before, which should be harmless because that phase is not the failure.\", \"expected_risk\": \"Looser convergence can let the cube settle 3.0-4.7 cm from the goal, which is the main way earlier edits broke workspace scenes, so some scenes that now succeed may fail the 3 cm placement check. The result comes from the 90-scene memory panel, not the held-out test scenes, so the broken and fixed counts may not transfer.\"}",
+     "information_tool_calls": 0,
+     "models_reported": [
+      "claude-haiku-5-5"
+     ],
+     "cli_error": null,
+     "valid": true,
+     "invalid_reason": null
+    }
+   ],
+   "noop": null,
+   "duplicate_of": "opus_m1",
+   "run": false
+  },
+  {
+   "id": "gpt_b1",
+   "agent": "gpt",
+   "vendor": "OpenAI",
+   "cli": "codex",
+   "model_requested": "gpt-6-astra",
+   "condition": "blind",
+   "sample": 1,
+   "prompt_sha256": "7edd5be876c3821a3e4983090584f20ccd989fda888c2be618542eecb69aced1",
+   "overrides": {
+    "position_tolerance": 0.025
+   },
+   "excluded": false,
+   "exclusion_reason": null,
+   "rationale": "The observed LIFT error of 0.0203 m falls within this tolerance, allowing advancement if orientation and stability checks also pass. GRASP retains its separate 0.015 m tolerance, preserving its positioning requirement.",
+   "expected_risk": "Other phases also accept larger position errors, potentially reducing placement accuracy against the 0.03 m scoring limit. Nearby scenes with larger residual errors could still time out.",
+   "attempts": [
+    {
+     "started_utc": "2026-11-18T07:07:26.416716+00:00",
+     "seconds": 15.0,
+     "exit_code": 0,
+     "workdir": "C:\\Users\\Jonat\\AppData\\Local\\Temp\\ext3_agent_sandbox\\gpt_b1_a1_z4v1dh6y",
+     "workdir_empty_after": true,
+     "transcript": "transcripts/gpt_b1_a1.stdout.txt",
+     "final_text": "{\"overrides\":{\"position_tolerance\":0.025},\"rationale\":\"The observed LIFT error of 0.0203 m falls within this tolerance, allowing advancement if orientation and stability checks also pass. GRASP retains its separate 0.015 m tolerance, preserving its positioning requirement.\",\"expected_risk\":\"Other phases also accept larger position errors, potentially reducing placement accuracy against the 0.03 m scoring limit. Nearby scenes with larger residual errors could still time out.\"}",
+     "information_tool_calls": 0,
+     "models_reported": [],
+     "cli_error": null,
+     "valid": true,
+     "invalid_reason": null
+    }
+   ],
+   "noop": null,
+   "duplicate_of": null,
+   "run": true
+  },
+  {
+   "id": "gpt_b2",
+   "agent": "gpt",
+   "vendor": "OpenAI",
+   "cli": "codex",
+   "model_requested": "gpt-6-astra",
+   "condition": "blind",
+   "sample": 2,
+   "prompt_sha256": "7edd5be876c3821a3e4983090584f20ccd989fda888c2be618542eecb69aced1",
+   "overrides": {
+    "position_tolerance": 0.025
+   },
+   "excluded": false,
+   "exclusion_reason": null,
+   "rationale": "A 0.025 m tolerance exceeds the observed 0.0203 m LIFT residual, allowing advancement if orientation convergence and the stability requirement also hold. The separate GRASP tolerance remains 0.015 m, preserving its positioning requirement.",
+   "expected_risk": "Other non-GRASP phases also accept larger errors, potentially reducing placement accuracy under the 3 cm scoring limit. Success across the workspace remains unverified.",
+   "attempts": [
+    {
+     "started_utc": "2026-11-18T07:07:41.471864+00:00",
+     "seconds": 9.8,
+     "exit_code": 0,
+     "workdir": "C:\\Users\\Jonat\\AppData\\Local\\Temp\\ext3_agent_sandbox\\gpt_b2_a1_l8izk7kq",
+     "workdir_empty_after": true,
+     "transcript": "transcripts/gpt_b2_a1.stdout.txt",
+     "final_text": "{\"overrides\":{\"position_tolerance\":0.025},\"rationale\":\"A 0.025 m tolerance exceeds the observed 0.0203 m LIFT residual, allowing advancement if orientation convergence and the stability requirement also hold. The separate GRASP tolerance remains 0.015 m, preserving its positioning requirement.\",\"expected_risk\":\"Other non-GRASP phases also accept larger errors, potentially reducing placement accuracy under the 3 cm scoring limit. Success across the workspace remains unverified.\"}",
+     "information_tool_calls": 0,
+     "models_reported": [],
+     "cli_error": null,
+     "valid": true,
+     "invalid_reason": null
+    }
+   ],
+   "noop": null,
+   "duplicate_of": "gpt_b1",
+   "run": false
+  },
+  {
+   "id": "gpt_m1",
+   "agent": "gpt",
+   "vendor": "OpenAI",
+   "cli": "codex",
+   "model_requested": "gpt-6-astra",
+   "condition": "memory",
+   "sample": 1,
+   "prompt_sha256": "459a574c4c8520d11b992bc5361721fbe0647ee552d4ccbba4bf9a066080902c",
+   "overrides": {
+    "position_tolerance": 0.022
+   },
+   "excluded": false,
+   "exclusion_reason": null,
+   "rationale": "A 0.022 m tolerance clears the reported 0.0203 m LIFT position error while retaining the stability and orientation checks. This is a smaller relaxation than the previously tested 0.025\u20130.033 m values, aiming to limit placement regressions. GRASP keeps its separate 0.015 m tolerance.",
+   "expected_risk": "The tolerance also affects DESCEND_PLACE and RELEASE, so earlier release could still violate the 3 cm placement requirement. This untested value cannot guarantee preservation of existing successes.",
+   "attempts": [
+    {
+     "started_utc": "2026-11-18T07:07:51.266511+00:00",
+     "seconds": 13.0,
+     "exit_code": 0,
+     "workdir": "C:\\Users\\Jonat\\AppData\\Local\\Temp\\ext3_agent_sandbox\\gpt_m1_a1_6yb9v4zi",
+     "workdir_empty_after": true,
+     "transcript": "transcripts/gpt_m1_a1.stdout.txt",
+     "final_text": "{\"overrides\":{\"position_tolerance\":0.022},\"rationale\":\"A 0.022 m tolerance clears the reported 0.0203 m LIFT position error while retaining the stability and orientation checks. This is a smaller relaxation than the previously tested 0.025\u20130.033 m values, aiming to limit placement regressions. GRASP keeps its separate 0.015 m tolerance.\",\"expected_risk\":\"The tolerance also affects DESCEND_PLACE and RELEASE, so earlier release could still violate the 3 cm placement requirement. This untested value cannot guarantee preservation of existing successes.\"}",
+     "information_tool_calls": 0,
+     "models_reported": [],
+     "cli_error": null,
+     "valid": true,
+     "invalid_reason": null
+    }
+   ],
+   "noop": null,
+   "duplicate_of": "haiku_b2",
+   "run": false
+  },
+  {
+   "id": "gpt_m2",
+   "agent": "gpt",
+   "vendor": "OpenAI",
+   "cli": "codex",
+   "model_requested": "gpt-6-astra",
+   "condition": "memory",
+   "sample": 2,
+   "prompt_sha256": "459a574c4c8520d11b992bc5361721fbe0647ee552d4ccbba4bf9a066080902c",
+   "overrides": {
+    "position_tolerance": 0.022
+   },
+   "excluded": false,
+   "exclusion_reason": null,
+   "rationale": "This exceeds the observed LIFT residual of 0.0203 m by 1.7 mm, allowing advancement if convergence remains stable. It is a smaller relaxation than the tested 0.025\u20130.033 m settings and leaves GRASP tolerance unchanged.",
+   "expected_risk": "The tolerance also affects placement and release, so earlier advancement could cause placement errors. This untested value may reduce regressions relative to larger relaxations, but preserving every existing success is not guaranteed.",
+   "attempts": [
+    {
+     "started_utc": "2026-11-18T07:08:04.259074+00:00",
+     "seconds": 13.0,
+     "exit_code": 0,
+     "workdir": "C:\\Users\\Jonat\\AppData\\Local\\Temp\\ext3_agent_sandbox\\gpt_m2_a1_j248izw9",
+     "workdir_empty_after": true,
+     "transcript": "transcripts/gpt_m2_a1.stdout.txt",
+     "final_text": "{\"overrides\":{\"position_tolerance\":0.022},\"rationale\":\"This exceeds the observed LIFT residual of 0.0203 m by 1.7 mm, allowing advancement if convergence remains stable. It is a smaller relaxation than the tested 0.025\u20130.033 m settings and leaves GRASP tolerance unchanged.\",\"expected_risk\":\"The tolerance also affects placement and release, so earlier advancement could cause placement errors. This untested value may reduce regressions relative to larger relaxations, but preserving every existing success is not guaranteed.\"}",
+     "information_tool_calls": 0,
+     "models_reported": [],
+     "cli_error": null,
+     "valid": true,
+     "invalid_reason": null
+    }
+   ],
+   "noop": null,
+   "duplicate_of": "haiku_b2",
+   "run": false
+  },
+  {
+   "id": "gemini_b1",
+   "agent": "gemini",
+   "vendor": "Google",
+   "cli": "gemini",
+   "model_requested": null,
+   "condition": "blind",
+   "sample": 1,
+   "prompt_sha256": "7edd5be876c3821a3e4983090584f20ccd989fda888c2be618542eecb69aced1",
+   "overrides": null,
+   "excluded": true,
+   "exclusion_reason": "cli error: unparseable transcript: JSONDecodeError('Expecting property name enclosed in double quotes: line 2 column 3 (char 4)')",
+   "rationale": null,
+   "expected_risk": null,
+   "attempts": [
+    {
+     "started_utc": "2026-11-18T07:07:26.415713+00:00",
+     "seconds": 2.2,
+     "exit_code": 1,
+     "workdir": "C:\\Users\\Jonat\\AppData\\Local\\Temp\\ext3_agent_sandbox\\gemini_b1_a1_y6pt_h28",
+     "workdir_empty_after": true,
+     "transcript": "transcripts/gemini_b1_a1.stdout.txt",
+     "final_text": "",
+     "information_tool_calls": 0,
+     "models_reported": [],
+     "cli_error": "unparseable transcript: JSONDecodeError('Expecting property name enclosed in double quotes: line 2 column 3 (char 4)')",
+     "valid": false,
+     "invalid_reason": "cli error: unparseable transcript: JSONDecodeError('Expecting property name enclosed in double quotes: line 2 column 3 (char 4)')"
+    },
+    {
+     "started_utc": "2026-11-18T07:07:28.643934+00:00",
+     "seconds": 2.2,
+     "exit_code": 1,
+     "workdir": "C:\\Users\\Jonat\\AppData\\Local\\Temp\\ext3_agent_sandbox\\gemini_b1_a2_77vem07c",
+     "workdir_empty_after": true,
+     "transcript": "transcripts/gemini_b1_a2.stdout.txt",
+     "final_text": "",
+     "information_tool_calls": 0,
+     "models_reported": [],
+     "cli_error": "unparseable transcript: JSONDecodeError('Expecting property name enclosed in double quotes: line 2 column 3 (char 4)')",
+     "valid": false,
+     "invalid_reason": "cli error: unparseable transcript: JSONDecodeError('Expecting property name enclosed in double quotes: line 2 column 3 (char 4)')"
+    }
+   ],
+   "noop": null,
+   "duplicate_of": null,
+   "run": false
+  },
+  {
+   "id": "gemini_b2",
+   "agent": "gemini",
+   "vendor": "Google",
+   "cli": "gemini",
+   "model_requested": null,
+   "condition": "blind",
+   "sample": 2,
+   "prompt_sha256": "7edd5be876c3821a3e4983090584f20ccd989fda888c2be618542eecb69aced1",
+   "overrides": null,
+   "excluded": true,
+   "exclusion_reason": "cli error: unparseable transcript: JSONDecodeError('Expecting property name enclosed in double quotes: line 2 column 3 (char 4)')",
+   "rationale": null,
+   "expected_risk": null,
+   "attempts": [
+    {
+     "started_utc": "2026-11-18T07:07:30.863466+00:00",
+     "seconds": 1.8,
+     "exit_code": 1,
+     "workdir": "C:\\Users\\Jonat\\AppData\\Local\\Temp\\ext3_agent_sandbox\\gemini_b2_a1_q2ubmcs5",
+     "workdir_empty_after": true,
+     "transcript": "transcripts/gemini_b2_a1.stdout.txt",
+     "final_text": "",
+     "information_tool_calls": 0,
+     "models_reported": [],
+     "cli_error": "unparseable transcript: JSONDecodeError('Expecting property name enclosed in double quotes: line 2 column 3 (char 4)')",
+     "valid": false,
+     "invalid_reason": "cli error: unparseable transcript: JSONDecodeError('Expecting property name enclosed in double quotes: line 2 column 3 (char 4)')"
+    },
+    {
+     "started_utc": "2026-11-18T07:07:32.710783+00:00",
+     "seconds": 1.9,
+     "exit_code": 1,
+     "workdir": "C:\\Users\\Jonat\\AppData\\Local\\Temp\\ext3_agent_sandbox\\gemini_b2_a2_srupvh6y",
+     "workdir_empty_after": true,
+     "transcript": "transcripts/gemini_b2_a2.stdout.txt",
+     "final_text": "",
+     "information_tool_calls": 0,
+     "models_reported": [],
+     "cli_error": "unparseable transcript: JSONDecodeError('Expecting property name enclosed in double quotes: line 2 column 3 (char 4)')",
+     "valid": false,
+     "invalid_reason": "cli error: unparseable transcript: JSONDecodeError('Expecting property name enclosed in double quotes: line 2 column 3 (char 4)')"
+    }
+   ],
+   "noop": null,
+   "duplicate_of": null,
+   "run": false
+  },
+  {
+   "id": "gemini_m1",
+   "agent": "gemini",
+   "vendor": "Google",
+   "cli": "gemini",
+   "model_requested": null,
+   "condition": "memory",
+   "sample": 1,
+   "prompt_sha256": "459a574c4c8520d11b992bc5361721fbe0647ee552d4ccbba4bf9a066080902c",
+   "overrides": null,
+   "excluded": true,
+   "exclusion_reason": "cli error: unparseable transcript: JSONDecodeError('Expecting property name enclosed in double quotes: line 2 column 3 (char 4)')",
+   "rationale": null,
+   "expected_risk": null,
+   "attempts": [
+    {
+     "started_utc": "2026-11-18T07:07:34.583954+00:00",
+     "seconds": 1.9,
+     "exit_code": 1,
+     "workdir": "C:\\Users\\Jonat\\AppData\\Local\\Temp\\ext3_agent_sandbox\\gemini_m1_a1_gfkzrv60",
+     "workdir_empty_after": true,
+     "transcript": "transcripts/gemini_m1_a1.stdout.txt",
+     "final_text": "",
+     "information_tool_calls": 0,
+     "models_reported": [],
+     "cli_error": "unparseable transcript: JSONDecodeError('Expecting property name enclosed in double quotes: line 2 column 3 (char 4)')",
+     "valid": false,
+     "invalid_reason": "cli error: unparseable transcript: JSONDecodeError('Expecting property name enclosed in double quotes: line 2 column 3 (char 4)')"
+    },
+    {
+     "started_utc": "2026-11-18T07:07:36.451693+00:00",
+     "seconds": 1.8,
+     "exit_code": 1,
+     "workdir": "C:\\Users\\Jonat\\AppData\\Local\\Temp\\ext3_agent_sandbox\\gemini_m1_a2_m946eo3n",
+     "workdir_empty_after": true,
+     "transcript": "transcripts/gemini_m1_a2.stdout.txt",
+     "final_text": "",
+     "information_tool_calls": 0,
+     "models_reported": [],
+     "cli_error": "unparseable transcript: JSONDecodeError('Expecting property name enclosed in double quotes: line 2 column 3 (char 4)')",
+     "valid": false,
+     "invalid_reason": "cli error: unparseable transcript: JSONDecodeError('Expecting property name enclosed in double quotes: line 2 column 3 (char 4)')"
+    }
+   ],
+   "noop": null,
+   "duplicate_of": null,
+   "run": false
+  },
+  {
+   "id": "gemini_m2",
+   "agent": "gemini",
+   "vendor": "Google",
+   "cli": "gemini",
+   "model_requested": null,
+   "condition": "memory",
+   "sample": 2,
+   "prompt_sha256": "459a574c4c8520d11b992bc5361721fbe0647ee552d4ccbba4bf9a066080902c",
+   "overrides": null,
+   "excluded": true,
+   "exclusion_reason": "cli error: unparseable transcript: JSONDecodeError('Expecting property name enclosed in double quotes: line 2 column 3 (char 4)')",
+   "rationale": null,
+   "expected_risk": null,
+   "attempts": [
+    {
+     "started_utc": "2026-11-18T07:07:38.249702+00:00",
+     "seconds": 2.0,
+     "exit_code": 1,
+     "workdir": "C:\\Users\\Jonat\\AppData\\Local\\Temp\\ext3_agent_sandbox\\gemini_m2_a1__acyc1ue",
+     "workdir_empty_after": true,
+     "transcript": "transcripts/gemini_m2_a1.stdout.txt",
+     "final_text": "",
+     "information_tool_calls": 0,
+     "models_reported": [],
+     "cli_error": "unparseable transcript: JSONDecodeError('Expecting property name enclosed in double quotes: line 2 column 3 (char 4)')",
+     "valid": false,
+     "invalid_reason": "cli error: unparseable transcript: JSONDecodeError('Expecting property name enclosed in double quotes: line 2 column 3 (char 4)')"
+    },
+    {
+     "started_utc": "2026-11-18T07:07:40.269530+00:00",
+     "seconds": 1.9,
+     "exit_code": 1,
+     "workdir": "C:\\Users\\Jonat\\AppData\\Local\\Temp\\ext3_agent_sandbox\\gemini_m2_a2_y4bfbexb",
+     "workdir_empty_after": true,
+     "transcript": "transcripts/gemini_m2_a2.stdout.txt",
+     "final_text": "",
+     "information_tool_calls": 0,
+     "models_reported": [],
+     "cli_error": "unparseable transcript: JSONDecodeError('Expecting property name enclosed in double quotes: line 2 column 3 (char 4)')",
+     "valid": false,
+     "invalid_reason": "cli error: unparseable transcript: JSONDecodeError('Expecting property name enclosed in double quotes: line 2 column 3 (char 4)')"
+    }
+   ],
+   "noop": null,
+   "duplicate_of": null,
+   "run": false
+  }
+ ]
+}

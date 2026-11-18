@@ -1,0 +1,230 @@
+{
+ "frozen_local": "2026-11-17T23:08:57.065000-08:00",
+ "note": "Extension 3 agent proposals and transcripts, hashed after collection and before any Extension 3 rollout.",
+ "files": [
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\gpt_b1.json",
+   "sha256": "ce8361aa871337e1cc7674ebb84e3f99e5f4265ff299bdd1785a95cff8a6a6dc"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\haiku_b1.json",
+   "sha256": "2f15afac29712066e62d95c7ed568ae18ce304d68f7f8acc741d7c9ee26ae513"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\haiku_b2.json",
+   "sha256": "4b7b95e18c55e758693e39d4e6a84566dfab4d2963b8651a568c779a9a5a941f"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\haiku_m1.json",
+   "sha256": "0fd4f610518e2f66500bba5a8413ef9a81ac9e219d34eb267599e3c6ad2aaebb"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\index.json",
+   "sha256": "21fb9b211ddd18689da380e83624d54b96bfe3ce183e06b5aaa0b4933eef860e"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\opus_b1.json",
+   "sha256": "3a7825ac698ed0dcf939a55c01d523e444ca9d8496a1b05348eb80f46b0407a0"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\opus_m1.json",
+   "sha256": "27a0872116c713eb9db05d3e59e0bb05913d2fe95c385932066be181201d0605"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\sonnet_b2.json",
+   "sha256": "7668e1f56ce689636207e4b353047171253cd4ce88259e8881283555a5057ccd"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\gemini_b1_a1.stderr.txt",
+   "sha256": "68831fcaff72f8b4ab91c8a8b2832c454cc034e138722fc36b9c56b83b9f1bab"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\gemini_b1_a1.stdout.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\gemini_b1_a2.stderr.txt",
+   "sha256": "68831fcaff72f8b4ab91c8a8b2832c454cc034e138722fc36b9c56b83b9f1bab"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\gemini_b1_a2.stdout.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\gemini_b2_a1.stderr.txt",
+   "sha256": "891296bbae8172604b50c079fa544465ad4bbe867382993d90f06ff4eed2295d"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\gemini_b2_a1.stdout.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\gemini_b2_a2.stderr.txt",
+   "sha256": "31a412643daf5c438b80159c9e27e9f522331d2604b48d844a12e9f610df6cab"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\gemini_b2_a2.stdout.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\gemini_m1_a1.stderr.txt",
+   "sha256": "df449762f0eaf61b28247d7995a20ed986b89fcd757f549c4eca327244612ee4"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\gemini_m1_a1.stdout.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\gemini_m1_a2.stderr.txt",
+   "sha256": "d4e5bfee9ee3041b43180695ae2288d282c6c5c7831db05cd4ea9c1b3429412b"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\gemini_m1_a2.stdout.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\gemini_m2_a1.stderr.txt",
+   "sha256": "4503fb3eef55339e632beba543c7a31a2e69b80ce31d9e702402fd2b64fbb3e5"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\gemini_m2_a1.stdout.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\gemini_m2_a2.stderr.txt",
+   "sha256": "13abff4c78acdf3bb1dae1dbaf0b87c3d577f2e643914d98defc94d0115f3611"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\gemini_m2_a2.stdout.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\gpt_b1_a1.stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\gpt_b1_a1.stdout.txt",
+   "sha256": "340d15a6344ffc34e4d0d06a39840730db48c9bff4c062a1e3804abb2e8b103f"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\gpt_b2_a1.stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\gpt_b2_a1.stdout.txt",
+   "sha256": "d1f3caf075965d4d52315d49a96a61f571e61fdd5598b15ea4fa929f7e8600d9"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\gpt_m1_a1.stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\gpt_m1_a1.stdout.txt",
+   "sha256": "1468c30175ae6a06f975e9b609c68399aaef270f5bf4721a02c12b7eb2c389f1"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\gpt_m2_a1.stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\gpt_m2_a1.stdout.txt",
+   "sha256": "b290f6b66d8cfb83cacfc935e23644bbe31f2d08e9e11ab22a2769e741aad1b5"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\haiku_b1_a1.stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\haiku_b1_a1.stdout.txt",
+   "sha256": "cb004532d275e656ce010cb663d8a67da525ee76698453fb975a56f45505327e"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\haiku_b2_a1.stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\haiku_b2_a1.stdout.txt",
+   "sha256": "52e3bd0948e22365881f60f60b0f29d35a241f539f034d9bd581f0b224dbb952"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\haiku_m1_a1.stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\haiku_m1_a1.stdout.txt",
+   "sha256": "de112c52831f844c8631f607f1537283afc86e4080d7ecc834b59f920b7d045c"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\haiku_m2_a1.stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\haiku_m2_a1.stdout.txt",
+   "sha256": "8d30ab960f39a41976f2b73d75042205450f063ead4895df693a8a8a51649dc0"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\opus_b1_a1.stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\opus_b1_a1.stdout.txt",
+   "sha256": "a4df9bbdecb1715c93fc02cbe98e97eea252c922dd20851a9d2b23cece11d8fd"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\opus_b2_a1.stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\opus_b2_a1.stdout.txt",
+   "sha256": "1766ed60ee2f6ee5ebd6b91d93c5c7fccea92a53060ee1ea9753d35e9bba052c"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\opus_m1_a1.stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\opus_m1_a1.stdout.txt",
+   "sha256": "fe740ff224fec459cc7af7e0273866d0f19c4324ca0cf80ddcb9e28fc42acf64"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\opus_m2_a1.stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\opus_m2_a1.stdout.txt",
+   "sha256": "1d07ae7e941f7f5eb187005447dc61658770cfdba31be99c201c676ae5a1b859"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\sonnet_b1_a1.stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\sonnet_b1_a1.stdout.txt",
+   "sha256": "abcb67468e0a78e73d5cf61841aa34fbc927995520acc91babda6e839f9150a7"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\sonnet_b2_a1.stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\sonnet_b2_a1.stdout.txt",
+   "sha256": "4122b97ef70224094ef15450e5c744bea42211ace818879506d640fb27df1a86"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\sonnet_m1_a1.stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\sonnet_m1_a1.stdout.txt",
+   "sha256": "083c7f567366484d8ab30d589e97b735c11b9807cd41ffde9bb64cad9db690be"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\sonnet_m2_a1.stderr.txt",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\proposals\\ext3\\transcripts\\sonnet_m2_a1.stdout.txt",
+   "sha256": "a8dc891ff8d39a5e483f029a840d9ac38b1d767c8a5f7b8dd4d2261d8eb4dde6"
+  }
+ ]
+}

@@ -1,0 +1,103 @@
+Warning: True color (24-bit) support not detected. Using a terminal with true color enabled will result in a better visual experience.
+Error authenticating: _GaxiosError: Resource has been exhausted (e.g. check quota).
+    at Gaxios._request (file:///C:/Users/Jonat/AppData/Roaming/npm/node_modules/@google/gemini-cli/bundle/chunk-RCB6BI5H.js:17475:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async _OAuth2Client.requestAsync (file:///C:/Users/Jonat/AppData/Roaming/npm/node_modules/@google/gemini-cli/bundle/chunk-RCB6BI5H.js:19672:18)
+    at async CodeAssistServer.requestPost (file:///C:/Users/Jonat/AppData/Roaming/npm/node_modules/@google/gemini-cli/bundle/chunk-RCB6BI5H.js:312619:17)
+    at async _doSetupUser (file:///C:/Users/Jonat/AppData/Roaming/npm/node_modules/@google/gemini-cli/bundle/chunk-RCB6BI5H.js:312952:16) {
+  config: {
+    url: URL {
+      href: 'https://cloudcode-pa.googleapis.com/v1internal:onboardUser',
+      origin: 'https://cloudcode-pa.googleapis.com',
+      protocol: 'https:',
+      username: '',
+      password: '',
+      host: 'cloudcode-pa.googleapis.com',
+      hostname: 'cloudcode-pa.googleapis.com',
+      port: '',
+      pathname: '/v1internal:onboardUser',
+      search: '',
+      searchParams: URLSearchParams {},
+      hash: ''
+    },
+    method: 'POST',
+    headers: Headers {
+      authorization: '<<REDACTED> - See `errorRedactor` option in `gaxios` for configuration>.',
+      'content-type': 'application/json',
+      'User-Agent': 'GeminiCLI-tui/0.68.0/gemini-2.5-pro (win32; x64; terminal) google-api-nodejs-client/10.9.0',
+      accept: 'application/json',
+      'x-goog-api-client': 'gl-node/26.13.1'
+    },
+    responseType: 'json',
+    body: '{"tierId":"standard-tier","metadata":{"ideType":"IDE_UNSPECIFIED","platform":"PLATFORM_UNSPECIFIED","pluginType":"GEMINI"}}',
+    retryConfig: {
+      retryDelay: 100,
+      retry: 3,
+      noResponseRetries: 3,
+      statusCodesToRetry: [Array],
+      currentRetryAttempt: 0,
+      httpMethodsToRetry: [Array],
+      retryDelayMultiplier: 2,
+      timeOfFirstRequest: 1794985655861,
+      totalTimeout: 9007199254740991,
+      maxRetryDelay: 9007199254740991
+    },
+    validateStatus: [Function: validateStatus],
+    errorRedactor: [Function: defaultErrorRedactor],
+    duplex: 'half'
+  },
+  response: _Response [Response] {
+    size: 0,
+    data: { error: [Object] },
+    config: {
+      url: URL {},
+      method: 'POST',
+      headers: Headers {
+        authorization: '<<REDACTED> - See `errorRedactor` option in `gaxios` for configuration>.',
+        'content-type': 'application/json',
+        'User-Agent': 'GeminiCLI-tui/0.68.0/gemini-2.5-pro (win32; x64; terminal) google-api-nodejs-client/10.9.0',
+        accept: 'application/json',
+        'x-goog-api-client': 'gl-node/26.13.1'
+      },
+      responseType: 'json',
+      body: '{"tierId":"standard-tier","metadata":{"ideType":"IDE_UNSPECIFIED","platform":"PLATFORM_UNSPECIFIED","pluginType":"GEMINI"}}',
+      retryConfig: [Object],
+      validateStatus: [Function: validateStatus],
+      errorRedactor: [Function: defaultErrorRedactor],
+      duplex: 'half'
+    },
+    Symbol(Body internals): {
+      body: [Gunzip],
+      stream: [Gunzip],
+      boundary: null,
+      disturbed: true,
+      error: null
+    },
+    Symbol(Response internals): {
+      type: 'default',
+      url: 'https://cloudcode-pa.googleapis.com/v1internal:onboardUser',
+      status: 429,
+      statusText: 'Too Many Requests',
+      headers: [Object],
+      counter: 0,
+      highWaterMark: 16384
+    }
+  },
+  code: 429,
+  status: 429,
+  error: undefined,
+  Symbol(gaxios-gaxios-error): '7.2.0',
+  [cause]: {
+    message: 'Resource has been exhausted (e.g. check quota).',
+    code: 429,
+    status: 'RESOURCE_EXHAUSTED',
+    errors: [ [Object] ]
+  }
+}
+Ripgrep is not available. Falling back to GrepTool.
+An unexpected critical error occurred:Error: Resource has been exhausted (e.g. check quota).
+    at Gaxios._request (file:///C:/Users/Jonat/AppData/Roaming/npm/node_modules/@google/gemini-cli/bundle/chunk-RCB6BI5H.js:17475:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async _OAuth2Client.requestAsync (file:///C:/Users/Jonat/AppData/Roaming/npm/node_modules/@google/gemini-cli/bundle/chunk-RCB6BI5H.js:19672:18)
+    at async CodeAssistServer.requestPost (file:///C:/Users/Jonat/AppData/Roaming/npm/node_modules/@google/gemini-cli/bundle/chunk-RCB6BI5H.js:312619:17)
+    at async _doSetupUser (file:///C:/Users/Jonat/AppData/Roaming/npm/node_modules/@google/gemini-cli/bundle/chunk-RCB6BI5H.js:312952:16)

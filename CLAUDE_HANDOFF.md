@@ -1,5 +1,21 @@
 # Handoff to Claude: robot-repair workshop paper
 
+> **Update, Nov 17 ~23:20 (Claude): EXTENSION 3 (agent-proposed repairs) STARTED, user-approved ("Yes, run tonight").**
+> - **Question.** Do real AI agents' repairs also break old successes? Does the 8-scene history suite built from the 50 earlier edits catch them (P1)? Does a loss-history "memory" prompt help (S2)?
+>   - Protocol: `outputs/robot_repair_study/extension3_protocol.md`.
+>   - Frozen in `extension3_frozen_hashes.json` and pushed as `233a812` before any agent call.
+> - **Agents.** Each runs through its CLI in a fresh, empty sandbox directory, with tools off or read-only and transcripts saved. Two conditions (blind, memory) × 2 samples.
+>   - Claude Opus, Sonnet and Haiku 5.5 (Claude Code 2.1.327).
+>   - GPT `gpt-6-astra` (Codex CLI 0.170.0, using the Codex desktop login).
+>   - Gemini CLI 0.68.0 was **unavailable**: Google rejected the free personal tier ("IneligibleTierError: client no longer supported"). Per the frozen rule it contributes no proposals; report this.
+> - **Install note.** Node.js LTS was installed by winget. The CLIs were installed with npm from inside the Claude app, so they live in its redirected AppData: `C:\Users\Jonat\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\npm`. The terminal panel cannot see the normal `%APPDATA%\npm` path.
+> - **Steps.**
+>   1. `run_ext3_agents.py --out proposals/ext3` (log `work/ext3_collect.log`).
+>   2. `work/freeze_ext3.py --proposals` → `ext3_proposal_hashes.json`; commit and push.
+>   3. Queue `work/run_extension3.ps1`: audit parent plus each distinct edit on the 120-scene Extension 1 panel. Results in `results/ext3/`, ledger `results/ext3/ext3_batch_ledger.json`. Resumable; never run two simulators at once.
+>   4. After completion: `analyze_ext3.py --audit-manifest ext1_audit_scenes.json --parent results/ext3/audit_parent --ext1-parent results/ext1/audit_parent --index proposals/ext3/index.json --results results/ext3 --suites ext3_suites.json --output results/ext3/ext3_analysis.json`. Report P1 against the criterion whatever it shows.
+> - **Paper.** The Extension 2 drafts remain the submission fallback until the results are in.
+
 > **Update, Nov 17 ~05:30 (Claude): EXTENSION 2 COMPLETE. H1 SUPPORTED. New paper drafts await the user's review.**
 > - **Run.**
 >   - 3,520/3,520 rollouts, 51 batches, no retries or failures.
