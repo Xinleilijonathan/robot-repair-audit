@@ -53,7 +53,7 @@ Gate & no. & w/ loss & losses & adm. & missed \\
 %s
 \bottomrule
 \end{tabular}
-\caption{Committed gate decisions in the two candidate populations, scored on each population's audit (30 target and 90 old scenes; the parent solves 73 old scenes in both). Losses are summed over admitted candidates. No candidate in either population is useful under the zero-loss objective. Suite gates spend 4 target and $k$ old pairs and admit only with a target gain and zero suite losses.}
+\caption{Committed gate decisions in the two candidate populations, scored on each population's audit (30 target and 90 old scenes; the parent solves 73 old scenes in both). Losses are summed over admitted candidates. No candidate in either population is useful under the zero-loss objective. Suite gates spend 4 target and $k$ old pairs and admit only with a target gain and zero suite losses. In the pre-registered test, target-only uses the same 4 target pairs, not 12.}
 \label{tab:gates2}
 \end{table}
 """ % (n1, u1, '\n'.join(rows1), n2, u2, '\n'.join(rows2))
