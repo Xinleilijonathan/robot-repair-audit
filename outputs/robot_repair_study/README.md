@@ -1,6 +1,16 @@
 # Robot repair study — artifact
 
-This folder accompanies `../initial_paper.md` (historical pre-experiment draft) and `../research_plan.md`. The submission manuscript is `paper/main_ext2.tex`, with a 4-page-total variant in `paper/main_ext2_short.tex`. `paper/main.tex` and `paper/main_short.tex` are the earlier version, without Extension 2. Results write-ups are `../repair_pilot_report.md` (development pilot), `../audit_report.md` (frozen audit), `../extension1_report.md` (post-hoc candidate-population extension) and `../extension2_report.md` (pre-registered loss-history test).
+This folder accompanies `../initial_paper.md` (historical pre-experiment draft) and `../research_plan.md`. The submission manuscript is `paper/main_ext2.tex`, with a 4-page-total variant in `paper/main_ext2_short.tex`. `paper/main.tex` and `paper/main_short.tex` are the earlier version, without Extension 2. Results write-ups are `../repair_pilot_report.md` (development pilot), `../audit_report.md` (frozen audit), `../extension1_report.md` (post-hoc candidate-population extension) `../extension2_report.md` (pre-registered loss-history test) and `../extension3_report.md` (pre-registered test on AI-agent-proposed repairs; not yet in the manuscript).
+
+## Extension 3 (pre-registered agent-proposed repairs, Nov 17–18)
+
+Protocol `extension3_protocol.md`, hashes `extension3_frozen_hashes.json` and `ext3_proposal_hashes.json` (written by `scripts/freeze_ext3.py`), materials from `make_ext3_materials.py`, proposals in `proposals/ext3/` (collected by `run_ext3_agents.py`; agent CLIs not included), results in `results/ext3/`. Queue: `scripts/run_extension3.ps1` with `scripts/launch_isaac_ps51_timeout.ps1`. Commands are run from this directory; `R=results/ext3`.
+
+| Output | Command |
+|---|---|
+| Frozen analysis (P1, S1–S6) | `analyze_ext3.py --audit-manifest ext1_audit_scenes.json --parent $R/audit_parent --ext1-parent results/ext1/audit_parent --index proposals/ext3/index.json --results $R --suites ext3_suites.json --output $R/ext3_analysis.json` |
+| Post-hoc: copied edits, leave-own-out and new-edits-only P1 | `explore_ext3_insample.py --analysis $R/ext3_analysis.json --suites ext3_suites.json --output results/exploratory/ext3_insample.json` |
+| Post-hoc: copied edits vs their earlier runs | `explore_ext3_copy_replay.py --output results/exploratory/ext3_copy_replay.json` |
 
 ## Extension 2 (pre-registered loss-history test, Nov 16–17)
 

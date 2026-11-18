@@ -1,0 +1,11 @@
+EXT3_QUEUE candidates=7
+BATCH audit_parent attempt=1 exit=0 rollouts=120/120
+BATCH audit_opus_b1 attempt=1 exit=0 rollouts=120/120
+BATCH audit_opus_m1 attempt=1 exit=0 rollouts=120/120
+BATCH audit_sonnet_b2 attempt=1 exit=0 rollouts=120/120
+BATCH audit_haiku_b1 attempt=1 exit=0 rollouts=120/120
+BATCH audit_haiku_b2 attempt=1 exit=0 rollouts=120/120
+BATCH audit_haiku_m1 attempt=1 exit=0 rollouts=120/120
+BATCH audit_gpt_b1 attempt=1 exit=0 rollouts=120/120
+EXT3_QUEUE_DONE
+QUEUE_EXIT 0

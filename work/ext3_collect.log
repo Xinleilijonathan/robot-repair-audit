@@ -1,0 +1,22 @@
+gemini_b1 EXCLUDED (cli error: unparseable transcript: JSONDecodeError('Expecting property name enclosed in double quotes: line 2 column 3 (char 4)')) None
+gemini_b2 EXCLUDED (cli error: unparseable transcript: JSONDecodeError('Expecting property name enclosed in double quotes: line 2 column 3 (char 4)')) None
+haiku_b1 OK {'lift_height': 0.2}
+gemini_m1 EXCLUDED (cli error: unparseable transcript: JSONDecodeError('Expecting property name enclosed in double quotes: line 2 column 3 (char 4)')) None
+sonnet_b1 OK {'lift_height': 0.15}
+gpt_b1 OK {'position_tolerance': 0.025}
+opus_b1 OK {'lift_height': 0.15}
+gemini_m2 EXCLUDED (cli error: unparseable transcript: JSONDecodeError('Expecting property name enclosed in double quotes: line 2 column 3 (char 4)')) None
+haiku_b2 OK {'position_tolerance': 0.022}
+sonnet_b2 OK {'lift_height': 0.2, 'position_tolerance': 0.022}
+gpt_b2 OK {'position_tolerance': 0.025}
+haiku_m1 OK {'position_tolerance': 0.033}
+sonnet_m1 OK {'position_tolerance': 0.03, 'grasp_position_tolerance': 0.019}
+haiku_m2 OK {'position_tolerance': 0.03, 'grasp_position_tolerance': 0.019}
+opus_b2 OK {'lift_height': 0.15}
+gpt_m1 OK {'position_tolerance': 0.022}
+sonnet_m2 OK {'position_tolerance': 0.03, 'grasp_position_tolerance': 0.019}
+opus_m1 OK {'position_tolerance': 0.03, 'grasp_position_tolerance': 0.019}
+gpt_m2 OK {'position_tolerance': 0.022}
+opus_m2 OK {'position_tolerance': 0.03, 'grasp_position_tolerance': 0.019}
+7 distinct edits to run; 4 excluded; 9 duplicates; 0 no-ops
+EXIT 0

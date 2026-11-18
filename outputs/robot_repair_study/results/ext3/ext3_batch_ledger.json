@@ -1,0 +1,74 @@
+﻿[
+    {
+        "batch":  "audit_parent",
+        "attempt":  1,
+        "started_utc":  "2026-11-18T07:09:09.2800553Z",
+        "ended_utc":  "2026-11-18T07:21:56.3786831Z",
+        "exit_code":  0,
+        "completed_rollouts":  120,
+        "expected_rollouts":  120
+    },
+    {
+        "batch":  "audit_opus_b1",
+        "attempt":  1,
+        "started_utc":  "2026-11-18T07:21:56.4076931Z",
+        "ended_utc":  "2026-11-18T07:33:42.8488133Z",
+        "exit_code":  0,
+        "completed_rollouts":  120,
+        "expected_rollouts":  120
+    },
+    {
+        "batch":  "audit_opus_m1",
+        "attempt":  1,
+        "started_utc":  "2026-11-18T07:33:42.8548131Z",
+        "ended_utc":  "2026-11-18T07:48:14.1581662Z",
+        "exit_code":  0,
+        "completed_rollouts":  120,
+        "expected_rollouts":  120
+    },
+    {
+        "batch":  "audit_sonnet_b2",
+        "attempt":  1,
+        "started_utc":  "2026-11-18T07:48:14.1653777Z",
+        "ended_utc":  "2026-11-18T08:00:58.2794542Z",
+        "exit_code":  0,
+        "completed_rollouts":  120,
+        "expected_rollouts":  120
+    },
+    {
+        "batch":  "audit_haiku_b1",
+        "attempt":  1,
+        "started_utc":  "2026-11-18T08:00:58.2844543Z",
+        "ended_utc":  "2026-11-18T08:12:56.4494087Z",
+        "exit_code":  0,
+        "completed_rollouts":  120,
+        "expected_rollouts":  120
+    },
+    {
+        "batch":  "audit_haiku_b2",
+        "attempt":  1,
+        "started_utc":  "2026-11-18T08:12:56.4544146Z",
+        "ended_utc":  "2026-11-18T08:26:15.6279630Z",
+        "exit_code":  0,
+        "completed_rollouts":  120,
+        "expected_rollouts":  120
+    },
+    {
+        "batch":  "audit_haiku_m1",
+        "attempt":  1,
+        "started_utc":  "2026-11-18T08:26:15.6309709Z",
+        "ended_utc":  "2026-11-18T08:39:34.3926721Z",
+        "exit_code":  0,
+        "completed_rollouts":  120,
+        "expected_rollouts":  120
+    },
+    {
+        "batch":  "audit_gpt_b1",
+        "attempt":  1,
+        "started_utc":  "2026-11-18T08:39:34.3946641Z",
+        "ended_utc":  "2026-11-18T08:52:49.8850677Z",
+        "exit_code":  0,
+        "completed_rollouts":  120,
+        "expected_rollouts":  120
+    }
+]

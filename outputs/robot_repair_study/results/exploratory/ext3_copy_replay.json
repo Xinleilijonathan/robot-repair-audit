@@ -1,0 +1,37 @@
+{
+  "label": "POST-HOC check; not part of the frozen Extension 3 protocol",
+  "pairs": [
+    {
+      "ext3_edit": "opus_m1",
+      "earlier_folder": "results/ext2/audit_r44",
+      "labels": 120,
+      "outcome_agreement": 120,
+      "max_abs_final_error_diff_m": 0.0,
+      "step_count_mismatches": 0
+    },
+    {
+      "ext3_edit": "haiku_b1",
+      "earlier_folder": "results/ext1/audit_candidate_a",
+      "labels": 120,
+      "outcome_agreement": 120,
+      "max_abs_final_error_diff_m": 0.0,
+      "step_count_mismatches": 0
+    },
+    {
+      "ext3_edit": "haiku_m1",
+      "earlier_folder": "results/ext1/audit_r04",
+      "labels": 120,
+      "outcome_agreement": 120,
+      "max_abs_final_error_diff_m": 0.0,
+      "step_count_mismatches": 0
+    },
+    {
+      "ext3_edit": "gpt_b1",
+      "earlier_folder": "results/ext1/audit_candidate_b",
+      "labels": 120,
+      "outcome_agreement": 120,
+      "max_abs_final_error_diff_m": 0.0,
+      "step_count_mismatches": 0
+    }
+  ]
+}

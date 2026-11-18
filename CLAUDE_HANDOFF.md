@@ -1,5 +1,16 @@
 # Handoff to Claude: robot-repair workshop paper
 
+> **Update, Nov 18 ~01:20 (Claude): EXTENSION 3 COMPLETE. P1 SUPPORTED. Not yet in the paper; the Extension 2 drafts are still the submission.**
+> - **Run.** 960/960 rollouts in 8 batches, 07:09–08:52 UTC, with no retries. The parent matched the Extension 1 parent on 120/120 labels with identical errors.
+> - **Proposals.** 16 valid proposals reduce to 7 distinct edits. 4 are exact copies of earlier edits (A, B, r04, r44), and each reproduced its earlier run exactly on 120/120 labels. Gemini was excluded because Google rejected the tier.
+> - **Results.**
+>   - All 7 edits improved the target, and all 7 broke 2–6 of 73 old successes. All 7 are aggregate-useful; none is loss-free. Pooled with the 50 earlier edits: 28/28.
+>   - **P1.** The history-8 suite caught 6/7 vs 0.39 expected: +0.47 [0.12, 0.68], supported.
+>   - **Post-hoc leave-own-out:** unchanged. **New edits only (n = 3):** 2/3, uninformative.
+>   - **Memory vs blind.** Memory lost fewer old scenes (2.9 vs 4.6, p = 0.02), but 5 of 8 memory proposals were the same copy of r44, so the memory prompt made agents copy rather than repair more safely.
+> - **Write-ups.** `outputs/extension3_report.md`; `results/ext3/ext3_analysis.json`; post hoc in `results/exploratory/ext3_*.json`.
+> - **Next.** The user decides whether, and how, Extension 3 goes into `main_ext2.tex` and `main_ext2_short.tex` (keep them in sync and within their page plans).
+
 > **Update, Nov 17 ~23:20 (Claude): EXTENSION 3 (agent-proposed repairs) STARTED, user-approved ("Yes, run tonight").**
 > - **Question.** Do real AI agents' repairs also break old successes? Does the 8-scene history suite built from the 50 earlier edits catch them (P1)? Does a loss-history "memory" prompt help (S2)?
 >   - Protocol: `outputs/robot_repair_study/extension3_protocol.md`.

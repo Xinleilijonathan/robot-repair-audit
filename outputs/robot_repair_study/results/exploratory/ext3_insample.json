@@ -1,0 +1,81 @@
+{
+  "label": "POST-HOC sensitivity analysis; not part of the frozen Extension 3 protocol",
+  "n_lossy": 7,
+  "n_lossy_new_edits": 3,
+  "leave_own_out": {
+    "detect_rate": 0.8571,
+    "uniform8_expected_rate": 0.3917,
+    "difference_mean_ci95": [
+      0.4654,
+      0.1186,
+      0.6855
+    ]
+  },
+  "new_edits_only": {
+    "detect_rate": 0.6667,
+    "uniform8_expected_rate": 0.4476,
+    "difference_mean_ci95": [
+      0.219,
+      -0.5148,
+      0.622
+    ]
+  },
+  "edits": [
+    {
+      "id": "opus_b1",
+      "copy_of_past_edit": null,
+      "old_lost": 4,
+      "frozen_detect": true,
+      "leave_own_out_detect": true,
+      "uniform8_expected": 0.378
+    },
+    {
+      "id": "opus_m1",
+      "copy_of_past_edit": "r44",
+      "old_lost": 2,
+      "frozen_detect": true,
+      "leave_own_out_detect": true,
+      "uniform8_expected": 0.2085
+    },
+    {
+      "id": "sonnet_b2",
+      "copy_of_past_edit": null,
+      "old_lost": 6,
+      "frozen_detect": false,
+      "leave_own_out_detect": false,
+      "uniform8_expected": 0.5148
+    },
+    {
+      "id": "haiku_b1",
+      "copy_of_past_edit": "candidate_a",
+      "old_lost": 6,
+      "frozen_detect": true,
+      "leave_own_out_detect": true,
+      "uniform8_expected": 0.5148
+    },
+    {
+      "id": "haiku_b2",
+      "copy_of_past_edit": null,
+      "old_lost": 5,
+      "frozen_detect": true,
+      "leave_own_out_detect": true,
+      "uniform8_expected": 0.4501
+    },
+    {
+      "id": "haiku_m1",
+      "copy_of_past_edit": "r04",
+      "old_lost": 3,
+      "frozen_detect": true,
+      "leave_own_out_detect": true,
+      "uniform8_expected": 0.2977
+    },
+    {
+      "id": "gpt_b1",
+      "copy_of_past_edit": "candidate_b",
+      "old_lost": 4,
+      "frozen_detect": true,
+      "leave_own_out_detect": true,
+      "uniform8_expected": 0.378
+    }
+  ]
+}
