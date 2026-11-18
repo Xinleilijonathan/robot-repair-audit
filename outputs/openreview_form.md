@@ -42,8 +42,9 @@ When a coding agent edits a persistent robot controller to fix a failure, aggreg
 
 The form has no field for supplementary material, so the paper says the anonymized artifact will be "released after review."
 
-- **Organizers confirm references are excluded:** upload `paper/main_ext2.pdf`.
-- **No confirmation by Nov 18:** upload `paper/main_ext2_short.pdf`.
+**Decided (Nov 18): upload `paper/main_ext2.pdf`.** The organizers replied by email that the main text may use the full 4 pages, that references and appendices have no page limit, and that any appendices must be in the same PDF as the main text.
+
+- `paper/main_ext2_short.pdf` remains only as a backup.
 
 ## Required confirmations (read before ticking)
 

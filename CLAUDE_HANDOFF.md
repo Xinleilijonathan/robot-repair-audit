@@ -1,5 +1,9 @@
 # Handoff to Claude: robot-repair workshop paper
 
+> **Update, Nov 18 (Claude): THE ORGANIZERS ANSWERED. Submit `paper/main_ext2.pdf`.**
+> - **Rules.** The main text gets 4 pages. References and appendices are unlimited, but appendices must be in the same PDF.
+> - **Short draft.** `main_ext2_short` is now only a backup.
+
 > **Update, Nov 18 ~03:00 (Claude): reviewer-style text fixes applied to both drafts (user: "Yes, make them").**
 > - **Abstract.** Rewritten around the takeaways, and now identical in both drafts and in `openreview_form.md`. It says that replay is exact for a fixed scene order, that edits are parameters rather than code, and that the zero-loss gate rejects almost every useful edit.
 > - **Body.**
