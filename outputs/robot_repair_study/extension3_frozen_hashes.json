@@ -1,0 +1,62 @@
+{
+ "frozen_local": "2026-11-17T23:01:27.700551-08:00",
+ "note": "Extension 3 materials hashed before any agent was asked for a proposal and before any Extension 3 rollout.",
+ "files": [
+  {
+   "path": "outputs\\robot_repair_study\\extension3_protocol.md",
+   "sha256": "bc9d166c0d0cfe4d22c0a82cf06438eb01ea8e17718395f65885b6de2a2c6b0f"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\make_ext3_materials.py",
+   "sha256": "4b3eed00d405dda979c6e313808f855bf729b9096667203cc0518023ac3f7d9d"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\ext3_suites.json",
+   "sha256": "5a5d9efb4d036b4bc8afa8c71985dd9126574bdb6e0023b5a3a8036de66a4462"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\ext3_prompts\\blind.md",
+   "sha256": "7edd5be876c3821a3e4983090584f20ccd989fda888c2be618542eecb69aced1"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\ext3_prompts\\memory.md",
+   "sha256": "459a574c4c8520d11b992bc5361721fbe0647ee552d4ccbba4bf9a066080902c"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\ext3_agents.json",
+   "sha256": "8e7b4310999f666946aa9b39a2298ef312b569298b99adbfea7a5b4740992183"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\run_ext3_agents.py",
+   "sha256": "e38a141065c315b81bcd95a346551daa5f73c354b727d083fe1ecb62c86c8473"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\analyze_ext3.py",
+   "sha256": "388ba14fca0cd534ce0a482116ba730dc44ed63ad694cb4c760acb815155c4d5"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\analyze_ext2.py",
+   "sha256": "dfac43d1701c4715773c6b1f514298c73362d31855faf63f4db0eed96905a66a"
+  },
+  {
+   "path": "work\\run_extension3.ps1",
+   "sha256": "0f2ec4195ae8920093a7fa20ce390ef33083165dcbfa6fba8b1a13788684a93f"
+  },
+  {
+   "path": "work\\launch_isaac_ps51_timeout.ps1",
+   "sha256": "12b6a2b9e731836cd644b6308a1923fcec38ca8fb952c12504df788b23b3405f"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\run_stock_scene.py",
+   "sha256": "b0982ed0d856b6ae802e32863723762abf62ab50f7c013548bb1af2f8fee3c58"
+  },
+  {
+   "path": "outputs\\robot_repair_study\\ext1_audit_scenes.json",
+   "sha256": "50a38e120b4ea4cf278f7948260afc9cdd4096b765e328860956f0cc8cbef10b"
+  },
+  {
+   "path": "<ISAAC_ENV>/Lib/site-packages/isaacsim/exts/isaacsim.robot_motion.examples/isaacsim/robot_motion/examples/manipulation/controllers/pick_place.py",
+   "sha256": "97c06d4babd30311b06eff60445d03c1338577fda7f5df63d1282269a3290aa5"
+  }
+ ]
+}

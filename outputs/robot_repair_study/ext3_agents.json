@@ -1,0 +1,73 @@
+{
+ "conditions": [
+  "blind",
+  "memory"
+ ],
+ "samples_per_condition": 2,
+ "bounds": {
+  "approach_height": [
+   0.05,
+   0.4
+  ],
+  "lift_height": [
+   0.1,
+   0.4
+  ],
+  "position_tolerance": [
+   0.005,
+   0.035
+  ],
+  "grasp_position_tolerance": [
+   0.005,
+   0.035
+  ],
+  "stability_duration": [
+   0.05,
+   0.5
+  ],
+  "gripper_dwell": [
+   0.1,
+   1.0
+  ]
+ },
+ "stock_values": {
+  "approach_height": 0.3,
+  "lift_height": 0.3,
+  "position_tolerance": 0.015,
+  "grasp_position_tolerance": 0.015,
+  "stability_duration": 0.1,
+  "gripper_dwell": 0.2
+ },
+ "agents": [
+  {
+   "agent": "claude-opus",
+   "vendor": "Anthropic",
+   "cli": "claude",
+   "model": "opus"
+  },
+  {
+   "agent": "claude-sonnet",
+   "vendor": "Anthropic",
+   "cli": "claude",
+   "model": "sonnet"
+  },
+  {
+   "agent": "claude-haiku",
+   "vendor": "Anthropic",
+   "cli": "claude",
+   "model": "haiku"
+  },
+  {
+   "agent": "gpt",
+   "vendor": "OpenAI",
+   "cli": "codex",
+   "model": "gpt-6-astra"
+  },
+  {
+   "agent": "gemini",
+   "vendor": "Google",
+   "cli": "gemini",
+   "model": null
+  }
+ ]
+}

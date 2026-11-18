@@ -1,0 +1,1202 @@
+{
+ "source": "Extension 1 audit panel (ext1_audit_scenes.json); 50 earlier candidate audits (results/ext1: A, B, r01-r24; results/ext2: r25-r48), each against its own audit parent; all recorded before Extension 3",
+ "parent_old_successes": [
+  "ao001",
+  "ao002",
+  "ao004",
+  "ao005",
+  "ao006",
+  "ao007",
+  "ao008",
+  "ao009",
+  "ao010",
+  "ao012",
+  "ao013",
+  "ao014",
+  "ao015",
+  "ao017",
+  "ao018",
+  "ao019",
+  "ao020",
+  "ao021",
+  "ao022",
+  "ao023",
+  "ao024",
+  "ao026",
+  "ao027",
+  "ao028",
+  "ao029",
+  "ao030",
+  "ao031",
+  "ao032",
+  "ao033",
+  "ao034",
+  "ao035",
+  "ao038",
+  "ao039",
+  "ao041",
+  "ao042",
+  "ao043",
+  "ao044",
+  "ao045",
+  "ao046",
+  "ao047",
+  "ao048",
+  "ao049",
+  "ao050",
+  "ao051",
+  "ao052",
+  "ao053",
+  "ao054",
+  "ao055",
+  "ao056",
+  "ao057",
+  "ao059",
+  "ao060",
+  "ao061",
+  "ao062",
+  "ao063",
+  "ao064",
+  "ao065",
+  "ao066",
+  "ao069",
+  "ao072",
+  "ao073",
+  "ao075",
+  "ao076",
+  "ao077",
+  "ao078",
+  "ao079",
+  "ao082",
+  "ao083",
+  "ao085",
+  "ao087",
+  "ao088",
+  "ao089",
+  "ao090"
+ ],
+ "loss_counts_50": {
+  "ao020": 19,
+  "ao083": 15,
+  "ao052": 12,
+  "ao017": 12,
+  "ao002": 11,
+  "ao022": 10,
+  "ao064": 9,
+  "ao034": 9,
+  "ao018": 9,
+  "ao001": 8,
+  "ao078": 8,
+  "ao056": 7,
+  "ao048": 7,
+  "ao085": 6,
+  "ao038": 6,
+  "ao088": 5,
+  "ao075": 5,
+  "ao079": 5,
+  "ao087": 5,
+  "ao060": 4,
+  "ao026": 4,
+  "ao007": 4,
+  "ao057": 4,
+  "ao004": 4,
+  "ao009": 3,
+  "ao027": 3,
+  "ao019": 3,
+  "ao035": 3,
+  "ao047": 3,
+  "ao041": 3,
+  "ao061": 3,
+  "ao049": 3,
+  "ao073": 2,
+  "ao015": 2,
+  "ao024": 2,
+  "ao010": 2,
+  "ao054": 2,
+  "ao008": 2,
+  "ao090": 2,
+  "ao043": 2,
+  "ao089": 2,
+  "ao042": 2,
+  "ao033": 2,
+  "ao059": 2,
+  "ao063": 2,
+  "ao046": 2,
+  "ao044": 2,
+  "ao030": 2,
+  "ao065": 1,
+  "ao045": 1,
+  "ao051": 1,
+  "ao023": 1,
+  "ao031": 1,
+  "ao029": 1,
+  "ao012": 1,
+  "ao077": 1,
+  "ao050": 1,
+  "ao005": 1,
+  "ao053": 1,
+  "ao021": 1,
+  "ao055": 1,
+  "ao039": 1,
+  "ao013": 1,
+  "ao072": 1,
+  "ao069": 0,
+  "ao028": 0,
+  "ao082": 0,
+  "ao066": 0,
+  "ao032": 0,
+  "ao062": 0,
+  "ao014": 0,
+  "ao076": 0,
+  "ao006": 0
+ },
+ "history_ranked": [
+  "ao020",
+  "ao083",
+  "ao052",
+  "ao017",
+  "ao002",
+  "ao022",
+  "ao064",
+  "ao034",
+  "ao018",
+  "ao001",
+  "ao078",
+  "ao056",
+  "ao048",
+  "ao085",
+  "ao038",
+  "ao088",
+  "ao075",
+  "ao079",
+  "ao087",
+  "ao060",
+  "ao026",
+  "ao007",
+  "ao057",
+  "ao004",
+  "ao009",
+  "ao027",
+  "ao019",
+  "ao035",
+  "ao047",
+  "ao041",
+  "ao061",
+  "ao049",
+  "ao073",
+  "ao015",
+  "ao024",
+  "ao010",
+  "ao054",
+  "ao008",
+  "ao090",
+  "ao043",
+  "ao089",
+  "ao042",
+  "ao033",
+  "ao059",
+  "ao063",
+  "ao046",
+  "ao044",
+  "ao030",
+  "ao065",
+  "ao045",
+  "ao051",
+  "ao023",
+  "ao031",
+  "ao029",
+  "ao012",
+  "ao077",
+  "ao050",
+  "ao005",
+  "ao053",
+  "ao021",
+  "ao055",
+  "ao039",
+  "ao013",
+  "ao072",
+  "ao069",
+  "ao028",
+  "ao082",
+  "ao066",
+  "ao032",
+  "ao062",
+  "ao014",
+  "ao076",
+  "ao006"
+ ],
+ "history_suite": [
+  "ao020",
+  "ao083",
+  "ao052",
+  "ao017",
+  "ao002",
+  "ao022",
+  "ao064",
+  "ao034"
+ ],
+ "history_suite_k4": [
+  "ao020",
+  "ao083",
+  "ao052",
+  "ao017"
+ ],
+ "ext2_history_suite": [
+  "ao083",
+  "ao052",
+  "ao020",
+  "ao002",
+  "ao018",
+  "ao048",
+  "ao001",
+  "ao034"
+ ],
+ "ext2_history_suite_k4": [
+  "ao083",
+  "ao052",
+  "ao020",
+  "ao002"
+ ],
+ "ext2_uniform_suite": [
+  "ao005",
+  "ao014",
+  "ao024",
+  "ao027",
+  "ao028",
+  "ao056",
+  "ao057",
+  "ao077"
+ ],
+ "past_edits": [
+  {
+   "id": "candidate_a",
+   "population": "ext1",
+   "overrides": {
+    "lift_height": 0.2
+   },
+   "target_gained": 5,
+   "target_lost": 0,
+   "old_lost": 6,
+   "old_gained": 8,
+   "lost_scenes": [
+    "ao002",
+    "ao038",
+    "ao047",
+    "ao052",
+    "ao057",
+    "ao064"
+   ]
+  },
+  {
+   "id": "candidate_b",
+   "population": "ext1",
+   "overrides": {
+    "position_tolerance": 0.025
+   },
+   "target_gained": 18,
+   "target_lost": 1,
+   "old_lost": 4,
+   "old_gained": 7,
+   "lost_scenes": [
+    "ao002",
+    "ao007",
+    "ao020",
+    "ao088"
+   ]
+  },
+  {
+   "id": "r01",
+   "population": "ext1",
+   "overrides": {
+    "approach_height": 0.152
+   },
+   "target_gained": 1,
+   "target_lost": 0,
+   "old_lost": 8,
+   "old_gained": 7,
+   "lost_scenes": [
+    "ao009",
+    "ao018",
+    "ao027",
+    "ao030",
+    "ao049",
+    "ao064",
+    "ao083",
+    "ao087"
+   ]
+  },
+  {
+   "id": "r02",
+   "population": "ext1",
+   "overrides": {
+    "grasp_position_tolerance": 0.012
+   },
+   "target_gained": 0,
+   "target_lost": 0,
+   "old_lost": 0,
+   "old_gained": 0,
+   "lost_scenes": []
+  },
+  {
+   "id": "r03",
+   "population": "ext1",
+   "overrides": {
+    "lift_height": 0.397,
+    "position_tolerance": 0.026
+   },
+   "target_gained": 0,
+   "target_lost": 10,
+   "old_lost": 6,
+   "old_gained": 6,
+   "lost_scenes": [
+    "ao001",
+    "ao004",
+    "ao007",
+    "ao043",
+    "ao048",
+    "ao083"
+   ]
+  },
+  {
+   "id": "r04",
+   "population": "ext1",
+   "overrides": {
+    "position_tolerance": 0.033
+   },
+   "target_gained": 19,
+   "target_lost": 0,
+   "old_lost": 3,
+   "old_gained": 9,
+   "lost_scenes": [
+    "ao002",
+    "ao020",
+    "ao055"
+   ]
+  },
+  {
+   "id": "r05",
+   "population": "ext1",
+   "overrides": {
+    "approach_height": 0.397,
+    "gripper_dwell": 0.21
+   },
+   "target_gained": 0,
+   "target_lost": 10,
+   "old_lost": 7,
+   "old_gained": 5,
+   "lost_scenes": [
+    "ao001",
+    "ao018",
+    "ao044",
+    "ao048",
+    "ao052",
+    "ao056",
+    "ao083"
+   ]
+  },
+  {
+   "id": "r06",
+   "population": "ext1",
+   "overrides": {
+    "approach_height": 0.073,
+    "grasp_position_tolerance": 0.011
+   },
+   "target_gained": 1,
+   "target_lost": 0,
+   "old_lost": 3,
+   "old_gained": 8,
+   "lost_scenes": [
+    "ao018",
+    "ao056",
+    "ao083"
+   ]
+  },
+  {
+   "id": "r07",
+   "population": "ext1",
+   "overrides": {
+    "position_tolerance": 0.012,
+    "gripper_dwell": 0.749
+   },
+   "target_gained": 0,
+   "target_lost": 8,
+   "old_lost": 3,
+   "old_gained": 8,
+   "lost_scenes": [
+    "ao020",
+    "ao022",
+    "ao083"
+   ]
+  },
+  {
+   "id": "r08",
+   "population": "ext1",
+   "overrides": {
+    "lift_height": 0.395
+   },
+   "target_gained": 0,
+   "target_lost": 10,
+   "old_lost": 10,
+   "old_gained": 7,
+   "lost_scenes": [
+    "ao001",
+    "ao007",
+    "ao018",
+    "ao035",
+    "ao048",
+    "ao052",
+    "ao075",
+    "ao078",
+    "ao083",
+    "ao088"
+   ]
+  },
+  {
+   "id": "r09",
+   "population": "ext1",
+   "overrides": {
+    "gripper_dwell": 0.134
+   },
+   "target_gained": 0,
+   "target_lost": 0,
+   "old_lost": 3,
+   "old_gained": 5,
+   "lost_scenes": [
+    "ao017",
+    "ao078",
+    "ao088"
+   ]
+  },
+  {
+   "id": "r10",
+   "population": "ext1",
+   "overrides": {
+    "approach_height": 0.156
+   },
+   "target_gained": 1,
+   "target_lost": 0,
+   "old_lost": 10,
+   "old_gained": 8,
+   "lost_scenes": [
+    "ao001",
+    "ao002",
+    "ao004",
+    "ao034",
+    "ao038",
+    "ao052",
+    "ao075",
+    "ao077",
+    "ao085",
+    "ao087"
+   ]
+  },
+  {
+   "id": "r11",
+   "population": "ext1",
+   "overrides": {
+    "stability_duration": 0.267
+   },
+   "target_gained": 0,
+   "target_lost": 2,
+   "old_lost": 9,
+   "old_gained": 8,
+   "lost_scenes": [
+    "ao010",
+    "ao020",
+    "ao022",
+    "ao035",
+    "ao054",
+    "ao060",
+    "ao063",
+    "ao083",
+    "ao089"
+   ]
+  },
+  {
+   "id": "r12",
+   "population": "ext1",
+   "overrides": {
+    "lift_height": 0.361,
+    "position_tolerance": 0.009
+   },
+   "target_gained": 0,
+   "target_lost": 10,
+   "old_lost": 10,
+   "old_gained": 5,
+   "lost_scenes": [
+    "ao001",
+    "ao005",
+    "ao018",
+    "ao020",
+    "ao022",
+    "ao046",
+    "ao048",
+    "ao052",
+    "ao075",
+    "ao083"
+   ]
+  },
+  {
+   "id": "r13",
+   "population": "ext1",
+   "overrides": {
+    "grasp_position_tolerance": 0.021
+   },
+   "target_gained": 0,
+   "target_lost": 0,
+   "old_lost": 0,
+   "old_gained": 0,
+   "lost_scenes": []
+  },
+  {
+   "id": "r14",
+   "population": "ext1",
+   "overrides": {
+    "approach_height": 0.178,
+    "position_tolerance": 0.026
+   },
+   "target_gained": 20,
+   "target_lost": 0,
+   "old_lost": 16,
+   "old_gained": 10,
+   "lost_scenes": [
+    "ao002",
+    "ao007",
+    "ao008",
+    "ao010",
+    "ao015",
+    "ao019",
+    "ao022",
+    "ao034",
+    "ao038",
+    "ao041",
+    "ao043",
+    "ao049",
+    "ao051",
+    "ao060",
+    "ao064",
+    "ao087"
+   ]
+  },
+  {
+   "id": "r15",
+   "population": "ext1",
+   "overrides": {
+    "approach_height": 0.249,
+    "grasp_position_tolerance": 0.025
+   },
+   "target_gained": 0,
+   "target_lost": 0,
+   "old_lost": 14,
+   "old_gained": 8,
+   "lost_scenes": [
+    "ao015",
+    "ao017",
+    "ao020",
+    "ao034",
+    "ao038",
+    "ao039",
+    "ao041",
+    "ao044",
+    "ao052",
+    "ao059",
+    "ao060",
+    "ao061",
+    "ao085",
+    "ao090"
+   ]
+  },
+  {
+   "id": "r16",
+   "population": "ext1",
+   "overrides": {
+    "grasp_position_tolerance": 0.026
+   },
+   "target_gained": 0,
+   "target_lost": 0,
+   "old_lost": 0,
+   "old_gained": 0,
+   "lost_scenes": []
+  },
+  {
+   "id": "r17",
+   "population": "ext1",
+   "overrides": {
+    "approach_height": 0.394
+   },
+   "target_gained": 0,
+   "target_lost": 10,
+   "old_lost": 5,
+   "old_gained": 6,
+   "lost_scenes": [
+    "ao001",
+    "ao018",
+    "ao048",
+    "ao052",
+    "ao083"
+   ]
+  },
+  {
+   "id": "r18",
+   "population": "ext1",
+   "overrides": {
+    "gripper_dwell": 0.896
+   },
+   "target_gained": 1,
+   "target_lost": 0,
+   "old_lost": 2,
+   "old_gained": 7,
+   "lost_scenes": [
+    "ao042",
+    "ao048"
+   ]
+  },
+  {
+   "id": "r19",
+   "population": "ext1",
+   "overrides": {
+    "approach_height": 0.062,
+    "grasp_position_tolerance": 0.018
+   },
+   "target_gained": 1,
+   "target_lost": 0,
+   "old_lost": 5,
+   "old_gained": 7,
+   "lost_scenes": [
+    "ao009",
+    "ao018",
+    "ao024",
+    "ao053",
+    "ao056"
+   ]
+  },
+  {
+   "id": "r20",
+   "population": "ext1",
+   "overrides": {
+    "grasp_position_tolerance": 0.006,
+    "gripper_dwell": 0.44
+   },
+   "target_gained": 0,
+   "target_lost": 0,
+   "old_lost": 15,
+   "old_gained": 6,
+   "lost_scenes": [
+    "ao002",
+    "ao008",
+    "ao012",
+    "ao017",
+    "ao020",
+    "ao030",
+    "ao034",
+    "ao035",
+    "ao046",
+    "ao047",
+    "ao049",
+    "ao057",
+    "ao064",
+    "ao073",
+    "ao085"
+   ]
+  },
+  {
+   "id": "r21",
+   "population": "ext1",
+   "overrides": {
+    "approach_height": 0.325
+   },
+   "target_gained": 0,
+   "target_lost": 5,
+   "old_lost": 3,
+   "old_gained": 7,
+   "lost_scenes": [
+    "ao017",
+    "ao052",
+    "ao083"
+   ]
+  },
+  {
+   "id": "r22",
+   "population": "ext1",
+   "overrides": {
+    "stability_duration": 0.164
+   },
+   "target_gained": 0,
+   "target_lost": 0,
+   "old_lost": 5,
+   "old_gained": 5,
+   "lost_scenes": [
+    "ao002",
+    "ao020",
+    "ao022",
+    "ao061",
+    "ao079"
+   ]
+  },
+  {
+   "id": "r23",
+   "population": "ext1",
+   "overrides": {
+    "approach_height": 0.244
+   },
+   "target_gained": 0,
+   "target_lost": 1,
+   "old_lost": 12,
+   "old_gained": 7,
+   "lost_scenes": [
+    "ao017",
+    "ao020",
+    "ao023",
+    "ao027",
+    "ao034",
+    "ao041",
+    "ao059",
+    "ao060",
+    "ao063",
+    "ao078",
+    "ao087",
+    "ao090"
+   ]
+  },
+  {
+   "id": "r24",
+   "population": "ext1",
+   "overrides": {
+    "lift_height": 0.105,
+    "gripper_dwell": 0.202
+   },
+   "target_gained": 5,
+   "target_lost": 0,
+   "old_lost": 4,
+   "old_gained": 9,
+   "lost_scenes": [
+    "ao024",
+    "ao052",
+    "ao056",
+    "ao078"
+   ]
+  },
+  {
+   "id": "r25",
+   "population": "ext2",
+   "overrides": {
+    "grasp_position_tolerance": 0.034
+   },
+   "target_gained": 0,
+   "target_lost": 0,
+   "old_lost": 0,
+   "old_gained": 0,
+   "lost_scenes": []
+  },
+  {
+   "id": "r26",
+   "population": "ext2",
+   "overrides": {
+    "grasp_position_tolerance": 0.021,
+    "gripper_dwell": 0.157
+   },
+   "target_gained": 0,
+   "target_lost": 0,
+   "old_lost": 2,
+   "old_gained": 5,
+   "lost_scenes": [
+    "ao033",
+    "ao078"
+   ]
+  },
+  {
+   "id": "r27",
+   "population": "ext2",
+   "overrides": {
+    "grasp_position_tolerance": 0.022
+   },
+   "target_gained": 0,
+   "target_lost": 0,
+   "old_lost": 0,
+   "old_gained": 0,
+   "lost_scenes": []
+  },
+  {
+   "id": "r28",
+   "population": "ext2",
+   "overrides": {
+    "lift_height": 0.253
+   },
+   "target_gained": 5,
+   "target_lost": 0,
+   "old_lost": 5,
+   "old_gained": 7,
+   "lost_scenes": [
+    "ao001",
+    "ao017",
+    "ao020",
+    "ao078",
+    "ao079"
+   ]
+  },
+  {
+   "id": "r29",
+   "population": "ext2",
+   "overrides": {
+    "lift_height": 0.343,
+    "position_tolerance": 0.018
+   },
+   "target_gained": 0,
+   "target_lost": 10,
+   "old_lost": 2,
+   "old_gained": 4,
+   "lost_scenes": [
+    "ao020",
+    "ao083"
+   ]
+  },
+  {
+   "id": "r30",
+   "population": "ext2",
+   "overrides": {
+    "approach_height": 0.085
+   },
+   "target_gained": 1,
+   "target_lost": 0,
+   "old_lost": 1,
+   "old_gained": 8,
+   "lost_scenes": [
+    "ao009"
+   ]
+  },
+  {
+   "id": "r31",
+   "population": "ext2",
+   "overrides": {
+    "position_tolerance": 0.013
+   },
+   "target_gained": 0,
+   "target_lost": 6,
+   "old_lost": 6,
+   "old_gained": 5,
+   "lost_scenes": [
+    "ao004",
+    "ao017",
+    "ao022",
+    "ao052",
+    "ao057",
+    "ao083"
+   ]
+  },
+  {
+   "id": "r32",
+   "population": "ext2",
+   "overrides": {
+    "grasp_position_tolerance": 0.016,
+    "stability_duration": 0.454
+   },
+   "target_gained": 0,
+   "target_lost": 5,
+   "old_lost": 2,
+   "old_gained": 8,
+   "lost_scenes": [
+    "ao022",
+    "ao083"
+   ]
+  },
+  {
+   "id": "r33",
+   "population": "ext2",
+   "overrides": {
+    "approach_height": 0.181,
+    "position_tolerance": 0.009
+   },
+   "target_gained": 0,
+   "target_lost": 10,
+   "old_lost": 25,
+   "old_gained": 6,
+   "lost_scenes": [
+    "ao001",
+    "ao004",
+    "ao013",
+    "ao018",
+    "ao019",
+    "ao020",
+    "ao026",
+    "ao029",
+    "ao031",
+    "ao033",
+    "ao034",
+    "ao038",
+    "ao042",
+    "ao045",
+    "ao048",
+    "ao050",
+    "ao054",
+    "ao064",
+    "ao065",
+    "ao072",
+    "ao083",
+    "ao085",
+    "ao087",
+    "ao088",
+    "ao089"
+   ]
+  },
+  {
+   "id": "r34",
+   "population": "ext2",
+   "overrides": {
+    "grasp_position_tolerance": 0.011
+   },
+   "target_gained": 0,
+   "target_lost": 0,
+   "old_lost": 0,
+   "old_gained": 0,
+   "lost_scenes": []
+  },
+  {
+   "id": "r35",
+   "population": "ext2",
+   "overrides": {
+    "lift_height": 0.128,
+    "stability_duration": 0.432
+   },
+   "target_gained": 0,
+   "target_lost": 3,
+   "old_lost": 1,
+   "old_gained": 9,
+   "lost_scenes": [
+    "ao022"
+   ]
+  },
+  {
+   "id": "r36",
+   "population": "ext2",
+   "overrides": {
+    "position_tolerance": 0.028
+   },
+   "target_gained": 17,
+   "target_lost": 0,
+   "old_lost": 3,
+   "old_gained": 8,
+   "lost_scenes": [
+    "ao002",
+    "ao020",
+    "ao056"
+   ]
+  },
+  {
+   "id": "r37",
+   "population": "ext2",
+   "overrides": {
+    "approach_height": 0.168
+   },
+   "target_gained": 1,
+   "target_lost": 0,
+   "old_lost": 14,
+   "old_gained": 7,
+   "lost_scenes": [
+    "ao002",
+    "ao019",
+    "ao021",
+    "ao026",
+    "ao027",
+    "ao034",
+    "ao038",
+    "ao047",
+    "ao056",
+    "ao057",
+    "ao064",
+    "ao078",
+    "ao079",
+    "ao088"
+   ]
+  },
+  {
+   "id": "r38",
+   "population": "ext2",
+   "overrides": {
+    "stability_duration": 0.068
+   },
+   "target_gained": 0,
+   "target_lost": 0,
+   "old_lost": 3,
+   "old_gained": 8,
+   "lost_scenes": [
+    "ao017",
+    "ao020",
+    "ao052"
+   ]
+  },
+  {
+   "id": "r39",
+   "population": "ext2",
+   "overrides": {
+    "lift_height": 0.187
+   },
+   "target_gained": 5,
+   "target_lost": 1,
+   "old_lost": 7,
+   "old_gained": 8,
+   "lost_scenes": [
+    "ao002",
+    "ao017",
+    "ao020",
+    "ao034",
+    "ao052",
+    "ao064",
+    "ao073"
+   ]
+  },
+  {
+   "id": "r40",
+   "population": "ext2",
+   "overrides": {
+    "lift_height": 0.303,
+    "position_tolerance": 0.026
+   },
+   "target_gained": 18,
+   "target_lost": 0,
+   "old_lost": 2,
+   "old_gained": 4,
+   "lost_scenes": [
+    "ao020",
+    "ao079"
+   ]
+  },
+  {
+   "id": "r41",
+   "population": "ext2",
+   "overrides": {
+    "lift_height": 0.147,
+    "position_tolerance": 0.013
+   },
+   "target_gained": 2,
+   "target_lost": 0,
+   "old_lost": 4,
+   "old_gained": 10,
+   "lost_scenes": [
+    "ao022",
+    "ao026",
+    "ao064",
+    "ao078"
+   ]
+  },
+  {
+   "id": "r42",
+   "population": "ext2",
+   "overrides": {
+    "gripper_dwell": 0.78
+   },
+   "target_gained": 1,
+   "target_lost": 0,
+   "old_lost": 1,
+   "old_gained": 8,
+   "lost_scenes": [
+    "ao083"
+   ]
+  },
+  {
+   "id": "r43",
+   "population": "ext2",
+   "overrides": {
+    "stability_duration": 0.134
+   },
+   "target_gained": 0,
+   "target_lost": 0,
+   "old_lost": 6,
+   "old_gained": 6,
+   "lost_scenes": [
+    "ao017",
+    "ao020",
+    "ao022",
+    "ao061",
+    "ao075",
+    "ao085"
+   ]
+  },
+  {
+   "id": "r44",
+   "population": "ext2",
+   "overrides": {
+    "position_tolerance": 0.03,
+    "grasp_position_tolerance": 0.019
+   },
+   "target_gained": 20,
+   "target_lost": 0,
+   "old_lost": 2,
+   "old_gained": 8,
+   "lost_scenes": [
+    "ao002",
+    "ao020"
+   ]
+  },
+  {
+   "id": "r45",
+   "population": "ext2",
+   "overrides": {
+    "grasp_position_tolerance": 0.026,
+    "gripper_dwell": 0.215
+   },
+   "target_gained": 0,
+   "target_lost": 0,
+   "old_lost": 0,
+   "old_gained": 0,
+   "lost_scenes": []
+  },
+  {
+   "id": "r46",
+   "population": "ext2",
+   "overrides": {
+    "lift_height": 0.258
+   },
+   "target_gained": 5,
+   "target_lost": 0,
+   "old_lost": 6,
+   "old_gained": 8,
+   "lost_scenes": [
+    "ao017",
+    "ao020",
+    "ao026",
+    "ao034",
+    "ao075",
+    "ao079"
+   ]
+  },
+  {
+   "id": "r47",
+   "population": "ext2",
+   "overrides": {
+    "gripper_dwell": 0.319
+   },
+   "target_gained": 0,
+   "target_lost": 0,
+   "old_lost": 3,
+   "old_gained": 6,
+   "lost_scenes": [
+    "ao018",
+    "ao056",
+    "ao085"
+   ]
+  },
+  {
+   "id": "r48",
+   "population": "ext2",
+   "overrides": {
+    "lift_height": 0.24,
+    "gripper_dwell": 0.191
+   },
+   "target_gained": 5,
+   "target_lost": 0,
+   "old_lost": 2,
+   "old_gained": 7,
+   "lost_scenes": [
+    "ao017",
+    "ao064"
+   ]
+  }
+ ],
+ "controller_source": {
+  "path": "C:\\Users\\Jonat\\Documents\\Codex\\isaac-sim-env\\Lib\\site-packages\\isaacsim\\exts\\isaacsim.robot_motion.examples\\isaacsim\\robot_motion\\examples\\manipulation\\controllers\\pick_place.py",
+  "sha256": "97c06d4babd30311b06eff60445d03c1338577fda7f5df63d1282269a3290aa5"
+ },
+ "seeds": {
+  "history_tiebreak": 20261131
+ }
+}
