@@ -13,7 +13,7 @@
 - **Main caveat.** 4 of the 7 distinct edits are exact copies of earlier audited edits, and they reproduced those runs exactly.
   - A post-hoc leave-own-out check leaves P1 unchanged.
   - On the 3 genuinely new edits alone, the suite caught 2 of 3. That sample is too small to show anything.
-- **Memory prompt.** Agents shown the loss history lost fewer old scenes per proposal: 2.9 vs 4.6, permutation p = 0.02. But 5 of their 8 proposals copied the same earlier edit, the one with the fewest losses in the table they were shown. The memory prompt led agents to pick the best past edit, not to produce a new, safer one.
+- **Memory prompt.** Agents shown the loss history lost fewer old scenes per proposal: 2.9 vs 4.6, permutation p = 0.02. But 5 of their 8 proposals copied the same earlier edit, r44. Of the two edits in their table that fixed the whole target, r44 had 2 losses and r14 had 16. The memory prompt led agents to pick the best past edit, not to produce a new, safer one.
 
 ## 1. Run integrity
 
@@ -45,7 +45,7 @@ Detection is read from the audit itself, so the Extension 2 caveat about suite-b
 - **Deduplication.** Of the 16 valid proposals, 9 duplicate another proposal and 0 are no-ops, which leaves 7 distinct edits.
   - **Copies.** Four distinct edits match earlier audited edits exactly: candidate A, candidate B, r04 and r44.
   - **New.** Three are new: lift 0.15; lift 0.20 + tolerance 0.022; tolerance 0.022.
-  - **Convergence.** Blind agents twice rediscovered the two original repair candidates. Memory-prompted agents mostly copied r44, the target improver with the fewest losses in the table they were given.
+  - **Convergence.** Blind agents twice rediscovered the two original repair candidates. Memory-prompted agents mostly copied r44. In the table they were given, two edits fixed all 20 target failures: r44 lost 2 old successes and r14 lost 16. Two other edits lost only 1 each, but each fixed a single target scene.
 
 ## 3. Distinct edits on the audit panel
 
@@ -106,7 +106,7 @@ This analysis was written before the queue finished and is labelled post hoc (`e
 
 - **Test.** Permutation p = 0.02 for the mean old loss.
 - **Distinct edits.** The 8 memory proposals contain only 3 distinct edits, and 5 of the 8 are the same copy of r44. The 8 blind proposals contain 5 distinct edits.
-- **Reading.** The p-value treats agent sessions as independent. It mostly reflects agents converging on the lowest-loss row of the table they were shown.
+- **Reading.** The p-value treats agent sessions as independent. It mostly reflects agents converging on the best trade-off in the table they were shown.
 - **What the agents said (descriptive, not pre-registered).**
   - Memory-prompted agents named the right risk: release up to 3 cm off target leaves the cube just outside the goal.
   - None of the blind lower-lift proposals anticipated losing old placements, and one expected passing scenes to be "largely unaffected". Those edits lost 4 to 6 old successes.

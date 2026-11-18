@@ -1,6 +1,6 @@
 # Robot repair study — artifact
 
-This folder accompanies `../initial_paper.md` (historical pre-experiment draft) and `../research_plan.md`. The submission manuscript is `paper/main_ext2.tex`, with a 4-page-total variant in `paper/main_ext2_short.tex`. `paper/main.tex` and `paper/main_short.tex` are the earlier version, without Extension 2. Results write-ups are `../repair_pilot_report.md` (development pilot), `../audit_report.md` (frozen audit), `../extension1_report.md` (post-hoc candidate-population extension) `../extension2_report.md` (pre-registered loss-history test) and `../extension3_report.md` (pre-registered test on AI-agent-proposed repairs; not yet in the manuscript).
+This folder accompanies `../initial_paper.md` (historical pre-experiment draft) and `../research_plan.md`. The submission manuscript is `paper/main_ext2.tex`, with a 4-page-total variant in `paper/main_ext2_short.tex`. `paper/main.tex` and `paper/main_short.tex` are the earlier version, without Extension 2. Results write-ups are `../repair_pilot_report.md` (development pilot), `../audit_report.md` (frozen audit), `../extension1_report.md` (post-hoc candidate-population extension) `../extension2_report.md` (pre-registered loss-history test) and `../extension3_report.md` (pre-registered test on AI-agent-proposed repairs, added to both drafts on Nov 18).
 
 ## Extension 3 (pre-registered agent-proposed repairs, Nov 17–18)
 

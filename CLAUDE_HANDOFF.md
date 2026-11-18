@@ -1,6 +1,13 @@
 # Handoff to Claude: robot-repair workshop paper
 
-> **Update, Nov 18 ~01:20 (Claude): EXTENSION 3 COMPLETE. P1 SUPPORTED. Not yet in the paper; the Extension 2 drafts are still the submission.**
+> **Update, Nov 18 ~02:00 (Claude): Extension 3 ADDED TO BOTH DRAFTS (user: "Yes, add it").**
+> - **Drafts.** `main_ext2.tex` and `main_ext2_short.tex` gained a section "Pre-registered Test: Agent-Proposed Repairs", plus an abstract sentence, an intro clause, discussion "57 audited edits", revised limitations, and "agent transcripts" in the reproducibility note.
+> - **Space.** To make room, prose was condensed; no result was dropped from the long draft. The long draft took the short draft's wording for the setup, related work and pilot, and its run-context note was folded into "Regressions recur". The short draft also dropped the k = 4 rates (they remain in Table 2), the approach-timeout detail and the separate Admission paragraph (folded into one sentence).
+> - **Checks.** `main_ext2.pdf` has a 4-page body with references on p5. `main_ext2_short.pdf` is 4 pages total. No overfull boxes, all fonts embedded, no identifying strings.
+> - **Form.** `outputs/openreview_form.md` abstracts and TL;DR were updated to match.
+> - **Correction.** r44 is the past edit that fixed the whole target with the fewest losses (2); r14 also fixed it but lost 16. It is not the lowest-loss improver: r30 and r42 lost 1 each but fixed only 1 target scene. The report was corrected.
+
+> **Update, Nov 18 ~01:20 (Claude): EXTENSION 3 COMPLETE. P1 SUPPORTED.**
 > - **Run.** 960/960 rollouts in 8 batches, 07:09–08:52 UTC, with no retries. The parent matched the Extension 1 parent on 120/120 labels with identical errors.
 > - **Proposals.** 16 valid proposals reduce to 7 distinct edits. 4 are exact copies of earlier edits (A, B, r04, r44), and each reproduced its earlier run exactly on 120/120 labels. Gemini was excluded because Google rejected the tier.
 > - **Results.**
@@ -9,7 +16,6 @@
 >   - **Post-hoc leave-own-out:** unchanged. **New edits only (n = 3):** 2/3, uninformative.
 >   - **Memory vs blind.** Memory lost fewer old scenes (2.9 vs 4.6, p = 0.02), but 5 of 8 memory proposals were the same copy of r44, so the memory prompt made agents copy rather than repair more safely.
 > - **Write-ups.** `outputs/extension3_report.md`; `results/ext3/ext3_analysis.json`; post hoc in `results/exploratory/ext3_*.json`.
-> - **Next.** The user decides whether, and how, Extension 3 goes into `main_ext2.tex` and `main_ext2_short.tex` (keep them in sync and within their page plans).
 
 > **Update, Nov 17 ~23:20 (Claude): EXTENSION 3 (agent-proposed repairs) STARTED, user-approved ("Yes, run tonight").**
 > - **Question.** Do real AI agents' repairs also break old successes? Does the 8-scene history suite built from the 50 earlier edits catch them (P1)? Does a loss-history "memory" prompt help (S2)?
