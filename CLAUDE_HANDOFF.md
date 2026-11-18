@@ -2,7 +2,8 @@
 
 > **Update, Nov 18 (Claude): THE ORGANIZERS ANSWERED. Submit `paper/main_ext2.pdf`.**
 > - **Rules.** The main text gets 4 pages. References and appendices are unlimited, but appendices must be in the same PDF.
-> - **Short draft.** `main_ext2_short` is now only a backup.
+> - **Short draft.** `main_ext2_short` is now only a backup, and it has no appendix.
+> - **Appendix.** `main_ext2.tex` now has Appendix A (agent protocol, prompts, a table of the 16 answers, a table of the 7 distinct edits, frozen secondary results, stated risks) and Appendix B (post-hoc: copy replay, leave-own-out, parent margin, run order). The PDF is 6 pages.
 
 > **Update, Nov 18 ~03:00 (Claude): reviewer-style text fixes applied to both drafts (user: "Yes, make them").**
 > - **Abstract.** Rewritten around the takeaways, and now identical in both drafts and in `openreview_form.md`. It says that replay is exact for a fixed scene order, that edits are parameters rather than code, and that the zero-loss gate rejects almost every useful edit.

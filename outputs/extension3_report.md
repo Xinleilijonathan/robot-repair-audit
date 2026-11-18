@@ -109,7 +109,7 @@ This analysis was written before the queue finished and is labelled post hoc (`e
 - **Reading.** The p-value treats agent sessions as independent. It mostly reflects agents converging on the best trade-off in the table they were shown.
 - **What the agents said (descriptive, not pre-registered).**
   - Memory-prompted agents named the right risk: release up to 3 cm off target leaves the cube just outside the goal.
-  - None of the blind lower-lift proposals anticipated losing old placements, and one expected passing scenes to be "largely unaffected". Those edits lost 4 to 6 old successes.
+  - None of the four blind lift-only proposals anticipated losing old placements (one gave no risk statement), and one expected passing scenes to be "largely unaffected". Those edits lost 4 to 6 old successes.
 
 ## 7. What this adds and what it does not
 

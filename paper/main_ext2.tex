@@ -113,8 +113,67 @@ Under a further protocol frozen and pushed before any agent call, Claude Opus, S
 
 These observations come from one robot, one task and one repair context. The two repairs were proposed interactively and both populations use random edits. The agent test samples four models twice per prompt, without simulator access, and yields only 3 new edits; both pre-registered tests reuse one scene panel. We make no claim about agent competence, which gate is better in general, or whether loss histories transfer to edits unlike past ones, other skills or a redrawn panel. Parameter edits to a scripted controller are neither code changes nor learned-policy updates, and simulation says nothing about physical safety.
 
-\paragraph{Reproducibility.} An anonymized artifact, released after review, contains the runner, manifests, all rollout records, agent transcripts, frozen hashes, table and figure scripts, and a dependency-free protocol implementation.
+\paragraph{Reproducibility.} An anonymized artifact, released after review, contains the runner, manifests, all rollout records, agent transcripts, frozen hashes, table and figure scripts, and a dependency-free protocol implementation. Appendices A and B give agent and post-hoc details.
 
 \bibliography{refs}
+
+\appendix
+\section{Appendix A: Agent-Proposed Repairs}
+\paragraph{Protocol.} The protocol, both prompts, the agent list, the exclusion and deduplication rules and the analysis script were hashed and pushed before the first agent call; the answers and full transcripts were hashed and pushed before the first rollout. Each agent received one prompt on standard input in a fresh, empty directory with its tools disabled (Claude Code with an empty tool list; the Codex CLI in a read-only sandbox with shell and other tools disabled). No transcript contains a tool call, and all 16 answers were valid on the first attempt. A planned Gemini CLI agent was excluded under the frozen rule because the service rejected the account tier; its failed attempts are recorded.
+
+\paragraph{Prompts.} Both prompts give the system (Isaac Sim, Franka, CPU physics, cube and goal), the six parameters with current values and allowed ranges, the full controller source, the target failure (radius 0.80\,m, angle $-60^\circ$, a lift-phase timeout at 2.03\,cm error against the 1.5\,cm tolerance), the development success record, the scoring rule, and the goal: fix the failure without breaking scenes the controller already solves, to be tested near the failure and across the workspace. The answer is a JSON object with the overrides, a rationale and an expected risk. The \emph{history} prompt adds a table of the 50 earlier edits with their target gains and losses and their old-scene losses and gains on the same panel, the ten most often broken old scenes, and two facts: every target improver broke at least one old success, and most losses left the cube 3.0--4.7\,cm from the goal. History-prompted agents therefore saw outcomes on the panel on which they were scored. Each agent answered each prompt twice, in independent sessions (Table~\ref{tab:agents}). Identical answers were run once (Table~\ref{tab:agentedits}).
+
+\begin{table*}[t]
+\centering
+\small
+\begin{tabular}{llll}
+\toprule
+Agent & Harness & Blind prompt (2 answers) & History prompt (2 answers) \\
+\midrule
+Claude Opus 5.5 & Claude Code & lift 0.15; lift 0.15 & copy of r44; copy of r44 \\
+Claude Sonnet 5.5 & Claude Code & lift 0.15; lift 0.20 + tol.\ 0.022 & copy of r44; copy of r44 \\
+Claude Haiku 5.5 & Claude Code & lift 0.20 (= A); tol.\ 0.022 & tol.\ 0.033 (= r04); copy of r44 \\
+GPT & Codex CLI & tol.\ 0.025 (= B); tol.\ 0.025 (= B) & tol.\ 0.022; tol.\ 0.022 \\
+\bottomrule
+\end{tabular}
+\caption{The 16 valid answers. ``tol.'' is the motion convergence tolerance (m), ``lift'' the lift height (m); r44 sets the tolerance to 0.030 and the grasp tolerance to 0.019. A, B, r04 and r44 are earlier audited edits.}
+\label{tab:agents}
+\end{table*}
+
+\begin{table*}[t]
+\centering
+\small
+\begin{tabular}{llcccccc}
+\toprule
+Distinct edit & Same as & Target & Old lost & Old gained & Lost on suite & Detected & Uniform exp. \\
+\midrule
+Parent & -- & 10 & -- & -- & -- & -- & -- \\
+lift 0.15 & new & 15 & 4 & 8 & 1 & yes & 0.38 \\
+tol.\ 0.030, grasp 0.019 & r44 & 30 & 2 & 8 & 2 & yes & 0.21 \\
+lift 0.20, tol.\ 0.022 & new & 28 & 6 & 9 & 0 & no & 0.51 \\
+lift 0.20 & A & 15 & 6 & 8 & 3 & yes & 0.51 \\
+tol.\ 0.022 & new & 24 & 5 & 6 & 3 & yes & 0.45 \\
+tol.\ 0.033 & r04 & 29 & 3 & 9 & 2 & yes & 0.30 \\
+tol.\ 0.025 & B & 27 & 4 & 7 & 2 & yes & 0.38 \\
+\bottomrule
+\end{tabular}
+\caption{The 7 distinct agent edits on the 120-scene audit panel (30 target, 90 old; the parent solves 10 and 73). Target: target successes of 30; old lost: of the parent's 73 old successes; old gained: of its 17 old failures. Lost on suite: losses among the 8-scene history suite, the old successes most often lost by the 50 earlier edits; detected: at least one such loss; uniform exp.: detection probability expected for 8 uniformly drawn old successes. All 7 edits improve the target and lose old successes; all are useful under the aggregate objective, two (r44, r04) under the 5\% tolerance, none under zero loss.}
+\label{tab:agentedits}
+\end{table*}
+
+\paragraph{Secondary results (frozen).} With 4 scenes the history suite detected 5 of 7 lossy edits (uniform expectation 0.22; difference $+0.50$ [0.15, 0.81]). The 8-scene suite built from Extension~2's 26 candidates detected 5 of 7 ($+0.32$ [$-0.05$, 0.66]). Of the 30 losses, 13 (43\%) fell on the 8 history scenes, against 11\% expected if losses were uniform. With answers as units, blind answers lost 4.6 old successes on average and gained 7.6 (target net $+10.8$), and history answers lost 2.9 and gained 7.6 (target net $+18.4$; permutation $p=0.02$ for losses). The 8 history answers contain only 3 distinct edits, 5 of them identical to r44, which of the two earlier edits that fixed the whole target lost fewer old successes (2, against 16 for r14). Mean conditional loss among target improvers was 5.9\% for agent edits and 7.1\% for the 21 earlier improvers.
+
+\paragraph{Stated risks (descriptive).} History-prompted answers named the observed failure mode: releasing up to 3\,cm off target leaves the cube just outside the goal. None of the four blind lift-only answers anticipated losing old placements (one gave no risk statement), and one expected passing scenes to be ``largely unaffected''; these edits lost 4 to 6 old successes.
+
+\section{Appendix B: Post-hoc Checks}
+These analyses were not pre-registered.
+
+\paragraph{Replay of copied edits.} Each of the four agent edits identical to an earlier edit reproduced that edit's audit run on all 120 labels, with identical final errors and step counts, in a separate process one to three days later. The Extension~3 parent likewise reproduced the Extension~1 parent on all 120 labels.
+
+\paragraph{Leave-own-out and new edits.} Rebuilding the history suite without each copy's own earlier edit (same ranking and tie-break) leaves detection at 6 of 7 ($+0.47$ [0.12, 0.69]); every copy also broke a scene that many other earlier edits broke. On the 3 new edits alone the suite detected 2 (expected 0.45; $+0.22$ [$-0.51$, 0.62]), too few to support or reject anything.
+
+\paragraph{Parent margin.} Define the margin of a parent success as 3.0\,cm minus the parent's final placement error. On the first audit, where only A and B were tested (13 losses), margin ranked lost scenes well (AUC 0.81), and the 20\% least-margin parent successes held 62\% of losses. In the 26-candidate population (163 losses), margin was at chance (AUC 0.49), and the 20\% least-margin successes held 24\% of losses. Fragility therefore did not predict which scenes random edits broke in the population from which the history suite was built, whereas past losses did.
+
+\paragraph{Run order.} In Extension~2, suite batches ran scenes in a different order from the audit; the parent kept all 16 shared outcomes, but candidate outcomes flipped on 17 of 384 near-threshold labels. Reading detection from the audit gives 15 of 20 instead of 14 of 20. Extension~3 reads detection from the audit, so this does not apply there.
 
 \end{document}
