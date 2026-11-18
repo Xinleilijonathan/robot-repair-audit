@@ -22,9 +22,13 @@
 >   - `paper/main_ext2_short.tex`: 4 pages total. It also drops the audit-map figure.
 >   - The figure is `fig_ext2.pdf`, from `plot_ext2.py`. The table is `combined_gate_table.tex`, from `paper/make_combined_gate_table.py`.
 >   - Two verified references were added: Kim & Porter (ICSE 2002) and Elbaum et al. (TSE 2002). History-based test prioritization is prior art, and the drafts say so.
-> - **Waiting on the user.**
->   - Choose a version: the current paper, or the Extension 2 drafts.
->   - If the drafts are chosen, update the OpenReview abstract and TL;DR in `outputs/openreview_form.md`.
+> - **Version (user decision, Nov 17).** Submit the Extension 2 drafts.
+>   - **References excluded** (organizers confirm): `paper/main_ext2.pdf`.
+>   - **No confirmation by Nov 18:** `paper/main_ext2_short.pdf`.
+>   - `main.tex` and `main_short.tex` are kept as the earlier version but are no longer the submission.
+>   - Keep `main_ext2.tex` and `main_ext2_short.tex` in sync.
+>   - `outputs/openreview_form.md` now carries the matching abstracts (plain text), TL;DR and keywords.
+> - **Repo visibility (user decision, Nov 17).** `Xinleilijonathan/robot-repair-audit` has been PUBLIC since it was created on Nov 16 at 01:00 UTC, despite `--private`. The user chose to leave it public. Do not change visibility. Never link the repo from the paper, the OpenReview form or the artifact. As of Nov 17 none of them contains the repo name or the username; the artifact leak check covers "xinle".
 
 > **Update, Nov 16 ~22:00 (Claude): EXTENSION 2 RUNNING overnight (user-approved).**
 > - **Question.** A confirmatory test of whether loss histories predict future regressions. Protocol: `outputs/robot_repair_study/extension2_protocol.md`. It was frozen at 21:52 in `extension2_frozen_hashes.json` (42 files) and pushed as commit `1a49f07` before any rollout.
@@ -70,7 +74,7 @@
 > - **Tools.** Git is at `C:\Program Files\Git\cmd\git.exe`. gh is at `%LOCALAPPDATA%\Microsoft\WinGet\Packages\GitHub.cli_Microsoft.Winget.Source_8wekyb3d8bbwe\bin\gh.exe`.
 > - **Pushing.** No global credential helper is configured, so push with `git -c credential.helper= -c "credential.helper=!'<gh path with forward slashes>' auth git-credential" push`.
 > - **After extension 1 completes:** remove the two `ext1` lines from `.gitignore`, then commit and push.
-> - **Visibility.** Do not make the repo public or link it from the submission during double-blind review.
+> - **Visibility.** Do not link it from the submission during double-blind review. The repo was in fact public from creation, and the user chose on Nov 17 to leave it public; see the Nov 17 block at the top.
 >
 > **Update, Nov 15 ~16:50 (Claude): EXTENSION 1 RUNNING (overnight).**
 > - **Setup.** The protocol is `outputs/robot_repair_study/extension1_protocol.md`. Its materials (39 files) were frozen at 16:47 in `extension1_frozen_hashes.json`. It tests 24 seeded random edits plus A and B on a fresh scene draw: 3,800 rollouts, about 7–9 hours.
