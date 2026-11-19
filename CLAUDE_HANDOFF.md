@@ -1,5 +1,10 @@
 # Handoff to Claude: robot-repair workshop paper
 
+> **Update, Nov 18 (Claude): SUBMITTED on OpenReview** (Trust4RSI-Agent @ AAAI 2027) with `submission/Trust4RSI2027_submission_anonymous.pdf` (= `paper/main_ext2.pdf`).
+> - **Deadline.** Edits are possible until Nov 21, 13:00 UTC. Notification is Dec 2, 2026.
+> - **Workshop.** Non-archival and double-blind.
+> - **Anonymity.** Keep author names out of every tracked file until review ends. They live only in git-excluded files.
+
 > **Update, Nov 18 (Claude): THE ORGANIZERS ANSWERED. Submit `paper/main_ext2.pdf`.**
 > - **Rules.** The main text gets 4 pages. References and appendices are unlimited, but appendices must be in the same PDF.
 > - **Short draft.** `main_ext2_short` is now only a backup, and it has no appendix.

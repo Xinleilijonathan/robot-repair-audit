@@ -2,7 +2,7 @@
 
 Venue: AAAI 2027 Workshop on Trustworthy Evolution of AI Agents (Trust4RSI-Agent). Form: https://openreview.net/group?id=AAAI.org/2027/Workshop/Trust4RSI-Agent. The form closes Nov 21, 13:00 UTC, which is Nov 20 AoE.
 
-These fields come from the live submission form, read Nov 16. **Nothing has been submitted.**
+**Submitted on OpenReview on Nov 18, 2026**, with `submission/Trust4RSI2027_submission_anonymous.pdf` and the entries below. It can be edited until Nov 21, 13:00 UTC. Notification: Dec 2, 2026.
 
 **Version (user decision, Nov 17; Extension 3 added Nov 18 at the user's request):** submit the Extension 2 drafts, `paper/main_ext2.pdf` or `paper/main_ext2_short.pdf`, which now also include the agent-proposed-repair test. The entries below match them. `main.pdf` and `main_short.pdf` are the earlier version without the pre-registered test and are no longer the submission.
 
